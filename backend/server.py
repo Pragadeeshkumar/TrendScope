@@ -48,6 +48,11 @@ class PromptRequest(BaseModel):
 # API Endpoints
 # ==============================================================================
 
+@app.get("/api/health")
+async def health_check():
+    return {"status": "ok", "service": "TrendScope API", "version": "2.0.0"}
+
+
 @app.post("/api/pipeline/analyze")
 async def analyze_prompt(payload: PromptRequest):
     """
