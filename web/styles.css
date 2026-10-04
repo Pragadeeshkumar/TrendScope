@@ -1652,3 +1652,54 @@ body {
   .feature-cards-grid { grid-template-columns: 1fr; }
   .provenance-drawer { width: 100%; }
 }
+
+/* Tag Pills & Entity Badges */
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.tags-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.tag-purple {
+  background: #F3E8FF;
+  color: #7E22CE;
+}
+
+.tag-green {
+  background: #DCFCE7;
+  color: #15803D;
+}
+
+.tag-blue {
+  background: #EFF6FF;
+  color: #1D4ED8;
+}
+
+.tag-red {
+  background: #FEE2E2;
+  color: #B91C1C;
+}
+
+.tag-orange {
+  background: #FFEDD5;
+  color: #C2410C;
+}
+
+.tag-not-found {
+  background: #F1F5F9;
+  color: #64748B;
+  font-style: italic;
+  border: 1px dashed #CBD5E1;
+}
+

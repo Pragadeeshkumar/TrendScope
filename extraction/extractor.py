@@ -236,9 +236,17 @@ class LLMStructuredExtractor:
             except Exception as e:
                 pass
 
-        # Final Fallback: High-Precision Domain Lexicon Matcher
+        # Strict zero-hardcode policy: If LLM APIs are offline or return no data, do NOT use hardcoded lexicon.
+        # Leave as empty structure so "Not Found" is accurately reflected.
         if not extracted_data:
-            extracted_data = self._lexicon_based_fallback_extraction(doc, pruned_sents)
+            extracted_data = {
+                "methods": [],
+                "datasets": [],
+                "triplets": [],
+                "limitations": [],
+                "future_work": [],
+                "findings": []
+            }
 
         # 4. Map, Canonicalize, and Self-Verify extracted entities and triplets
         self._populate_extraction_result(result, extracted_data, sentence_lookup, doc)
@@ -287,161 +295,23 @@ class LLMStructuredExtractor:
                 return json.loads(match.group(1))
             return None
 
-    def _lexicon_based_fallback_extraction(
-        self, 
-        doc: ParsedPDFDocument, 
-        pruned_sents: Dict[str, List[IndexedSentence]]
-    ) -> Dict[str, Any]:
-        """
-        High-precision domain lexicon matcher used when LLM APIs are offline.
-        Strictly matches recognized architectures, benchmarks, and metrics without generic nouns.
-        """
-        output: Dict[str, List[Dict[str, Any]]] = {
-            "methods": [],
-            "datasets": [],
-            "triplets": [],
-            "limitations": [],
-            "future_work": [],
-            "findings": []
-        }
-
-        RECOGNIZED_METHODS = [
-            ("Convolutional Neural Network", r'\b(?:cnn|convolutional\s+neural\s+network)\b'),
-            ("Vision Transformer", r'\b(?:vit|vision\s+transformer)\b'),
-            ("Large Language Model", r'\b(?:llm|large\s+language\s+model)\b'),
-            ("Clinical Large Language Model", r'\b(?:clinical\s+llm|clinical\s+large\s+language\s+model)\b'),
-            ("Transformer", r'\b(?:transformer|attention\s+network)\b'),
-            ("Random Forest", r'\b(?:random\s+forest)\b'),
-            ("Decision Tree", r'\b(?:decision\s+tree)\b'),
-            ("Support Vector Machine", r'\b(?:svm|support\s+vector\s+machine)\b'),
-            ("XGBoost", r'\b(?:xgboost)\b'),
-            ("Graph Neural Network", r'\b(?:gnn|graph\s+neural\s+network)\b'),
-            ("Reinforcement Learning", r'\b(?:reinforcement\s+learning|deep\s+rl)\b'),
-            ("LoRA", r'\b(?:lora|low[\-\s]+rank\s+adaptation)\b'),
-            ("Sandboxed Terminal Execution", r'\b(?:sandboxed\s+terminal\s+execution)\b'),
-            ("Multi-Stage Verification Pipeline", r'\b(?:multi[\-\s]+stage\s+verification)\b'),
-            ("ResNet", r'\b(?:resnet(?:\-?\d+)?)\b'),
-            ("UNet", r'\b(?:u\-?net)\b')
-        ]
-
-        RECOGNIZED_DATASETS = [
-            # Cybersecurity
-            ("Ransomware Dataset 2024", r'\b(?:ransomware[\-\s]*2024)\b'),
-            ("Incident-2026Alpha", r'\b(?:incident[\-\s]*2026alpha)\b'),
-            ("Cyberwheel", r'\b(?:cyberwheel)\b'),
-            ("Cicmalmem-2022", r'\b(?:cicmalmem[\-\s]*2022)\b'),
-            ("NSL-KDD", r'\b(?:nsl[\-\s]*kdd|kdd[\-\s]*cup)\b'),
-            ("CIC-IDS Dataset", r'\b(?:cic[\-\s]*ids)\b'),
-            ("UNSW-NB15", r'\b(?:unsw[\-\s]*nb15)\b'),
-            ("BODMAS Malware", r'\b(?:bodmas)\b'),
-            ("Cybench", r'\b(?:cybench)\b'),
-            
-            # Medical & Clinical AI
-            ("MIMIC Database", r'\b(?:mimic(?:\-cxr|\-iv|\-iii)?)\b'),
-            ("MedQA Benchmark", r'\b(?:medqa|usmle)\b'),
-            ("PubMedQA", r'\b(?:pubmedqa)\b'),
-            ("CheXpert", r'\b(?:chexpert)\b'),
-            ("ChestX-ray14", r'\b(?:chestx[\-\s]*ray(?:14)?|nih\s+chest)\b'),
-            ("BraTS Benchmark", r'\b(?:brats(?:\s*20\d\d)?)\b'),
-            ("ISIC Skin Lesion", r'\b(?:isic(?:\s*20\d\d)?)\b'),
-            ("ACDC Cardiac MRI", r'\b(?:acdc(?:\s+cardiac|\s+dataset)?)\b'),
-            ("Synapse Multi-Organ CT", r'\b(?:synapse(?:\s+multi\-organ)?)\b'),
-            ("PhysioNet Cohort", r'\b(?:physionet|eicu)\b'),
-            ("ADNI Cohort", r'\b(?:adni|alzheimer\'?s\s+disease\s+neuroimaging)\b'),
-            ("TCGA Pathology", r'\b(?:tcga|the\s+cancer\s+genome\s+atlas)\b'),
-            
-            # Vision & Multimodal
-            ("ImageNet", r'\b(?:imagenet(?:\-?1k|\-?21k)?)\b'),
-            ("MS COCO", r'\b(?:coco|ms[\-\s]*coco)\b'),
-            ("PASCAL VOC", r'\b(?:pascal\s*voc|voc\s*2012)\b'),
-            ("CIFAR", r'\b(?:cifar[\-\s]*(?:10|100))\b'),
-            ("MNIST", r'\b(?:mnist|fashion[\-\s]*mnist)\b'),
-            ("Cityscapes", r'\b(?:cityscapes)\b'),
-            
-            # NLP & LLM Benchmarks
-            ("MMLU", r'\b(?:mmlu|massive\s+multitask\s+language\s+understanding)\b'),
-            ("GSM8K", r'\b(?:gsm8k)\b'),
-            ("HumanEval", r'\b(?:human_?eval|humaneval)\b'),
-            ("SQuAD", r'\b(?:squad(?:\s*v?2\.0)?)\b'),
-            ("GLUE Benchmark", r'\b(?:glue|superglue)\b'),
-            ("SWE-bench", r'\b(?:swe[\-\s]*bench)\b'),
-            ("TruthfulQA", r'\b(?:truthfulqa)\b'),
-            ("HellaSwag", r'\b(?:hellaswag)\b')
-        ]
-
-        found_methods = set()
-        for s in pruned_sents.get("methods", []) + pruned_sents.get("abstract_intro", []):
-            for canonical_name, pat in RECOGNIZED_METHODS:
-                if re.search(pat, s.text, re.IGNORECASE) and canonical_name not in found_methods:
-                    found_methods.add(canonical_name)
-                    output["methods"].append({
-                        "name": canonical_name,
-                        "type": "model",
-                        "role": "proposed",
-                        "sentence_id": s.sentence_id,
-                        "page": s.page,
-                        "section": s.section,
-                        "quote": s.text[:150]
-                    })
-                if len(output["methods"]) >= 4:
-                    break
-
-        found_datasets = set()
-        for s in pruned_sents.get("datasets", []) + pruned_sents.get("findings", []) + pruned_sents.get("abstract_intro", []):
-            for canonical_name, pat in RECOGNIZED_DATASETS:
-                if re.search(pat, s.text, re.IGNORECASE) and canonical_name not in found_datasets:
-                    found_datasets.add(canonical_name)
-                    output["datasets"].append({
-                        "name": canonical_name,
-                        "modality": "Benchmark",
-                        "usage": "evaluation",
-                        "sentence_id": s.sentence_id,
-                        "page": s.page,
-                        "section": s.section,
-                        "quote": s.text[:150]
-                    })
-                if len(output["datasets"]) >= 4:
-                    break
-
-        # Build relation triplets if method and dataset are found
-        if output["methods"] and output["datasets"]:
-            top_m = output["methods"][0]
-            top_d = output["datasets"][0]
-            output["triplets"].append({
-                "subject": top_m["name"],
-                "predicate": "EVALUATED_ON",
-                "object": top_d["name"],
-                "metric": "Accuracy/F1",
-                "value": "Reported",
-                "sentence_id": top_d["sentence_id"],
-                "page": top_d["page"],
-                "section": top_d["section"],
-                "quote": top_d["quote"]
-            })
-
-        # Extract limitations
-        for s in pruned_sents.get("limitations", [])[:2]:
-            output["limitations"].append({
-                "text": s.text[:150],
-                "category": "general",
-                "sentence_id": s.sentence_id,
-                "page": s.page,
-                "section": s.section,
-                "quote": s.text[:150]
-            })
-
-        # Extract future work
-        for s in pruned_sents.get("future_work", [])[:2]:
-            output["future_work"].append({
-                "text": s.text[:150],
-                "category": "methodological_extension",
-                "sentence_id": s.sentence_id,
-                "page": s.page,
-                "section": s.section,
-                "quote": s.text[:150]
-            })
-
-        return output
+    # def _lexicon_based_fallback_extraction(
+    #     self, 
+    #     doc: ParsedPDFDocument, 
+    #     pruned_sents: Dict[str, List[IndexedSentence]]
+    # ) -> Dict[str, Any]:
+    #     """
+    #     [DEPRECATED / DISABLED]: Zero-hardcoding policy.
+    #     Extraction relies purely on generative LLM reasoning.
+    #     """
+    #     return {
+    #         "methods": [],
+    #         "datasets": [],
+    #         "triplets": [],
+    #         "limitations": [],
+    #         "future_work": [],
+    #         "findings": []
+    #     }
 
     def _populate_extraction_result(
         self,

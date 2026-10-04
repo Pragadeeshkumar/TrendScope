@@ -654,26 +654,34 @@ function renderPapersTable(papers) {
     return;
   }
 
-  const renderRows = (paperList) => paperList.map(p => `
+  const renderRows = (paperList) => paperList.map(p => {
+    const methodsList = p.methods || [];
+    const datasetsList = p.datasets || [];
+    return `
     <tr onclick="openProvenanceDrawer('${escapeHtml(p.id)}', 'Paper')">
       <td class="paper-title-cell">${escapeHtml(p.title)}</td>
       <td class="text-mono">${p.year || 2024}</td>
       <td><span class="tag-pill tag-blue">${escapeHtml(p.venue ? p.venue.split(' ')[0] : 'arXiv')}</span></td>
       <td>
         <div class="tags-group">
-          ${(p.methods || ['Clinical AI']).slice(0, 3).map(m => `<span class="tag-pill tag-purple">${escapeHtml(m)}</span>`).join('')}
+          ${methodsList.length > 0 
+            ? methodsList.slice(0, 3).map(m => `<span class="tag-pill tag-purple">${escapeHtml(m)}</span>`).join('') 
+            : `<span class="tag-pill" style="background:#F1F5F9; color:#94A3B8; font-style:italic; border:1px dashed #CBD5E1;">Not Found</span>`}
         </div>
       </td>
       <td>
         <div class="tags-group">
-          ${(p.datasets || ['MIMIC-IV']).slice(0, 3).map(d => `<span class="tag-pill tag-green">${escapeHtml(d)}</span>`).join('')}
+          ${datasetsList.length > 0 
+            ? datasetsList.slice(0, 3).map(d => `<span class="tag-pill tag-green">${escapeHtml(d)}</span>`).join('') 
+            : `<span class="tag-pill" style="background:#F1F5F9; color:#94A3B8; font-style:italic; border:1px dashed #CBD5E1;">Not Found</span>`}
         </div>
       </td>
       <td style="text-align: right; color: var(--text-light);">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </td>
     </tr>
-  `).join('');
+  `;
+  }).join('');
 
   if (tbodyOverview) tbodyOverview.innerHTML = renderRows(papers.slice(0, 8));
   if (tbodyFull) tbodyFull.innerHTML = renderRows(papers);
@@ -690,6 +698,7 @@ function renderClustersTab(clusters) {
     const color = c.color || colors[i % colors.length];
     const pCount = c.size || (c.paper_ids ? c.paper_ids.length : null) || c.paper_count || c.papers_count;
     const badgeText = pCount ? `${pCount} Papers (${c.pct || Math.round((pCount / 20) * 100)}%)` : (c.pct ? `${c.pct}%` : 'Cluster Area');
+    const domMethods = c.dominant_methods || [];
 
     return `
       <div class="white-card mb-3" style="margin-bottom: 1rem; border-left: 4px solid ${color};">
@@ -698,10 +707,12 @@ function renderClustersTab(clusters) {
           <span class="tag-pill" style="background: ${color}15; color: ${color}; font-weight: 600;">${badgeText}</span>
         </div>
         <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0.5rem 0;">
-          ${escapeHtml(c.description || 'Discovered thematic literature cluster grounded in SPECTER2 dense semantic embeddings.')}
+          ${escapeHtml(c.description || 'Discovered thematic literature cluster grounded in dense semantic embeddings.')}
         </p>
         <div class="tags-group">
-          ${(c.dominant_methods || ['Foundation Models', 'Multi-Agent']).map(m => `<span class="tag-pill tag-purple">${escapeHtml(m)}</span>`).join('')}
+          ${domMethods.length > 0 
+            ? domMethods.map(m => `<span class="tag-pill tag-purple">${escapeHtml(m)}</span>`).join('') 
+            : `<span class="tag-pill" style="background:#F1F5F9; color:#94A3B8; font-style:italic;">Methods Not Found</span>`}
         </div>
       </div>
     `;
@@ -911,13 +922,17 @@ window.openProvenanceDrawer = function(entityName, entityType) {
             <div>
               <span style="font-size: 0.72rem; font-weight: 700; color: #7C3AED;">METHODS USED:</span>
               <div class="tags-group" style="margin-top: 0.2rem;">
-                ${(paperMatch.methods || []).map(m => `<span class="tag-pill tag-purple">${escapeHtml(m)}</span>`).join('')}
+                ${(paperMatch.methods && paperMatch.methods.length > 0) 
+                  ? paperMatch.methods.map(m => `<span class="tag-pill tag-purple">${escapeHtml(m)}</span>`).join('') 
+                  : `<span class="tag-pill" style="background: #F1F5F9; color: #94A3B8; font-style: italic; border: 1px dashed #CBD5E1;">Not Found (Theoretical / Survey Paper)</span>`}
               </div>
             </div>
             <div>
-              <span style="font-size: 0.72rem; font-weight: 700; color: #059669;">DATASETS:</span>
+              <span style="font-size: 0.72rem; font-weight: 700; color: #059669;">DATASETS / BENCHMARKS:</span>
               <div class="tags-group" style="margin-top: 0.2rem;">
-                ${(paperMatch.datasets || []).map(d => `<span class="tag-pill tag-green">${escapeHtml(d)}</span>`).join('')}
+                ${(paperMatch.datasets && paperMatch.datasets.length > 0) 
+                  ? paperMatch.datasets.map(d => `<span class="tag-pill tag-green">${escapeHtml(d)}</span>`).join('') 
+                  : `<span class="tag-pill" style="background: #F1F5F9; color: #94A3B8; font-style: italic; border: 1px dashed #CBD5E1;">Not Found (No Public Benchmark Evaluated)</span>`}
               </div>
             </div>
           </div>
