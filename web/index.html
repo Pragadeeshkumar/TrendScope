@@ -379,15 +379,39 @@
         </div>
       </main>
 
-      <!-- VIEW 2: ANALYSIS DASHBOARD (Reference Image 2) -->
+      <!-- VIEW 2: ANALYSIS DASHBOARD -->
       <main class="page-content" id="viewAnalysis" style="display: none;">
         <div class="analysis-container">
 
-          <!-- Analysis Header Area -->
-          <div class="analysis-header-area">
-            <div class="analysis-title-row">
-              <div>
-                <button class="back-link" onclick="navigateTo('home')">
+          <!-- Empty State when no session is active -->
+          <div id="analysisEmptyState" class="analysis-empty-state" style="display: none; text-align: center; padding: 6rem 2rem; max-width: 600px; margin: 0 auto;">
+            <div style="width: 64px; height: 64px; border-radius: 16px; background: #EEF2FF; color: #4F46E5; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h2 style="font-size: 1.5rem; font-weight: 700; color: #0F172A; margin-bottom: 0.5rem;">No Active Investigation</h2>
+            <p style="color: #64748B; font-size: 0.95rem; line-height: 1.5; margin-bottom: 2rem;">
+              Literature analysis metrics, method taxonomies, and research gap lifecycles are generated after running an investigation. Enter a research topic on the home screen to start.
+            </p>
+            <button class="btn btn-primary" onclick="navigateTo('home')" style="padding: 0.75rem 1.75rem; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              Start New Investigation
+            </button>
+          </div>
+
+          <!-- Active Investigation Content (Only shown when data exists) -->
+          <div id="analysisActiveContent" style="display: none;">
+
+            <!-- Analysis Header Area -->
+            <div class="analysis-header-area">
+              <div class="analysis-title-row">
+                <div>
+                  <button class="back-link" onclick="navigateTo('home')">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="19" y1="12" x2="5" y2="12" />
                     <polyline points="12 19 5 12 12 5" />
@@ -772,15 +796,16 @@
             </div>
           </div>
 
+          <!-- End Active Content -->
+          </div>
+
         </div>
       </main>
 
     </div>
   </div>
 
-
-
-  <script src="app.js?v=8.0" type="module"></script>
+  <script src="app.js?v=10.0" type="module"></script>
 </body>
 
 </html>

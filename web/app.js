@@ -143,14 +143,41 @@ function setupEventListeners() {
 // Navigation View Controller
 // ==============================================================================
 window.navigateTo = function(view) {
+  const viewHome = document.getElementById('viewHome');
+  const viewAnalysis = document.getElementById('viewAnalysis');
+  const analysisEmptyState = document.getElementById('analysisEmptyState');
+  const analysisActiveContent = document.getElementById('analysisActiveContent');
+
+  if (view === 'analysis') {
+    // If no active run or analysis data is loaded
+    if (!state.activeRunId && (!state.analysisData || !state.analysisData.papers || state.analysisData.papers.length === 0)) {
+      if (state.historyRuns && state.historyRuns.length > 0) {
+        openAnalysis(state.historyRuns[0].run_id);
+        return;
+      } else {
+        // No runs exist in system - stay on home
+        state.currentView = 'home';
+        document.querySelectorAll('.sidebar-nav .nav-item').forEach(b => {
+          b.classList.toggle('active', b.getAttribute('data-nav') === 'home');
+        });
+        if (viewHome) viewHome.style.display = 'block';
+        if (viewAnalysis) viewAnalysis.style.display = 'none';
+        
+        const homeInput = document.getElementById('homeSearchInput');
+        if (homeInput) {
+          homeInput.focus();
+          homeInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        return;
+      }
+    }
+  }
+
   state.currentView = view;
 
   document.querySelectorAll('.sidebar-nav .nav-item').forEach(b => {
     b.classList.toggle('active', b.getAttribute('data-nav') === view);
   });
-
-  const viewHome = document.getElementById('viewHome');
-  const viewAnalysis = document.getElementById('viewAnalysis');
 
   if (view === 'home' || view === 'library') {
     if (viewHome) viewHome.style.display = 'block';
@@ -158,6 +185,14 @@ window.navigateTo = function(view) {
   } else if (view === 'analysis') {
     if (viewHome) viewHome.style.display = 'none';
     if (viewAnalysis) viewAnalysis.style.display = 'block';
+    
+    if (state.activeRunId && state.analysisData) {
+      if (analysisEmptyState) analysisEmptyState.style.display = 'none';
+      if (analysisActiveContent) analysisActiveContent.style.display = 'block';
+    } else {
+      if (analysisEmptyState) analysisEmptyState.style.display = 'block';
+      if (analysisActiveContent) analysisActiveContent.style.display = 'none';
+    }
   }
 };
 
@@ -405,6 +440,7 @@ window.loadServerRuns = async function() {
     if (!res.ok) return;
     const data = await res.json();
     const runs = data.runs || [];
+    state.historyRuns = runs;
 
     if (runs.length === 0) {
       listEl.innerHTML = `
@@ -464,11 +500,17 @@ async function loadAnalysisData(runId) {
 function renderAnalysisDashboard(data) {
   if (!data) return;
 
+  const analysisEmptyState = document.getElementById('analysisEmptyState');
+  const analysisActiveContent = document.getElementById('analysisActiveContent');
+  if (analysisEmptyState) analysisEmptyState.style.display = 'none';
+  if (analysisActiveContent) analysisActiveContent.style.display = 'block';
+
   // 1. Title & Header Counts
   const titleEl = document.getElementById('analysisTitle');
   const paperCountEl = document.getElementById('analysisPaperCount');
+  const realPaperCount = data.paperCount ?? (data.papers ? data.papers.length : 0);
   if (titleEl) titleEl.textContent = data.title || "Scientific Literature Intelligence";
-  if (paperCountEl) paperCountEl.textContent = `${data.paperCount || 40} papers`;
+  if (paperCountEl) paperCountEl.textContent = `${realPaperCount} papers`;
 
   // 2. 4 Top KPI Stat Cards
   const kpiP = document.getElementById('statCardPapers');
@@ -476,17 +518,17 @@ function renderAnalysisDashboard(data) {
   const kpiM = document.getElementById('statCardMethods');
   const kpiB = document.getElementById('statCardBenchmarks');
 
-  if (kpiP) kpiP.textContent = data.paperCount || 40;
-  if (kpiA) kpiA.textContent = data.areasCount || 8;
-  if (kpiM) kpiM.textContent = data.methodsCount || 68;
-  if (kpiB) kpiB.textContent = data.benchmarksCount || 54;
+  if (kpiP) kpiP.textContent = data.paperCount ?? (data.papers ? data.papers.length : 0);
+  if (kpiA) kpiA.textContent = data.areasCount ?? (data.taxonomy?.clusters ? data.taxonomy.clusters.length : 0);
+  if (kpiM) kpiM.textContent = data.methodsCount ?? (data.top_methods ? data.top_methods.length : 0);
+  if (kpiB) kpiB.textContent = data.benchmarksCount ?? (data.top_benchmarks ? data.top_benchmarks.length : 0);
 
   // 3. Donut Chart SVG Segments & Legend
   const donutNum = document.getElementById('donutCenterNum');
   const totalDonutPapers = (data.donut && data.donut.length > 0)
     ? data.donut.reduce((acc, d) => acc + (d.paper_count || 0), 0)
-    : (data.paperCount || 20);
-  if (donutNum) donutNum.textContent = totalDonutPapers || data.paperCount || 20;
+    : realPaperCount;
+  if (donutNum) donutNum.textContent = totalDonutPapers ?? 0;
 
   const donutSvg = document.getElementById('donutSvg') || document.querySelector('.donut-svg');
   const circumference = 2 * Math.PI * 45; // ~282.7433
