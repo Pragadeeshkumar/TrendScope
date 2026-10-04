@@ -325,16 +325,48 @@ class LLMStructuredExtractor:
         ]
 
         RECOGNIZED_DATASETS = [
+            # Cybersecurity
             ("Ransomware Dataset 2024", r'\b(?:ransomware[\-\s]*2024)\b'),
             ("Incident-2026Alpha", r'\b(?:incident[\-\s]*2026alpha)\b'),
             ("Cyberwheel", r'\b(?:cyberwheel)\b'),
             ("Cicmalmem-2022", r'\b(?:cicmalmem[\-\s]*2022)\b'),
             ("NSL-KDD", r'\b(?:nsl[\-\s]*kdd|kdd[\-\s]*cup)\b'),
             ("CIC-IDS Dataset", r'\b(?:cic[\-\s]*ids)\b'),
-            ("ImageNet", r'\b(?:imagenet)\b'),
+            ("UNSW-NB15", r'\b(?:unsw[\-\s]*nb15)\b'),
+            ("BODMAS Malware", r'\b(?:bodmas)\b'),
+            ("Cybench", r'\b(?:cybench)\b'),
+            
+            # Medical & Clinical AI
+            ("MIMIC Database", r'\b(?:mimic(?:\-cxr|\-iv|\-iii)?)\b'),
+            ("MedQA Benchmark", r'\b(?:medqa|usmle)\b'),
+            ("PubMedQA", r'\b(?:pubmedqa)\b'),
+            ("CheXpert", r'\b(?:chexpert)\b'),
+            ("ChestX-ray14", r'\b(?:chestx[\-\s]*ray(?:14)?|nih\s+chest)\b'),
+            ("BraTS Benchmark", r'\b(?:brats(?:\s*20\d\d)?)\b'),
+            ("ISIC Skin Lesion", r'\b(?:isic(?:\s*20\d\d)?)\b'),
+            ("ACDC Cardiac MRI", r'\b(?:acdc(?:\s+cardiac|\s+dataset)?)\b'),
+            ("Synapse Multi-Organ CT", r'\b(?:synapse(?:\s+multi\-organ)?)\b'),
+            ("PhysioNet Cohort", r'\b(?:physionet|eicu)\b'),
+            ("ADNI Cohort", r'\b(?:adni|alzheimer\'?s\s+disease\s+neuroimaging)\b'),
+            ("TCGA Pathology", r'\b(?:tcga|the\s+cancer\s+genome\s+atlas)\b'),
+            
+            # Vision & Multimodal
+            ("ImageNet", r'\b(?:imagenet(?:\-?1k|\-?21k)?)\b'),
             ("MS COCO", r'\b(?:coco|ms[\-\s]*coco)\b'),
-            ("MIMIC Database", r'\b(?:mimic)\b'),
-            ("MedQA Benchmark", r'\b(?:medqa|usmle)\b')
+            ("PASCAL VOC", r'\b(?:pascal\s*voc|voc\s*2012)\b'),
+            ("CIFAR", r'\b(?:cifar[\-\s]*(?:10|100))\b'),
+            ("MNIST", r'\b(?:mnist|fashion[\-\s]*mnist)\b'),
+            ("Cityscapes", r'\b(?:cityscapes)\b'),
+            
+            # NLP & LLM Benchmarks
+            ("MMLU", r'\b(?:mmlu|massive\s+multitask\s+language\s+understanding)\b'),
+            ("GSM8K", r'\b(?:gsm8k)\b'),
+            ("HumanEval", r'\b(?:human_?eval|humaneval)\b'),
+            ("SQuAD", r'\b(?:squad(?:\s*v?2\.0)?)\b'),
+            ("GLUE Benchmark", r'\b(?:glue|superglue)\b'),
+            ("SWE-bench", r'\b(?:swe[\-\s]*bench)\b'),
+            ("TruthfulQA", r'\b(?:truthfulqa)\b'),
+            ("HellaSwag", r'\b(?:hellaswag)\b')
         ]
 
         found_methods = set()
@@ -355,7 +387,7 @@ class LLMStructuredExtractor:
                     break
 
         found_datasets = set()
-        for s in pruned_sents.get("datasets", []):
+        for s in pruned_sents.get("datasets", []) + pruned_sents.get("findings", []) + pruned_sents.get("abstract_intro", []):
             for canonical_name, pat in RECOGNIZED_DATASETS:
                 if re.search(pat, s.text, re.IGNORECASE) and canonical_name not in found_datasets:
                     found_datasets.add(canonical_name)
