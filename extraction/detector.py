@@ -1,6 +1,10 @@
 """
 Section Detector and Smart Context Pruner for Stage 3 Research Information Extraction.
-Routes relevant section blocks and prunes 1000s of sentences into ~40-70 target candidate sentences.
+Implements Layout-Guided Section Routing across:
+1. Abstract & Introduction (Core contributions & main models)
+2. Methodology (Algorithms, loss functions, architectures)
+3. Experiments (Datasets, benchmarks, baselines, evaluation metrics)
+4. Discussion & Limitations (Failure cases, computational bottlenecks, future directions)
 """
 
 import re
@@ -12,6 +16,12 @@ logger = logging.getLogger("trendscope.extraction.detector")
 
 # Section heading regex maps
 SECTION_CATEGORIES = {
+    "abstract_intro": [
+        r'\babstract\b',
+        r'\bintroduction\b',
+        r'\boverview\b',
+        r'\bbackground\b'
+    ],
     "methods": [
         r'\bmethod(?:s|ology)?\b',
         r'\bproposed\s+(?:method|framework|approach|model|architecture)\b',
@@ -19,7 +29,9 @@ SECTION_CATEGORIES = {
         r'\bmodel\s+architecture\b',
         r'\bnetwork\s+architecture\b',
         r'\bframework\b',
-        r'\bimplementation\s+details\b'
+        r'\bimplementation\s+details\b',
+        r'\bsystem\s+design\b',
+        r'\balgorithm\b'
     ],
     "datasets": [
         r'\bdataset(?:s)?\b',
@@ -59,26 +71,27 @@ KEYWORD_PATTERNS = {
         r'\bwe\s+(?:propose|introduce|develop|present|design|implement|formulate)\b',
         r'\bour\s+(?:architecture|model|framework|method|approach|algorithm|pipeline|system)\b',
         r'\b(?:transformer|attention|backbone|convolutional|densenet|resnet|vit|neural|deep\s+learning|llm|agent|prompt)\b',
-        r'\b(?:decision\s+tree|random\s+forest|svm|logistic\s+regression|xgboost|ctree|utree|federated|fl-tdabc)\b',
-        r'\b(?:loss\s+function|optimization|reinforcement\s+learning|chain-of-thought|reasoning|meta-learner)\b'
+        r'\b(?:decision\s+tree|random\s+forest|svm|logistic\s+regression|xgboost|gnn|gat|gcn|diffusion|ddpm|mamba)\b',
+        r'\b(?:loss\s+function|optimization|reinforcement\s+learning|chain-of-thought|reasoning|meta-learner|lora|qlora)\b'
     ],
     "datasets": [
         r'\b(?:dataset|benchmark|corpus|database|cohort|registry|clinical\s+trial|scans|mri|ct\s+scans)\b',
         r'\b(?:evaluated\s+on|trained\s+on|tested\s+on|experimented\s+with|collected\s+from|patient\s+records)\b',
-        r'\b(?:mimic|eicu|imagenet|kaggle|synthetic|patients|cases|subjects|ehr|emr|fracatlas|medqa|pedcorpus|medmnist)\b'
+        r'\b(?:mimic|eicu|imagenet|kaggle|synthetic|patients|cases|subjects|ransomware|cyberwheel|kdd|nsl-kdd|medqa)\b'
     ],
     "literature_sources": [
         r'\b(?:searches?\s+were\s+conducted|literature\s+search|queried\s+the\s+databases?|systematic\s+review)\b',
         r'\b(?:pubmed|scopus|embase|web\s+of\s+science|ieee\s+xplore|google\s+scholar|proquest|medline)\b'
     ],
     "findings": [
-        r'\b(?:achieves?|outperforms?|improved\s+by|superior\s+to|accuracy\s+of|auroc|f1-score|bleu|sensitivity)\b',
-        r'\b(?:statistically\s+significant|p\s*[<=]\s*0\.\d+|demonstrated\s+higher|reduced\s+error)\b'
+        r'\b(?:achieves?|outperforms?|improved\s+by|superior\s+to|accuracy\s+of|auroc|f1-score|f1\s+score|bleu|sensitivity)\b',
+        r'\b(?:statistically\s+significant|p\s*[<=]\s*0\.\d+|demonstrated\s+higher|reduced\s+error|higher\s+accuracy)\b'
     ],
     "limitations": [
         r'\blimitation\b', r'\blimited\s+by\b', r'\bdrawback\b', r'\bshortcoming\b',
         r'\bweakness\b', r'\bstruggles?\s+with\b', r'\bdegrades?\b', r'\bcomputational\s+(?:cost|complexity|overhead)\b',
-        r'\bmemory\s+(?:cost|overhead|consumption)\b', r'\bgeneralization\b', r'\bscalability\b', r'\blacks?\s+external\s+validation\b'
+        r'\bmemory\s+(?:cost|overhead|consumption)\b', r'\bgeneralization\b', r'\bscalability\b', r'\blacks?\s+external\s+validation\b',
+        r'\bhigh\s+latency\b', r'\bsynthetic\s+bias\b'
     ],
     "future_work": [
         r'\bfuture\s+(?:work|research|direction|investigation|avenue)\b',
@@ -88,133 +101,90 @@ KEYWORD_PATTERNS = {
 }
 
 
-DISCOURSE_MARKERS = {
-    "however", "moreover", "furthermore", "nevertheless", "nonetheless", "therefore",
-    "overall", "over", "given", "through", "here", "these", "prior", "specifically"
-}
-
-
 def classify_section_header(header_name: str) -> str:
-    """
-    Classifies a raw section header into a canonical category or 'other'.
-    """
-    clean_name = header_name.lower().strip()
-    for category, patterns in SECTION_CATEGORIES.items():
-        for pattern in patterns:
-            if re.search(pattern, clean_name):
-                return category
+    """Classifies a raw section header into a canonical category or 'other'."""
+    if not header_name:
+        return "other"
+        
+    h_lower = header_name.lower().strip()
+    for cat, patterns in SECTION_CATEGORIES.items():
+        for pat in patterns:
+            if re.search(pat, h_lower):
+                return cat
+                
     return "other"
 
 
-def score_sentence_relevance(sentence_text: str, category: str) -> int:
-    """
-    Computes a keyword relevance score for a sentence for a target category.
-    """
-    text_lower = sentence_text.lower()
-    score = 0
-    patterns = KEYWORD_PATTERNS.get(category, [])
-    for pattern in patterns:
-        if re.search(pattern, text_lower):
-            score += 1
+def score_sentence_relevance(sent: IndexedSentence, target_category: str) -> float:
+    """Scores how relevant a sentence is to a given scientific extraction category."""
+    text_lower = sent.text.lower()
+    score = 0.0
+    
+    # 1. Section alignment bonus
+    sec_cat = classify_section_header(sent.section)
+    if sec_cat == target_category:
+        score += 3.0
+    elif sec_cat == "abstract_intro" and target_category in {"methods", "limitations"}:
+        score += 1.5
+        
+    # 2. Keyword pattern matches
+    patterns = KEYWORD_PATTERNS.get(target_category, [])
+    for pat in patterns:
+        matches = len(re.findall(pat, text_lower))
+        score += matches * 2.0
+        
+    # 3. Sentence length penalty (very short or very long sentences)
+    words = len(text_lower.split())
+    if words < 6 or words > 60:
+        score -= 1.0
+        
     return score
 
 
-def classify_sentence_intent(sentence_text: str, section_header: str = "") -> Dict[str, Any]:
-    """
-    Multi-label classification of a scientific sentence.
-    Distinguishes methods, datasets, literature sources, findings, limitations, and future work.
-    """
-    text_lower = sentence_text.lower().strip()
-    sec_cat = classify_section_header(section_header)
-    
-    labels = {
-        "method": False,
-        "dataset": False,
-        "literature_source": False,
-        "finding": False,
-        "limitation": False,
-        "future_work": False
-    }
-    scores: Dict[str, int] = {}
-    
-    for cat, patterns in KEYWORD_PATTERNS.items():
-        score = sum(1 for p in patterns if re.search(p, text_lower))
-        if sec_cat == cat:
-            score += 2
-        scores[cat] = score
-    
-    if scores.get("literature_sources", 0) > 0 and any(kw in text_lower for kw in ["search", "scopus", "pubmed", "proquest", "databases"]):
-        labels["literature_source"] = True
-    
-    labels["method"] = scores.get("methods", 0) >= 1
-    labels["dataset"] = scores.get("datasets", 0) >= 1 and not labels["literature_source"]
-    labels["finding"] = scores.get("findings", 0) >= 1 or sec_cat == "findings"
-    labels["limitation"] = scores.get("limitations", 0) >= 1 or sec_cat == "limitations"
-    labels["future_work"] = scores.get("future_work", 0) >= 1 or sec_cat == "future_work"
-    
-    confidence = min(1.0, max(0.5, sum(scores.values()) * 0.2))
-    return {
-        "labels": labels,
-        "scores": scores,
-        "confidence": round(confidence, 2)
-    }
-
-
-def extract_smart_candidate_context(
-    doc: ParsedPDFDocument, 
-    max_sentences_per_category: int = 5
+def extract_section_targeted_context(
+    doc: ParsedPDFDocument,
+    max_sentences_per_category: int = 8
 ) -> Dict[str, List[IndexedSentence]]:
     """
-    Prunes the complete document (1000s of sentences) down to ~15-20 high-signal candidate sentences,
-    organized by extraction goal (methods, datasets, limitations, future_work).
+    Extracts high-signal candidate sentences grouped by section-targeted category.
+    Ensures comprehensive coverage of Contributions, Methods, Benchmarks, and Limitations.
     """
-    categorized_sentences: Dict[str, List[IndexedSentence]] = {
+    categorized_sents: Dict[str, List[Tuple[float, IndexedSentence]]] = {
+        "abstract_intro": [],
         "methods": [],
         "datasets": [],
+        "literature_sources": [],
+        "findings": [],
         "limitations": [],
         "future_work": []
     }
     
-    # 1. Pass: Route sentences based on recognized section headings
-    for section_name, sents in doc.sections.items():
-        category = classify_section_header(section_name)
-        if category in categorized_sentences:
-            for s in sents:
-                if len(s.text.strip()) >= 20:  # skip trivial fragments
-                    categorized_sentences[category].append(s)
-
-    # 2. Pass: If any category has few sentences, score via keywords
-    for category in ["methods", "datasets", "limitations", "future_work"]:
-        if len(categorized_sentences[category]) < 4:
-            scored_candidates: List[Tuple[int, IndexedSentence]] = []
-            for s in doc.sentences:
-                sec_lower = s.section.lower()
-                if "reference" in sec_lower or "bibliography" in sec_lower or "acknowledg" in sec_lower:
-                    continue
-                if len(s.text.strip()) < 20:
-                    continue
-                score = score_sentence_relevance(s.text, category)
-                if score > 0:
-                    scored_candidates.append((score, s))
-            
-            scored_candidates.sort(key=lambda x: x[0], reverse=True)
-            for _, s in scored_candidates[:max_sentences_per_category]:
-                if s not in categorized_sentences[category]:
-                    categorized_sentences[category].append(s)
-
-    # 3. Pass: Rank & prune each category to max_sentences_per_category
-    pruned_result: Dict[str, List[IndexedSentence]] = {}
-    for category, sents in categorized_sentences.items():
-        scored = [(score_sentence_relevance(s.text, category), s) for s in sents]
-        scored.sort(key=lambda x: x[0], reverse=True)
-        top_sents = [s for _, s in scored[:max_sentences_per_category]]
-        top_sents.sort(key=lambda s: (s.page, int(s.sentence_id[1:]) if s.sentence_id[1:].isdigit() else 0))
-        pruned_result[category] = top_sents
-
-    total_selected = sum(len(v) for v in pruned_result.values())
-    logger.debug(f"[{doc.paper_id}] Selected {total_selected} target sentences out of {len(doc.sentences)} total.")
+    seen_ids: Set[str] = set()
     
-    return pruned_result
+    for sent in doc.sentences:
+        for cat in categorized_sents.keys():
+            score = score_sentence_relevance(sent, cat)
+            if score > 1.0:
+                categorized_sents[cat].append((score, sent))
+                
+    # Sort by score descending and take top N
+    final_selection: Dict[str, List[IndexedSentence]] = {}
+    for cat, scored_list in categorized_sents.items():
+        scored_list.sort(key=lambda x: x[0], reverse=True)
+        chosen = []
+        for score, sent in scored_list:
+            if sent.sentence_id not in seen_ids or len(chosen) < 3:
+                chosen.append(sent)
+                seen_ids.add(sent.sentence_id)
+            if len(chosen) >= max_sentences_per_category:
+                break
+        final_selection[cat] = chosen
+        
+    return final_selection
+
+
+# Retain backward-compatible alias
+extract_smart_candidate_context = extract_section_targeted_context
 
 
 def build_compact_prompt_context(
@@ -222,26 +192,25 @@ def build_compact_prompt_context(
     pruned_sents: Dict[str, List[IndexedSentence]]
 ) -> str:
     """
-    Formats the pruned sentences into a clean, numbered context block ready for the LLM prompt.
+    Formats the candidate sentences into a compact, clearly structured prompt block
+    with sentence IDs [S...], section headers, and page coordinates.
     """
-    seen_sentence_ids: Set[str] = set()
-    ordered_all_sents: List[IndexedSentence] = []
-    
-    for category in ["methods", "datasets", "limitations", "future_work"]:
-        for s in pruned_sents.get(category, []):
-            if s.sentence_id not in seen_sentence_ids:
-                seen_sentence_ids.add(s.sentence_id)
-                ordered_all_sents.append(s)
-
-    # Sort in document reading order
-    ordered_all_sents.sort(key=lambda s: (s.page, int(s.sentence_id[1:]) if s.sentence_id[1:].isdigit() else 0))
-
     lines = []
-    current_sec = None
-    for s in ordered_all_sents:
-        if s.section != current_sec:
-            current_sec = s.section
-            lines.append(f"\n[SECTION: {s.section.upper()} | Page {s.page}]")
-        lines.append(f"[{s.sentence_id}] {s.text}")
-
+    
+    category_labels = [
+        ("abstract_intro", "=== ABSTRACT & INTRODUCTION ==="),
+        ("methods", "=== PROPOSED ARCHITECTURE & METHODOLOGY ==="),
+        ("datasets", "=== BENCHMARKS, DATASETS & EXPERIMENTAL SETUP ==="),
+        ("findings", "=== EMPIRICAL FINDINGS & EVALUATION METRICS ==="),
+        ("limitations", "=== LIMITATIONS, BOTTLENECKS & FAILURE CASES ==="),
+        ("future_work", "=== FUTURE RESEARCH DIRECTIONS ===")
+    ]
+    
+    for cat_key, header in category_labels:
+        sents = pruned_sents.get(cat_key, [])
+        if sents:
+            lines.append(f"\n{header}")
+            for s in sents:
+                lines.append(f"[{s.sentence_id}] (p.{s.page}, {s.section}): {s.text}")
+                
     return "\n".join(lines)

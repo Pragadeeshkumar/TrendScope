@@ -139,6 +139,25 @@ def init_extraction_db(db_path: str = "data/trendscope.db") -> None:
             );
         """)
 
+        # 7b. Extracted Scientific Triplets Table
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS extracted_triplets (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                paper_id TEXT,
+                subject TEXT,
+                predicate TEXT,
+                object TEXT,
+                metric TEXT,
+                value TEXT,
+                sentence_id TEXT,
+                page INTEGER,
+                section TEXT,
+                quote TEXT,
+                confidence REAL,
+                FOREIGN KEY (paper_id) REFERENCES extracted_papers (paper_id)
+            );
+        """)
+
         # =========================================================================
         # PHASE 2: EVIDENCE-CENTRIC SCIENTIFIC SCHEMAS
         # =========================================================================
@@ -588,6 +607,7 @@ def save_paper_extraction_to_db(
         cursor.execute("DELETE FROM extracted_limitations WHERE paper_id = ?;", (paper_res.paper_id,))
         cursor.execute("DELETE FROM extracted_future_work WHERE paper_id = ?;", (paper_res.paper_id,))
         cursor.execute("DELETE FROM extracted_findings WHERE paper_id = ?;", (paper_res.paper_id,))
+        cursor.execute("DELETE FROM extracted_triplets WHERE paper_id = ?;", (paper_res.paper_id,))
 
         # 2. Insert Methods
         for m in paper_res.methods:
@@ -609,6 +629,17 @@ def save_paper_extraction_to_db(
             """, (
                 paper_res.paper_id, d.name, d.normalized_name, d.modality, d.usage, d.samples,
                 d.provenance.sentence_id, d.provenance.page, d.provenance.section, d.provenance.quote
+            ))
+
+        # 4. Insert Scientific Triplets
+        for t in getattr(paper_res, "triplets", []):
+            cursor.execute("""
+                INSERT INTO extracted_triplets (
+                    paper_id, subject, predicate, object, metric, value, sentence_id, page, section, quote, confidence
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            """, (
+                paper_res.paper_id, t.subject, t.predicate, t.object, t.metric, t.value,
+                t.sentence_id, t.page, t.section, t.quote, t.confidence
             ))
 
         # 4. Insert Literature Sources

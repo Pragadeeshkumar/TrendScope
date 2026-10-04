@@ -66,6 +66,20 @@ class ExtractedLiteratureSource(BaseModel):
     provenance: ProvenancePointer = Field(description="Exact sentence and page location")
 
 
+class ScientificTriplet(BaseModel):
+    """Subject-Predicate-Object relational triplet with quantitative performance."""
+    subject: str = Field(description="Name of the method/model")
+    predicate: str = Field(default="EVALUATED_ON", description="Relation: 'EVALUATED_ON', 'OUTPERFORMS', 'EXTENDS', 'USES_BACKBONE', 'SUFFERS_FROM'")
+    object: str = Field(description="Name of the dataset, baseline method, or limitation")
+    metric: Optional[str] = Field(default=None, description="Evaluation metric, e.g. 'F1-Score', 'Accuracy', 'AUROC', 'Latency'")
+    value: Optional[str] = Field(default=None, description="Reported score or percentage, e.g. '94.2%', '0.88'")
+    sentence_id: str = Field(description="Sentence identifier, e.g. S42")
+    page: int = Field(default=1, description="Page number")
+    section: str = Field(default="Experiments", description="Section name")
+    quote: str = Field(description="Verbatim or near-verbatim quote")
+    confidence: float = Field(default=0.90, ge=0.0, le=1.0)
+
+
 class PaperExtractionResult(BaseModel):
     """Complete structured extraction result for a single scientific paper."""
     paper_id: str = Field(description="Unique paper identifier")
@@ -81,6 +95,7 @@ class PaperExtractionResult(BaseModel):
     limitations: List[ExtractedLimitation] = Field(default_factory=list)
     future_work: List[ExtractedFutureWork] = Field(default_factory=list)
     findings: List[ExtractedFinding] = Field(default_factory=list)
+    triplets: List[ScientificTriplet] = Field(default_factory=list)
 
 
 class ConfidenceScores(BaseModel):

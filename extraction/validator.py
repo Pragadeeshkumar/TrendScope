@@ -68,7 +68,11 @@ DATASET_INDICATORS = [
 METHOD_INDICATORS = [
     "model", "net", "network", "transformer", "bert", "gpt", "algorithm",
     "framework", "architecture", "pipeline", "loss", "encoder", "decoder",
-    "classifier", "regressor", "agent", "system", "method", "technique", "gan"
+    "classifier", "regressor", "agent", "system", "method", "technique", "gan",
+    "learning", "optimization", "attention", "propagation", "clustering", "regression",
+    "diffusion", "reasoning", "search", "routing", "decoding", "prompting", "tuning",
+    "adaptation", "distillation", "embedding", "tree", "forest", "svm", "boosting",
+    "descent", "regularization", "representation", "space", "fusion"
 ]
 
 

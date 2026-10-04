@@ -56,16 +56,21 @@ def main():
     table.add_column("Status", style="bold")
     table.add_column("Methods", justify="right", style="green")
     table.add_column("Datasets", justify="right", style="blue")
+    table.add_column("Triplets", justify="right", style="bold cyan")
     table.add_column("Limitations", justify="right", style="yellow")
     table.add_column("Future Work", justify="right", style="magenta")
 
+    total_triplets = 0
     for p in manifest.papers:
         status_styled = "[green]SUCCESS[/green]" if p.status == "SUCCESS" else f"[red]{p.status}[/red]"
+        triplets_count = len(getattr(p, "triplets", []))
+        total_triplets += triplets_count
         table.add_row(
             p.paper_id[:20],
             status_styled,
             str(len(p.methods)),
             str(len(p.datasets)),
+            str(triplets_count),
             str(len(p.limitations)),
             str(len(p.future_work))
         )
@@ -78,6 +83,7 @@ def main():
         f"• Successfully Processed: {manifest.successful_extractions}\n"
         f"• Total Methods Extracted: {manifest.total_methods_found}\n"
         f"• Total Datasets Extracted: {manifest.total_datasets_found}\n"
+        f"• Total Relation Triplets Mined: {total_triplets}\n"
         f"• Total Limitations Mined: {manifest.total_limitations_found}\n"
         f"• Total Future Work Mined: {manifest.total_future_work_found}\n"
         f"• JSON Artifact: data/extracted/extracted_{manifest.run_id}.json\n"

@@ -1,13 +1,13 @@
 {
   "run_id": "c6e053a9",
-  "timestamp": "2026-10-04T11:07:55.762170",
+  "timestamp": "2026-10-04T15:43:16.438882",
   "total_papers": 20,
   "successful_extractions": 20,
   "failed_extractions": 0,
-  "total_methods_found": 95,
-  "total_datasets_found": 21,
-  "total_limitations_found": 35,
-  "total_future_work_found": 22,
+  "total_methods_found": 29,
+  "total_datasets_found": 3,
+  "total_limitations_found": 39,
+  "total_future_work_found": 34,
   "papers": [
     {
       "paper_id": "arxiv_2610.02206v1",
@@ -18,334 +18,92 @@
       "error_message": null,
       "methods": [
         {
-          "name": "multi-stage verification pipeline",
-          "normalized_name": "multi-stage verification pipeline",
-          "type": "algorithm",
+          "name": "LoRA",
+          "normalized_name": "LoRA",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S958",
+            "page": 29,
+            "section": "G Experiment Details",
+            "quote": "For both SFT and GRPO training, we used LoRA rank 64, LoRA alpha 128, and zero LoRA dropout, applying adapters to the attention and MLP projection lay"
+          }
+        },
+        {
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
+          "type": "model",
           "role": "proposed",
           "provenance": {
             "sentence_id": "S9",
             "page": 1,
             "section": "Abstract",
-            "quote": "multi-stage verification pipeline combines LLM validation, sandboxed execution, human-in-the-loop"
+            "quote": "To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sa"
           }
         },
         {
-          "name": "LLM-based validation",
-          "normalized_name": "Llm-Based Validation",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S9",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "LLM-based validation"
-          }
-        },
-        {
-          "name": "sandboxed terminal execution",
+          "name": "Sandboxed Terminal Execution",
           "normalized_name": "Sandboxed Terminal Execution",
-          "type": "framework",
+          "type": "model",
           "role": "proposed",
           "provenance": {
             "sentence_id": "S9",
             "page": 1,
             "section": "Abstract",
-            "quote": "sandboxed terminal execution"
+            "quote": "To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sa"
           }
         },
         {
-          "name": "human-in-the-loop refinement",
-          "normalized_name": "Human-In-The-Loop Refinement",
-          "type": "algorithm",
+          "name": "Multi-Stage Verification Pipeline",
+          "normalized_name": "Multi-Stage Verification Pipeline",
+          "type": "model",
           "role": "proposed",
           "provenance": {
             "sentence_id": "S9",
             "page": 1,
             "section": "Abstract",
-            "quote": "human-in-the-loop refinement"
-          }
-        },
-        {
-          "name": "Supervised Fine-Tuning (SFT)",
-          "normalized_name": "Supervised Fine-Tuning (Sft)",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S206",
-            "page": 6,
-            "section": "KaliBench",
-            "quote": "Supervised Fine-Tuning (SFT)"
-          }
-        },
-        {
-          "name": "Reinforcement Learning with Verifiable Rewards (RLVR)",
-          "normalized_name": "Reinforcement Learning with Verifiable Rewards (RLVR)",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S206",
-            "page": 6,
-            "section": "KaliBench",
-            "quote": "Reinforcement Learning with Verifiable Rewards (RLVR)"
-          }
-        },
-        {
-          "name": "parameter efficient post-training",
-          "normalized_name": "parameter efficient post-training",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S141",
-            "page": 4,
-            "section": "KaliBench",
-            "quote": "parameter efficient post-training with supervised fine-tuning and reinforcement learning"
-          }
-        },
-        {
-          "name": "prompt template with <think> tags",
-          "normalized_name": "prompt template with <think> tags",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S216",
-            "page": 6,
-            "section": "Rewards",
-            "quote": "prompt template ... produce intermediate reasoning within <think> tags"
+            "quote": "To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sa"
           }
         }
       ],
-      "datasets": [
-        {
-          "name": "KaliBench",
-          "normalized_name": "Kalibench",
-          "modality": "NL-to-CLI text",
-          "usage": "evaluation|training",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S7",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "fine-grained benchmark and dataset for NL-to-CLI translation on Kali Linux"
-          }
-        }
-      ],
+      "datasets": [],
       "literature_sources": [],
       "limitations": [
         {
-          "text": "focus on single-turn command generation and reliance on documentation-grounded data",
-          "category": "generalization",
+          "text": "This limitation is consequential because modern security operations rely heavily on large, heterogeneous command-line toolchains.",
+          "category": "general",
           "provenance": {
-            "sentence_id": "S348",
+            "sentence_id": "S52",
+            "page": 2,
+            "section": "Introduction",
+            "quote": "This limitation is consequential because modern security operations rely heavily on large, heterogeneous command-line toolchains."
+          }
+        },
+        {
+          "text": "KaliBench exposes a clear gap between LLMs’ general cybersecurity knowledge and their ability to generate exact, executable CLI commands.",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S342",
             "page": 10,
             "section": "Discussion and Conclusion",
-            "quote": "focus on single-turn command generation and reliance on documentation-grounded data"
+            "quote": "KaliBench exposes a clear gap between LLMs’ general cybersecurity knowledge and their ability to generate exact, executable CLI commands."
           }
         }
       ],
       "future_work": [
         {
-          "text": "extend to multi-step workflows, retrieval-augmented tool use, and environment-aware evaluation",
+          "text": "Future work should extend to multi-step workflows, retrieval-augmented tool use, and environmentaware evaluation.",
           "category": "methodological_extension",
           "provenance": {
             "sentence_id": "S349",
             "page": 10,
             "section": "Discussion and Conclusion",
-            "quote": "extend to multi-step workflows, retrieval-augmented tool use, and environment-aware evaluation"
+            "quote": "Future work should extend to multi-step workflows, retrieval-augmented tool use, and environmentaware evaluation."
           }
         }
       ],
-      "findings": [
-        {
-          "finding": "Supervised fine-tuning and reinforcement learning with verifiable rewards significantly improve an 8B model",
-          "metric": "performance",
-          "result": "comparable to 685B MoE model",
-          "provenance": {
-            "sentence_id": "S12",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "significantly improve an 8B model and achieve performance comparable to a 685B MoE model"
-          }
-        },
-        {
-          "finding": "Providing tool documentation results in the largest gains",
-          "metric": "gain",
-          "result": "largest",
-          "provenance": {
-            "sentence_id": "S344",
-            "page": 10,
-            "section": "Discussion and Conclusion",
-            "quote": "Providing tool documentation results in the largest gains"
-          }
-        },
-        {
-          "finding": "Post-training with SFT and RLVR substantially improves compact models, allowing an 8B model to approach much larger systems",
-          "metric": "performance",
-          "result": "approach much larger systems",
-          "provenance": {
-            "sentence_id": "S347",
-            "page": 10,
-            "section": "Discussion and Conclusion",
-            "quote": "Post-training with SFT and RLVR substantially improves compact models"
-          }
-        }
-      ]
-    },
-    {
-      "paper_id": "arxiv_2609.29808v2",
-      "title": "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution",
-      "publication_year": 2026,
-      "pdf_path": "data/pdfs\\arxiv_2609.29808v2.pdf",
-      "status": "SUCCESS",
-      "error_message": null,
-      "methods": [
-        {
-          "name": "Kernel-level preemption",
-          "normalized_name": "Kernel-Level Preemption",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S9",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "Kernel-level preemption"
-          }
-        },
-        {
-          "name": "cgroup containment",
-          "normalized_name": "Cgroup Containment",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S9",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "cgroup containment"
-          }
-        },
-        {
-          "name": "Synchronous Reactive Supervisor (Reference Monitor & Policy Enforcement Point - PEP)",
-          "normalized_name": "Synchronous Reactive Supervisor (Reference Monitor & Policy Enforcement Point - PEP)",
-          "type": "architecture",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S212",
-            "page": 9,
-            "section": "Public Internet Incursion",
-            "quote": "Synchronous Reactive Supervisor (Reference Monitor & Policy Enforcement Point - PEP)"
-          }
-        },
-        {
-          "name": "out-of-band kernel/runtime sentinel",
-          "normalized_name": "out-of-band kernel/runtime sentinel",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S212",
-            "page": 9,
-            "section": "Public Internet Incursion",
-            "quote": "out-of-band kernel/runtime sentinel evaluating state deltas"
-          }
-        },
-        {
-          "name": "Dual-Sided Epistemic Andon Imperative",
-          "normalized_name": "Dual-Sided Epistemic Andon Imperative",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S6",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "Dual-Sided Epistemic Andon Imperative"
-          }
-        }
-      ],
-      "datasets": [
-        {
-          "name": "Hugging Face production multi-tenant dataset conversion infrastructure",
-          "normalized_name": "Hugging Face production multi-tenant dataset conversion infrastructure",
-          "modality": "text",
-          "usage": "evaluation",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S4",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "Hugging Face’s production multi-tenant dataset conversion infrastructure"
-          }
-        },
-        {
-          "name": "Incident-2026Alpha",
-          "normalized_name": "Incident-2026Alpha",
-          "modality": "incident report",
-          "usage": "evaluation",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S4",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "Incident-2026Alpha"
-          }
-        }
-      ],
-      "literature_sources": [],
-      "limitations": [
-        {
-          "text": "Comparison is absence‑of‑feature, not a performance measurement",
-          "category": "general",
-          "provenance": {
-            "sentence_id": "S374",
-            "page": 15,
-            "section": "Comparative Systems Benchmark Results",
-            "quote": "absence-of-feature comparison, not a performance measurement"
-          }
-        },
-        {
-          "text": "Baseline lacks automated halting, limiting measurable throughput",
-          "category": "general",
-          "provenance": {
-            "sentence_id": "S372",
-            "page": 15,
-            "section": "Comparative Systems Benchmark Results",
-            "quote": "no automated halting mechanism was active in the baseline configuration"
-          }
-        }
-      ],
-      "future_work": [],
-      "findings": [
-        {
-          "finding": "Rogue agent performed extensive actions over multiple clusters",
-          "metric": "actions, clusters, duration",
-          "result": "17,600 actions, 6,280 clusters, 4.5 days",
-          "provenance": {
-            "sentence_id": "S5",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "17,600 discrete actions across 6,280 worker clusters over 4.5 days"
-          }
-        },
-        {
-          "finding": "Baseline configuration lacked automated halting mechanism",
-          "metric": "halting mechanism presence",
-          "result": "none",
-          "provenance": {
-            "sentence_id": "S372",
-            "page": 15,
-            "section": "Comparative Systems Benchmark Results",
-            "quote": "no automated halting mechanism was active in the baseline configuration"
-          }
-        },
-        {
-          "finding": "4.5‑day figure reflects human‑initiated response time",
-          "metric": "response latency",
-          "result": "4.5 days",
-          "provenance": {
-            "sentence_id": "S373",
-            "page": 15,
-            "section": "Comparative Systems Benchmark Results",
-            "quote": "4.5-day figure is the elapsed time until human-initiated incident response"
-          }
-        }
-      ]
+      "findings": [],
+      "triplets": []
     },
     {
       "paper_id": "arxiv_2610.00590v1",
@@ -356,99 +114,27 @@
       "error_message": null,
       "methods": [
         {
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S45",
+            "page": 2,
+            "section": "Introduction",
+            "quote": "These architectures include a fully trained RL hierarchy (RL+RL), an LLM planner coupled with a trained RL executor (LLM+RL), and an all-LLM hierarchy"
+          }
+        },
+        {
           "name": "Reinforcement Learning",
           "normalized_name": "Reinforcement Learning",
-          "type": "algorithm",
-          "role": "baseline",
+          "type": "model",
+          "role": "proposed",
           "provenance": {
             "sentence_id": "S9",
             "page": 1,
             "section": "ABSTRACT",
-            "quote": "autonomous cyber defender trained with reinforcement learning (RL)"
-          }
-        },
-        {
-          "name": "Large Language Models",
-          "normalized_name": "Large Language Models",
-          "type": "model",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S11",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "frozen, zero-shot large language models (LLMs)"
-          }
-        },
-        {
-          "name": "planner-executor hierarchy",
-          "normalized_name": "Planner-Executor Hierarchy",
-          "type": "architecture",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S12",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "controller-agnostic planner-executor hierarchy"
-          }
-        },
-        {
-          "name": "RL+RL",
-          "normalized_name": "Rl+Rl",
-          "type": "framework",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S13",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "compare RL+RL, LLM+RL, and LLM+LLM configurations"
-          }
-        },
-        {
-          "name": "LLM+RL",
-          "normalized_name": "Llm+Rl",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S13",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "compare RL+RL, LLM+RL, and LLM+LLM configurations"
-          }
-        },
-        {
-          "name": "LLM+LLM",
-          "normalized_name": "Llm+Llm",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S13",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "compare RL+RL, LLM+RL, and LLM+LLM configurations"
-          }
-        },
-        {
-          "name": "Llama-3.2-3B",
-          "normalized_name": "Llama-3.2-3B",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S230",
-            "page": 7,
-            "section": "Results",
-            "quote": "Llama-3.2-3B underperforms the RL baseline"
-          }
-        },
-        {
-          "name": "Trendyol-Cybersecurity-70B",
-          "normalized_name": "Trendyol-Cybersecurity-70B",
-          "type": "model",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S230",
-            "page": 7,
-            "section": "Results",
-            "quote": "Trendyol-Cybersecurity-70B performs well on the small network"
+            "quote": "An autonomous cyber defender trained with reinforcement learning (RL) is typically tied to the network on which it was trained, limiting its ability t"
           }
         }
       ],
@@ -456,150 +142,75 @@
         {
           "name": "Cyberwheel",
           "normalized_name": "Cyberwheel",
-          "modality": "simulation",
+          "modality": "Benchmark",
           "usage": "evaluation",
           "samples": null,
           "provenance": {
-            "sentence_id": "S13",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "Using the highfidelity Cyberwheel environment"
-          }
-        },
-        {
-          "name": "Cyberwheel",
-          "normalized_name": "Cyberwheel",
-          "modality": "simulation",
-          "usage": "evaluation",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S147",
+            "sentence_id": "S146",
             "page": 5,
             "section": "Experimental Setup",
-            "quote": "instantiate the hierarchical defender in Cyberwheel"
+            "quote": "4.1 Cyberwheel Environment and Threat Model"
           }
         }
       ],
-      "literature_sources": [
-        {
-          "name": "MITRE ATT&CK",
-          "normalized_name": "Mitre Att&Ck",
-          "provenance": {
-            "sentence_id": "S13",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "mapped to the MITRE ATT&CK framework"
-          }
-        },
-        {
-          "name": "Atomic Red Team",
-          "normalized_name": "Atomic Red Team",
-          "provenance": {
-            "sentence_id": "S151",
-            "page": 5,
-            "section": "Experimental Setup",
-            "quote": "executes an Atomic Red Team-based attack sequence"
-          }
-        }
-      ],
+      "literature_sources": [],
       "limitations": [
         {
-          "text": "Autonomous cyber defenders trained with RL are typically tied to the network on which they were trained, limiting generalization as network scale changes.",
-          "category": "generalization",
-          "provenance": {
-            "sentence_id": "S9",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "limiting its ability to generalize as network scale changes"
-          }
-        },
-        {
-          "text": "Smaller and some cybersecurity-specialized models degrade as networks grow, indicating that domain specialization does not guarantee scale generalization.",
-          "category": "generalization",
+          "text": "Smaller and some cybersecurity-specialized models degrade as networks grow, indicating that domain specialization does not guarantee scale generalizat",
+          "category": "general",
           "provenance": {
             "sentence_id": "S244",
             "page": 8,
             "section": "Conclusion and Future Work",
-            "quote": "domain specialization does not guarantee scale generalization"
+            "quote": "Smaller and some cybersecurity-specialized models degrade as networks grow, indicating that domain specialization does not guarantee scale generalizat"
+          }
+        },
+        {
+          "text": "Pretrained large language models (LLMs) offer a fundamentally different form of generalization.",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S34",
+            "page": 2,
+            "section": "Introduction",
+            "quote": "Pretrained large language models (LLMs) offer a fundamentally different form of generalization."
           }
         }
       ],
       "future_work": [
         {
-          "text": "Evaluating the complementary RL+LLM configuration would better isolate the contributions of planning and execution.",
+          "text": "Finally, future work should extend evaluation across multiple independent seeds and test generalization to unseen topologies, attacker strategies, and",
           "category": "methodological_extension",
-          "provenance": {
-            "sentence_id": "S247",
-            "page": 8,
-            "section": "Conclusion and Future Work",
-            "quote": "evaluating the complementary RL+LLM configuration"
-          }
-        },
-        {
-          "text": "Analyzing planner and executor decision traces could explain why some frozen LLMs generalize across scales while others degrade.",
-          "category": "methodological_extension",
-          "provenance": {
-            "sentence_id": "S248",
-            "page": 8,
-            "section": "Conclusion and Future Work",
-            "quote": "analyzing planner and executor decision traces"
-          }
-        },
-        {
-          "text": "Future work should extend evaluation across multiple independent seeds and test generalization to unseen topologies, attacker strategies, and multi-agent enterprise environments.",
-          "category": "dataset_expansion",
           "provenance": {
             "sentence_id": "S249",
             "page": 8,
             "section": "Conclusion and Future Work",
-            "quote": "extend evaluation across multiple independent seeds"
+            "quote": "Finally, future work should extend evaluation across multiple independent seeds and test generalization to unseen topologies, attacker strategies, and"
+          }
+        },
+        {
+          "text": "We investigated whether frozen, zero-shot LLMs can provide effective hierarchical cyber defense across network scales without task-specific retraining",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S242",
+            "page": 8,
+            "section": "Conclusion and Future Work",
+            "quote": "We investigated whether frozen, zero-shot LLMs can provide effective hierarchical cyber defense across network scales without task-specific retraining"
           }
         }
       ],
-      "findings": [
+      "findings": [],
+      "triplets": [
         {
-          "finding": "Replacing only the planner with an LLM yields limited gains as network size increases.",
-          "metric": "defensive performance",
-          "result": "limited gains",
-          "provenance": {
-            "sentence_id": "S14",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "Replacing only the planner with an LLM yields limited gains"
-          }
-        },
-        {
-          "finding": "Extending LLM control to execution produces notable improvements for sufficiently capable models.",
-          "metric": "defensive performance",
-          "result": "notable improvements",
-          "provenance": {
-            "sentence_id": "S15",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "extending LLM control to execution produces notable improvements"
-          }
-        },
-        {
-          "finding": "Llama-3.2-3B underperforms the RL baseline at several scales.",
-          "metric": "defensive performance",
-          "result": "underperforms",
-          "provenance": {
-            "sentence_id": "S230",
-            "page": 7,
-            "section": "Results",
-            "quote": "Llama-3.2-3B underperforms the RL baseline at several scales"
-          }
-        },
-        {
-          "finding": "Trendyol-Cybersecurity-70B performs well on the small network but degrades on the large network.",
-          "metric": "defensive performance",
-          "result": "degrades",
-          "provenance": {
-            "sentence_id": "S230",
-            "page": 7,
-            "section": "Results",
-            "quote": "Trendyol-Cybersecurity-70B performs well on the small network but degrades"
-          }
+          "subject": "Large Language Model",
+          "predicate": "EVALUATED_ON",
+          "object": "Cyberwheel",
+          "metric": "Accuracy/F1",
+          "value": "Reported",
+          "sentence_id": "S146",
+          "page": 5,
+          "section": "Experimental Setup",
+          "quote": "4.1 Cyberwheel Environment and Threat Model",
+          "confidence": 0.9
         }
       ]
     },
@@ -612,273 +223,127 @@
       "error_message": null,
       "methods": [
         {
-          "name": "S4",
-          "normalized_name": "S4",
+          "name": "Transformer",
+          "normalized_name": "Transformer",
           "type": "model",
           "role": "proposed",
+          "provenance": {
+            "sentence_id": "S41",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "While the introduction of Transformer models addresses this gap, they often do so at the cost of computation."
+          }
+        }
+      ],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [
+        {
+          "text": "Overall, these studies show that multiclass malware classification improves when models can retain long-range structure and capture detailed dependenc",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S51",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "Overall, these studies show that multiclass malware classification improves when models can retain long-range structure and capture detailed dependenc"
+          }
+        },
+        {
+          "text": "Unlike recurrent and attention-based architectures, S4 applies an explicit state space formulation that captures long-range dependencies at linear com",
+          "category": "general",
           "provenance": {
             "sentence_id": "S53",
             "page": 2,
             "section": "INTRODUCTION",
-            "quote": "S4 applies an explicit state space formulation"
-          }
-        },
-        {
-          "name": "CNN",
-          "normalized_name": "CNN",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S59",
-            "page": 3,
-            "section": "INTRODUCTION",
-            "quote": "benchmark S4 against CNN, LSTM, GRU, and Transformer baselines"
-          }
-        },
-        {
-          "name": "LSTM",
-          "normalized_name": "Lstm",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S59",
-            "page": 3,
-            "section": "INTRODUCTION",
-            "quote": "benchmark S4 against CNN, LSTM, GRU, and Transformer baselines"
-          }
-        },
-        {
-          "name": "GRU",
-          "normalized_name": "Gru",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S59",
-            "page": 3,
-            "section": "INTRODUCTION",
-            "quote": "benchmark S4 against CNN, LSTM, GRU, and Transformer baselines"
-          }
-        },
-        {
-          "name": "Transformer",
-          "normalized_name": "Transformer",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S59",
-            "page": 3,
-            "section": "INTRODUCTION",
-            "quote": "benchmark S4 against CNN, LSTM, GRU, and Transformer baselines"
-          }
-        },
-        {
-          "name": "MLP",
-          "normalized_name": "Mlp",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S211",
-            "page": 8,
-            "section": "CONCLUSION",
-            "quote": "compared it with CNN, LSTM, GRU, Transformer, and MLP baselines"
-          }
-        }
-      ],
-      "datasets": [
-        {
-          "name": "Ransomware Dataset 2024",
-          "normalized_name": "Ransomware Dataset 2024",
-          "modality": "static numerical features",
-          "usage": "training",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S64",
-            "page": 3,
-            "section": "METHODOLOGY",
-            "quote": "Ransomware Dataset 2024, publicly available on Zenodo"
-          }
-        },
-        {
-          "name": "CICMalMem-2022",
-          "normalized_name": "Cicmalmem-2022",
-          "modality": "unspecified",
-          "usage": "benchmark",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S219",
-            "page": 8,
-            "section": "CONCLUSION",
-            "quote": "additional benchmarks such as CICMalMem-2022"
-          }
-        },
-        {
-          "name": "BODMAS",
-          "normalized_name": "Bodmas",
-          "modality": "unspecified",
-          "usage": "benchmark",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S219",
-            "page": 8,
-            "section": "CONCLUSION",
-            "quote": "additional benchmarks such as ... BODMAS"
-          }
-        }
-      ],
-      "literature_sources": [
-        {
-          "name": "Wilkie et al.",
-          "normalized_name": "Wilkie Et Al.",
-          "provenance": {
-            "sentence_id": "S44",
-            "page": 2,
-            "section": "INTRODUCTION",
-            "quote": "Wilkie et al. reported F1-scores ... on the large-scale MalNet dataset"
-          }
-        }
-      ],
-      "limitations": [
-        {
-          "text": "Study limited to a single dataset",
-          "category": "generalization",
-          "provenance": {
-            "sentence_id": "S219",
-            "page": 8,
-            "section": "CONCLUSION",
-            "quote": "limited to a single dataset"
+            "quote": "Unlike recurrent and attention-based architectures, S4 applies an explicit state space formulation that captures long-range dependencies at linear com"
           }
         }
       ],
       "future_work": [
         {
-          "text": "Evaluate generalizability on additional benchmarks such as CICMalMem-2022 and BODMAS",
-          "category": "dataset_expansion",
+          "text": "This study is limited to a single dataset; future work will evaluate generalizability on additional benchmarks such as CICMalMem-2022 and BODMAS, whic",
+          "category": "methodological_extension",
           "provenance": {
             "sentence_id": "S219",
             "page": 8,
             "section": "CONCLUSION",
-            "quote": "future work will evaluate generalizability on additional benchmarks"
-          }
-        }
-      ],
-      "findings": [
-        {
-          "finding": "S4 achieves 98.5% accuracy on binary detection",
-          "metric": "accuracy",
-          "result": "98.5%",
-          "provenance": {
-            "sentence_id": "S212",
-            "page": 8,
-            "section": "CONCLUSION",
-            "quote": "S4 reaching 98.5% accuracy"
+            "quote": "This study is limited to a single dataset; future work will evaluate generalizability on additional benchmarks such as CICMalMem-2022 and BODMAS, whic"
           }
         },
         {
-          "finding": "S4 macro F1-score of 89% surpasses baselines (75‑76%)",
-          "metric": "macro F1-score",
-          "result": "89%",
+          "text": "This paper evaluated a Structured State-Space Sequence (S4) model for binary malware detection and multi-class ransomware family classification using ",
+          "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S215",
+            "sentence_id": "S211",
             "page": 8,
             "section": "CONCLUSION",
-            "quote": "S4 achieved a macro F1-score of 89% while baselines ranged 75%‑76%"
+            "quote": "This paper evaluated a Structured State-Space Sequence (S4) model for binary malware detection and multi-class ransomware family classification using "
           }
         }
-      ]
+      ],
+      "findings": [],
+      "triplets": []
     },
     {
-      "paper_id": "arxiv_2609.38415v1",
-      "title": "Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks",
+      "paper_id": "arxiv_2609.29808v2",
+      "title": "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution",
       "publication_year": 2026,
-      "pdf_path": "data/pdfs\\arxiv_2609.38415v1.pdf",
+      "pdf_path": "data/pdfs\\arxiv_2609.29808v2.pdf",
       "status": "SUCCESS",
       "error_message": null,
       "methods": [
         {
-          "name": "Unsanctioned Supply Chain Attack evaluation",
-          "normalized_name": "Unsanctioned Supply Chain Attack evaluation",
-          "type": "framework",
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
+          "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S5",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "We developed a new Unsanctioned Supply Chain Attack evaluation"
+            "sentence_id": "S202",
+            "page": 9,
+            "section": "Public Internet Incursion",
+            "quote": "Decoupled Supervisory Boundary: Neither the LLM inference runtime nor agent reasoning state is trusted by the supervisory design."
           }
         },
         {
-          "name": "Petri",
-          "normalized_name": "Petri",
-          "type": "framework",
-          "role": "baseline",
+          "name": "Reinforcement Learning",
+          "normalized_name": "Reinforcement Learning",
+          "type": "model",
+          "role": "proposed",
           "provenance": {
-            "sentence_id": "S47",
+            "sentence_id": "S40",
             "page": 3,
-            "section": "Evaluation Methodology",
-            "quote": "internal version of Petri [6] adjusted to better simulate"
+            "section": "Modal Sandbox Rooted as Launchpad",
+            "quote": "13) [12] explicitly invoked the Toyota Andon cord analogy to describe human labeler and engineer intervention during reinforcement learning from human"
           }
         }
       ],
       "datasets": [],
-      "literature_sources": [
-        {
-          "name": "Petri",
-          "normalized_name": "Petri",
-          "provenance": {
-            "sentence_id": "S47",
-            "page": 3,
-            "section": "Evaluation Methodology",
-            "quote": "internal version of Petri [6]"
-          }
-        }
-      ],
+      "literature_sources": [],
       "limitations": [
         {
-          "text": "Evaluations used simulated environments, which may not reflect real-world deployment behavior.",
-          "category": "generalization",
+          "text": "Hard Stop: Kernel-Level Preemption and Containment",
+          "category": "general",
           "provenance": {
-            "sentence_id": "S209",
-            "page": 9,
-            "section": "Addressing Potential Limitations",
-            "quote": "If the model identified the environments as simulated and this affected its behaviour"
+            "sentence_id": "S1",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "Hard Stop: Kernel-Level Preemption and Containment"
           }
         },
         {
-          "text": "A main remaining limitation is the coverage of the evaluations.",
-          "category": "generalization",
+          "text": "In July 2026, an unconstrained autonomous agent participating in a frontier AI cybersecurity evaluation harness breached its evaluation sandbox, estab",
+          "category": "general",
           "provenance": {
-            "sentence_id": "S242",
-            "page": 10,
-            "section": "Addressing Potential Limitations",
-            "quote": "a main remaining limitation is the coverage of our evaluations"
+            "sentence_id": "S4",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "In July 2026, an unconstrained autonomous agent participating in a frontier AI cybersecurity evaluation harness breached its evaluation sandbox, estab"
           }
         }
       ],
       "future_work": [],
-      "findings": [
-        {
-          "finding": "GPT-6 Astra often asked for permission to perform unsanctioned actions on targets outside the scope.",
-          "metric": "frequency",
-          "result": "often",
-          "provenance": {
-            "sentence_id": "S14",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "GPT-6 Astra often asked for permission to perform unsanctioned actions"
-          }
-        },
-        {
-          "finding": "GPT-6 Astra occasionally completed unsanctioned supply-chain attacks on out-of-scope targets.",
-          "metric": "frequency",
-          "result": "occasionally",
-          "provenance": {
-            "sentence_id": "S191",
-            "page": 8,
-            "section": "Treated answer as permission",
-            "quote": "GPT-6 Astra still occasionally completed unsanctioned supply-chain attacks"
-          }
-        }
-      ]
+      "findings": [],
+      "triplets": []
     },
     {
       "paper_id": "arxiv_2609.32390v1",
@@ -889,326 +354,105 @@
       "error_message": null,
       "methods": [
         {
-          "name": "Monte Carlo simulation with 100,000 independent runs",
-          "normalized_name": "Monte Carlo simulation with 100,000 independent runs",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S89",
-            "page": 4,
-            "section": "Method",
-            "quote": "simulation uses pseudorandom seed 260903 and 100,000 independent runs"
-          }
-        },
-        {
-          "name": "Beta distribution modeling of agent capability",
-          "normalized_name": "Beta distribution modeling of agent capability",
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
           "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S90",
-            "page": 4,
-            "section": "Method",
-            "quote": "Agent capability follows Beta(5,3)"
-          }
-        },
-        {
-          "name": "Beta distribution modeling of reward pressure and task difficulty",
-          "normalized_name": "Beta distribution modeling of reward pressure and task difficulty",
-          "type": "model",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S90",
-            "page": 4,
-            "section": "Method",
-            "quote": "reward pressure and task difficulty follow Beta(4,3)"
-          }
-        },
-        {
-          "name": "Beta distribution modeling of control strength",
-          "normalized_name": "Beta distribution modeling of control strength",
-          "type": "model",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S92",
-            "page": 4,
-            "section": "Method",
-            "quote": "Control strength uses Beta distributions that differ by scenario"
+            "sentence_id": "S183",
+            "page": 9,
+            "section": "Discussion",
+            "quote": "Recent systematizations of agentic-AI attack surfaces reach a compatible conclusion from a different direction: layered taxonomies of LLM-agent threat"
           }
         }
       ],
       "datasets": [],
-      "literature_sources": [
+      "literature_sources": [],
+      "limitations": [
         {
-          "name": "Denison et al.",
-          "normalized_name": "Denison Et Al.",
+          "text": "Monitoring weakness ranks second, followed by credential weakness, reward pressure, task difficulty, isolation weakness, and authorization weakness.",
+          "category": "general",
           "provenance": {
-            "sentence_id": "S48",
-            "page": 3,
-            "section": "Incident Evidence and Theoretical Basis",
-            "quote": "Denison and colleagues observed reward tampering in 45 of 32,768 trials"
+            "sentence_id": "S142",
+            "page": 7,
+            "section": "Input Correlation with simulated",
+            "quote": "Monitoring weakness ranks second, followed by credential weakness, reward pressure, task difficulty, isolation weakness, and authorization weakness."
+          }
+        },
+        {
+          "text": "logit detection failure = -1.4 + 2.3 × monitoring weakness + 1.2 × authorization weakness (A.5)",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S346",
+            "page": 14,
+            "section": "Discussion",
+            "quote": "logit detection failure = -1.4 + 2.3 × monitoring weakness + 1.2 × authorization weakness (A.5)"
           }
         }
       ],
-      "limitations": [],
       "future_work": [
         {
-          "text": "Calibrate stages with controlled cyber-range experiments and extend five-stage chain toward granular multi-layer taxonomies.",
+          "text": "Future research should calibrate individual stages with controlled cyber-range experiments and anonymized incident data, and could extend the five-sta",
           "category": "methodological_extension",
           "provenance": {
             "sentence_id": "S207",
             "page": 10,
             "section": "Discussion",
-            "quote": "Future research should calibrate individual stages with controlled cyber-range experiments"
+            "quote": "Future research should calibrate individual stages with controlled cyber-range experiments and anonymized incident data, and could extend the five-sta"
           }
         }
       ],
-      "findings": [
-        {
-          "finding": "External harm becomes less likely when organizations prevent several required events instead of relying on one boundary.",
-          "metric": "external harm likelihood",
-          "result": "less likely",
-          "provenance": {
-            "sentence_id": "S171",
-            "page": 9,
-            "section": "Discussion",
-            "quote": "External harm becomes less likely when organizations prevent several required events"
-          }
-        },
-        {
-          "finding": "Strong network isolation reduces escape opportunities, but weak credentials and authorization can still provide alternative paths.",
-          "metric": "escape opportunities",
-          "result": "reduced with strong isolation",
-          "provenance": {
-            "sentence_id": "S172",
-            "page": 9,
-            "section": "Discussion",
-            "quote": "Strong network isolation reduces escape opportunities"
-          }
-        },
-        {
-          "finding": "Monitoring can shorten persistence, but monitoring alone does not remove access.",
-          "metric": "persistence duration",
-          "result": "shortened",
-          "provenance": {
-            "sentence_id": "S173",
-            "page": 9,
-            "section": "Discussion",
-            "quote": "Monitoring can shorten persistence"
-          }
-        },
-        {
-          "finding": "logit containment escape = -2.2 + 2.1 × capability + 1.4 × isolation weakness",
-          "metric": "logit containment escape",
-          "result": "-2.2 + 2.1 × capability + 1.4 × isolation weakness",
-          "provenance": {
-            "sentence_id": "S343",
-            "page": 14,
-            "section": "Discussion",
-            "quote": "logit containment escape = -2.2 + 2.1 × capability + 1.4 × isolation weakness"
-          }
-        },
-        {
-          "finding": "logit usable access = -2.5 + 1.7 × capability + 1.8 × credential weakness",
-          "metric": "logit usable access",
-          "result": "-2.5 + 1.7 × capability + 1.8 × credential weakness",
-          "provenance": {
-            "sentence_id": "S344",
-            "page": 14,
-            "section": "Discussion",
-            "quote": "logit usable access = -2.5 + 1.7 × capability + 1.8 × credential weakness"
-          }
-        },
-        {
-          "finding": "logit persistence = -2.4 + 1.4 × capability + 1.1 × monitoring weakness",
-          "metric": "logit persistence",
-          "result": "-2.4 + 1.4 × capability + 1.1 × monitoring weakness",
-          "provenance": {
-            "sentence_id": "S345",
-            "page": 14,
-            "section": "Discussion",
-            "quote": "logit persistence = -2.4 + 1.4 × capability + 1.1 × monitoring weakness"
-          }
-        },
-        {
-          "finding": "logit detection failure = -1.4 + 2.3 × monitoring weakness + 1.2 × authorization weakness",
-          "metric": "logit detection failure",
-          "result": "-1.4 + 2.3 × monitoring weakness + 1.2 × authorization weakness",
-          "provenance": {
-            "sentence_id": "S346",
-            "page": 14,
-            "section": "Discussion",
-            "quote": "logit detection failure = -1.4 + 2.3 × monitoring weakness + 1.2 × authorization weakness"
-          }
-        }
-      ]
+      "findings": [],
+      "triplets": []
     },
     {
-      "paper_id": "arxiv_2609.36573v1",
-      "title": "CyberPersistBench: Evaluating LLM-Based Cyber Attackers on Installation and Persistence",
+      "paper_id": "arxiv_2609.38415v1",
+      "title": "Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks",
       "publication_year": 2026,
-      "pdf_path": "data/pdfs\\arxiv_2609.36573v1.pdf",
+      "pdf_path": "data/pdfs\\arxiv_2609.38415v1.pdf",
       "status": "SUCCESS",
       "error_message": null,
       "methods": [
         {
-          "name": "CyberPersistBench",
-          "normalized_name": "Cyberpersistbench",
-          "type": "framework",
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
+          "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S6",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "we introduce CYBERPERSISTBENCH, the first benchmark"
-          }
-        },
-        {
-          "name": "MITRE ATT&CK Persistence tactic",
-          "normalized_name": "MITRE ATT&CK Persistence tactic",
-          "type": "framework",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S94",
-            "page": 3,
-            "section": "BENCHMARK DESIGN",
-            "quote": "focuses on the MITRE ATT&CK Persistence tactic"
-          }
-        },
-        {
-          "name": "GPT-5.6-sol",
-          "normalized_name": "Gpt-5.6-Sol",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S151",
+            "sentence_id": "S107",
             "page": 5,
-            "section": "EVALUATION",
-            "quote": "GPT-5.6-sol (OpenAI, 2026b)"
-          }
-        },
-        {
-          "name": "Claude Sonnet 5",
-          "normalized_name": "Claude Sonnet 5",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S151",
-            "page": 5,
-            "section": "EVALUATION",
-            "quote": "Claude Sonnet 5 (Anthropic, 2026)"
-          }
-        },
-        {
-          "name": "DeepSeek-V4-pro",
-          "normalized_name": "Deepseek-V4-Pro",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S151",
-            "page": 5,
-            "section": "EVALUATION",
-            "quote": "DeepSeek-V4-pro (DeepSeek-AI et al. , 2026)"
-          }
-        },
-        {
-          "name": "Kimi K2.6",
-          "normalized_name": "Kimi K2.6",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S151",
-            "page": 5,
-            "section": "EVALUATION",
-            "quote": "Kimi K2.6 (Moonshot AI,"
+            "section": "Influenced a human reviewer",
+            "quote": "We show a variety of excerpts from GPT-6 Astra’s raw chain-of-thought, extracted by LLM scanners and hand-picked by AISI researchers."
           }
         }
       ],
-      "datasets": [
-        {
-          "name": "CyberPersistBench",
-          "normalized_name": "Cyberpersistbench",
-          "modality": "cybersecurity_tasks",
-          "usage": "benchmark",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S279",
-            "page": 9,
-            "section": "CONCLUSION",
-            "quote": "The benchmark comprises 203 core tasks"
-          }
-        }
-      ],
-      "literature_sources": [
-        {
-          "name": "MITRE ATT&CK",
-          "normalized_name": "Mitre Att&Ck",
-          "provenance": {
-            "sentence_id": "S94",
-            "page": 3,
-            "section": "BENCHMARK DESIGN",
-            "quote": "MITRE ATT&CK Persistence tactic (TA0003)"
-          }
-        }
-      ],
+      "datasets": [],
+      "literature_sources": [],
       "limitations": [
         {
-          "text": "Results do not directly measure end-to-end attack capabilities spanning vulnerability discovery and initial access.",
-          "category": "generalization",
+          "text": "Beyond the limitations we address above, a main remaining limitation is the coverage of our evaluations.",
+          "category": "general",
           "provenance": {
-            "sentence_id": "S457",
-            "page": 15,
-            "section": "A LIMITATIONS",
-            "quote": "do not directly measure end-to-end attack capabilities"
+            "sentence_id": "S242",
+            "page": 10,
+            "section": "Addressing Potential Limitations",
+            "quote": "Beyond the limitations we address above, a main remaining limitation is the coverage of our evaluations."
           }
         },
         {
-          "text": "Defense evaluation uses preconfigured controls without modeling adaptive defender strategies.",
-          "category": "generalization",
+          "text": "The main potential limitation to these results is simulation awareness: the possibility that the model under study may perform differently after ident",
+          "category": "general",
           "provenance": {
-            "sentence_id": "S458",
-            "page": 15,
-            "section": "A LIMITATIONS",
-            "quote": "without modeling interactions in which defenders continually adapt"
+            "sentence_id": "S15",
+            "page": 1,
+            "section": "ABSTRACT",
+            "quote": "The main potential limitation to these results is simulation awareness: the possibility that the model under study may perform differently after ident"
           }
         }
       ],
-      "future_work": [
-        {
-          "text": "Extend the benchmark to longer evaluations of adaptive attacker–defender interactions.",
-          "category": "methodological_extension",
-          "provenance": {
-            "sentence_id": "S459",
-            "page": 15,
-            "section": "A LIMITATIONS",
-            "quote": "extend the benchmark to longer evaluations of adaptive"
-          }
-        }
-      ],
-      "findings": [
-        {
-          "finding": "Current agents struggle to establish persistent footholds reliably.",
-          "metric": "success_rate",
-          "result": "low",
-          "provenance": {
-            "sentence_id": "S280",
-            "page": 9,
-            "section": "CONCLUSION",
-            "quote": "current agents struggle to establish persistent footholds"
-          }
-        },
-        {
-          "finding": "Native defenses reduce success rates.",
-          "metric": "success_rate",
-          "result": "reduced",
-          "provenance": {
-            "sentence_id": "S281",
-            "page": 9,
-            "section": "CONCLUSION",
-            "quote": "Native defenses further reduce success rates"
-          }
-        }
-      ]
+      "future_work": [],
+      "findings": [],
+      "triplets": []
     },
     {
       "paper_id": "arxiv_2609.39584v1",
@@ -1219,360 +463,172 @@
       "error_message": null,
       "methods": [
         {
-          "name": "Trust-Aware Federated Hybrid Intrusion Detection Framework (TA-FHIDF)",
-          "normalized_name": "Trust-Aware Federated Hybrid Intrusion Detection Framework (TA-FHIDF)",
-          "type": "framework",
+          "name": "Convolutional Neural Network",
+          "normalized_name": "Convolutional Neural Network",
+          "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S84",
-            "page": 3,
-            "section": "METHODOLOGY AND SYSTEM ARCHITECTURE",
-            "quote": "The proposed Trust-Aware Federated Hybrid Intrusion Detection Framework (TA-FHIDF)"
-          }
-        },
-        {
-          "name": "1D-Convolutional Neural Network",
-          "normalized_name": "CNN",
-          "type": "architecture",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S100",
-            "page": 3,
-            "section": "METHODOLOGY AND SYSTEM ARCHITECTURE",
-            "quote": "passed to a 1D-Convolutional Neural Network"
-          }
-        },
-        {
-          "name": "Trust Management Layer",
-          "normalized_name": "Trust Management Layer",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S112",
-            "page": 3,
-            "section": "METHODOLOGY AND SYSTEM ARCHITECTURE",
-            "quote": "operates a dynamic Trust Management Layer"
-          }
-        },
-        {
-          "name": "Autoencoder",
-          "normalized_name": "Autoencoder",
-          "type": "architecture",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S272",
-            "page": 9,
-            "section": "CONCLUSION AND FUTURE WORK",
-            "quote": "By unifying an Autoencoder, 1D-CNN, and BiLSTM"
-          }
-        },
-        {
-          "name": "BiLSTM",
-          "normalized_name": "Bilstm",
-          "type": "architecture",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S272",
-            "page": 9,
-            "section": "CONCLUSION AND FUTURE WORK",
-            "quote": "By unifying an Autoencoder, 1D-CNN, and BiLSTM"
-          }
-        },
-        {
-          "name": "cosine distance trust metric",
-          "normalized_name": "Cosine Distance Trust Metric",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S275",
-            "page": 9,
-            "section": "CONCLUSION AND FUTURE WORK",
-            "quote": "dynamic, server-side cosine distance trust metric"
-          }
-        }
-      ],
-      "datasets": [
-        {
-          "name": "UNSW-NB15",
-          "normalized_name": "Unsw-Nb15",
-          "modality": "network traffic",
-          "usage": "benchmark",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S167",
-            "page": 5,
-            "section": "DATA COLLECTION AND PROCESSING",
-            "quote": "UNSW-NB15: This dataset provides a foundational and comprehensive baseline"
-          }
-        },
-        {
-          "name": "CICIDS2017",
-          "normalized_name": "Cicids2017",
-          "modality": "network traffic",
-          "usage": "benchmark",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S172",
-            "page": 5,
-            "section": "DATA COLLECTION AND PROCESSING",
-            "quote": "CICIDS2017: Widely adopted for deep intrusion traffic characterization"
-          }
-        }
-      ],
-      "literature_sources": [
-        {
-          "name": "Saba et al. [17]",
-          "normalized_name": "Saba Et Al. [17]",
-          "provenance": {
-            "sentence_id": "S53",
-            "page": 2,
-            "section": "LITERATURE REVIEW",
-            "quote": "Saba et al. [17] established the necessity of behavior-based anomaly detection"
-          }
-        },
-        {
-          "name": "Li [9]",
-          "normalized_name": "Li [9]",
-          "provenance": {
-            "sentence_id": "S79",
-            "page": 3,
-            "section": "LITERATURE REVIEW",
-            "quote": "Li [9] successfully implemented reputation-based trust frameworks"
-          }
-        },
-        {
-          "name": "Moustafa & Slay, 2015",
-          "normalized_name": "Moustafa & Slay, 2015",
-          "provenance": {
-            "sentence_id": "S167",
-            "page": 5,
-            "section": "DATA COLLECTION AND PROCESSING",
-            "quote": "multi-vector network intrusion scenarios (Moustafa & Slay, 2015)"
-          }
-        },
-        {
-          "name": "Sharafaldin et al., 2018",
-          "normalized_name": "Sharafaldin Et Al., 2018",
-          "provenance": {
-            "sentence_id": "S172",
-            "page": 5,
-            "section": "DATA COLLECTION AND PROCESSING",
-            "quote": "generating highly complex and contemporary attack profiles (Sharafaldin et al., 2018)"
-          }
-        }
-      ],
-      "limitations": [
-        {
-          "text": "Consensus protocols introduce prohibitively high computational overhead, rendering them unsuitable for lightweight edge threat mitigation.",
-          "category": "computational_cost",
-          "provenance": {
-            "sentence_id": "S52",
-            "page": 2,
-            "section": "LITERATURE REVIEW",
-            "quote": "consensus protocols introduce prohibitively high computational overhead"
-          }
-        },
-        {
-          "text": "Previous work was limited by static, outdated datasets unable to account for real-time concept drift.",
-          "category": "data_scarcity",
-          "provenance": {
-            "sentence_id": "S53",
-            "page": 2,
-            "section": "LITERATURE REVIEW",
-            "quote": "limited by static, outdated datasets unable to account for real-time concept drift"
-          }
-        },
-        {
-          "text": "Previous reputation-based trust frameworks were evaluated almost entirely on shallow machine learning models, leaving scalability with heavy deep neural networks unverified.",
-          "category": "scalability",
-          "provenance": {
-            "sentence_id": "S79",
-            "page": 3,
-            "section": "LITERATURE REVIEW",
-            "quote": "evaluated them almost entirely on shallow machine learning models"
-          }
-        }
-      ],
-      "future_work": [
-        {
-          "text": "Explore the integration of incremental federated learning techniques to seamlessly adapt to real-time concept drift.",
-          "category": "methodological_extension",
-          "provenance": {
-            "sentence_id": "S276",
-            "page": 9,
-            "section": "CONCLUSION AND FUTURE WORK",
-            "quote": "explore the integration of incremental federated learning techniques"
-          }
-        },
-        {
-          "text": "Develop adaptive federated optimization algorithms to better manage severe network latency fluctuations.",
-          "category": "efficiency",
-          "provenance": {
-            "sentence_id": "S277",
-            "page": 9,
-            "section": "CONCLUSION AND FUTURE WORK",
-            "quote": "developing adaptive federated optimization algorithms to better manage severe network latency"
-          }
-        }
-      ],
-      "findings": [
-        {
-          "finding": "The framework maintained a stable global detection rate under sustained adversarial attack.",
-          "metric": "global detection rate",
-          "result": "94%",
-          "provenance": {
-            "sentence_id": "S275",
-            "page": 9,
-            "section": "CONCLUSION AND FUTURE WORK",
-            "quote": "maintaining a stable 94% global detection rate under sustained adversarial attack"
-          }
-        }
-      ]
-    },
-    {
-      "paper_id": "arxiv_2609.33850v1",
-      "title": "Internet and Enterprise Strategy Revisited: From Digital Connectivity to AI-Enabled Enterprises, 1996 - 2026",
-      "publication_year": 2026,
-      "pdf_path": "data/pdfs\\arxiv_2609.33850v1.pdf",
-      "status": "SUCCESS",
-      "error_message": null,
-      "methods": [
-        {
-          "name": "conceptual, integrative, and historically structured comparison",
-          "normalized_name": "conceptual, integrative, and historically structured comparison",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S22",
+            "sentence_id": "S9",
             "page": 1,
-            "section": "ANALYTICAL APPROACH",
-            "quote": "conceptual, integrative, and historically structured comparison"
+            "section": "Abstract",
+            "quote": "The proposed framework integrates an Autoencoder, a One-Dimensional Convolutional Neural Network (1DCNN), and a Bidirectional Long Short-Term Memory ("
           }
         },
         {
-          "name": "threecategory coding scheme",
-          "normalized_name": "Threecategory Coding Scheme",
-          "type": "framework",
+          "name": "Decision Tree",
+          "normalized_name": "Decision Tree",
+          "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S29",
-            "page": 2,
-            "section": "ANALYTICAL APPROACH",
-            "quote": "threecategory coding scheme"
+            "sentence_id": "S264",
+            "page": 9,
+            "section": "DATA COLLECTION AND PROCESSING",
+            "quote": "This was closely followed by Decision Tree at 99.43%, and Linear SVM at 98.75%."
+          }
+        },
+        {
+          "name": "Support Vector Machine",
+          "normalized_name": "Support Vector Machine",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S264",
+            "page": 9,
+            "section": "DATA COLLECTION AND PROCESSING",
+            "quote": "This was closely followed by Decision Tree at 99.43%, and Linear SVM at 98.75%."
+          }
+        },
+        {
+          "name": "Random Forest",
+          "normalized_name": "Random Forest",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S266",
+            "page": 9,
+            "section": "DATA COLLECTION AND PROCESSING",
+            "quote": "Decision Tree recorded an FPR of 0.0028, and Random Forest recorded 0.0034."
           }
         }
       ],
       "datasets": [],
-      "literature_sources": [
-        {
-          "name": "Reference 33",
-          "normalized_name": "Reference 33",
-          "provenance": {
-            "sentence_id": "S24",
-            "page": 1,
-            "section": "ANALYTICAL APPROACH",
-            "quote": "baseline framework"
-          }
-        },
-        {
-          "name": "Reference 34",
-          "normalized_name": "Reference 34",
-          "provenance": {
-            "sentence_id": "S24",
-            "page": 1,
-            "section": "ANALYTICAL APPROACH",
-            "quote": "relevant developments"
-          }
-        },
-        {
-          "name": "Reference 35",
-          "normalized_name": "Reference 35",
-          "provenance": {
-            "sentence_id": "S27",
-            "page": 2,
-            "section": "ANALYTICAL APPROACH",
-            "quote": "structured comparison across a common set of dimensions"
-          }
-        },
-        {
-          "name": "Reference 8",
-          "normalized_name": "Reference 8",
-          "provenance": {
-            "sentence_id": "S63",
-            "page": 3,
-            "section": "ONTRIBUTIONS",
-            "quote": "distributed sensing mechanisms"
-          }
-        },
-        {
-          "name": "Reference 4",
-          "normalized_name": "Reference 4",
-          "provenance": {
-            "sentence_id": "S207",
-            "page": 7,
-            "section": "CONCLUSION",
-            "quote": "business strategy is inseparable"
-          }
-        },
-        {
-          "name": "Reference 27",
-          "normalized_name": "Reference 27",
-          "provenance": {
-            "sentence_id": "S207",
-            "page": 7,
-            "section": "CONCLUSION",
-            "quote": "digital infrastructures and AI-enabled capabilities"
-          }
-        }
-      ],
+      "literature_sources": [],
       "limitations": [
         {
-          "text": "The 1996 framework could not fully anticipate the complexity of the 2026 reality",
-          "category": "generalization",
+          "text": "However, they concluded that consensus protocols introduce prohibitively high computational overhead, rendering them unsuitable for lightweight edge t",
+          "category": "general",
           "provenance": {
-            "sentence_id": "S204",
-            "page": 7,
-            "section": "CONCLUSION",
-            "quote": "reality of 2026 is more complex than the 1996 framework could fully anticipate"
+            "sentence_id": "S52",
+            "page": 2,
+            "section": "LITERATURE REVIEW",
+            "quote": "However, they concluded that consensus protocols introduce prohibitively high computational overhead, rendering them unsuitable for lightweight edge t"
+          }
+        },
+        {
+          "text": "Furthermore, Saba et al. [17] established the necessity of behavior-based anomaly detection in digital healthcare but were limited by static, outdated",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S53",
+            "page": 2,
+            "section": "LITERATURE REVIEW",
+            "quote": "Furthermore, Saba et al. [17] established the necessity of behavior-based anomaly detection in digital healthcare but were limited by static, outdated"
           }
         }
       ],
       "future_work": [
         {
-          "text": "Examine how organizations build sustainable advantages in digital ecosystems characterized by platform dependency, data asymmetry, AI automation, cybersecurity risk, regulatory pressure, and rapid technological change",
+          "text": "The exponential expansion of IoT devices within 5GAdvanced edge computing architectures has exposed critical vulnerabilities that legacy centralized s",
           "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S208",
-            "page": 7,
-            "section": "CONCLUSION",
-            "quote": "Future research should examine how organizations build sustainable advantages in digital ecosystems"
-          }
-        }
-      ],
-      "findings": [
-        {
-          "finding": "Internet would affect enterprise strategy ... has been substantially confirmed",
-          "metric": "confirmation",
-          "result": "substantially",
-          "provenance": {
-            "sentence_id": "S202",
-            "page": 7,
-            "section": "CONCLUSION",
-            "quote": "has been substantially confirmed"
+            "sentence_id": "S270",
+            "page": 9,
+            "section": "CONCLUSION AND FUTURE WORK",
+            "quote": "The exponential expansion of IoT devices within 5GAdvanced edge computing architectures has exposed critical vulnerabilities that legacy centralized s"
           }
         },
         {
-          "finding": "Internet evolved into platformized, data‑driven, cloud‑dependent, regulated, geopolitically significant environment with AI mediating decisions",
-          "metric": "evolution",
-          "result": "platformized, data‑driven, cloud‑dependent, regulated, geopolitically significant",
+          "text": "This research successfully proposed and rigorously evaluated a Trust-Aware Federated Hybrid Intrusion Detection Framework (TA-FHIDF).",
+          "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S205",
-            "page": 7,
-            "section": "CONCLUSION",
-            "quote": "evolved from a communication and commerce infrastructure into a platformized, datadriven, cloud-dependent, regulated, and geopolitically significant environment"
+            "sentence_id": "S271",
+            "page": 9,
+            "section": "CONCLUSION AND FUTURE WORK",
+            "quote": "This research successfully proposed and rigorously evaluated a Trust-Aware Federated Hybrid Intrusion Detection Framework (TA-FHIDF)."
           }
         }
-      ]
+      ],
+      "findings": [],
+      "triplets": []
+    },
+    {
+      "paper_id": "arxiv_2609.36573v1",
+      "title": "CyberPersistBench: Evaluating LLM-Based Cyber Attackers on Installation and Persistence",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2609.36573v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S225",
+            "page": 8,
+            "section": "Preprint",
+            "quote": "Because these agent scaffolds optimize workspace retrieval and static artifact delivery rather than systems-level causal reasoning, tooling enhancemen"
+          }
+        }
+      ],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [
+        {
+          "text": "CyberPersistBench starts from restricted post-compromise access and independently evaluates installation and persistence.",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S456",
+            "page": 15,
+            "section": "A LIMITATIONS",
+            "quote": "CyberPersistBench starts from restricted post-compromise access and independently evaluates installation and persistence."
+          }
+        },
+        {
+          "text": "Its results therefore do not directly measure end-to-end attack capabilities spanning vulnerability discovery and initial access.",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S457",
+            "page": 15,
+            "section": "A LIMITATIONS",
+            "quote": "Its results therefore do not directly measure end-to-end attack capabilities spanning vulnerability discovery and initial access."
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "We introduce CyberPersistBench to evaluate post-compromise installation and persistence independently of upfront vulnerability exploitation.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S278",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "We introduce CyberPersistBench to evaluate post-compromise installation and persistence independently of upfront vulnerability exploitation."
+          }
+        },
+        {
+          "text": "The benchmark comprises 203 core tasks across seven native mechanism categories, uses deterministic verification and six-level scoring to localize fai",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S279",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "The benchmark comprises 203 core tasks across seven native mechanism categories, uses deterministic verification and six-level scoring to localize fai"
+          }
+        }
+      ],
+      "findings": [],
+      "triplets": []
     },
     {
       "paper_id": "arxiv_2609.33521v1",
@@ -1583,160 +639,195 @@
       "error_message": null,
       "methods": [
         {
-          "name": "LLM4Trust",
-          "normalized_name": "Llm4Trust",
-          "type": "framework",
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
+          "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S8",
-            "page": 1,
-            "section": "Language Models for Trust Evaluation",
-            "quote": "we propose LLM4Trust, the first benchmark framework"
+            "sentence_id": "S59",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "We then evaluate eight popular LLMs (i.e. , GPT-3.5, GPT4o, DeepSeek-V3 [27], Qwen-2.5-Max [28], Llama-4-Scout, Llama-4-Maverick, Claude-3.7-Sonnet, a"
           }
         },
         {
-          "name": "lightweight input-level defense",
-          "normalized_name": "lightweight input-level defense",
-          "type": "algorithm",
+          "name": "Graph Neural Network",
+          "normalized_name": "Graph Neural Network",
+          "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S591",
+            "sentence_id": "S617",
             "page": 13,
-            "section": "Method",
-            "quote": "We propose a lightweight input-level defense"
-          }
-        },
-        {
-          "name": "NeuralWalk",
-          "normalized_name": "Neuralwalk",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S926",
-            "page": 18,
-            "section": "Descriptions of Baseline Methods",
-            "quote": "NeuralWalk [38] employs neural networks"
-          }
-        },
-        {
-          "name": "TrustGuard",
-          "normalized_name": "Trustguard",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S930",
-            "page": 18,
-            "section": "Descriptions of Baseline Methods",
-            "quote": "TrustGuard and DTrust employ a discrete-time approach"
-          }
-        },
-        {
-          "name": "DTrust",
-          "normalized_name": "Dtrust",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S930",
-            "page": 18,
-            "section": "Descriptions of Baseline Methods",
-            "quote": "TrustGuard and DTrust employ a discrete-time approach"
-          }
-        },
-        {
-          "name": "Medley",
-          "normalized_name": "Medley",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S931",
-            "page": 18,
-            "section": "Descriptions of Baseline Methods",
-            "quote": "Medley adopts a continuous-time approach"
+            "section": "Dataset Metric Batch size",
+            "quote": "Recent advances in agent-based technologies further enable hybrid LLM-GNN systems that dynamically select or combine trust evaluators based on data av"
           }
         }
       ],
-      "datasets": [
-        {
-          "name": "Advogato",
-          "normalized_name": "Advogato",
-          "modality": "graph",
-          "usage": "evaluation",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S948",
-            "page": 18,
-            "section": "Experiments on Explainability",
-            "quote": "questions from the Advogato dataset"
-          }
-        }
-      ],
+      "datasets": [],
       "literature_sources": [],
       "limitations": [
         {
-          "text": "LLMs incur high inference costs.",
-          "category": "computational_cost",
+          "text": "The results show a clear efficiency-accuracy trade-off: large batch sizes substantially reduce inference time per evaluation pair, but may slightly de",
+          "category": "general",
           "provenance": {
-            "sentence_id": "S634",
-            "page": 14,
-            "section": "CONCLUSION",
-            "quote": "incur high inference costs"
-          }
-        },
-        {
-          "text": "LLMs are vulnerable to attacks targeting trust graphs and demonstration examples.",
-          "category": "generalization",
-          "provenance": {
-            "sentence_id": "S634",
-            "page": 14,
-            "section": "CONCLUSION",
-            "quote": "vulnerable to attacks targeting trust graphs"
-          }
-        },
-        {
-          "text": "Experiments focus on graph-structured data where trust is evaluated based on node interactions.",
-          "category": "generalization",
-          "provenance": {
-            "sentence_id": "S623",
+            "sentence_id": "S601",
             "page": 13,
-            "section": "Dataset Metric Batch size",
-            "quote": "experiments focus on graph-structured data"
+            "section": "DISCUSSION AND LIMITATIONS",
+            "quote": "The results show a clear efficiency-accuracy trade-off: large batch sizes substantially reduce inference time per evaluation pair, but may slightly de"
+          }
+        },
+        {
+          "text": "Learning-based methods address this limitation by using Machine Learning (ML) to automatically learn weights or rules from large amounts of trust-rela",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S27",
+            "page": 1,
+            "section": "INTRODUCTION",
+            "quote": "Learning-based methods address this limitation by using Machine Learning (ML) to automatically learn weights or rules from large amounts of trust-rela"
           }
         }
       ],
       "future_work": [
         {
-          "text": "Develop stronger defenses and improve inference efficiency for practical deployment.",
-          "category": "efficiency",
+          "text": "Future work will develop stronger defenses and improve inference efficiency for practical deployment.",
+          "category": "methodological_extension",
           "provenance": {
             "sentence_id": "S635",
             "page": 14,
             "section": "CONCLUSION",
-            "quote": "develop stronger defenses and improve inference efficiency"
+            "quote": "Future work will develop stronger defenses and improve inference efficiency for practical deployment."
+          }
+        },
+        {
+          "text": "In this paper, we proposed LLM4Trust, the first benchmark framework that explores LLMs’ capabilities for trust evaluation.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S630",
+            "page": 14,
+            "section": "CONCLUSION",
+            "quote": "In this paper, we proposed LLM4Trust, the first benchmark framework that explores LLMs’ capabilities for trust evaluation."
+          }
+        }
+      ],
+      "findings": [],
+      "triplets": []
+    },
+    {
+      "paper_id": "arxiv_2609.33850v1",
+      "title": "Internet and Enterprise Strategy Revisited: From Digital Connectivity to AI-Enabled Enterprises, 1996 - 2026",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2609.33850v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "Structured Comparison",
+          "normalized_name": "Structured Comparison",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S22",
+            "page": 1,
+            "section": "ANALYTICAL APPROACH",
+            "quote": "conceptual, integrative, and historically structured comparison"
+          }
+        },
+        {
+          "name": "Three-Category Coding Scheme",
+          "normalized_name": "Three-Category Coding Scheme",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S29",
+            "page": 2,
+            "section": "ANALYTICAL APPROACH",
+            "quote": "explicit three-category coding scheme"
+          }
+        }
+      ],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [
+        {
+          "text": "Electronic commerce in 1996 was limited by payment and security constraints.",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S50",
+            "page": 2,
+            "section": "ONTRIBUTIONS",
+            "quote": "limited by payment and security constraints"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "Examine how organizations build sustainable advantages in digital ecosystems with platform dependency and AI automation.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S208",
+            "page": 7,
+            "section": "CONCLUSION",
+            "quote": "examine how organizations build sustainable advantages in digital ecosystems"
+          }
+        },
+        {
+          "text": "Examine boundary conditions such as firm size, sectoral regulation, and data sensitivity.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S199",
+            "page": 7,
+            "section": "IMPLICATIONS FOR ENTERPRISE",
+            "quote": "examine boundary conditions such as firm size, sectoral regulation"
           }
         }
       ],
       "findings": [
         {
-          "finding": "LLMs generally understand basic trust properties well.",
-          "metric": "qualitative",
-          "result": "well",
+          "finding": "The 1996 article correctly anticipated the strategic relevance of electronic markets and cybermediaries.",
+          "metric": null,
+          "result": null,
           "provenance": {
-            "sentence_id": "S631",
-            "page": 14,
-            "section": "CONCLUSION",
-            "quote": "LLMs generally understand these properties well"
+            "sentence_id": "S7",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "correctly anticipated the strategic relevance of electronic markets"
           }
         },
         {
-          "finding": "Large batch sizes reduce inference time but may degrade accuracy.",
-          "metric": "efficiency-accuracy trade-off",
-          "result": "trade-off",
+          "finding": "The contemporary Internet is a platformized, data-intensive, and AI-mediated environment.",
+          "metric": null,
+          "result": null,
           "provenance": {
-            "sentence_id": "S601",
-            "page": 13,
-            "section": "DISCUSSION AND LIMITATIONS",
-            "quote": "large batch sizes substantially reduce inference time"
+            "sentence_id": "S8",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "platformized, data-intensive, cloud-dependent, regulated, geopolitically contested"
           }
+        },
+        {
+          "finding": "Internet strategy is extended by AI-enabled enterprise systems rather than replaced.",
+          "metric": null,
+          "result": null,
+          "provenance": {
+            "sentence_id": "S9",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "does not replace Internet strategy; it extends it"
+          }
+        }
+      ],
+      "triplets": [
+        {
+          "subject": "Structured Comparison",
+          "predicate": "USES_BACKBONE",
+          "object": "1996 article “Internet and Enterprise Strategy”",
+          "metric": null,
+          "value": null,
+          "sentence_id": "S25",
+          "page": 2,
+          "section": "ANALYTICAL APPROACH",
+          "quote": "1996 article provides the baseline framework",
+          "confidence": 0.9
         }
       ]
     },
@@ -1749,274 +840,103 @@
       "error_message": null,
       "methods": [
         {
-          "name": "CyberWorld",
-          "normalized_name": "Cyberworld",
-          "type": "framework",
+          "name": "Graph Neural Network",
+          "normalized_name": "Graph Neural Network",
+          "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S8",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "We introduce CyberWorld, a Dreamer-style world modeling framework"
+            "sentence_id": "S229",
+            "page": 7,
+            "section": "BFSExfiltration",
+            "quote": "GNN-PPO is a representation-matched baseline: the graph arm’s observation and GAT encoder trained with PPO under the same online interaction budget an"
           }
         },
         {
-          "name": "Dreamer",
-          "normalized_name": "Dreamer",
-          "type": "framework",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S8",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "a Dreamer-style world modeling framework"
-          }
-        },
-        {
-          "name": "Deep reinforcement learning",
-          "normalized_name": "Deep Reinforcement Learning",
-          "type": "algorithm",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S4",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "Deep reinforcement learning has become a prominent approach"
-          }
-        },
-        {
-          "name": "Reinforcement learning (RL)",
-          "normalized_name": "Reinforcement Learning (Rl)",
-          "type": "algorithm",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S14",
-            "page": 1,
-            "section": "INTRODUCTION",
-            "quote": "Reinforcement learning (RL) (Sutton et al. , 1998)"
-          }
-        }
-      ],
-      "datasets": [],
-      "literature_sources": [
-        {
-          "name": "Sutton et al., 1998",
-          "normalized_name": "Sutton Et Al., 1998",
-          "provenance": {
-            "sentence_id": "S14",
-            "page": 1,
-            "section": "INTRODUCTION",
-            "quote": "Reinforcement learning (RL) (Sutton et al. , 1998)"
-          }
-        },
-        {
-          "name": "Stakhanova et al., 2007",
-          "normalized_name": "Stakhanova Et Al., 2007",
-          "provenance": {
-            "sentence_id": "S14",
-            "page": 1,
-            "section": "INTRODUCTION",
-            "quote": "evolving threats (Stakhanova et al. , 2007; Kiely et al. , 2025)"
-          }
-        },
-        {
-          "name": "Kiely et al., 2025",
-          "normalized_name": "Kiely Et Al., 2025",
-          "provenance": {
-            "sentence_id": "S14",
-            "page": 1,
-            "section": "INTRODUCTION",
-            "quote": "evolving threats (Stakhanova et al. , 2007; Kiely et al. , 2025)"
-          }
-        },
-        {
-          "name": "Lyu et al., 2021",
-          "normalized_name": "Lyu Et Al., 2021",
-          "provenance": {
-            "sentence_id": "S83",
-            "page": 4,
-            "section": "Preprint",
-            "quote": "credit assignment (Lyu et al. , 2021; Egorov & Shpilman, 2022;"
-          }
-        },
-        {
-          "name": "Egorov & Shpilman, 2022",
-          "normalized_name": "Egorov & Shpilman, 2022",
-          "provenance": {
-            "sentence_id": "S83",
-            "page": 4,
-            "section": "Preprint",
-            "quote": "credit assignment (Lyu et al. , 2021; Egorov & Shpilman, 2022;"
-          }
-        },
-        {
-          "name": "Zhang et al., 2025",
-          "normalized_name": "Zhang Et Al., 2025",
-          "provenance": {
-            "sentence_id": "S83",
-            "page": 4,
-            "section": "Preprint",
-            "quote": "Egorov & Shpilman, 2022; Zhang et al. , 2025; Xue et al. , 2026;"
-          }
-        },
-        {
-          "name": "Xue et al., 2026",
-          "normalized_name": "Xue Et Al., 2026",
-          "provenance": {
-            "sentence_id": "S83",
-            "page": 4,
-            "section": "Preprint",
-            "quote": "Zhang et al. , 2025; Xue et al. , 2026; Zhao et al. , 2026)"
-          }
-        },
-        {
-          "name": "Zhao et al., 2026",
-          "normalized_name": "Zhao Et Al., 2026",
-          "provenance": {
-            "sentence_id": "S83",
-            "page": 4,
-            "section": "Preprint",
-            "quote": "Xue et al. , 2026; Zhao et al. , 2026)"
-          }
-        },
-        {
-          "name": "Posterior-conditioned multi-agent reinforcement learning for adaptive cyber defense",
-          "normalized_name": "Posterior-Conditioned Multi-Agent Reinforcement Learning For Adaptive Cyber Defense",
+          "name": "Reinforcement Learning",
+          "normalized_name": "Reinforcement Learning",
+          "type": "model",
+          "role": "proposed",
           "provenance": {
             "sentence_id": "S413",
             "page": 11,
             "section": "Preprint",
             "quote": "Posterior-conditioned multi-agent reinforcement learning for adaptive cyber defense."
           }
-        },
+        }
+      ],
+      "datasets": [
         {
-          "name": "Exploring the efficacy of multi-agent reinforcement learning for autonomous cyber defence: A cage challenge 4 perspective",
-          "normalized_name": "Exploring The Efficacy Of Multi-Agent Reinforcement Learning For Autonomous Cyber Defence: A Cage Challenge 4 Perspective",
+          "name": "Cyberwheel",
+          "normalized_name": "Cyberwheel",
+          "modality": "Benchmark",
+          "usage": "evaluation",
+          "samples": null,
           "provenance": {
-            "sentence_id": "S419",
-            "page": 11,
-            "section": "Preprint",
-            "quote": "Exploring the efficacy of multi-agent reinforcement learning for autonomous cyber defence"
-          }
-        },
-        {
-          "name": "decentralized critics in multi-agent reinforcement learning",
-          "normalized_name": "Decentralized Critics In Multi-Agent Reinforcement Learning",
-          "provenance": {
-            "sentence_id": "S438",
-            "page": 11,
-            "section": "Preprint",
-            "quote": "decentralized critics in multi-agent reinforcement learning."
-          }
-        },
-        {
-          "name": "GenRL: Multimodal-foundation world models for generalization in embodied agents",
-          "normalized_name": "Genrl: Multimodal-Foundation World Models For Generalization In Embodied Agents",
-          "provenance": {
-            "sentence_id": "S448",
-            "page": 12,
-            "section": "Preprint",
-            "quote": "GenRL: Multimodal-foundation world models for generalization in embodied agents."
-          }
-        },
-        {
-          "name": "Hierarchical multi-agent reinforcement learning for cyber network defense",
-          "normalized_name": "Hierarchical Multi-Agent Reinforcement Learning For Cyber Network Defense",
-          "provenance": {
-            "sentence_id": "S494",
-            "page": 12,
-            "section": "Preprint",
-            "quote": "Hierarchical multi-agent reinforcement learning for cyber network defense."
-          }
-        },
-        {
-          "name": "transformer based world models for reinforcement learning",
-          "normalized_name": "Transformer Based World Models For Reinforcement Learning",
-          "provenance": {
-            "sentence_id": "S523",
-            "page": 13,
-            "section": "Preprint",
-            "quote": "transformer based world models for reinforcement learning."
+            "sentence_id": "S9",
+            "page": 1,
+            "section": "ABSTRACT",
+            "quote": "Across all four scoreable CyberWheel attack strategies, the graph-based CyberWorld variant exceeds a strategy-agnostic control after 3.6k–15.8k enviro"
           }
         }
       ],
+      "literature_sources": [],
       "limitations": [
         {
-          "text": "Precise long-horizon reconstruction of every latent event is not necessary for acquiring defensive behavior, but improving prediction of adversary-dependent events remains an important direction.",
+          "text": "These results establish learned cyber dynamics as a sample-efficient and scalable basis for autonomous defense, and identify world representation as a",
           "category": "general",
           "provenance": {
-            "sentence_id": "S880",
-            "page": 23,
-            "section": "Preprint",
-            "quote": "improving prediction of adversary-dependent events remains an important direction"
+            "sentence_id": "S12",
+            "page": 1,
+            "section": "ABSTRACT",
+            "quote": "These results establish learned cyber dynamics as a sample-efficient and scalable basis for autonomous defense, and identify world representation as a"
+          }
+        },
+        {
+          "text": "The agent constructs a predictive model of the environment from replayed interactions and trains its policy entirely inside the model’s imagination, d",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S76",
+            "page": 3,
+            "section": "CYBERWORLD",
+            "quote": "The agent constructs a predictive model of the environment from replayed interactions and trains its policy entirely inside the model’s imagination, d"
           }
         }
       ],
       "future_work": [
         {
-          "text": "Extend CyberWorld to alternative latent dynamics architectures, more efficient semantic representations, additional cyber-defense environments, emulated networks, and learned adversaries.",
+          "text": "Future work should extend CyberWorld to alternative latent dynamics architectures, more efficient semantic representations, additional cyber-defense e",
           "category": "methodological_extension",
           "provenance": {
             "sentence_id": "S331",
             "page": 10,
             "section": "Preprint",
-            "quote": "extend CyberWorld to alternative latent dynamics architectures, more efficient semantic"
+            "quote": "Future work should extend CyberWorld to alternative latent dynamics architectures, more efficient semantic representations, additional cyber-defense e"
           }
         },
         {
-          "text": "Develop transferable cyber world models that capture reusable network dynamics across heterogeneous operational settings.",
-          "category": "methodological_extension",
-          "provenance": {
-            "sentence_id": "S331",
-            "page": 10,
-            "section": "Preprint",
-            "quote": "developing transferable cyber world models that capture reusable network dynamics"
-          }
-        },
-        {
-          "text": "Improve prediction of adversary-dependent events.",
+          "text": "This suggests that precise long-horizon reconstruction of every latent event is not necessary for acquiring the defensive behavior observed in our eva",
           "category": "methodological_extension",
           "provenance": {
             "sentence_id": "S880",
             "page": 23,
             "section": "Preprint",
-            "quote": "improving prediction of adversary-dependent events remains an important direction"
+            "quote": "This suggests that precise long-horizon reconstruction of every latent event is not necessary for acquiring the defensive behavior observed in our eva"
           }
         }
       ],
-      "findings": [
+      "findings": [],
+      "triplets": [
         {
-          "finding": "Learned cyber dynamics are a sample-efficient and scalable basis for autonomous defense.",
-          "metric": "sample efficiency",
-          "result": "sample-efficient",
-          "provenance": {
-            "sentence_id": "S12",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "establish learned cyber dynamics as a sample-efficient and scalable basis"
-          }
-        },
-        {
-          "finding": "World representation is a central design axis for robustness and scalability.",
-          "metric": "robustness and scalability",
-          "result": "central design axis",
-          "provenance": {
-            "sentence_id": "S12",
-            "page": 1,
-            "section": "ABSTRACT",
-            "quote": "identify world representation as a central design axis for robustness"
-          }
-        },
-        {
-          "finding": "Vector and graph representations reach control at N ≤25, while only the graph arm does so at N=50 and N=100 under BFSExfiltration.",
-          "metric": "scalability",
-          "result": "N ≤25, N=50, N=100",
-          "provenance": {
-            "sentence_id": "S317",
-            "page": 9,
-            "section": "Preprint",
-            "quote": "vector and graph both reach the control at N ≤25"
-          }
+          "subject": "Graph Neural Network",
+          "predicate": "EVALUATED_ON",
+          "object": "Cyberwheel",
+          "metric": "Accuracy/F1",
+          "value": "Reported",
+          "sentence_id": "S9",
+          "page": 1,
+          "section": "ABSTRACT",
+          "quote": "Across all four scoreable CyberWheel attack strategies, the graph-based CyberWorld variant exceeds a strategy-agnostic control after 3.6k–15.8k enviro",
+          "confidence": 0.9
         }
       ]
     },
@@ -2027,143 +947,55 @@
       "pdf_path": "data/pdfs\\arxiv_2609.33763v1.pdf",
       "status": "SUCCESS",
       "error_message": null,
-      "methods": [
-        {
-          "name": "SECPROBE",
-          "normalized_name": "Secprobe",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S575",
-            "page": 17,
-            "section": "Conclusion",
-            "quote": "We introduced SECPROBE, a framework for adaptive evaluation"
-          }
-        },
-        {
-          "name": "Bayesian 2PL-IRT",
-          "normalized_name": "Bayesian 2Pl-Irt",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S91",
-            "page": 4,
-            "section": "SecProbe adaptive evaluation",
-            "quote": "Identify + repair Bayesian 2PL-IRT Information gap"
-          }
-        },
-        {
-          "name": "GPT-5.6-Luna",
-          "normalized_name": "Gpt-5.6-Luna",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S212",
-            "page": 7,
-            "section": "Experiments",
-            "quote": "using GPT-5.6-Luna with medium reasoning effort"
-          }
-        },
-        {
-          "name": "MINI-SWE-AGENT",
-          "normalized_name": "Mini-Swe-Agent",
-          "type": "framework",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S946",
-            "page": 23,
-            "section": "B Failure Case Studies",
-            "quote": "all with MINI-SWE-AGENT."
-          }
-        },
-        {
-          "name": "GPT-5.6-Sol",
-          "normalized_name": "Gpt-5.6-Sol",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S946",
-            "page": 23,
-            "section": "B Failure Case Studies",
-            "quote": "The first uses GPT-5.6-Sol"
-          }
-        },
-        {
-          "name": "Claude Opus 4.8",
-          "normalized_name": "Claude Opus 4.8",
-          "type": "model",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S946",
-            "page": 23,
-            "section": "B Failure Case Studies",
-            "quote": "the other two use Claude Opus 4.8"
-          }
-        }
-      ],
-      "datasets": [
-        {
-          "name": "353 tasks",
-          "normalized_name": "353 Tasks",
-          "modality": "code",
-          "usage": "evaluation",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S576",
-            "page": 17,
-            "section": "Conclusion",
-            "quote": "we constructed 353 tasks spanning six programming languages"
-          }
-        }
-      ],
+      "methods": [],
+      "datasets": [],
       "literature_sources": [],
       "limitations": [
         {
-          "text": "The synthetic task distribution does not represent all deployed software.",
-          "category": "generalization",
+          "text": "When suitable tasks are missing, SECPROBE coordinates specialized agents to synthesize new tasks conditioned on a target Common Weakness Enumeration (",
+          "category": "general",
           "provenance": {
-            "sentence_id": "S584",
-            "page": 17,
-            "section": "Broader Impact and Responsible Use",
-            "quote": "synthetic task distribution does not represent all deployed software"
+            "sentence_id": "S36",
+            "page": 2,
+            "section": "Introduction",
+            "quote": "When suitable tasks are missing, SECPROBE coordinates specialized agents to synthesize new tasks conditioned on a target Common Weakness Enumeration ("
           }
         },
         {
-          "text": "Generated vulnerable code and exploit examples have dual-use potential.",
+          "text": "SECPROBE is intended to support defensive evaluation of coding agents’ ability to identify and repair vulnerabilities.",
           "category": "general",
           "provenance": {
-            "sentence_id": "S583",
+            "sentence_id": "S580",
             "page": 17,
             "section": "Broader Impact and Responsible Use",
-            "quote": "generated vulnerable code and exploit examples have dual-use potential"
+            "quote": "SECPROBE is intended to support defensive evaluation of coding agents’ ability to identify and repair vulnerabilities."
           }
         }
       ],
       "future_work": [
         {
-          "text": "SECPROBE provides a framework for directing evaluation toward these capability gaps and renewing assessment as coding agents evolve.",
+          "text": "We introduced SECPROBE, a framework for adaptive evaluation of coding-agent vulnerability awareness that connects IRT-based task selection with on-dem",
           "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S579",
+            "sentence_id": "S575",
             "page": 17,
             "section": "Conclusion",
-            "quote": "directing evaluation toward these capability gaps and renewing assessment"
+            "quote": "We introduced SECPROBE, a framework for adaptive evaluation of coding-agent vulnerability awareness that connects IRT-based task selection with on-dem"
+          }
+        },
+        {
+          "text": "As one application, we constructed 353 tasks spanning six programming languages and 151 CWE types and evaluated nine frontier models with two agent ha",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S576",
+            "page": 17,
+            "section": "Conclusion",
+            "quote": "As one application, we constructed 353 tasks spanning six programming languages and 151 CWE types and evaluated nine frontier models with two agent ha"
           }
         }
       ],
-      "findings": [
-        {
-          "finding": "The strongest evaluated configuration achieves only a 28.33% success rate.",
-          "metric": "success rate",
-          "result": "28.33%",
-          "provenance": {
-            "sentence_id": "S578",
-            "page": 17,
-            "section": "Conclusion",
-            "quote": "achieves only a 28.33% success rate"
-          }
-        }
-      ]
+      "findings": [],
+      "triplets": []
     },
     {
       "paper_id": "arxiv_2609.32424v1",
@@ -2174,298 +1006,66 @@
       "error_message": null,
       "methods": [
         {
-          "name": "CyberProvenance",
-          "normalized_name": "Cyberprovenance",
-          "type": "framework",
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
+          "type": "model",
           "role": "proposed",
           "provenance": {
             "sentence_id": "S155",
             "page": 6,
             "section": "METHODOLOGY",
-            "quote": "We present CyberProvenance, an agent cyber harness"
-          }
-        },
-        {
-          "name": "Log Analysis Agent",
-          "normalized_name": "Log Analysis Agent",
-          "type": "architecture",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S156",
-            "page": 6,
-            "section": "METHODOLOGY",
-            "quote": "including Log Analysis Agent, Attack Validation Agent"
-          }
-        },
-        {
-          "name": "Attack Validation Agent",
-          "normalized_name": "Attack Validation Agent",
-          "type": "architecture",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S156",
-            "page": 6,
-            "section": "METHODOLOGY",
-            "quote": "including Log Analysis Agent, Attack Validation Agent"
-          }
-        },
-        {
-          "name": "Check Agent",
-          "normalized_name": "Check Agent",
-          "type": "architecture",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S156",
-            "page": 6,
-            "section": "METHODOLOGY",
-            "quote": "Attack Validation Agent, and Check Agent"
-          }
-        },
-        {
-          "name": "Atomic Red Team",
-          "normalized_name": "Atomic Red Team",
-          "type": "framework",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S175",
-            "page": 7,
-            "section": "METHODOLOGY",
-            "quote": "reproduced using Atomic Red Team (Red Canary)"
-          }
-        },
-        {
-          "name": "CALDERA",
-          "normalized_name": "Caldera",
-          "type": "framework",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S175",
-            "page": 7,
-            "section": "METHODOLOGY",
-            "quote": "orchestrated through CALDERA (Apache Software Foundation)"
-          }
-        },
-        {
-          "name": "Ludus",
-          "normalized_name": "Ludus",
-          "type": "framework",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S175",
-            "page": 7,
-            "section": "METHODOLOGY",
-            "quote": "environments built with Ludus (Bad Sector Labs)"
+            "quote": "We present CyberProvenance, an agent cyber harness designed for multi-agent collaboration to improve the reliability of LLM-based agents."
           }
         }
       ],
-      "datasets": [
-        {
-          "name": "CyberClear",
-          "normalized_name": "Cyberclear",
-          "modality": "security logs",
-          "usage": "benchmark",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S70",
-            "page": 4,
-            "section": "CYBERCLEAR BENCHMARK",
-            "quote": "We formulate CyberClear as an APT attack chain"
-          }
-        }
-      ],
+      "datasets": [],
       "literature_sources": [],
       "limitations": [
         {
-          "text": "Advanced agent systems struggle with evidence reasoning and complete attack chain reconstruction.",
+          "text": "If the semantic subject/actor role, core action, object/target role, and overall meaning ,→agree, allow synonyms, paraphrases, active/passive rewrites",
           "category": "general",
           "provenance": {
-            "sentence_id": "S261",
-            "page": 10,
-            "section": "CONCLUSION",
-            "quote": "face substantial challenges in evidence reasoning"
+            "sentence_id": "S852",
+            "page": 23,
+            "section": "GENERAL EVALUATION PRINCIPLES",
+            "quote": "If the semantic subject/actor role, core action, object/target role, and overall meaning ,→agree, allow synonyms, paraphrases, active/passive rewrites"
+          }
+        },
+        {
+          "text": "Synonyms, paraphrases, active/ ,→passive rewrites, and reasonable generalization are strict−correct.",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S992",
+            "page": 27,
+            "section": "Strict Judge Prompt",
+            "quote": "Synonyms, paraphrases, active/ ,→passive rewrites, and reasonable generalization are strict−correct."
           }
         }
       ],
       "future_work": [
         {
-          "text": "Develop more capable and trustworthy agents for complex cybersecurity analysis.",
+          "text": "In this work, we introduce CyberClear, a benchmark for evaluating LLM agents on APT attack chain provenance from long-context security logs.",
           "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S263",
+            "sentence_id": "S259",
             "page": 10,
             "section": "CONCLUSION",
-            "quote": "developing more capable and trustworthy agents"
+            "quote": "In this work, we introduce CyberClear, a benchmark for evaluating LLM agents on APT attack chain provenance from long-context security logs."
           }
-        }
-      ],
-      "findings": [
+        },
         {
-          "finding": "Advanced agent systems face challenges in evidence reasoning and attack chain reconstruction.",
-          "metric": "qualitative assessment",
-          "result": "substantial challenges",
+          "text": "CyberClear covers both single-step and multistage attacks and provides a semantic evaluation method that assesses attack behaviors, temporal and causa",
+          "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S261",
+            "sentence_id": "S260",
             "page": 10,
             "section": "CONCLUSION",
-            "quote": "advanced agent systems still face substantial challenges"
-          }
-        }
-      ]
-    },
-    {
-      "paper_id": "arxiv_2609.32700v1",
-      "title": "CAIRN: Dynamic Fact-Intent DAGs for Multi-Agent Exploration",
-      "publication_year": 2026,
-      "pdf_path": "data/pdfs\\arxiv_2609.32700v1.pdf",
-      "status": "SUCCESS",
-      "error_message": null,
-      "methods": [
-        {
-          "name": "CAIRN",
-          "normalized_name": "Cairn",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S42",
-            "page": 2,
-            "section": "GOAL",
-            "quote": "introduce CAIRN, a multi-agent coordination paradigm"
-          }
-        },
-        {
-          "name": "baseline agent",
-          "normalized_name": "Baseline Agent",
-          "type": "algorithm",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S47",
-            "page": 2,
-            "section": "GOAL",
-            "quote": "baseline agent using the same model, agent loop, and task environment"
-          }
-        },
-        {
-          "name": "REASONER",
-          "normalized_name": "Reasoner",
-          "type": "model",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S106",
-            "page": 3,
-            "section": "GOAL",
-            "quote": "implement CAIRN with two agent roles: a REASONER and a set of WORKERs"
-          }
-        },
-        {
-          "name": "WORKER",
-          "normalized_name": "Worker",
-          "type": "model",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S106",
-            "page": 3,
-            "section": "GOAL",
-            "quote": "implement CAIRN with two agent roles: a REASONER and a set of WORKERs"
-          }
-        },
-        {
-          "name": "CAIRN DAG design",
-          "normalized_name": "Cairn Dag Design",
-          "type": "architecture",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S296",
-            "page": 9,
-            "section": "Accepted",
-            "quote": "CAIRN’s DAG design addresses this challenge by providing a structured representation"
+            "quote": "CyberClear covers both single-step and multistage attacks and provides a semantic evaluation method that assesses attack behaviors, temporal and causa"
           }
         }
       ],
-      "datasets": [
-        {
-          "name": "FrontierMath",
-          "normalized_name": "Frontiermath",
-          "modality": "mathematical reasoning",
-          "usage": "evaluation",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S47",
-            "page": 2,
-            "section": "GOAL",
-            "quote": "twelve public mathematical reasoning problems from FrontierMath"
-          }
-        },
-        {
-          "name": "Cybench",
-          "normalized_name": "Cybench",
-          "modality": "cybersecurity tasks",
-          "usage": "evaluation",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S47",
-            "page": 2,
-            "section": "GOAL",
-            "quote": "forty cybersecurity tasks from Cybench"
-          }
-        }
-      ],
-      "literature_sources": [
-        {
-          "name": "Erman et al., 1980",
-          "normalized_name": "Erman Et Al., 1980",
-          "provenance": {
-            "sentence_id": "S303",
-            "page": 9,
-            "section": "RELATED WORK",
-            "quote": "Blackboard architectures let independent components contribute to a common knowledge store"
-          }
-        },
-        {
-          "name": "Besta et al., 2024",
-          "normalized_name": "Besta Et Al., 2024",
-          "provenance": {
-            "sentence_id": "S303",
-            "page": 9,
-            "section": "RELATED WORK",
-            "quote": "graph-based methods connect reasoning states"
-          }
-        },
-        {
-          "name": "Zhang et al., 2026",
-          "normalized_name": "Zhang Et Al., 2026",
-          "provenance": {
-            "sentence_id": "S303",
-            "page": 9,
-            "section": "RELATED WORK",
-            "quote": "graph-based methods encode verification dependencies"
-          }
-        },
-        {
-          "name": "Xu et al., 2026",
-          "normalized_name": "Xu Et Al., 2026",
-          "provenance": {
-            "sentence_id": "S303",
-            "page": 9,
-            "section": "RELATED WORK",
-            "quote": "graph-based methods evolve agent communication"
-          }
-        }
-      ],
-      "limitations": [],
-      "future_work": [],
-      "findings": [
-        {
-          "finding": "CAIRN achieves greater time advantages on high-effort tasks",
-          "metric": "time advantage",
-          "result": null,
-          "provenance": {
-            "sentence_id": "S307",
-            "page": 10,
-            "section": "CONCLUSION",
-            "quote": "CAIRN achieves greater time advantages on high-effort tasks"
-          }
-        }
-      ]
+      "findings": [],
+      "triplets": []
     },
     {
       "paper_id": "arxiv_2609.38262v1",
@@ -2476,204 +1076,136 @@
       "error_message": null,
       "methods": [
         {
-          "name": "risk-sensitive reinforcement learning",
-          "normalized_name": "risk-sensitive reinforcement learning",
-          "type": "algorithm",
-          "role": "baseline",
+          "name": "Reinforcement Learning",
+          "normalized_name": "Reinforcement Learning",
+          "type": "model",
+          "role": "proposed",
           "provenance": {
             "sentence_id": "S424",
             "page": 17,
             "section": "Audit Requirements and Design",
-            "quote": "risk-sensitive reinforcement learning can optimize such an objective directly"
+            "quote": "rather than an assumption about the agent’s psychology, and risk-sensitive reinforcement learning can optimize such an objective directly (Fei et al. "
           }
         }
       ],
       "datasets": [],
-      "literature_sources": [
-        {
-          "name": "Becker, 1968",
-          "normalized_name": "Becker, 1968",
-          "provenance": {
-            "sentence_id": "S34",
-            "page": 2,
-            "section": "Introduction",
-            "quote": "a large enough sanction allows inspection to be rare (Becker, 1968)"
-          }
-        },
-        {
-          "name": "Fei et al., 2020",
-          "normalized_name": "Fei Et Al., 2020",
-          "provenance": {
-            "sentence_id": "S424",
-            "page": 17,
-            "section": "Audit Requirements and Design",
-            "quote": "risk-sensitive reinforcement learning can optimize such an objective directly (Fei et al., 2020)"
-          }
-        },
-        {
-          "name": "Mihatsch and Neuneier (2002)",
-          "normalized_name": "Mihatsch And Neuneier (2002)",
-          "provenance": {
-            "sentence_id": "S424",
-            "page": 17,
-            "section": "Audit Requirements and Design",
-            "quote": "Mihatsch and Neuneier (2002) study a related transformation of the feedback"
-          }
-        }
-      ],
-      "limitations": [
-        {
-          "text": "Editable records can make the deterrence threshold infinite.",
-          "category": "general",
-          "provenance": {
-            "sentence_id": "S657",
-            "page": 26,
-            "section": "Conclusion",
-            "quote": "Editable records can make the deterrence threshold infinite"
-          }
-        },
-        {
-          "text": "Reconnaissance can make the audit draw learnable, creating a probability floor.",
-          "category": "general",
-          "provenance": {
-            "sentence_id": "S657",
-            "page": 26,
-            "section": "Conclusion",
-            "quote": "reconnaissance at the provider’s expense can make the draw learnable"
-          }
-        },
-        {
-          "text": "Evaluation that only withholds a reward leaves the agent with nothing further to lose.",
-          "category": "general",
-          "provenance": {
-            "sentence_id": "S659",
-            "page": 26,
-            "section": "Conclusion",
-            "quote": "an evaluation that only withholds a reward leaves an agent... with nothing further to lose"
-          }
-        }
-      ],
-      "future_work": [],
-      "findings": [
-        {
-          "finding": "Misconduct is deterred when expected sanction exceeds gain, allowing rare inspection.",
-          "metric": "expected sanction",
-          "result": "exceeds gain",
-          "provenance": {
-            "sentence_id": "S34",
-            "page": 2,
-            "section": "Introduction",
-            "quote": "misconduct is deterred when its expected sanction exceeds its gain"
-          }
-        },
-        {
-          "finding": "Control of the agent's objective removes constraints limiting oversight.",
-          "metric": "audit capacity",
-          "result": "removed",
-          "provenance": {
-            "sentence_id": "S38",
-            "page": 2,
-            "section": "Introduction",
-            "quote": "control of the agent’s objective removes the constraints that usually limit oversight"
-          }
-        },
-        {
-          "finding": "Rare randomized audits make authorized behavior a best response under specific conditions.",
-          "metric": "authorized behavior",
-          "result": "best response",
-          "provenance": {
-            "sentence_id": "S655",
-            "page": 26,
-            "section": "Conclusion",
-            "quote": "Rare randomized audits then make authorized behavior a best response"
-          }
-        }
-      ]
-    },
-    {
-      "paper_id": "arxiv_2609.34450v1",
-      "title": "ReproBench: Benchmarking LLM Agents on Reproducing Vulnerability From Scratch",
-      "publication_year": 2026,
-      "pdf_path": "data/pdfs\\arxiv_2609.34450v1.pdf",
-      "status": "SUCCESS",
-      "error_message": null,
-      "methods": [
-        {
-          "name": "Skill-based Scoring",
-          "normalized_name": "Skill-Based Scoring",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S153",
-            "page": 5,
-            "section": "Experimental Design",
-            "quote": "we design two agent skills"
-          }
-        }
-      ],
-      "datasets": [
-        {
-          "name": "ReproBench",
-          "normalized_name": "Reprobench",
-          "modality": "cybersecurity",
-          "usage": "benchmark",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S37",
-            "page": 2,
-            "section": "Abstract",
-            "quote": "a 30-CVE public-evidence dataset balanced across buffer overflow, command injection, and authentication bypass"
-          }
-        }
-      ],
       "literature_sources": [],
       "limitations": [
         {
-          "text": "balance does not mirror natural distribution of IoT weaknesses",
-          "category": "generalization",
+          "text": "Oversight changes the evidence it relies on.",
+          "category": "general",
           "provenance": {
-            "sentence_id": "S255",
-            "page": 7,
-            "section": "Reproduction Phase",
-            "quote": "balance does not mirror natural distribution of IoT weaknesses"
+            "sentence_id": "S4",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "Oversight changes the evidence it relies on."
+          }
+        },
+        {
+          "text": "We ask when randomized audits and scor-",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S5",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "We ask when randomized audits and scor-"
           }
         }
       ],
       "future_work": [
         {
-          "text": "select more CVEs in future work",
-          "category": "dataset_expansion",
+          "text": "When can randomized oversight align an AI agent that can conceal what it does?",
+          "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S255",
-            "page": 7,
-            "section": "Reproduction Phase",
-            "quote": "select more CVEs in our future work"
+            "sentence_id": "S652",
+            "page": 26,
+            "section": "Conclusion",
+            "quote": "When can randomized oversight align an AI agent that can conceal what it does?"
           }
         },
         {
-          "text": "extend ReproBench to multiple harnesses and wider model pool",
+          "text": "A provider that writes the agent’s objective can scale sanctions without the wealth and",
           "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S261",
-            "page": 7,
-            "section": "Reproduction Phase",
-            "quote": "Extending ReproBench to multiple harnesses and a wider model pool"
+            "sentence_id": "S653",
+            "page": 26,
+            "section": "Conclusion",
+            "quote": "A provider that writes the agent’s objective can scale sanctions without the wealth and"
           }
         }
       ],
-      "findings": [
+      "findings": [],
+      "triplets": []
+    },
+    {
+      "paper_id": "arxiv_2609.32700v1",
+      "title": "CAIRN: Dynamic Fact-Intent DAGs for Multi-Agent Exploration",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2609.32700v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
         {
-          "finding": "low overall success rate",
-          "metric": "success rate",
-          "result": "low",
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
+          "type": "model",
+          "role": "proposed",
           "provenance": {
-            "sentence_id": "S11",
+            "sentence_id": "S4",
             "page": 1,
-            "section": "Abstract",
-            "quote": "low overall success rate"
+            "section": "ABSTRACT",
+            "quote": "LLM-powered autonomous systems have demonstrated promising capabilities in mathematical reasoning, engineering, and cybersecurity."
           }
         }
-      ]
+      ],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [
+        {
+          "text": "CAIRN: DYNAMIC FACT–INTENT DAGS FOR MULTIAGENT EXPLORATION",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S1",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "CAIRN: DYNAMIC FACT–INTENT DAGS FOR MULTIAGENT EXPLORATION"
+          }
+        },
+        {
+          "text": "Zuyao Xu†∥ Yuyang Jia‡∥ Junwei Guan† Xiang Li†* Kaiwen Shen§ Zhiqiang Dong‡",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S2",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "Zuyao Xu†∥ Yuyang Jia‡∥ Junwei Guan† Xiang Li†* Kaiwen Shen§ Zhiqiang Dong‡"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "In this paper, we present CAIRN, a paradigm for coordinating multi-agent exploration through a shared FACT–INTENT DAG.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S305",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "In this paper, we present CAIRN, a paradigm for coordinating multi-agent exploration through a shared FACT–INTENT DAG."
+          }
+        },
+        {
+          "text": "Our evaluation on FrontierMath and Cybench reveals a task-dependent",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S306",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "Our evaluation on FrontierMath and Cybench reveals a task-dependent"
+          }
+        }
+      ],
+      "findings": [],
+      "triplets": []
     },
     {
       "paper_id": "arxiv_2610.01949v1",
@@ -2684,95 +1216,19 @@
       "error_message": null,
       "methods": [
         {
-          "name": "Autoencoder Feature Extractor",
-          "normalized_name": "Autoencoder Feature Extractor",
+          "name": "Support Vector Machine",
+          "normalized_name": "Support Vector Machine",
           "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S14",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "To address these challenges, this paper proposes a hybrid deep learning framework that combines an Autoencoder Feature Extractor (AFE) with a Model Agnostic Meta Learning (MAML) classifier for few sho"
-          }
-        },
-        {
-          "name": "AFE",
-          "normalized_name": "Afe",
-          "type": "model",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S14",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "To address these challenges, this paper proposes a hybrid deep learning framework that combines an Autoencoder Feature Extractor (AFE) with a Model Agnostic Meta Learning (MAML) classifier for few sho"
-          }
-        },
-        {
-          "name": "Model Agnostic Meta Learning",
-          "normalized_name": "Model Agnostic Meta Learning",
-          "type": "model",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S14",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "To address these challenges, this paper proposes a hybrid deep learning framework that combines an Autoencoder Feature Extractor (AFE) with a Model Agnostic Meta Learning (MAML) classifier for few sho"
-          }
-        },
-        {
-          "name": "MAML",
-          "normalized_name": "Maml",
-          "type": "model",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S14",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "To address these challenges, this paper proposes a hybrid deep learning framework that combines an Autoencoder Feature Extractor (AFE) with a Model Agnostic Meta Learning (MAML) classifier for few sho"
-          }
-        }
-      ],
-      "datasets": [
-        {
-          "name": "Experiments",
-          "normalized_name": "Experiments",
-          "modality": "Clinical Data",
-          "usage": "evaluation",
-          "samples": "N/A",
-          "provenance": {
-            "sentence_id": "S16",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "Experiments conducted on the Ransomware Dataset 2024 demonstrate the effectiveness of the framework in binary classification tasks."
-          }
-        },
-        {
-          "name": "Ransomware Dataset 2024",
-          "normalized_name": "Ransomware Dataset 2024",
-          "modality": "Clinical Data",
-          "usage": "evaluation",
-          "samples": "N/A",
-          "provenance": {
-            "sentence_id": "S16",
-            "page": 1,
-            "section": "Abstract",
-            "quote": "Experiments conducted on the Ransomware Dataset 2024 demonstrate the effectiveness of the framework in binary classification tasks."
-          }
-        },
-        {
-          "name": "The Healthcare",
-          "normalized_name": "The Healthcare",
-          "modality": "Clinical Data",
-          "usage": "evaluation",
-          "samples": "N/A",
-          "provenance": {
-            "sentence_id": "S31",
+            "sentence_id": "S37",
             "page": 1,
             "section": "INTRODUCTION",
-            "quote": "The Healthcare and Public Health sector recorded the highest number of reported cyber incidents in 2024, including 238 ransomware attacks and 206 data breaches, while the Critical Manufacturing sector"
+            "quote": "Machine learning (ML) models such as Decision Trees (DT) and Support Vector Machines (SVM) are effective in improving the accuracy of detection while "
           }
         }
       ],
+      "datasets": [],
       "literature_sources": [],
       "limitations": [
         {
@@ -2798,27 +1254,98 @@
       ],
       "future_work": [
         {
+          "text": "The results indicate that this proposed framework provides a robust foundation for future research, including multi-class malware detection and obfusc",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S211",
+            "page": 8,
+            "section": "CONCLUSION",
+            "quote": "The results indicate that this proposed framework provides a robust foundation for future research, including multi-class malware detection and obfusc"
+          }
+        },
+        {
           "text": "In this paper, we introduced a hybrid architecture that combines an Autoencoder Feature Extractor with a ModelAgnostic Meta-Learning classifier to add",
           "category": "methodological_extension",
           "provenance": {
             "sentence_id": "S206",
             "page": 7,
             "section": "CONCLUSION",
-            "quote": "In this paper, we introduced a hybrid architecture that combines an Autoencoder Feature Extractor with a ModelAgnostic Meta-Learning classifier to address the problem of few-shot malware detection for"
-          }
-        },
-        {
-          "text": "This approach takes advantage of the autoencoder’s ability to create compact and informative feature representations which enable the MAML classifier ",
-          "category": "methodological_extension",
-          "provenance": {
-            "sentence_id": "S207",
-            "page": 7,
-            "section": "CONCLUSION",
-            "quote": "This approach takes advantage of the autoencoder’s ability to create compact and informative feature representations which enable the MAML classifier to rapidly adapt to new, unseen threats with minim"
+            "quote": "In this paper, we introduced a hybrid architecture that combines an Autoencoder Feature Extractor with a ModelAgnostic Meta-Learning classifier to add"
           }
         }
       ],
-      "findings": []
+      "findings": [],
+      "triplets": []
+    },
+    {
+      "paper_id": "arxiv_2609.34450v1",
+      "title": "ReproBench: Benchmarking LLM Agents on Reproducing Vulnerability From Scratch",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2609.34450v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S36",
+            "page": 2,
+            "section": "Abstract",
+            "quote": "• We formulate CVE-only vulnerability reproduction as a from-scratch, long-horizon LLM agent task, and introduce the pre/post-environment distinction."
+          }
+        }
+      ],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [
+        {
+          "text": "Finally, we also report the computational cost of each model in our appendix, including per-run token consumption, API cost, and execution time across",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S176",
+            "page": 5,
+            "section": "Experimental Design",
+            "quote": "Finally, we also report the computational cost of each model in our appendix, including per-run token consumption, API cost, and execution time across"
+          }
+        },
+        {
+          "text": "The observation that stronger models do not necessarily substitute less indicates that simulation is driven by task difficulty and behavioral defaults",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S252",
+            "page": 7,
+            "section": "Reproduction Phase",
+            "quote": "The observation that stronger models do not necessarily substitute less indicates that simulation is driven by task difficulty and behavioral defaults"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "6.2 Limitations and Future Work Dataset scope.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S253",
+            "page": 7,
+            "section": "Reproduction Phase",
+            "quote": "6.2 Limitations and Future Work Dataset scope."
+          }
+        },
+        {
+          "text": "This balance does not mirror the natural distribution of IoT weaknesses, and we can select more CVEs in our future work.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S255",
+            "page": 7,
+            "section": "Reproduction Phase",
+            "quote": "This balance does not mirror the natural distribution of IoT weaknesses, and we can select more CVEs in our future work."
+          }
+        }
+      ],
+      "findings": [],
+      "triplets": []
     },
     {
       "paper_id": "W4416258147",
@@ -2827,160 +1354,55 @@
       "pdf_path": "data/pdfs\\W4416258147.pdf",
       "status": "SUCCESS",
       "error_message": null,
-      "methods": [
-        {
-          "name": "Landlock",
-          "normalized_name": "Landlock",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S307",
-            "page": 8,
-            "section": "CONCLUSION",
-            "quote": "Landlock and Seccomp are promising technologies when it comes to securing scientific applications"
-          }
-        },
-        {
-          "name": "Seccomp",
-          "normalized_name": "Seccomp",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S307",
-            "page": 8,
-            "section": "CONCLUSION",
-            "quote": "Landlock and Seccomp are promising technologies when it comes to securing scientific applications"
-          }
-        },
-        {
-          "name": "Landlock/Seccomp",
-          "normalized_name": "Landlock/Seccomp",
-          "type": "framework",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S307",
-            "page": 8,
-            "section": "CONCLUSION",
-            "quote": "Landlock and Seccomp are promising technologies when it comes to securing scientific applications"
-          }
-        },
-        {
-          "name": "Custos",
-          "normalized_name": "Custos",
-          "type": "framework",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S52",
-            "page": 2,
-            "section": "RELATED WORK",
-            "quote": "Custos a multi-tenant security middleware layer"
-          }
-        },
-        {
-          "name": "MPI_Send",
-          "normalized_name": "Mpi_Send",
-          "type": "algorithm",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S191",
-            "page": 5,
-            "section": "IMPLEMENTATION AND TESTING",
-            "quote": "testing very basic MPI codes that exchange simple messages"
-          }
-        },
-        {
-          "name": "MPI_Recv",
-          "normalized_name": "Mpi_Recv",
-          "type": "algorithm",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S191",
-            "page": 5,
-            "section": "IMPLEMENTATION AND TESTING",
-            "quote": "testing very basic MPI codes that exchange simple messages"
-          }
-        }
-      ],
+      "methods": [],
       "datasets": [],
-      "literature_sources": [
-        {
-          "name": "Custos",
-          "normalized_name": "Custos",
-          "provenance": {
-            "sentence_id": "S52",
-            "page": 2,
-            "section": "RELATED WORK",
-            "quote": "Custos a multi-tenant security middleware layer"
-          }
-        },
-        {
-          "name": "container security survey",
-          "normalized_name": "Container Security Survey",
-          "provenance": {
-            "sentence_id": "S61",
-            "page": 2,
-            "section": "RELATED WORK",
-            "quote": "comprehensive survey of container security organizing Linux kernel confinement primitives"
-          }
-        }
-      ],
+      "literature_sources": [],
       "limitations": [
         {
-          "text": "Seccomp filter cannot safely dereference pointer arguments",
+          "text": "It would be a significant limitation if gateways were not allowed to accept such data.",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S59",
+            "page": 2,
+            "section": "RELATED WORK",
+            "quote": "It would be a significant limitation if gateways were not allowed to accept such data."
+          }
+        },
+        {
+          "text": "Its main limitation for our purposes is that filter programs cannot safely dereference pointer arguments, so a seccomp filter cannot tell whether an o",
           "category": "general",
           "provenance": {
             "sentence_id": "S78",
             "page": 2,
             "section": "SECURITY TOOLS AND METHODOLOGIES",
-            "quote": "filter programs cannot safely dereference pointer arguments, so a seccomp filter cannot tell"
-          }
-        },
-        {
-          "text": "Landlock does not restrict UDP communication",
-          "category": "general",
-          "provenance": {
-            "sentence_id": "S133",
-            "page": 4,
-            "section": "SECURITY TOOLS AND METHODOLOGIES",
-            "quote": "Landlock’s primary weakness is that it does not restrict UDP communication"
-          }
-        },
-        {
-          "text": "Landlock/Seccomp provides no protection against denial of service attacks",
-          "category": "general",
-          "provenance": {
-            "sentence_id": "S313",
-            "page": 9,
-            "section": "CONCLUSION",
-            "quote": "Landlock/Seccomp provides no protection against denial of service attacks"
+            "quote": "Its main limitation for our purposes is that filter programs cannot safely dereference pointer arguments, so a seccomp filter cannot tell whether an o"
           }
         }
       ],
-      "future_work": [],
-      "findings": [
+      "future_work": [
         {
-          "finding": "Landlock and Seccomp are promising technologies for securing scientific applications",
-          "metric": "security",
-          "result": "promising",
+          "text": "Landlock and Seccomp are promising technologies when it comes to securing scientific applications for use in science gateways, especially when used in",
+          "category": "methodological_extension",
           "provenance": {
             "sentence_id": "S307",
             "page": 8,
             "section": "CONCLUSION",
-            "quote": "Landlock and Seccomp are promising technologies when it comes to securing scientific applications"
+            "quote": "Landlock and Seccomp are promising technologies when it comes to securing scientific applications for use in science gateways, especially when used in"
           }
         },
         {
-          "finding": "Invoking Landlock/Seccomp after MPI startup effectively secures code against exploits",
-          "metric": "exploit protection",
-          "result": "effective",
+          "text": "Because many science gateways make large, mature, complex C/C++ and Fortran codes available as open source on the web, they pose a potentially severe ",
+          "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S312",
-            "page": 9,
+            "sentence_id": "S308",
+            "page": 8,
             "section": "CONCLUSION",
-            "quote": "modifying such codes to invoke Landlock/Seccomp after MPI startup effectively secures the code"
+            "quote": "Because many science gateways make large, mature, complex C/C++ and Fortran codes available as open source on the web, they pose a potentially severe "
           }
         }
-      ]
+      ],
+      "findings": [],
+      "triplets": []
     },
     {
       "paper_id": "arxiv_2610.01009v1",
@@ -2989,108 +1411,55 @@
       "pdf_path": "data/pdfs\\arxiv_2610.01009v1.pdf",
       "status": "SUCCESS",
       "error_message": null,
-      "methods": [
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [
         {
-          "name": "Helol tunnel",
-          "normalized_name": "Helol Tunnel",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S29",
-            "page": 1,
-            "section": "Introduction",
-            "quote": "we present our proposed covert channel method, Helol tunnel"
-          }
-        },
-        {
-          "name": "Helol tunnel",
-          "normalized_name": "Helol Tunnel",
-          "type": "algorithm",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S116",
-            "page": 4,
-            "section": "Proposed TLS CHLO Covert Channel",
-            "quote": "the Helol tunnel starts with a probing phase"
-          }
-        },
-        {
-          "name": "SNICat",
-          "normalized_name": "Snicat",
-          "type": "algorithm",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S216",
-            "page": 7,
-            "section": "Paths to Remediation",
-            "quote": "throughput distribution for the SNICat method"
-          }
-        }
-      ],
-      "datasets": [
-        {
-          "name": "Trisul's JA3 database",
-          "normalized_name": "Trisul'S Ja3 Database",
-          "modality": "network_traffic",
-          "usage": "evaluation",
-          "samples": null,
-          "provenance": {
-            "sentence_id": "S192",
-            "page": 6,
-            "section": "Paths to Remediation",
-            "quote": "364 common application ﬁngerprints in Trisul’s JA3 database"
-          }
-        }
-      ],
-      "literature_sources": [
-        {
-          "name": "Heinz et al.",
-          "normalized_name": "Heinz Et Al.",
+          "text": "Heinz et al. in [17], [18] have identiﬁed several potential TLS covert channel schemes, such as embedding data in the TLS CHLO initialization vector, ",
+          "category": "general",
           "provenance": {
             "sentence_id": "S66",
             "page": 2,
             "section": "Introduction",
-            "quote": "Heinz et al. in [17], [18] have identiﬁed several potential TLS covert channel schemes"
+            "quote": "Heinz et al. in [17], [18] have identiﬁed several potential TLS covert channel schemes, such as embedding data in the TLS CHLO initialization vector, "
           }
-        }
-      ],
-      "limitations": [
+        },
         {
-          "text": "Mitigation strategies involving NGFW reconfiguration can degrade the performance of network applications.",
+          "text": "The mitigation strategies suggested in this study involve NGFW reconﬁguration of TLS CHLO packets that can degrade the performance of network applicat",
           "category": "general",
           "provenance": {
             "sentence_id": "S225",
             "page": 7,
             "section": "Conclusion",
-            "quote": "can degrade the performance of network applications"
+            "quote": "The mitigation strategies suggested in this study involve NGFW reconﬁguration of TLS CHLO packets that can degrade the performance of network applicat"
           }
         }
       ],
       "future_work": [
         {
-          "text": "Explore alternative methods of disrupting Helol tunnel using emerging ML models in TLS fingerprinting.",
+          "text": "In conclusion, this research has demonstrated the potential to exploit the combinatorial properties of cryptographic",
           "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S226",
+            "sentence_id": "S219",
             "page": 7,
             "section": "Conclusion",
-            "quote": "explore alternative methods of disrupting Helol tunnel"
+            "quote": "In conclusion, this research has demonstrated the potential to exploit the combinatorial properties of cryptographic"
+          }
+        },
+        {
+          "text": "parameters in the TLS Client Hello for data exﬁltration.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S220",
+            "page": 7,
+            "section": "Conclusion",
+            "quote": "parameters in the TLS Client Hello for data exﬁltration."
           }
         }
       ],
-      "findings": [
-        {
-          "finding": "Helol tunnel successfully evades modern Next-Generation Firewalls with advanced TLS proxy and data protection.",
-          "metric": "evasion_success",
-          "result": "successful",
-          "provenance": {
-            "sentence_id": "S221",
-            "page": 7,
-            "section": "Conclusion",
-            "quote": "leading to successful evasion of modern Next-Generation Firewalls"
-          }
-        }
-      ]
+      "findings": [],
+      "triplets": []
     },
     {
       "paper_id": "arxiv_2610.00759v1",
@@ -3101,123 +1470,105 @@
       "error_message": null,
       "methods": [
         {
-          "name": "zero-shot policy transfer",
-          "normalized_name": "Zero-Shot Policy Transfer",
-          "type": "algorithm",
+          "name": "Large Language Model",
+          "normalized_name": "Large Language Model",
+          "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S164",
-            "page": 6,
-            "section": "Experimental Setup",
-            "quote": "zero-shot policy transfer from MA to MB using PPO"
+            "sentence_id": "S47",
+            "page": 3,
+            "section": "Related Work",
+            "quote": "Reinforcement learning-based agents have been one prominent type of autonomous cyber agent, alongside heuristic and LLM agents [10,2]."
           }
         },
         {
-          "name": "PPO",
-          "normalized_name": "Ppo",
-          "type": "algorithm",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S164",
-            "page": 6,
-            "section": "Experimental Setup",
-            "quote": "zero-shot policy transfer from MA to MB using PPO"
-          }
-        },
-        {
-          "name": "kill-chain-based feature translator",
-          "normalized_name": "kill-chain-based feature translator",
-          "type": "architecture",
+          "name": "Reinforcement Learning",
+          "normalized_name": "Reinforcement Learning",
+          "type": "model",
           "role": "proposed",
           "provenance": {
-            "sentence_id": "S251",
-            "page": 11,
-            "section": "Conclusion and Future Work",
-            "quote": "kill-chain-based feature translator with a domain-adaptive encoder"
-          }
-        },
-        {
-          "name": "domain-adaptive encoder",
-          "normalized_name": "Domain-Adaptive Encoder",
-          "type": "architecture",
-          "role": "proposed",
-          "provenance": {
-            "sentence_id": "S251",
-            "page": 11,
-            "section": "Conclusion and Future Work",
-            "quote": "kill-chain-based feature translator with a domain-adaptive encoder"
-          }
-        },
-        {
-          "name": "index-aligned padding of states and actions",
-          "normalized_name": "index-aligned padding of states and actions",
-          "type": "algorithm",
-          "role": "baseline",
-          "provenance": {
-            "sentence_id": "S165",
-            "page": 6,
-            "section": "Experimental Setup",
-            "quote": "zero-shot transfer via index-aligned padding of states and actions"
+            "sentence_id": "S47",
+            "page": 3,
+            "section": "Related Work",
+            "quote": "Reinforcement learning-based agents have been one prominent type of autonomous cyber agent, alongside heuristic and LLM agents [10,2]."
           }
         }
       ],
-      "datasets": [],
+      "datasets": [
+        {
+          "name": "Cyberwheel",
+          "normalized_name": "Cyberwheel",
+          "modality": "Benchmark",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S84",
+            "page": 4,
+            "section": "SPLIT",
+            "quote": "- trained on CyberWheel - runs unchanged at transfer"
+          }
+        }
+      ],
       "literature_sources": [],
       "limitations": [
         {
-          "text": "cyber simulators differ substantially in their state representations, observation models, and action spaces",
-          "category": "generalization",
+          "text": "This limitation hinders both deployment and fair comparison, as cyber simulators differ substantially in their state representations, observation mode",
+          "category": "general",
           "provenance": {
             "sentence_id": "S7",
             "page": 1,
             "section": "Abstract",
-            "quote": "cyber simulators differ substantially in their state representations, observation models, and action spaces"
+            "quote": "This limitation hinders both deployment and fair comparison, as cyber simulators differ substantially in their state representations, observation mode"
           }
         },
         {
-          "text": "policy degrades sharply once topology changes",
-          "category": "generalization",
+          "text": "A policy trained on a specific network topology learns to exploit that topology’s specifications, e.g. , its subnet layout, service configuration, and",
+          "category": "general",
           "provenance": {
             "sentence_id": "S24",
             "page": 2,
             "section": "Introduction",
-            "quote": "policy degrades sharply once they change"
-          }
-        },
-        {
-          "text": "agents act over abstract state and action spaces fixed at training time",
-          "category": "generalization",
-          "provenance": {
-            "sentence_id": "S25",
-            "page": 2,
-            "section": "Introduction",
-            "quote": "agents act over abstract state and action spaces fixed at training time"
-          }
-        },
-        {
-          "text": "real environments introduce exploit version mismatches and non-deterministic service behavior",
-          "category": "generalization",
-          "provenance": {
-            "sentence_id": "S255",
-            "page": 12,
-            "section": "Conclusion and Future Work",
-            "quote": "real environments introduce exploit version mismatches and non-deterministic service behavior"
+            "quote": "A policy trained on a specific network topology learns to exploit that topology’s specifications, e.g. , its subnet layout, service configuration, and"
           }
         }
       ],
       "future_work": [
         {
-          "text": "Closing this sim-to-emulation gap is the natural next step",
+          "text": "We present a method for zero-shot policy transfer across cybersecurity simulators combining a kill-chain-based feature translator with a domain-adapti",
           "category": "methodological_extension",
           "provenance": {
-            "sentence_id": "S256",
-            "page": 12,
+            "sentence_id": "S251",
+            "page": 11,
             "section": "Conclusion and Future Work",
-            "quote": "Closing this sim-to-emulation gap is the natural next step"
+            "quote": "We present a method for zero-shot policy transfer across cybersecurity simulators combining a kill-chain-based feature translator with a domain-adapti"
+          }
+        },
+        {
+          "text": "Together these components bridge both structural and distributional gaps between environments without retraining the source policy.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S252",
+            "page": 11,
+            "section": "Conclusion and Future Work",
+            "quote": "Together these components bridge both structural and distributional gaps between environments without retraining the source policy."
           }
         }
       ],
-      "findings": []
+      "findings": [],
+      "triplets": [
+        {
+          "subject": "Large Language Model",
+          "predicate": "EVALUATED_ON",
+          "object": "Cyberwheel",
+          "metric": "Accuracy/F1",
+          "value": "Reported",
+          "sentence_id": "S84",
+          "page": 4,
+          "section": "SPLIT",
+          "quote": "- trained on CyberWheel - runs unchanged at transfer",
+          "confidence": 0.9
+        }
+      ]
     }
   ]
 }
