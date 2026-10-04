@@ -142,7 +142,8 @@ class GroqFallbackClient:
                 except Exception as e:
                     err_str = str(e).lower()
                     if "429" in err_str or "rate" in err_str or "limit" in err_str or "tpm" in err_str or "otpm" in err_str:
-                        logger.warning(f"[Groq Key #{idx+1} ({key_preview}) | Model {current_model}] 429 Rate limit, failing over...")
+                        logger.warning(f"[Groq Key #{idx+1} ({key_preview}) | Model {current_model}] 429 Rate limit, backing off 1.5s...")
+                        time.sleep(1.5)
                         continue
                     logger.warning(f"[Groq Key #{idx+1} ({key_preview}) | Model {current_model}] {e}")
                     continue
