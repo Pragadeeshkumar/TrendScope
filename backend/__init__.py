@@ -1,0 +1,3 @@
+"""
+TrendScope Backend Module
+"""

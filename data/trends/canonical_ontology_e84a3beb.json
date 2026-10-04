@@ -1,0 +1,1341 @@
+[
+  {
+    "canonical_id": "canon_method_hc_dlm",
+    "canonical_name": "Hc-Dlm",
+    "alias": "HC-DLM",
+    "entity_type": "method",
+    "family": "Hc-Dlm Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02193v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_autoregressive_arm__w_o_ordering_",
+    "canonical_name": "Autoregressive Arm (W/O Ordering)",
+    "alias": "Autoregressive ARM (w/o ordering)",
+    "entity_type": "method",
+    "family": "Autoregressive Arm (W/O Ordering) Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02193v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_autoregressive_arm__with_ordering_",
+    "canonical_name": "Autoregressive Arm (With Ordering)",
+    "alias": "Autoregressive ARM (with ordering)",
+    "entity_type": "method",
+    "family": "Autoregressive Arm (With Ordering) Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02193v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_mdm__vanilla_",
+    "canonical_name": "Mdm (Vanilla)",
+    "alias": "MDM (vanilla)",
+    "entity_type": "method",
+    "family": "Mdm (Vanilla) Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02193v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_mdm__top_prob__",
+    "canonical_name": "Mdm (Top‑Prob.)",
+    "alias": "MDM (top‑prob.)",
+    "entity_type": "method",
+    "family": "Mdm (Top‑Prob.) Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02193v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_langflow",
+    "canonical_name": "Langflow",
+    "alias": "LangFlow",
+    "entity_type": "method",
+    "family": "Langflow Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02193v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_plaid",
+    "canonical_name": "Plaid",
+    "alias": "Plaid",
+    "entity_type": "method",
+    "family": "Plaid Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02193v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_sudoku",
+    "canonical_name": "Sudoku",
+    "alias": "Sudoku",
+    "entity_type": "dataset",
+    "family": "Sudoku Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02193v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_countdown",
+    "canonical_name": "Countdown",
+    "alias": "Countdown",
+    "entity_type": "dataset",
+    "family": "Countdown Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02193v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_lm1b",
+    "canonical_name": "Lm1B",
+    "alias": "LM1B",
+    "entity_type": "dataset",
+    "family": "Lm1B Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02193v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_specter2",
+    "canonical_name": "Specter2",
+    "alias": "SPECTER2",
+    "entity_type": "method",
+    "family": "Specter2 Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_openscholar",
+    "canonical_name": "Openscholar",
+    "alias": "OpenScholar",
+    "entity_type": "method",
+    "family": "Openscholar Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_gemini_embedding_2",
+    "canonical_name": "Gemini-Embedding-2",
+    "alias": "Gemini-Embedding-2",
+    "entity_type": "method",
+    "family": "Gemini-Embedding-2 Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_gemini_3_7_flash",
+    "canonical_name": "Gemini 3.7 Flash",
+    "alias": "Gemini 3.7 Flash",
+    "entity_type": "method",
+    "family": "Gemini 3.7 Flash Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_clinical_large_language_model",
+    "canonical_name": "Clinical Large Language Model",
+    "alias": "GPT-4.1",
+    "entity_type": "method",
+    "family": "Clinical Foundation LLMs",
+    "paradigm": "Foundation Models & LLMs",
+    "reason": "Generative clinical LLM",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_scholarcatalyst",
+    "canonical_name": "Scholarcatalyst",
+    "alias": "SCHOLARCATALYST",
+    "entity_type": "dataset",
+    "family": "Scholarcatalyst Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_arxiv",
+    "canonical_name": "Arxiv",
+    "alias": "arXiv",
+    "entity_type": "literature_source",
+    "family": "Arxiv Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_imagenet",
+    "canonical_name": "Imagenet",
+    "alias": "ImageNet",
+    "entity_type": "dataset",
+    "family": "Imagenet Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_kaggle_arxiv_datasets",
+    "canonical_name": "Kaggle Arxiv Datasets",
+    "alias": "kaggle arXiv datasets",
+    "entity_type": "dataset",
+    "family": "Kaggle Arxiv Datasets Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_singh_et_al____2022",
+    "canonical_name": "Singh Et Al. , 2022",
+    "alias": "Singh et al. , 2022",
+    "entity_type": "literature_source",
+    "family": "Singh Et Al. , 2022 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_asai_et_al____2024",
+    "canonical_name": "Asai Et Al. , 2024",
+    "alias": "Asai et al. , 2024",
+    "entity_type": "literature_source",
+    "family": "Asai Et Al. , 2024 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_google_deepmind__2026c",
+    "canonical_name": "Google Deepmind, 2026C",
+    "alias": "Google DeepMind, 2026c",
+    "entity_type": "literature_source",
+    "family": "Google Deepmind, 2026C Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_gao_et_al____2023",
+    "canonical_name": "Gao Et Al. , 2023",
+    "alias": "Gao et al. , 2023",
+    "entity_type": "literature_source",
+    "family": "Gao Et Al. , 2023 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_russakovsky_et_al____2015",
+    "canonical_name": "Russakovsky Et Al. , 2015",
+    "alias": "Russakovsky et al. , 2015",
+    "entity_type": "literature_source",
+    "family": "Russakovsky Et Al. , 2015 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_beyer_et_al____2020",
+    "canonical_name": "Beyer Et Al. , 2020",
+    "alias": "Beyer et al. , 2020",
+    "entity_type": "literature_source",
+    "family": "Beyer Et Al. , 2020 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_shankar_et_al____2020",
+    "canonical_name": "Shankar Et Al. , 2020",
+    "alias": "Shankar et al. , 2020",
+    "entity_type": "literature_source",
+    "family": "Shankar Et Al. , 2020 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_lo_et_al____2020",
+    "canonical_name": "Lo Et Al. , 2020",
+    "alias": "Lo et al. , 2020",
+    "entity_type": "literature_source",
+    "family": "Lo Et Al. , 2020 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02202v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_ferpo",
+    "canonical_name": "Ferpo",
+    "alias": "FERPO",
+    "entity_type": "method",
+    "family": "Ferpo Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02198v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_reppo",
+    "canonical_name": "Reppo",
+    "alias": "REPPO",
+    "entity_type": "method",
+    "family": "Reppo Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02198v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_cheetahrun",
+    "canonical_name": "Cheetahrun",
+    "alias": "CheetahRun",
+    "entity_type": "dataset",
+    "family": "Cheetahrun Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02198v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_acrobotswingupsparse",
+    "canonical_name": "Acrobotswingupsparse",
+    "alias": "AcrobotSwingupSparse",
+    "entity_type": "dataset",
+    "family": "Acrobotswingupsparse Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02198v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_voelcker_et_al___2026",
+    "canonical_name": "Voelcker Et Al., 2026",
+    "alias": "Voelcker et al., 2026",
+    "entity_type": "literature_source",
+    "family": "Voelcker Et Al., 2026 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02198v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_reconstruct__practice__go_real__rpg_",
+    "canonical_name": "Reconstruct, Practice, Go Real (Rpg)",
+    "alias": "Reconstruct, Practice, Go Real (RPG)",
+    "entity_type": "method",
+    "family": "Reconstruct, Practice, Go Real (Rpg) Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02204v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_agent_as_policy",
+    "canonical_name": "Agent-As-Policy",
+    "alias": "Agent-as-Policy",
+    "entity_type": "method",
+    "family": "Agent-As-Policy Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02204v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_runtime_agent",
+    "canonical_name": "Runtime Agent",
+    "alias": "Runtime Agent",
+    "entity_type": "method",
+    "family": "Runtime Agent Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02204v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_gemini_3_8_flash",
+    "canonical_name": "Gemini 3.8 Flash",
+    "alias": "Gemini 3.8 Flash",
+    "entity_type": "method",
+    "family": "Gemini 3.8 Flash Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02204v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_aspire",
+    "canonical_name": "Aspire",
+    "alias": "ASPIRE",
+    "entity_type": "method",
+    "family": "Aspire Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02204v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_cap_agent0",
+    "canonical_name": "Cap-Agent0",
+    "alias": "CaP-Agent0",
+    "entity_type": "method",
+    "family": "Cap-Agent0 Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02204v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_clinical_large_language_model",
+    "canonical_name": "Clinical Large Language Model",
+    "alias": "GPT-6 Astra Pro",
+    "entity_type": "method",
+    "family": "Clinical Foundation LLMs",
+    "paradigm": "Foundation Models & LLMs",
+    "reason": "Generative clinical LLM",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2610.02204v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_privileged_agent",
+    "canonical_name": "Privileged Agent",
+    "alias": "Privileged Agent",
+    "entity_type": "method",
+    "family": "Privileged Agent Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02204v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_cap_x",
+    "canonical_name": "Cap-X",
+    "alias": "CaP-X",
+    "entity_type": "dataset",
+    "family": "Cap-X Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02204v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_abc",
+    "canonical_name": "Abc",
+    "alias": "ABC",
+    "entity_type": "dataset",
+    "family": "Abc Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02204v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_vista",
+    "canonical_name": "Vista",
+    "alias": "VISTA",
+    "entity_type": "method",
+    "family": "Vista Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02200v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_babyvision",
+    "canonical_name": "Babyvision",
+    "alias": "BabyVision",
+    "entity_type": "dataset",
+    "family": "Babyvision Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02200v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_arc_agi_3",
+    "canonical_name": "Arc-Agi-3",
+    "alias": "ARC-AGI-3",
+    "entity_type": "dataset",
+    "family": "Arc-Agi-3 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02200v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_babyvision",
+    "canonical_name": "Babyvision",
+    "alias": "BabyVision",
+    "entity_type": "literature_source",
+    "family": "Babyvision Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02200v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_arc_agi_3",
+    "canonical_name": "Arc-Agi-3",
+    "alias": "ARC-AGI-3",
+    "entity_type": "literature_source",
+    "family": "Arc-Agi-3 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02200v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_softserve",
+    "canonical_name": "Softserve",
+    "alias": "SOFTSERVE",
+    "entity_type": "method",
+    "family": "Softserve Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_quasi_newton__qn__methods",
+    "canonical_name": "Quasi-Newton (Qn) Methods",
+    "alias": "Quasi-Newton (QN) methods",
+    "entity_type": "method",
+    "family": "Quasi-Newton (Qn) Methods Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_diagonal_and_kroneckerfactored_variants",
+    "canonical_name": "Diagonal And Kroneckerfactored Variants",
+    "alias": "diagonal and Kroneckerfactored variants",
+    "entity_type": "method",
+    "family": "Diagonal And Kroneckerfactored Variants Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_kroneckerstructured_updates",
+    "canonical_name": "Kroneckerstructured Updates",
+    "alias": "Kroneckerstructured updates",
+    "entity_type": "method",
+    "family": "Kroneckerstructured Updates Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_bfgs",
+    "canonical_name": "Bfgs",
+    "alias": "BFGS",
+    "entity_type": "method",
+    "family": "Bfgs Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_newton_schulz",
+    "canonical_name": "Newton-Schulz",
+    "alias": "Newton-Schulz",
+    "entity_type": "method",
+    "family": "Newton-Schulz Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_adam",
+    "canonical_name": "Adam",
+    "alias": "Adam",
+    "entity_type": "method",
+    "family": "Adam Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_muon",
+    "canonical_name": "Muon",
+    "alias": "Muon",
+    "entity_type": "method",
+    "family": "Muon Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_soap",
+    "canonical_name": "Soap",
+    "alias": "SOAP",
+    "entity_type": "method",
+    "family": "Soap Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_k_fac",
+    "canonical_name": "K-Fac",
+    "alias": "K-FAC",
+    "entity_type": "method",
+    "family": "K-Fac Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_l_bfgs",
+    "canonical_name": "L-Bfgs",
+    "alias": "L-BFGS",
+    "entity_type": "method",
+    "family": "L-Bfgs Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_softserve_i",
+    "canonical_name": "Softserve-I",
+    "alias": "SOFTSERVE-I",
+    "entity_type": "method",
+    "family": "Softserve-I Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_mnist",
+    "canonical_name": "Mnist",
+    "alias": "MNIST",
+    "entity_type": "dataset",
+    "family": "Mnist Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_goldfarb_et_al____2020",
+    "canonical_name": "Goldfarb Et Al. , 2020",
+    "alias": "Goldfarb et al. , 2020",
+    "entity_type": "literature_source",
+    "family": "Goldfarb Et Al. , 2020 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_ren_et_al____2022",
+    "canonical_name": "Ren Et Al. , 2022",
+    "alias": "Ren et al. , 2022",
+    "entity_type": "literature_source",
+    "family": "Ren Et Al. , 2022 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_amsel_et_al____2026",
+    "canonical_name": "Amsel Et Al. , 2026",
+    "alias": "Amsel et al. , 2026",
+    "entity_type": "literature_source",
+    "family": "Amsel Et Al. , 2026 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_higham__2008",
+    "canonical_name": "Higham, 2008",
+    "alias": "Higham, 2008",
+    "entity_type": "literature_source",
+    "family": "Higham, 2008 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_hinton___salakhutdinov__2006",
+    "canonical_name": "Hinton & Salakhutdinov, 2006",
+    "alias": "Hinton & Salakhutdinov, 2006",
+    "entity_type": "literature_source",
+    "family": "Hinton & Salakhutdinov, 2006 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_martens__2010",
+    "canonical_name": "Martens, 2010",
+    "alias": "Martens, 2010",
+    "entity_type": "literature_source",
+    "family": "Martens, 2010 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02182v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_kalibench",
+    "canonical_name": "Kalibench",
+    "alias": "KaliBench",
+    "entity_type": "method",
+    "family": "Kalibench Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02206v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_multi_stage_verification_pipeline",
+    "canonical_name": "Multi-Stage Verification Pipeline",
+    "alias": "multi-stage verification pipeline",
+    "entity_type": "method",
+    "family": "Multi-Stage Verification Pipeline Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02206v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_supervised_fine_tuning",
+    "canonical_name": "Supervised Fine-Tuning",
+    "alias": "supervised fine-tuning",
+    "entity_type": "method",
+    "family": "Supervised Fine-Tuning Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02206v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_reinforcement_learning_with_verifiable_rewards",
+    "canonical_name": "reinforcement learning with verifiable rewards",
+    "alias": "reinforcement learning with verifiable rewards",
+    "entity_type": "method",
+    "family": "reinforcement learning with verifiable rewards Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02206v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_supervised_fine_tuning__sft_",
+    "canonical_name": "Supervised Fine-Tuning (Sft)",
+    "alias": "Supervised Fine-Tuning (SFT)",
+    "entity_type": "method",
+    "family": "Supervised Fine-Tuning (Sft) Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02206v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_reinforcement_learning_with_verifiable_rewards__rlvr_",
+    "canonical_name": "Reinforcement Learning with Verifiable Rewards (RLVR)",
+    "alias": "Reinforcement Learning with Verifiable Rewards (RLVR)",
+    "entity_type": "method",
+    "family": "Reinforcement Learning with Verifiable Rewards (RLVR) Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02206v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_kali_linux_toolset",
+    "canonical_name": "Kali Linux Toolset",
+    "alias": "Kali Linux toolset",
+    "entity_type": "dataset",
+    "family": "Kali Linux Toolset Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02206v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_preliminaries",
+    "canonical_name": "Preliminaries",
+    "alias": "Preliminaries",
+    "entity_type": "method",
+    "family": "Preliminaries Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02186v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_hgr",
+    "canonical_name": "Hgr",
+    "alias": "HGR",
+    "entity_type": "method",
+    "family": "Hgr Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02186v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_transformer",
+    "canonical_name": "Transformer",
+    "alias": "Grammar Transformer",
+    "entity_type": "method",
+    "family": "Attention Architectures",
+    "paradigm": "Deep Learning & Representation Learning",
+    "reason": "Base attention architecture",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2610.02186v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_ringdiv",
+    "canonical_name": "Ringdiv",
+    "alias": "RingDiv",
+    "entity_type": "dataset",
+    "family": "Ringdiv Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02186v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_ringdiv300k",
+    "canonical_name": "Ringdiv300K",
+    "alias": "RingDiv300k",
+    "entity_type": "dataset",
+    "family": "Ringdiv300K Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02186v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_public",
+    "canonical_name": "Public",
+    "alias": "Public",
+    "entity_type": "dataset",
+    "family": "Public Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02186v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_source",
+    "canonical_name": "Source",
+    "alias": "Source",
+    "entity_type": "dataset",
+    "family": "Source Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02186v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_gencine",
+    "canonical_name": "Gencine",
+    "alias": "GenCine",
+    "entity_type": "method",
+    "family": "Gencine Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02180v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_wan2_1_fun_v1_1_14b_control",
+    "canonical_name": "Wan2.1-Fun-V1.1-14B-Control",
+    "alias": "Wan2.1-Fun-V1.1-14B-Control",
+    "entity_type": "method",
+    "family": "Wan2.1-Fun-V1.1-14B-Control Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02180v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_pointodyssey",
+    "canonical_name": "Pointodyssey",
+    "alias": "PointOdyssey",
+    "entity_type": "dataset",
+    "family": "Pointodyssey Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02180v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_spatialvid_hq",
+    "canonical_name": "Spatialvid-Hq",
+    "alias": "SpatialVid-HQ",
+    "entity_type": "dataset",
+    "family": "Spatialvid-Hq Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02180v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_wan2_1_fun_v1_1_14b_control",
+    "canonical_name": "Wan2.1-Fun-V1.1-14B-Control",
+    "alias": "Wan2.1-Fun-V1.1-14B-Control",
+    "entity_type": "literature_source",
+    "family": "Wan2.1-Fun-V1.1-14B-Control Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02180v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_pointodyssey",
+    "canonical_name": "Pointodyssey",
+    "alias": "PointOdyssey",
+    "entity_type": "literature_source",
+    "family": "Pointodyssey Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02180v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_spatialvid_hq",
+    "canonical_name": "Spatialvid-Hq",
+    "alias": "SpatialVid-HQ",
+    "entity_type": "literature_source",
+    "family": "Spatialvid-Hq Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02180v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_cowtracker",
+    "canonical_name": "Cowtracker",
+    "alias": "CoWTracker",
+    "entity_type": "literature_source",
+    "family": "Cowtracker Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02180v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_dmad",
+    "canonical_name": "Dmad",
+    "alias": "DMAD",
+    "entity_type": "method",
+    "family": "Dmad Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_dmd2",
+    "canonical_name": "Dmd2",
+    "alias": "DMD2",
+    "entity_type": "method",
+    "family": "Dmd2 Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_edm",
+    "canonical_name": "Edm",
+    "alias": "EDM",
+    "entity_type": "method",
+    "family": "Edm Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_sdxl",
+    "canonical_name": "Sdxl",
+    "alias": "SDXL",
+    "entity_type": "method",
+    "family": "Sdxl Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_wan2_1_t2v_14b",
+    "canonical_name": "Wan2.1-T2V 14B",
+    "alias": "Wan2.1-T2V 14B",
+    "entity_type": "method",
+    "family": "Wan2.1-T2V 14B Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_minimax_h3",
+    "canonical_name": "Minimax-H3",
+    "alias": "MiniMax-H3",
+    "entity_type": "method",
+    "family": "Minimax-H3 Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_rcm",
+    "canonical_name": "Rcm",
+    "alias": "rCM",
+    "entity_type": "method",
+    "family": "Rcm Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_lora",
+    "canonical_name": "Lora",
+    "alias": "LoRA",
+    "entity_type": "method",
+    "family": "Lora Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_imagenet_64_64",
+    "canonical_name": "Imagenet-64×64",
+    "alias": "ImageNet-64×64",
+    "entity_type": "dataset",
+    "family": "Imagenet-64×64 Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_10k_coco_2014_prompts",
+    "canonical_name": "10K Coco 2014 Prompts",
+    "alias": "10K COCO 2014 prompts",
+    "entity_type": "dataset",
+    "family": "10K Coco 2014 Prompts Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_avgen_bench",
+    "canonical_name": "Avgen-Bench",
+    "alias": "AVGen-Bench",
+    "entity_type": "dataset",
+    "family": "Avgen-Bench Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_fréchet_inception_distance__fid_",
+    "canonical_name": "Fréchet Inception Distance (Fid)",
+    "alias": "Fréchet Inception Distance (FID)",
+    "entity_type": "literature_source",
+    "family": "Fréchet Inception Distance (Fid) Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_clip_score",
+    "canonical_name": "Clip Score",
+    "alias": "CLIP score",
+    "entity_type": "literature_source",
+    "family": "Clip Score Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_patch_fid",
+    "canonical_name": "Patch Fid",
+    "alias": "patch FID",
+    "entity_type": "literature_source",
+    "family": "Patch Fid Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_literature_source_vbench",
+    "canonical_name": "Vbench",
+    "alias": "VBench",
+    "entity_type": "literature_source",
+    "family": "Vbench Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2610.02188v1"
+    ]
+  }
+]

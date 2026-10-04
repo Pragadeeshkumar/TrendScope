@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendScope | Scientific Literature Intelligence Platform</title>
+  <meta name="description"
+    content="Turn scientific literature into clear insights. Explore research trends, methods, datasets, and gaps with evidence from real papers.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=7.0">
+</head>
+
+<body class="theme-light">
+  <div class="app-layout">
+
+    <!-- Left Navigation Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand" onclick="navigateTo('home')">
+          <svg class="brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect width="24" height="24" rx="6" fill="#2563EB" />
+            <path d="M7 16V14M12 16V8M17 16V11" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+          <span class="brand-text">Trend<span class="text-blue">Scope</span></span>
+        </div>
+        <button class="btn-icon sidebar-collapse-btn" title="Collapse Sidebar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="sidebar-action">
+        <button class="btn btn-primary btn-block" id="btnNewResearch">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+          New Research
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-nav="home" onclick="navigateTo('home')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          <span>Home</span>
+        </button>
+        <button class="nav-item" data-nav="explore" onclick="navigateTo('analysis')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <span>Explore</span>
+        </button>
+        <button class="nav-item" data-nav="library" onclick="navigateTo('library')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+          </svg>
+          <span>Library</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-section-title">Recent Research</div>
+      <div class="sidebar-history-list" id="sidebarHistoryList">
+        <div class="empty-history-notice" style="padding: 1.25rem 0.75rem; color: #94A3B8; font-size: 0.8rem; text-align: center; line-height: 1.4;">
+          No recent research sessions. Enter a prompt to start.
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="profile-widget">
+          <div class="profile-avatar">P</div>
+          <div class="profile-info">
+            <span class="profile-name">Researcher</span>
+            <span class="profile-role">Pro Account</span>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-wrapper">
+
+      <!-- Top Secondary Header -->
+      <header class="top-nav-bar">
+        <div class="top-nav-left" id="topNavBreadcrumbs">
+          <!-- Back button for analysis mode -->
+        </div>
+        <div class="top-nav-right">
+          <button class="nav-aux-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+            Help
+          </button>
+          <button class="nav-aux-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg>
+            Settings
+          </button>
+        </div>
+      </header>
+
+      <!-- VIEW 1: HOME / LANDING VIEW -->
+      <main class="page-content" id="viewHome">
+        <div class="home-container">
+
+          <!-- Hero Section -->
+          <div class="hero-section">
+            <h1 class="hero-brand">Trend<span class="text-blue">Scope</span></h1>
+            <h2 class="hero-title">Turn scientific literature into clear insights.</h2>
+            <p class="hero-subtitle">Explore research trends, methods, datasets, and gaps with evidence from real
+              papers.</p>
+
+            <!-- Search Cockpit -->
+            <div class="search-cockpit">
+              <div class="search-input-wrap">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input type="text" id="homeSearchInput"
+                  placeholder="Ask a research question or enter a scientific domain..."
+                  value="">
+                <button class="btn btn-primary btn-analyze" id="btnHomeAnalyze">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
+                  Analyze
+                </button>
+              </div>
+
+              <!-- Advanced Research Parameters (Paper Count & Year Range) -->
+              <div class="search-parameters-bar">
+                <div class="param-item">
+                  <label for="inputPaperCount">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                      <polyline points="14 2 14 8 20 8" />
+                    </svg>
+                    Papers to Retrieve:
+                  </label>
+                  <select id="inputPaperCount" class="param-select">
+                    <option value="10">10 Papers</option>
+                    <option value="20">20 Papers</option>
+                    <option value="40" selected>40 Papers (Target)</option>
+                    <option value="60">60 Papers</option>
+                    <option value="100">100 Papers</option>
+                  </select>
+                </div>
+
+                <div class="param-item">
+                  <label for="inputStartYear">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    Year Range:
+                  </label>
+                  <div class="year-range-inputs">
+                    <input type="number" id="inputStartYear" value="2024" min="2015" max="2026" class="year-input">
+                    <span class="year-sep">—</span>
+                    <input type="number" id="inputEndYear" value="2026" min="2015" max="2026" class="year-input">
+                  </div>
+                </div>
+
+                <div class="param-item">
+                  <label>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M2 12h20" />
+                    </svg>
+                    Sources:
+                  </label>
+                  <div class="sources-pill-group">
+                    <span class="source-tag active">arXiv</span>
+                    <span class="source-tag active">OpenAlex</span>
+                    <span class="source-tag active">PubMed</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Example Chips -->
+              <div class="example-chips-row">
+                <span class="example-label">Try an example:</span>
+                <button class="example-chip"
+                  onclick="handleSearch('Healthcare AI clinical decision support', 40, 2024, 2026)">Healthcare AI
+                  clinical decision support</button>
+                <button class="example-chip"
+                  onclick="handleSearch('Medical AI agents and multimodal clinical reasoning', 40, 2024, 2026)">Medical
+                  AI agents (40 Papers · 2024–2026)</button>
+                <button class="example-chip"
+                  onclick="handleSearch('Genomics oncology multi-omics and medical imaging AI', 40, 2024, 2026)">Genomics
+                  & Oncology AI</button>
+                <button class="example-chip"
+                  onclick="handleSearch('Clinical LLM evaluation and validation benchmarks', 40, 2024, 2026)">Clinical
+                  LLM evaluation</button>
+              </div>
+
+              <!-- Claude-Style Inline Thinking / Progress Banner -->
+              <div class="claude-thinking-card" id="claudeThinkingCard" style="display: none;">
+                <div class="thinking-header-bar">
+                  <div class="thinking-spark-pulse">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="spark-icon">
+                      <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="url(#sparkGrad)"/>
+                      <defs>
+                        <linearGradient id="sparkGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#3B82F6"/>
+                          <stop offset="1" stop-color="#8B5CF6"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="thinking-status-info">
+                    <div class="thinking-active-label" id="thinkingActiveLabel">Searching literature across academic repositories...</div>
+                    <div class="thinking-active-meta" id="thinkingActiveMeta">Querying arXiv & OpenAlex · Target: 40 Papers</div>
+                  </div>
+                  <button class="btn-thinking-toggle" id="btnToggleThinkingDetails" type="button">
+                    <span id="thinkingToggleText">Details</span>
+                    <svg class="chevron-icon" id="thinkingChevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- 5 Progressive Status Pills (Strict Sequential: Next only lights up after previous completes) -->
+                <div class="thinking-steps-pills">
+                  <div class="t-pill running" id="tpill-1">
+                    <span class="t-pill-dot"></span>
+                    <span class="t-pill-text">1. Retrieving Papers</span>
+                  </div>
+                  <div class="t-pill queued" id="tpill-2">
+                    <span class="t-pill-dot"></span>
+                    <span class="t-pill-text">2. Extracting Methods</span>
+                  </div>
+                  <div class="t-pill queued" id="tpill-3">
+                    <span class="t-pill-dot"></span>
+                    <span class="t-pill-text">3. Inducing Taxonomy</span>
+                  </div>
+                  <div class="t-pill queued" id="tpill-4">
+                    <span class="t-pill-dot"></span>
+                    <span class="t-pill-text">4. Tracking Trends & HHI</span>
+                  </div>
+                  <div class="t-pill queued" id="tpill-5">
+                    <span class="t-pill-dot"></span>
+                    <span class="t-pill-text">5. Discovering Gaps</span>
+                  </div>
+                </div>
+
+                <!-- Collapsible Thinking Details Log Stream -->
+                <div class="thinking-logs-drawer" id="thinkingLogsDrawer" style="display: none;">
+                  <div class="thinking-logs-inner" id="thinkingLogsStream">
+                    <div class="log-entry info">[Init] Dispatching query to TrendScope literature intelligence pipeline...</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 5 Core Feature Cards (Static Informational Overview) -->
+          <div class="feature-cards-grid">
+            <div class="feature-card" style="cursor: default;">
+              <div class="feature-icon-wrap icon-blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
+              </div>
+              <h3 class="feature-title">Research Landscape</h3>
+              <p class="feature-desc">Understand the key research themes and taxonomy clusters</p>
+            </div>
+
+            <div class="feature-card" style="cursor: default;">
+              <div class="feature-icon-wrap icon-purple">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2" />
+                  <rect x="9" y="9" width="6" height="6" />
+                  <line x1="9" y1="1" x2="9" y2="4" />
+                  <line x1="15" y1="1" x2="15" y2="4" />
+                  <line x1="9" y1="20" x2="9" y2="23" />
+                  <line x1="15" y1="20" x2="15" y2="23" />
+                  <line x1="20" y1="9" x2="23" y2="9" />
+                  <line x1="20" y1="14" x2="23" y2="14" />
+                  <line x1="1" y1="9" x2="4" y2="9" />
+                  <line x1="1" y1="14" x2="4" y2="14" />
+                </svg>
+              </div>
+              <h3 class="feature-title">Methods & Paradigms</h3>
+              <p class="feature-desc">Track AI methods, models, and technical families</p>
+            </div>
+
+            <div class="feature-card" style="cursor: default;">
+              <div class="feature-icon-wrap icon-green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+              </div>
+              <h3 class="feature-title">Datasets & Validation</h3>
+              <p class="feature-desc">Analyze benchmark usage and validation diversity</p>
+            </div>
+
+            <div class="feature-card" style="cursor: default;">
+              <div class="feature-icon-wrap icon-orange">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10" />
+                  <line x1="12" y1="20" x2="12" y2="4" />
+                  <line x1="6" y1="20" x2="6" y2="14" />
+                </svg>
+              </div>
+              <h3 class="feature-title">Trends & Adoption</h3>
+              <p class="feature-desc">See how the field is evolving and paradigm shifts</p>
+            </div>
+
+            <div class="feature-card" style="cursor: default;">
+              <div class="feature-icon-wrap icon-red">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18h6" />
+                  <path d="M10 22h4" />
+                  <path
+                    d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14" />
+                </svg>
+              </div>
+              <h3 class="feature-title">Research Gaps</h3>
+              <p class="feature-desc">Find unresolved challenges and future directions</p>
+            </div>
+          </div>
+
+          <!-- Recent Research Section -->
+          <div class="recent-research-section">
+            <div class="section-header-row">
+              <div>
+                <h3 class="section-heading">Recent Research</h3>
+                <p class="section-sub">Your previous analyses and saved research topics.</p>
+              </div>
+              <button class="btn-link" onclick="navigateTo('library')">View all →</button>
+            </div>
+
+            <div class="recent-cards-grid" id="homeRecentCardsGrid">
+              <div class="empty-state-card" style="grid-column: 1 / -1; padding: 2.5rem 1.5rem; text-align: center; background: #FFFFFF; border: 1px dashed #E2E8F0; border-radius: 12px;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2" style="margin: 0 auto 0.75rem auto; display: block;">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                </svg>
+                <strong style="color: #475569; font-size: 0.95rem; display: block;">No recent research sessions</strong>
+                <p style="color: #94A3B8; font-size: 0.85rem; margin-top: 0.25rem;">Enter a scientific topic above to analyze literature, uncover method trajectories, and identify research gaps.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- VIEW 2: ANALYSIS DASHBOARD (Reference Image 2) -->
+      <main class="page-content" id="viewAnalysis" style="display: none;">
+        <div class="analysis-container">
+
+          <!-- Analysis Header Area -->
+          <div class="analysis-header-area">
+            <div class="analysis-title-row">
+              <div>
+                <button class="back-link" onclick="navigateTo('home')">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12" />
+                    <polyline points="12 19 5 12 12 5" />
+                  </svg>
+                  Back to Home
+                </button>
+                <h1 class="analysis-main-title" id="analysisTitle">Scientific Literature Intelligence</h1>
+                <div class="analysis-meta-row">
+                  <span class="meta-item" id="analysisPaperCount">0 papers</span>
+                  <span class="meta-dot">·</span>
+                  <span class="meta-item">Ready</span>
+                  <span class="meta-dot">·</span>
+                  <span class="meta-item">Snapshot</span>
+                  <span class="status-pill status-complete">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    </svg>
+                    Analysis Ready
+                  </span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="analysis-actions">
+                <button class="btn btn-outline" id="btnExportAnalysis">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  Export Report
+                </button>
+                <button class="btn btn-outline" id="btnShareAnalysis">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="18" cy="5" r="3" />
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="19" r="3" />
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                  </svg>
+                  Share
+                </button>
+                <button class="btn btn-primary" id="btnRefineAnalysis">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                  </svg>
+                  Refine Analysis
+                </button>
+              </div>
+            </div>
+
+            <!-- Analysis Sub Navigation Tabs -->
+            <nav class="analysis-tabs-nav" role="tablist">
+              <button class="atab-btn active" data-atab="tab-a-overview">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                Overview
+              </button>
+              <button class="atab-btn" data-atab="tab-a-papers">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <line x1="10" y1="9" x2="8" y2="9" />
+                </svg>
+                Papers
+              </button>
+              <button class="atab-btn" data-atab="tab-a-areas">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                Research Areas
+              </button>
+              <button class="atab-btn" data-atab="tab-a-methods">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7" rx="1" />
+                  <rect x="14" y="3" width="7" height="7" rx="1" />
+                  <rect x="14" y="14" width="7" height="7" rx="1" />
+                  <rect x="3" y="14" width="7" height="7" rx="1" />
+                </svg>
+                Methods
+              </button>
+              <button class="atab-btn" data-atab="tab-a-benchmarks">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+                Benchmarks
+              </button>
+              <button class="atab-btn" data-atab="tab-a-gaps">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                  <path d="M9 18h6" />
+                  <path d="M10 22h4" />
+                </svg>
+                Research Gaps
+              </button>
+              <button class="atab-btn" data-atab="tab-a-evidence">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+                Evidence Explorer
+              </button>
+            </nav>
+          </div>
+
+          <!-- Tab Content 1: Overview (Exact Match with Image 2) -->
+          <div id="tab-a-overview" class="atab-panel active">
+
+            <!-- 4 Top KPI Stat Cards -->
+            <div class="kpi-grid-4">
+              <div class="kpi-stat-card">
+                <div class="kpi-stat-icon icon-blue">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                  </svg>
+                </div>
+                <div class="kpi-stat-content">
+                  <div class="kpi-stat-num" id="statCardPapers">--</div>
+                  <div class="kpi-stat-lbl">Papers Analyzed <span class="info-bubble">ⓘ</span></div>
+                </div>
+              </div>
+
+              <div class="kpi-stat-card">
+                <div class="kpi-stat-icon icon-purple">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                  </svg>
+                </div>
+                <div class="kpi-stat-content">
+                  <div class="kpi-stat-num" id="statCardAreas">--</div>
+                  <div class="kpi-stat-lbl">Research Areas <span class="info-bubble">ⓘ</span></div>
+                </div>
+              </div>
+
+              <div class="kpi-stat-card">
+                <div class="kpi-stat-icon icon-green">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <rect x="9" y="9" width="6" height="6" />
+                  </svg>
+                </div>
+                <div class="kpi-stat-content">
+                  <div class="kpi-stat-num" id="statCardMethods">--</div>
+                  <div class="kpi-stat-lbl">Method Families <span class="info-bubble">ⓘ</span></div>
+                </div>
+              </div>
+
+              <div class="kpi-stat-card">
+                <div class="kpi-stat-icon icon-cyan">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                  </svg>
+                </div>
+                <div class="kpi-stat-content">
+                  <div class="kpi-stat-num" id="statCardBenchmarks">--</div>
+                  <div class="kpi-stat-lbl">Benchmark Resources <span class="info-bubble">ⓘ</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Middle Row: Research Areas Donut | Method Paradigms | Benchmark Landscape -->
+            <div class="charts-tri-grid mt-4">
+
+              <!-- Card 1: Research Areas Donut -->
+              <div class="white-card">
+                <div class="card-top-bar">
+                  <h3 class="card-heading">Research Areas</h3>
+                  <button class="btn-link" onclick="switchAnalysisTab('tab-a-areas')">View all →</button>
+                </div>
+                <div class="donut-chart-layout">
+                  <div class="donut-svg-wrap">
+                    <svg class="donut-svg" id="donutSvg" viewBox="0 0 120 120">
+                      <circle cx="60" cy="60" r="45" fill="none" stroke="#E2E8F0" stroke-width="16" />
+                    </svg>
+                    <div class="donut-center-label">
+                      <span class="donut-center-num" id="donutCenterNum">0</span>
+                      <span class="donut-center-sub">Papers</span>
+                    </div>
+                  </div>
+                  <div class="donut-legend" id="donutLegendList">
+                    <div style="color: #94A3B8; font-size: 0.85rem; padding: 1rem 0;">No taxonomy clusters generated yet.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2: Method Paradigms Progress Bars -->
+              <div class="white-card">
+                <div class="card-top-bar">
+                  <h3 class="card-heading">Method Paradigms</h3>
+                  <button class="btn-link" onclick="switchAnalysisTab('tab-a-methods')">View all →</button>
+                </div>
+                <div class="progress-bar-list" id="paradigmBarsList">
+                  <div style="color: #94A3B8; font-size: 0.85rem; padding: 1rem 0;">No method paradigms extracted yet.</div>
+                </div>
+              </div>
+
+              <!-- Card 3: Benchmark Landscape -->
+              <div class="white-card">
+                <div class="card-top-bar">
+                  <h3 class="card-heading">Benchmark Landscape</h3>
+                  <button class="btn-link" onclick="switchAnalysisTab('tab-a-benchmarks')">View all →</button>
+                </div>
+                <div class="benchmark-hhi-box">
+                  <div class="hhi-display-row">
+                    <span class="hhi-title">HHI</span>
+                    <span class="hhi-number" id="analysisHHIVal">--</span>
+                    <span class="badge-tag tag-blue" id="analysisHHIBadge">Pending Analysis</span>
+                  </div>
+                </div>
+                <div class="progress-bar-list mt-3" id="benchmarkBarsList">
+                  <div style="color: #94A3B8; font-size: 0.85rem; padding: 1rem 0;">No benchmark evaluations loaded.</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom-Mid Row: Top Methods | Top Benchmarks | Research Gaps -->
+            <div class="charts-tri-grid mt-4">
+
+              <!-- Card 1: Top Methods -->
+              <div class="white-card">
+                <div class="card-top-bar">
+                  <h3 class="card-heading">Top Methods</h3>
+                  <button class="btn-link" onclick="switchAnalysisTab('tab-a-methods')">View all →</button>
+                </div>
+                <div class="ranked-list" id="topMethodsRankedList">
+                  <div style="color: #94A3B8; font-size: 0.85rem; padding: 1rem 0;">No methods discovered yet.</div>
+                </div>
+              </div>
+
+              <!-- Card 2: Top Benchmarks -->
+              <div class="white-card">
+                <div class="card-top-bar">
+                  <h3 class="card-heading">Top Benchmarks</h3>
+                  <button class="btn-link" onclick="switchAnalysisTab('tab-a-benchmarks')">View all →</button>
+                </div>
+                <div class="ranked-list" id="topBenchmarksRankedList">
+                  <div style="color: #94A3B8; font-size: 0.85rem; padding: 1rem 0;">No benchmarks discovered yet.</div>
+                </div>
+              </div>
+
+              <!-- Card 3: Research Gaps Alerts -->
+              <div class="white-card">
+                <div class="card-top-bar">
+                  <h3 class="card-heading">Research Gaps</h3>
+                  <button class="btn-link" onclick="switchAnalysisTab('tab-a-gaps')">View all →</button>
+                </div>
+                <div class="gaps-alert-list" id="topGapsAlertList">
+                  <div style="color: #94A3B8; font-size: 0.85rem; padding: 1rem 0;">No research gaps identified yet.</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom Section: Recent Papers Table -->
+            <div class="white-card mt-4">
+              <div class="card-top-bar">
+                <h3 class="card-heading">Recent Papers</h3>
+                <button class="btn-link" onclick="switchAnalysisTab('tab-a-papers')">View all →</button>
+              </div>
+              <div class="table-responsive">
+                <table class="papers-clean-table">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Year</th>
+                      <th>Source</th>
+                      <th>Key Methods</th>
+                      <th>Key Datasets</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="analysisPapersTableBody">
+                    <!-- Populated dynamically by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Tab Content 2: Papers Table -->
+          <div id="tab-a-papers" class="atab-panel">
+            <div class="white-card">
+              <h3 class="card-heading mb-3">All Grounded Literature Papers</h3>
+              <div class="table-responsive">
+                <table class="papers-clean-table" id="fullPapersTable">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Year</th>
+                      <th>Source</th>
+                      <th>Key Methods</th>
+                      <th>Key Datasets</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="fullPapersTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 3: Research Areas (Taxonomy) -->
+          <div id="tab-a-areas" class="atab-panel">
+            <div class="white-card">
+              <h3 class="card-heading mb-3">HDBSCAN Discovered Research Clusters</h3>
+              <div class="cluster-cards-row" id="analysisClusterList"></div>
+            </div>
+          </div>
+
+          <!-- Tab Content 4: Methods -->
+          <div id="tab-a-methods" class="atab-panel">
+            <div class="white-card">
+              <h3 class="card-heading mb-3">Method Adoption Trajectory Matrix</h3>
+              <div class="table-responsive">
+                <table class="papers-clean-table" id="fullMethodsTable">
+                  <thead>
+                    <tr>
+                      <th>Method Name</th>
+                      <th>Paradigm</th>
+                      <th>Role</th>
+                      <th>Share</th>
+                      <th>Trajectory</th>
+                    </tr>
+                  </thead>
+                  <tbody id="fullMethodsTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 5: Benchmarks -->
+          <div id="tab-a-benchmarks" class="atab-panel">
+            <div class="white-card">
+              <h3 class="card-heading mb-3">Benchmark Datasets & Concentration</h3>
+              <div class="table-responsive">
+                <table class="papers-clean-table" id="fullBenchmarksTable">
+                  <thead>
+                    <tr>
+                      <th>Benchmark</th>
+                      <th>Domain</th>
+                      <th>Share</th>
+                      <th>Monopoly Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="fullBenchmarksTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 6: Research Gaps -->
+          <div id="tab-a-gaps" class="atab-panel">
+            <div class="white-card">
+              <h3 class="card-heading mb-3">Research Limitation Lifecycle Matrix</h3>
+              <div class="gaps-card-column" id="fullGapsList"></div>
+            </div>
+          </div>
+
+          <!-- Tab Content 7: Evidence Explorer -->
+          <div id="tab-a-evidence" class="atab-panel">
+            <div class="white-card">
+              <h3 class="card-heading mb-3">Inter-Paper Evidence Chains (Problem → Solution)</h3>
+              <div class="evidence-chain-column" id="fullEvidenceList"></div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+
+
+  <script src="app.js?v=7.0" type="module"></script>
+</body>
+
+</html>

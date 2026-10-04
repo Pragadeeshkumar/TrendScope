@@ -1,0 +1,202 @@
+{
+  "run_id": "e84a3beb",
+  "timestamp": "2026-10-04T10:37:15.744066",
+  "total_limitations_mined": 18,
+  "total_themes_discovered": 5,
+  "open_unaddressed_gaps_count": 5,
+  "resolved_or_converged_count": 0,
+  "themes": [
+    {
+      "theme_id": "theme_evaluation_benchmarking",
+      "name": "Process-Level Evaluation Gaps and Synthetic Benchmark Bias",
+      "category": "evaluation_gap",
+      "description": "Limitations of static benchmark metrics that fail to evaluate multi-step reasoning trajectories or real-world nuance.",
+      "total_papers": 4,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "PARTIALLY_ADDRESSED",
+      "confidence": 0.85,
+      "paper_ids": [
+        "arxiv_2610.02202v1",
+        "arxiv_2610.02200v1",
+        "arxiv_2610.02193v1",
+        "arxiv_2610.02186v1"
+      ],
+      "key_quotes": [
+        "target structured reasoning and planning benchmarks at moderate scale",
+        "far smaller than the three million papers",
+        "cannot rule out the possibility that these games were included",
+        "Building on a combinatorial-complex view of molecules, we examined three linked aspects: reusable grammar induction, ring-diverse benchmarking, and HGR-based generation and foundation modelling."
+      ],
+      "resolution_evidence": "Multiple heuristic mitigations proposed across 4 papers; however, trade-offs remain acknowledged in recent publications."
+    },
+    {
+      "theme_id": "theme_general_empirical",
+      "name": "Empirical System Trade-offs and Domain Bottlenecks",
+      "category": "general",
+      "description": "Empirical design trade-offs and specialized system bottlenecks identified in domain literature.",
+      "total_papers": 4,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "PARTIALLY_ADDRESSED",
+      "confidence": 0.85,
+      "paper_ids": [
+        "arxiv_2610.02180v1",
+        "arxiv_2610.02182v1",
+        "arxiv_2610.02202v1",
+        "arxiv_2610.02186v1"
+      ],
+      "key_quotes": [
+        "subject to hindsight",
+        "currently we use a fixed λ within each training run",
+        "characterizing convergence guarantees under realistic settings remains an open problem",
+        "This work bridges topological deep learning and sequence modelling by encoding hierarchical molecular topology as a decodable string that standard sequence models can learn from."
+      ],
+      "resolution_evidence": "Multiple heuristic mitigations proposed across 4 papers; however, trade-offs remain acknowledged in recent publications."
+    },
+    {
+      "theme_id": "theme_compute_scaling",
+      "name": "High Computational Complexity and Memory Scaling",
+      "category": "computational_cost",
+      "description": "Challenges regarding exponential compute demands, GPU VRAM constraints on large models, and high latency inference.",
+      "total_papers": 3,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "PARTIALLY_ADDRESSED",
+      "confidence": 0.85,
+      "paper_ids": [
+        "arxiv_2610.02202v1",
+        "arxiv_2610.02198v1",
+        "arxiv_2610.02193v1"
+      ],
+      "key_quotes": [
+        "scaling HC-DLM to larger pretrained backbones ... exceeds the resources typically available in academia",
+        "uneven representation across research areas",
+        "A drawback is higher GPU memory usage"
+      ],
+      "resolution_evidence": "Multiple heuristic mitigations proposed across 3 papers; however, trade-offs remain acknowledged in recent publications."
+    },
+    {
+      "theme_id": "theme_data_annotation",
+      "name": "Reliance on Large-Scale Supervised Annotations and Pretraining",
+      "category": "data_scarcity",
+      "description": "Sample size constraints and dataset limitations.",
+      "total_papers": 3,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "PARTIALLY_ADDRESSED",
+      "confidence": 0.85,
+      "paper_ids": [
+        "arxiv_2610.02204v1",
+        "arxiv_2610.02202v1",
+        "arxiv_2610.02206v1"
+      ],
+      "key_quotes": [
+        "limited candidate coverage keeps many useful papers",
+        "The clearest remaining limitation is deformable-object manipulation",
+        "focus on single-turn command generation"
+      ],
+      "resolution_evidence": "Multiple heuristic mitigations proposed across 3 papers; however, trade-offs remain acknowledged in recent publications."
+    },
+    {
+      "theme_id": "theme_multimodal_fusion",
+      "name": "Cross-Modal Alignment and Heterogeneous Data Integration",
+      "category": "multimodal_fusion",
+      "description": "Challenges in fusing disparate data types (e.g., genomics, imaging, time-series, text) with asynchronous alignment.",
+      "total_papers": 1,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "UNADDRESSED",
+      "confidence": 0.8,
+      "paper_ids": [
+        "arxiv_2610.02193v1"
+      ],
+      "key_quotes": [
+        "makes each training step more expensive than in a purely discrete masked diffusion baseline"
+      ],
+      "resolution_evidence": "Addressed by standard architectural adaptations in subsequent literature."
+    }
+  ],
+  "evidence_links": [
+    {
+      "theme_id": "theme_evaluation_benchmarking",
+      "source_paper_id": "arxiv_2610.02202v1",
+      "source_year": 2026,
+      "source_quote": "far smaller than the three million papers",
+      "target_paper_id": "arxiv_2610.02200v1",
+      "target_year": 2026,
+      "target_quote": "two example agent trajectories with VISTA",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_evaluation_benchmarking",
+      "source_paper_id": "arxiv_2610.02202v1",
+      "source_year": 2026,
+      "source_quote": "far smaller than the three million papers",
+      "target_paper_id": "arxiv_2610.02193v1",
+      "target_year": 2026,
+      "target_quote": "We evaluate HC-DLM on three tasks",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_general_empirical",
+      "source_paper_id": "arxiv_2610.02180v1",
+      "source_year": 2026,
+      "source_quote": "single-image scaffold leaves occluded regions unmodeled",
+      "target_paper_id": "arxiv_2610.02182v1",
+      "target_year": 2026,
+      "target_quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_general_empirical",
+      "source_paper_id": "arxiv_2610.02180v1",
+      "source_year": 2026,
+      "source_quote": "single-image scaffold leaves occluded regions unmodeled",
+      "target_paper_id": "arxiv_2610.02202v1",
+      "target_year": 2026,
+      "target_quote": "SPECTER2 (Singh et al. , 2022)",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_compute_scaling",
+      "source_paper_id": "arxiv_2610.02202v1",
+      "source_year": 2026,
+      "source_quote": "far smaller than the three million papers",
+      "target_paper_id": "arxiv_2610.02198v1",
+      "target_year": 2026,
+      "target_quote": "We propose Forward Entropy-Regularized Policy Optimization (FERPO)",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_compute_scaling",
+      "source_paper_id": "arxiv_2610.02202v1",
+      "source_year": 2026,
+      "source_quote": "far smaller than the three million papers",
+      "target_paper_id": "arxiv_2610.02193v1",
+      "target_year": 2026,
+      "target_quote": "We evaluate HC-DLM on three tasks",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_data_annotation",
+      "source_paper_id": "arxiv_2610.02204v1",
+      "source_year": 2026,
+      "source_quote": "The clearest remaining limitation is deformable-object manipulation",
+      "target_paper_id": "arxiv_2610.02202v1",
+      "target_year": 2026,
+      "target_quote": "SPECTER2 (Singh et al. , 2022)",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_data_annotation",
+      "source_paper_id": "arxiv_2610.02204v1",
+      "source_year": 2026,
+      "source_quote": "The clearest remaining limitation is deformable-object manipulation",
+      "target_paper_id": "arxiv_2610.02206v1",
+      "target_year": 2026,
+      "target_quote": "We introduce KaliBench, a fine-grained benchmark",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    }
+  ]
+}

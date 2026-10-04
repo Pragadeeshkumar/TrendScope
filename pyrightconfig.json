@@ -1,0 +1,21 @@
+{
+  "include": [
+    ".",
+    "backend",
+    "retrieval",
+    "extraction",
+    "taxonomy",
+    "trends",
+    "gaps",
+    "scratch"
+  ],
+  "venvPath": ".",
+  "venv": ".venv",
+  "extraPaths": [
+    ".",
+    ".venv/Lib/site-packages",
+    "C:/Users/praga/AppData/Local/Programs/Python/Python312/Lib/site-packages"
+  ],
+  "reportMissingImports": "warning",
+  "pythonVersion": "3.12"
+}

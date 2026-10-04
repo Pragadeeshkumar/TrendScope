@@ -1,0 +1,5429 @@
+{
+  "nodes": {
+    "paper_W7162399187": {
+      "node_id": "paper_W7162399187",
+      "node_type": "paper",
+      "name": "Human vs machine judgment in safety-critical logistics: a philosophical inquiry into trust and control",
+      "canonical_name": null,
+      "paper_id": "W7162399187",
+      "attributes": {
+        "publication_year": null
+      }
+    },
+    "paper_W7118979476": {
+      "node_id": "paper_W7118979476",
+      "node_type": "paper",
+      "name": "TRANSFORMING GOVERNMENT SERVICE DELIVERY THROUGH ARTIFICIAL INTELLIGENCE",
+      "canonical_name": null,
+      "paper_id": "W7118979476",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "paper_W7166533473": {
+      "node_id": "paper_W7166533473",
+      "node_type": "paper",
+      "name": "Research on Attention Guidance and User Autonomy in AI-Powered Immersive Environments",
+      "canonical_name": null,
+      "paper_id": "W7166533473",
+      "attributes": {
+        "publication_year": null
+      }
+    },
+    "paper_W7154463656": {
+      "node_id": "paper_W7154463656",
+      "node_type": "paper",
+      "name": "NUISS: A User-Centered Prototype for International Student Administrative Support",
+      "canonical_name": null,
+      "paper_id": "W7154463656",
+      "attributes": {
+        "publication_year": null
+      }
+    },
+    "paper_W7164183113": {
+      "node_id": "paper_W7164183113",
+      "node_type": "paper",
+      "name": "The Sociolinguistics of Machine Identity: LLM Personality and Ideology Propagation",
+      "canonical_name": null,
+      "paper_id": "W7164183113",
+      "attributes": {
+        "publication_year": null
+      }
+    },
+    "paper_W7118720654": {
+      "node_id": "paper_W7118720654",
+      "node_type": "paper",
+      "name": "ETHICAL CONSIDERATIONS AND POLICY FRAMEWORKS FOR TEACHING WITH ARTIFICIAL INTELLIGENCE IN SECONDARY SCHOOL SETTINGS",
+      "canonical_name": null,
+      "paper_id": "W7118720654",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "paper_W7166006500": {
+      "node_id": "paper_W7166006500",
+      "node_type": "paper",
+      "name": "Algorithmic Justice and Responsible AI Journalism: A Comparative Communication Policy Perspective in East Asia",
+      "canonical_name": null,
+      "paper_id": "W7166006500",
+      "attributes": {
+        "publication_year": null
+      }
+    },
+    "paper_W7164131933": {
+      "node_id": "paper_W7164131933",
+      "node_type": "paper",
+      "name": "The Role of Generative Artificial Intelligence in Korean Language Learning: Applications, Challenges, and Instructional Strategies",
+      "canonical_name": null,
+      "paper_id": "W7164131933",
+      "attributes": {
+        "publication_year": null
+      }
+    },
+    "paper_arxiv_2610.02207v1": {
+      "node_id": "paper_arxiv_2610.02207v1",
+      "node_type": "paper",
+      "name": "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02207v1",
+      "attributes": {
+        "publication_year": null
+      }
+    },
+    "paper_arxiv_2610.02201v1": {
+      "node_id": "paper_arxiv_2610.02201v1",
+      "node_type": "paper",
+      "name": "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02201v1",
+      "attributes": {
+        "publication_year": null
+      }
+    },
+    "paper_arxiv_2610.02193v1": {
+      "node_id": "paper_arxiv_2610.02193v1",
+      "node_type": "paper",
+      "name": "Hierarchical Continuous Diffusion Language Models",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "ent_arxiv_2610.02193v1_m_1": {
+      "node_id": "ent_arxiv_2610.02193v1_m_1",
+      "node_type": "entity",
+      "name": "HC-DLM",
+      "canonical_name": "Hc-Dlm",
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Hc-Dlm Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02193v1_m_2": {
+      "node_id": "ent_arxiv_2610.02193v1_m_2",
+      "node_type": "entity",
+      "name": "Autoregressive ARM (w/o ordering)",
+      "canonical_name": "Autoregressive Arm (W/O Ordering)",
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Autoregressive Arm (W/O Ordering) Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02193v1_m_3": {
+      "node_id": "ent_arxiv_2610.02193v1_m_3",
+      "node_type": "entity",
+      "name": "Autoregressive ARM (with ordering)",
+      "canonical_name": "Autoregressive Arm (With Ordering)",
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Autoregressive Arm (With Ordering) Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02193v1_m_4": {
+      "node_id": "ent_arxiv_2610.02193v1_m_4",
+      "node_type": "entity",
+      "name": "MDM (vanilla)",
+      "canonical_name": "Mdm (Vanilla)",
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Mdm (Vanilla) Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02193v1_m_5": {
+      "node_id": "ent_arxiv_2610.02193v1_m_5",
+      "node_type": "entity",
+      "name": "MDM (top‑prob.)",
+      "canonical_name": "Mdm (Top‑Prob.)",
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Mdm (Top‑Prob.) Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02193v1_m_6": {
+      "node_id": "ent_arxiv_2610.02193v1_m_6",
+      "node_type": "entity",
+      "name": "LangFlow",
+      "canonical_name": "Langflow",
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Langflow Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02193v1_m_7": {
+      "node_id": "ent_arxiv_2610.02193v1_m_7",
+      "node_type": "entity",
+      "name": "Plaid",
+      "canonical_name": "Plaid",
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Plaid Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02193v1_d_1": {
+      "node_id": "ent_arxiv_2610.02193v1_d_1",
+      "node_type": "entity",
+      "name": "Sudoku",
+      "canonical_name": "Sudoku",
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Sudoku Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02193v1_d_2": {
+      "node_id": "ent_arxiv_2610.02193v1_d_2",
+      "node_type": "entity",
+      "name": "Countdown",
+      "canonical_name": "Countdown",
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Countdown Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02193v1_d_3": {
+      "node_id": "ent_arxiv_2610.02193v1_d_3",
+      "node_type": "entity",
+      "name": "LM1B",
+      "canonical_name": "Lm1B",
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Lm1B Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "clm_arxiv_2610.02193v1_1": {
+      "node_id": "clm_arxiv_2610.02193v1_1",
+      "node_type": "finding",
+      "name": "HC-DLM training time is substantially lower than LangFlow...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "training time (hours)",
+        "value": 48.0,
+        "direction": "observation"
+      }
+    },
+    "clm_arxiv_2610.02193v1_2": {
+      "node_id": "clm_arxiv_2610.02193v1_2",
+      "node_type": "finding",
+      "name": "The coupled model outperforms continuous‑only and discrete alternatives...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "performance",
+        "value": null,
+        "direction": "improvement"
+      }
+    },
+    "lim_arxiv_2610.02193v1_1": {
+      "node_id": "lim_arxiv_2610.02193v1_1",
+      "node_type": "limitation",
+      "name": "Each training step is more expensive than in a purely discrete masked diffusion ...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "category": "computational_cost"
+      }
+    },
+    "lim_arxiv_2610.02193v1_2": {
+      "node_id": "lim_arxiv_2610.02193v1_2",
+      "node_type": "limitation",
+      "name": "Experiments are limited to moderate‑scale structured reasoning and planning benc...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "category": "scalability"
+      }
+    },
+    "lim_arxiv_2610.02193v1_3": {
+      "node_id": "lim_arxiv_2610.02193v1_3",
+      "node_type": "limitation",
+      "name": "Scaling to larger pretrained backbones requires compute beyond typical academic ...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "category": "computational_cost"
+      }
+    },
+    "fw_arxiv_2610.02193v1_1": {
+      "node_id": "fw_arxiv_2610.02193v1_1",
+      "node_type": "future_work",
+      "name": "Scaling HC-DLM to larger pretrained backbones is the most promising direction fo...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02193v1",
+      "attributes": {
+        "category": "efficiency",
+        "target": null
+      }
+    },
+    "paper_arxiv_2610.02202v1": {
+      "node_id": "paper_arxiv_2610.02202v1",
+      "node_type": "paper",
+      "name": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "ent_arxiv_2610.02202v1_m_1": {
+      "node_id": "ent_arxiv_2610.02202v1_m_1",
+      "node_type": "entity",
+      "name": "SPECTER2",
+      "canonical_name": "Specter2",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Specter2 Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02202v1_m_2": {
+      "node_id": "ent_arxiv_2610.02202v1_m_2",
+      "node_type": "entity",
+      "name": "OpenScholar",
+      "canonical_name": "Openscholar",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Openscholar Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02202v1_m_3": {
+      "node_id": "ent_arxiv_2610.02202v1_m_3",
+      "node_type": "entity",
+      "name": "Gemini-Embedding-2",
+      "canonical_name": "Gemini-Embedding-2",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Gemini-Embedding-2 Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02202v1_m_4": {
+      "node_id": "ent_arxiv_2610.02202v1_m_4",
+      "node_type": "entity",
+      "name": "Gemini 3.7 Flash",
+      "canonical_name": "Gemini 3.7 Flash",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Gemini 3.7 Flash Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02202v1_m_5": {
+      "node_id": "ent_arxiv_2610.02202v1_m_5",
+      "node_type": "entity",
+      "name": "GPT-4.1",
+      "canonical_name": "Clinical Large Language Model",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Clinical Foundation LLMs",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02202v1_d_1": {
+      "node_id": "ent_arxiv_2610.02202v1_d_1",
+      "node_type": "entity",
+      "name": "SCHOLARCATALYST",
+      "canonical_name": "Scholarcatalyst",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Scholarcatalyst Benchmarks",
+        "role": "benchmark",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02202v1_d_2": {
+      "node_id": "ent_arxiv_2610.02202v1_d_2",
+      "node_type": "entity",
+      "name": "arXiv",
+      "canonical_name": "Arxiv",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Arxiv Benchmarks",
+        "role": "database",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02202v1_d_3": {
+      "node_id": "ent_arxiv_2610.02202v1_d_3",
+      "node_type": "entity",
+      "name": "ImageNet",
+      "canonical_name": "Imagenet",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Imagenet Benchmarks",
+        "role": "benchmark",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02202v1_d_4": {
+      "node_id": "ent_arxiv_2610.02202v1_d_4",
+      "node_type": "entity",
+      "name": "kaggle arXiv datasets",
+      "canonical_name": "Kaggle Arxiv Datasets",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Kaggle Arxiv Datasets Benchmarks",
+        "role": "training",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02202v1_ls_1": {
+      "node_id": "ent_arxiv_2610.02202v1_ls_1",
+      "node_type": "entity",
+      "name": "arXiv",
+      "canonical_name": "Arxiv",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Arxiv Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02202v1_ls_2": {
+      "node_id": "ent_arxiv_2610.02202v1_ls_2",
+      "node_type": "entity",
+      "name": "Singh et al. , 2022",
+      "canonical_name": "Singh Et Al. , 2022",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Singh Et Al. , 2022 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02202v1_ls_3": {
+      "node_id": "ent_arxiv_2610.02202v1_ls_3",
+      "node_type": "entity",
+      "name": "Asai et al. , 2024",
+      "canonical_name": "Asai Et Al. , 2024",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Asai Et Al. , 2024 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02202v1_ls_4": {
+      "node_id": "ent_arxiv_2610.02202v1_ls_4",
+      "node_type": "entity",
+      "name": "Google DeepMind, 2026c",
+      "canonical_name": "Google Deepmind, 2026C",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Google Deepmind, 2026C Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02202v1_ls_5": {
+      "node_id": "ent_arxiv_2610.02202v1_ls_5",
+      "node_type": "entity",
+      "name": "Gao et al. , 2023",
+      "canonical_name": "Gao Et Al. , 2023",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Gao Et Al. , 2023 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02202v1_ls_6": {
+      "node_id": "ent_arxiv_2610.02202v1_ls_6",
+      "node_type": "entity",
+      "name": "Russakovsky et al. , 2015",
+      "canonical_name": "Russakovsky Et Al. , 2015",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Russakovsky Et Al. , 2015 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02202v1_ls_7": {
+      "node_id": "ent_arxiv_2610.02202v1_ls_7",
+      "node_type": "entity",
+      "name": "Beyer et al. , 2020",
+      "canonical_name": "Beyer Et Al. , 2020",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Beyer Et Al. , 2020 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02202v1_ls_8": {
+      "node_id": "ent_arxiv_2610.02202v1_ls_8",
+      "node_type": "entity",
+      "name": "Shankar et al. , 2020",
+      "canonical_name": "Shankar Et Al. , 2020",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Shankar Et Al. , 2020 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02202v1_ls_9": {
+      "node_id": "ent_arxiv_2610.02202v1_ls_9",
+      "node_type": "entity",
+      "name": "Lo et al. , 2020",
+      "canonical_name": "Lo Et Al. , 2020",
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Lo Et Al. , 2020 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "clm_arxiv_2610.02202v1_1": {
+      "node_id": "clm_arxiv_2610.02202v1_1",
+      "node_type": "finding",
+      "name": "Source title and abstract raise Recall@20 for CoreQ...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "Recall@20",
+        "value": 0.11,
+        "direction": "observation"
+      }
+    },
+    "clm_arxiv_2610.02202v1_2": {
+      "node_id": "clm_arxiv_2610.02202v1_2",
+      "node_type": "finding",
+      "name": "Source title and abstract raise Recall@20 for SubQ...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "Recall@20",
+        "value": 0.02,
+        "direction": "observation"
+      }
+    },
+    "clm_arxiv_2610.02202v1_3": {
+      "node_id": "clm_arxiv_2610.02202v1_3",
+      "node_type": "finding",
+      "name": "Web search changes Recall@20 by at most 0.01...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "Recall@20",
+        "value": 0.01,
+        "direction": "observation"
+      }
+    },
+    "clm_arxiv_2610.02202v1_4": {
+      "node_id": "clm_arxiv_2610.02202v1_4",
+      "node_type": "finding",
+      "name": "Reading beyond abstracts changes Recall@20 by at most 0.04...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "Recall@20",
+        "value": 0.04,
+        "direction": "observation"
+      }
+    },
+    "clm_arxiv_2610.02202v1_5": {
+      "node_id": "clm_arxiv_2610.02202v1_5",
+      "node_type": "finding",
+      "name": "Best SubQ policy trails the retriever...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "Recall@20",
+        "value": 0.5,
+        "direction": "observation"
+      }
+    },
+    "lim_arxiv_2610.02202v1_1": {
+      "node_id": "lim_arxiv_2610.02202v1_1",
+      "node_type": "limitation",
+      "name": "Evaluation corpus is far smaller than arXiv, making retrieval easier than real-w...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "category": "generalization"
+      }
+    },
+    "lim_arxiv_2610.02202v1_2": {
+      "node_id": "lim_arxiv_2610.02202v1_2",
+      "node_type": "limitation",
+      "name": "Limited candidate coverage keeps many useful papers out of reach for agentic sea...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "category": "scalability"
+      }
+    },
+    "lim_arxiv_2610.02202v1_3": {
+      "node_id": "lim_arxiv_2610.02202v1_3",
+      "node_type": "limitation",
+      "name": "Benchmark covers computer science papers from 2025-2026 with uneven representati...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "category": "generalization"
+      }
+    },
+    "lim_arxiv_2610.02202v1_4": {
+      "node_id": "lim_arxiv_2610.02202v1_4",
+      "node_type": "limitation",
+      "name": "Labels are retrospective judgments by paper authors, subject to hindsight....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "category": "general"
+      }
+    },
+    "fw_arxiv_2610.02202v1_1": {
+      "node_id": "fw_arxiv_2610.02202v1_1",
+      "node_type": "future_work",
+      "name": "Determine the performance ceiling (skyline) of the task....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02202v1",
+      "attributes": {
+        "category": "methodological_extension",
+        "target": null
+      }
+    },
+    "paper_arxiv_2610.02198v1": {
+      "node_id": "paper_arxiv_2610.02198v1",
+      "node_type": "paper",
+      "name": "FERPO: Forward Entropy-Regularized Policy Optimization",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02198v1",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "ent_arxiv_2610.02198v1_m_1": {
+      "node_id": "ent_arxiv_2610.02198v1_m_1",
+      "node_type": "entity",
+      "name": "FERPO",
+      "canonical_name": "Ferpo",
+      "paper_id": "arxiv_2610.02198v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Ferpo Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02198v1_m_2": {
+      "node_id": "ent_arxiv_2610.02198v1_m_2",
+      "node_type": "entity",
+      "name": "REPPO",
+      "canonical_name": "Reppo",
+      "paper_id": "arxiv_2610.02198v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Reppo Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02198v1_d_1": {
+      "node_id": "ent_arxiv_2610.02198v1_d_1",
+      "node_type": "entity",
+      "name": "CheetahRun",
+      "canonical_name": "Cheetahrun",
+      "paper_id": "arxiv_2610.02198v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Cheetahrun Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02198v1_d_2": {
+      "node_id": "ent_arxiv_2610.02198v1_d_2",
+      "node_type": "entity",
+      "name": "AcrobotSwingupSparse",
+      "canonical_name": "Acrobotswingupsparse",
+      "paper_id": "arxiv_2610.02198v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Acrobotswingupsparse Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02198v1_ls_1": {
+      "node_id": "ent_arxiv_2610.02198v1_ls_1",
+      "node_type": "entity",
+      "name": "Voelcker et al., 2026",
+      "canonical_name": "Voelcker Et Al., 2026",
+      "paper_id": "arxiv_2610.02198v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Voelcker Et Al., 2026 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "clm_arxiv_2610.02198v1_1": {
+      "node_id": "clm_arxiv_2610.02198v1_1",
+      "node_type": "finding",
+      "name": "FERPO demonstrates faster actor updates than REPPO....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02198v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "actor update speed",
+        "value": null,
+        "direction": "observation"
+      }
+    },
+    "clm_arxiv_2610.02198v1_2": {
+      "node_id": "clm_arxiv_2610.02198v1_2",
+      "node_type": "finding",
+      "name": "FERPO has higher GPU memory usage than REPPO....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02198v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "peak GPU memory usage",
+        "value": 22.4,
+        "direction": "observation"
+      }
+    },
+    "lim_arxiv_2610.02198v1_1": {
+      "node_id": "lim_arxiv_2610.02198v1_1",
+      "node_type": "limitation",
+      "name": "Higher GPU memory usage compared to REPPO due to PyTorch retaining additional me...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02198v1",
+      "attributes": {
+        "category": "computational_cost"
+      }
+    },
+    "fw_arxiv_2610.02198v1_1": {
+      "node_id": "fw_arxiv_2610.02198v1_1",
+      "node_type": "future_work",
+      "name": "Further exploration of FERPO due to higher returns and modest iteration-time ove...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02198v1",
+      "attributes": {
+        "category": "methodological_extension",
+        "target": null
+      }
+    },
+    "paper_arxiv_2610.02204v1": {
+      "node_id": "paper_arxiv_2610.02204v1",
+      "node_type": "paper",
+      "name": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "ent_arxiv_2610.02204v1_m_1": {
+      "node_id": "ent_arxiv_2610.02204v1_m_1",
+      "node_type": "entity",
+      "name": "Reconstruct, Practice, Go Real (RPG)",
+      "canonical_name": "Reconstruct, Practice, Go Real (Rpg)",
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Reconstruct, Practice, Go Real (Rpg) Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02204v1_m_2": {
+      "node_id": "ent_arxiv_2610.02204v1_m_2",
+      "node_type": "entity",
+      "name": "Agent-as-Policy",
+      "canonical_name": "Agent-As-Policy",
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Agent-As-Policy Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02204v1_m_3": {
+      "node_id": "ent_arxiv_2610.02204v1_m_3",
+      "node_type": "entity",
+      "name": "Runtime Agent",
+      "canonical_name": "Runtime Agent",
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Runtime Agent Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02204v1_m_4": {
+      "node_id": "ent_arxiv_2610.02204v1_m_4",
+      "node_type": "entity",
+      "name": "Gemini 3.8 Flash",
+      "canonical_name": "Gemini 3.8 Flash",
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Gemini 3.8 Flash Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02204v1_m_5": {
+      "node_id": "ent_arxiv_2610.02204v1_m_5",
+      "node_type": "entity",
+      "name": "ASPIRE",
+      "canonical_name": "Aspire",
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Aspire Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02204v1_m_6": {
+      "node_id": "ent_arxiv_2610.02204v1_m_6",
+      "node_type": "entity",
+      "name": "CaP-Agent0",
+      "canonical_name": "Cap-Agent0",
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Cap-Agent0 Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02204v1_m_7": {
+      "node_id": "ent_arxiv_2610.02204v1_m_7",
+      "node_type": "entity",
+      "name": "GPT-6 Astra Pro",
+      "canonical_name": "Clinical Large Language Model",
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Clinical Foundation LLMs",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02204v1_m_9": {
+      "node_id": "ent_arxiv_2610.02204v1_m_9",
+      "node_type": "entity",
+      "name": "Privileged Agent",
+      "canonical_name": "Privileged Agent",
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Privileged Agent Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02204v1_d_1": {
+      "node_id": "ent_arxiv_2610.02204v1_d_1",
+      "node_type": "entity",
+      "name": "CaP-X",
+      "canonical_name": "Cap-X",
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Cap-X Benchmarks",
+        "role": "training",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02204v1_d_2": {
+      "node_id": "ent_arxiv_2610.02204v1_d_2",
+      "node_type": "entity",
+      "name": "ABC",
+      "canonical_name": "Abc",
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Abc Benchmarks",
+        "role": "training",
+        "confidence": 0.922
+      }
+    },
+    "clm_arxiv_2610.02204v1_1": {
+      "node_id": "clm_arxiv_2610.02204v1_1",
+      "node_type": "finding",
+      "name": "RPG improves task success rate significantly over baselines....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "task success rate",
+        "value": 95.0,
+        "direction": "improvement"
+      }
+    },
+    "clm_arxiv_2610.02204v1_2": {
+      "node_id": "clm_arxiv_2610.02204v1_2",
+      "node_type": "finding",
+      "name": "RPG outperforms ASPIRE baseline....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "task success rate",
+        "value": 75.5,
+        "direction": "improvement"
+      }
+    },
+    "clm_arxiv_2610.02204v1_3": {
+      "node_id": "clm_arxiv_2610.02204v1_3",
+      "node_type": "finding",
+      "name": "RPG outperforms CaP-Agent0 with GPT-6 Astra Pro....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "task success rate",
+        "value": 60.0,
+        "direction": "improvement"
+      }
+    },
+    "lim_arxiv_2610.02204v1_1": {
+      "node_id": "lim_arxiv_2610.02204v1_1",
+      "node_type": "limitation",
+      "name": "Deformable-object manipulation remains a clear limitation....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "category": "generalization"
+      }
+    },
+    "fw_arxiv_2610.02204v1_1": {
+      "node_id": "fw_arxiv_2610.02204v1_1",
+      "node_type": "future_work",
+      "name": "Improve efficiency through quota-aware rollout scheduling and dependency-aware p...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02204v1",
+      "attributes": {
+        "category": "efficiency",
+        "target": null
+      }
+    },
+    "paper_arxiv_2610.02200v1": {
+      "node_id": "paper_arxiv_2610.02200v1",
+      "node_type": "paper",
+      "name": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "ent_arxiv_2610.02200v1_m_1": {
+      "node_id": "ent_arxiv_2610.02200v1_m_1",
+      "node_type": "entity",
+      "name": "VISTA",
+      "canonical_name": "Vista",
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Vista Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02200v1_m_3": {
+      "node_id": "ent_arxiv_2610.02200v1_m_3",
+      "node_type": "entity",
+      "name": "VISTA",
+      "canonical_name": "Vista",
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Vista Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02200v1_d_1": {
+      "node_id": "ent_arxiv_2610.02200v1_d_1",
+      "node_type": "entity",
+      "name": "BabyVision",
+      "canonical_name": "Babyvision",
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Babyvision Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02200v1_d_2": {
+      "node_id": "ent_arxiv_2610.02200v1_d_2",
+      "node_type": "entity",
+      "name": "ARC-AGI-3",
+      "canonical_name": "Arc-Agi-3",
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Arc-Agi-3 Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02200v1_d_3": {
+      "node_id": "ent_arxiv_2610.02200v1_d_3",
+      "node_type": "entity",
+      "name": "ARC-AGI-3",
+      "canonical_name": "Arc-Agi-3",
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Arc-Agi-3 Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02200v1_ls_1": {
+      "node_id": "ent_arxiv_2610.02200v1_ls_1",
+      "node_type": "entity",
+      "name": "BabyVision",
+      "canonical_name": "Babyvision",
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Babyvision Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02200v1_ls_2": {
+      "node_id": "ent_arxiv_2610.02200v1_ls_2",
+      "node_type": "entity",
+      "name": "ARC-AGI-3",
+      "canonical_name": "Arc-Agi-3",
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Arc-Agi-3 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "clm_arxiv_2610.02200v1_1": {
+      "node_id": "clm_arxiv_2610.02200v1_1",
+      "node_type": "finding",
+      "name": "VISTA completes all public ARC-AGI-3 games with a perfect score....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "score",
+        "value": null,
+        "direction": "observation"
+      }
+    },
+    "lim_arxiv_2610.02200v1_1": {
+      "node_id": "lim_arxiv_2610.02200v1_1",
+      "node_type": "limitation",
+      "name": "Models may have seen the benchmark games in their training data....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "category": "generalization"
+      }
+    },
+    "fw_arxiv_2610.02200v1_1": {
+      "node_id": "fw_arxiv_2610.02200v1_1",
+      "node_type": "future_work",
+      "name": "Evaluate VISTA on more complex and realistic embodied tasks....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02200v1",
+      "attributes": {
+        "category": "dataset_expansion",
+        "target": null
+      }
+    },
+    "paper_arxiv_2610.02182v1": {
+      "node_id": "paper_arxiv_2610.02182v1",
+      "node_type": "paper",
+      "name": "SoftServe: A Scalable Quasi-Newton Method for Deep Learning",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_1": {
+      "node_id": "ent_arxiv_2610.02182v1_m_1",
+      "node_type": "entity",
+      "name": "SOFTSERVE",
+      "canonical_name": "Softserve",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Softserve Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_2": {
+      "node_id": "ent_arxiv_2610.02182v1_m_2",
+      "node_type": "entity",
+      "name": "Quasi-Newton (QN) methods",
+      "canonical_name": "Quasi-Newton (Qn) Methods",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Quasi-Newton (Qn) Methods Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_3": {
+      "node_id": "ent_arxiv_2610.02182v1_m_3",
+      "node_type": "entity",
+      "name": "diagonal and Kroneckerfactored variants",
+      "canonical_name": "Diagonal And Kroneckerfactored Variants",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Diagonal And Kroneckerfactored Variants Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_4": {
+      "node_id": "ent_arxiv_2610.02182v1_m_4",
+      "node_type": "entity",
+      "name": "Kroneckerstructured updates",
+      "canonical_name": "Kroneckerstructured Updates",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Kroneckerstructured Updates Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_5": {
+      "node_id": "ent_arxiv_2610.02182v1_m_5",
+      "node_type": "entity",
+      "name": "BFGS",
+      "canonical_name": "Bfgs",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Bfgs Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_6": {
+      "node_id": "ent_arxiv_2610.02182v1_m_6",
+      "node_type": "entity",
+      "name": "Newton-Schulz",
+      "canonical_name": "Newton-Schulz",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Newton-Schulz Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_7": {
+      "node_id": "ent_arxiv_2610.02182v1_m_7",
+      "node_type": "entity",
+      "name": "Adam",
+      "canonical_name": "Adam",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Adam Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_8": {
+      "node_id": "ent_arxiv_2610.02182v1_m_8",
+      "node_type": "entity",
+      "name": "Muon",
+      "canonical_name": "Muon",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Muon Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_9": {
+      "node_id": "ent_arxiv_2610.02182v1_m_9",
+      "node_type": "entity",
+      "name": "SOAP",
+      "canonical_name": "Soap",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Soap Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_10": {
+      "node_id": "ent_arxiv_2610.02182v1_m_10",
+      "node_type": "entity",
+      "name": "K-FAC",
+      "canonical_name": "K-Fac",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "K-Fac Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_12": {
+      "node_id": "ent_arxiv_2610.02182v1_m_12",
+      "node_type": "entity",
+      "name": "L-BFGS",
+      "canonical_name": "L-Bfgs",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "L-Bfgs Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_m_13": {
+      "node_id": "ent_arxiv_2610.02182v1_m_13",
+      "node_type": "entity",
+      "name": "SOFTSERVE-I",
+      "canonical_name": "Softserve-I",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Softserve-I Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02182v1_d_1": {
+      "node_id": "ent_arxiv_2610.02182v1_d_1",
+      "node_type": "entity",
+      "name": "MNIST",
+      "canonical_name": "Mnist",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Mnist Benchmarks",
+        "role": "benchmark",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02182v1_ls_1": {
+      "node_id": "ent_arxiv_2610.02182v1_ls_1",
+      "node_type": "entity",
+      "name": "Goldfarb et al. , 2020",
+      "canonical_name": "Goldfarb Et Al. , 2020",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Goldfarb Et Al. , 2020 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02182v1_ls_2": {
+      "node_id": "ent_arxiv_2610.02182v1_ls_2",
+      "node_type": "entity",
+      "name": "Ren et al. , 2022",
+      "canonical_name": "Ren Et Al. , 2022",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Ren Et Al. , 2022 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02182v1_ls_3": {
+      "node_id": "ent_arxiv_2610.02182v1_ls_3",
+      "node_type": "entity",
+      "name": "Amsel et al. , 2026",
+      "canonical_name": "Amsel Et Al. , 2026",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Amsel Et Al. , 2026 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02182v1_ls_4": {
+      "node_id": "ent_arxiv_2610.02182v1_ls_4",
+      "node_type": "entity",
+      "name": "Higham, 2008",
+      "canonical_name": "Higham, 2008",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Higham, 2008 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02182v1_ls_5": {
+      "node_id": "ent_arxiv_2610.02182v1_ls_5",
+      "node_type": "entity",
+      "name": "Hinton & Salakhutdinov, 2006",
+      "canonical_name": "Hinton & Salakhutdinov, 2006",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Hinton & Salakhutdinov, 2006 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02182v1_ls_6": {
+      "node_id": "ent_arxiv_2610.02182v1_ls_6",
+      "node_type": "entity",
+      "name": "Martens, 2010",
+      "canonical_name": "Martens, 2010",
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Martens, 2010 Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "clm_arxiv_2610.02182v1_1": {
+      "node_id": "clm_arxiv_2610.02182v1_1",
+      "node_type": "finding",
+      "name": "SOFTSERVE scales to massive neural networks...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "parameter size",
+        "value": 136.0,
+        "direction": "observation"
+      }
+    },
+    "lim_arxiv_2610.02182v1_1": {
+      "node_id": "lim_arxiv_2610.02182v1_1",
+      "node_type": "limitation",
+      "name": "Currently uses a fixed λ within each training run...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "category": "general"
+      }
+    },
+    "lim_arxiv_2610.02182v1_2": {
+      "node_id": "lim_arxiv_2610.02182v1_2",
+      "node_type": "limitation",
+      "name": "Characterizing convergence guarantees under realistic settings remains an open p...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "category": "general"
+      }
+    },
+    "fw_arxiv_2610.02182v1_1": {
+      "node_id": "fw_arxiv_2610.02182v1_1",
+      "node_type": "future_work",
+      "name": "Developing adaptive λ would further optimize performance...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02182v1",
+      "attributes": {
+        "category": "methodological_extension",
+        "target": null
+      }
+    },
+    "paper_arxiv_2610.02206v1": {
+      "node_id": "paper_arxiv_2610.02206v1",
+      "node_type": "paper",
+      "name": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "ent_arxiv_2610.02206v1_m_1": {
+      "node_id": "ent_arxiv_2610.02206v1_m_1",
+      "node_type": "entity",
+      "name": "KaliBench",
+      "canonical_name": "Kalibench",
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Kalibench Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02206v1_m_2": {
+      "node_id": "ent_arxiv_2610.02206v1_m_2",
+      "node_type": "entity",
+      "name": "multi-stage verification pipeline",
+      "canonical_name": "Multi-Stage Verification Pipeline",
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Multi-Stage Verification Pipeline Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02206v1_m_3": {
+      "node_id": "ent_arxiv_2610.02206v1_m_3",
+      "node_type": "entity",
+      "name": "supervised fine-tuning",
+      "canonical_name": "Supervised Fine-Tuning",
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Supervised Fine-Tuning Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02206v1_m_4": {
+      "node_id": "ent_arxiv_2610.02206v1_m_4",
+      "node_type": "entity",
+      "name": "reinforcement learning with verifiable rewards",
+      "canonical_name": "reinforcement learning with verifiable rewards",
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "reinforcement learning with verifiable rewards Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02206v1_m_5": {
+      "node_id": "ent_arxiv_2610.02206v1_m_5",
+      "node_type": "entity",
+      "name": "Supervised Fine-Tuning (SFT)",
+      "canonical_name": "Supervised Fine-Tuning (Sft)",
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Supervised Fine-Tuning (Sft) Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02206v1_m_6": {
+      "node_id": "ent_arxiv_2610.02206v1_m_6",
+      "node_type": "entity",
+      "name": "Reinforcement Learning with Verifiable Rewards (RLVR)",
+      "canonical_name": "Reinforcement Learning with Verifiable Rewards (RLVR)",
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Reinforcement Learning with Verifiable Rewards (RLVR) Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02206v1_d_2": {
+      "node_id": "ent_arxiv_2610.02206v1_d_2",
+      "node_type": "entity",
+      "name": "Kali Linux toolset",
+      "canonical_name": "Kali Linux Toolset",
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Kali Linux Toolset Benchmarks",
+        "role": "training",
+        "confidence": 0.922
+      }
+    },
+    "clm_arxiv_2610.02206v1_1": {
+      "node_id": "clm_arxiv_2610.02206v1_1",
+      "node_type": "finding",
+      "name": "Supervised fine-tuning and reinforcement learning improve an 8B model to match a...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "performance",
+        "value": 685.0,
+        "direction": "improvement"
+      }
+    },
+    "clm_arxiv_2610.02206v1_2": {
+      "node_id": "clm_arxiv_2610.02206v1_2",
+      "node_type": "finding",
+      "name": "Post-training with SFT and RLVR improves compact models....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "model performance",
+        "value": null,
+        "direction": "improvement"
+      }
+    },
+    "lim_arxiv_2610.02206v1_1": {
+      "node_id": "lim_arxiv_2610.02206v1_1",
+      "node_type": "limitation",
+      "name": "Focus on single-turn command generation and reliance on documentation-grounded d...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "category": "general"
+      }
+    },
+    "fw_arxiv_2610.02206v1_1": {
+      "node_id": "fw_arxiv_2610.02206v1_1",
+      "node_type": "future_work",
+      "name": "Extend to multi-step workflows, retrieval-augmented tool use, and environment-aw...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02206v1",
+      "attributes": {
+        "category": "methodological_extension",
+        "target": null
+      }
+    },
+    "paper_arxiv_2610.02186v1": {
+      "node_id": "paper_arxiv_2610.02186v1",
+      "node_type": "paper",
+      "name": "Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "ent_arxiv_2610.02186v1_m_1": {
+      "node_id": "ent_arxiv_2610.02186v1_m_1",
+      "node_type": "entity",
+      "name": "Preliminaries",
+      "canonical_name": "Preliminaries",
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Preliminaries Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02186v1_m_2": {
+      "node_id": "ent_arxiv_2610.02186v1_m_2",
+      "node_type": "entity",
+      "name": "HGR",
+      "canonical_name": "Hgr",
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Hgr Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02186v1_m_4": {
+      "node_id": "ent_arxiv_2610.02186v1_m_4",
+      "node_type": "entity",
+      "name": "Grammar Transformer",
+      "canonical_name": "Transformer",
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Attention Architectures",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02186v1_d_1": {
+      "node_id": "ent_arxiv_2610.02186v1_d_1",
+      "node_type": "entity",
+      "name": "RingDiv",
+      "canonical_name": "Ringdiv",
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Ringdiv Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02186v1_d_2": {
+      "node_id": "ent_arxiv_2610.02186v1_d_2",
+      "node_type": "entity",
+      "name": "RingDiv300k",
+      "canonical_name": "Ringdiv300K",
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Ringdiv300K Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02186v1_d_3": {
+      "node_id": "ent_arxiv_2610.02186v1_d_3",
+      "node_type": "entity",
+      "name": "Public",
+      "canonical_name": "Public",
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Public Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02186v1_d_4": {
+      "node_id": "ent_arxiv_2610.02186v1_d_4",
+      "node_type": "entity",
+      "name": "Source",
+      "canonical_name": "Source",
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Source Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "lim_arxiv_2610.02186v1_1": {
+      "node_id": "lim_arxiv_2610.02186v1_1",
+      "node_type": "limitation",
+      "name": "This work bridges topological deep learning and sequence modelling by encoding h...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "category": "general"
+      }
+    },
+    "lim_arxiv_2610.02186v1_2": {
+      "node_id": "lim_arxiv_2610.02186v1_2",
+      "node_type": "limitation",
+      "name": "Building on a combinatorial-complex view of molecules, we examined three linked ...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "category": "general"
+      }
+    },
+    "fw_arxiv_2610.02186v1_1": {
+      "node_id": "fw_arxiv_2610.02186v1_1",
+      "node_type": "future_work",
+      "name": "Beyond addressing these boundaries, future work can extend HGR to other chemical...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02186v1",
+      "attributes": {
+        "category": "methodological_extension",
+        "target": null
+      }
+    },
+    "paper_arxiv_2610.02180v1": {
+      "node_id": "paper_arxiv_2610.02180v1",
+      "node_type": "paper",
+      "name": "Generative Cinematographer: Composing Camera and Object Motion in 3D",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "ent_arxiv_2610.02180v1_m_1": {
+      "node_id": "ent_arxiv_2610.02180v1_m_1",
+      "node_type": "entity",
+      "name": "GenCine",
+      "canonical_name": "Gencine",
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Gencine Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02180v1_m_2": {
+      "node_id": "ent_arxiv_2610.02180v1_m_2",
+      "node_type": "entity",
+      "name": "Wan2.1-Fun-V1.1-14B-Control",
+      "canonical_name": "Wan2.1-Fun-V1.1-14B-Control",
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Wan2.1-Fun-V1.1-14B-Control Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02180v1_d_2": {
+      "node_id": "ent_arxiv_2610.02180v1_d_2",
+      "node_type": "entity",
+      "name": "PointOdyssey",
+      "canonical_name": "Pointodyssey",
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Pointodyssey Benchmarks",
+        "role": "training",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02180v1_d_3": {
+      "node_id": "ent_arxiv_2610.02180v1_d_3",
+      "node_type": "entity",
+      "name": "SpatialVid-HQ",
+      "canonical_name": "Spatialvid-Hq",
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Spatialvid-Hq Benchmarks",
+        "role": "training",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02180v1_ls_1": {
+      "node_id": "ent_arxiv_2610.02180v1_ls_1",
+      "node_type": "entity",
+      "name": "Wan2.1-Fun-V1.1-14B-Control",
+      "canonical_name": "Wan2.1-Fun-V1.1-14B-Control",
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Wan2.1-Fun-V1.1-14B-Control Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02180v1_ls_3": {
+      "node_id": "ent_arxiv_2610.02180v1_ls_3",
+      "node_type": "entity",
+      "name": "PointOdyssey",
+      "canonical_name": "Pointodyssey",
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Pointodyssey Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02180v1_ls_4": {
+      "node_id": "ent_arxiv_2610.02180v1_ls_4",
+      "node_type": "entity",
+      "name": "SpatialVid-HQ",
+      "canonical_name": "Spatialvid-Hq",
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Spatialvid-Hq Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02180v1_ls_5": {
+      "node_id": "ent_arxiv_2610.02180v1_ls_5",
+      "node_type": "entity",
+      "name": "CoWTracker",
+      "canonical_name": "Cowtracker",
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Cowtracker Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "lim_arxiv_2610.02180v1_1": {
+      "node_id": "lim_arxiv_2610.02180v1_1",
+      "node_type": "limitation",
+      "name": "single-image scaffold leaves occluded regions unmodeled...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "category": "generalization"
+      }
+    },
+    "lim_arxiv_2610.02180v1_2": {
+      "node_id": "lim_arxiv_2610.02180v1_2",
+      "node_type": "limitation",
+      "name": "authoring many handles can become cumbersome...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "category": "scalability"
+      }
+    },
+    "lim_arxiv_2610.02180v1_3": {
+      "node_id": "lim_arxiv_2610.02180v1_3",
+      "node_type": "limitation",
+      "name": "handles impose no physical constraints or causal interactions...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "category": "general"
+      }
+    },
+    "fw_arxiv_2610.02180v1_1": {
+      "node_id": "fw_arxiv_2610.02180v1_1",
+      "node_type": "future_work",
+      "name": "Geometry completion, automatic handle placement, and learned interaction priors...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02180v1",
+      "attributes": {
+        "category": "methodological_extension",
+        "target": null
+      }
+    },
+    "paper_arxiv_2610.02188v1": {
+      "node_id": "paper_arxiv_2610.02188v1",
+      "node_type": "paper",
+      "name": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "publication_year": 2026
+      }
+    },
+    "ent_arxiv_2610.02188v1_m_1": {
+      "node_id": "ent_arxiv_2610.02188v1_m_1",
+      "node_type": "entity",
+      "name": "DMAD",
+      "canonical_name": "Dmad",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Dmad Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02188v1_m_2": {
+      "node_id": "ent_arxiv_2610.02188v1_m_2",
+      "node_type": "entity",
+      "name": "DMD2",
+      "canonical_name": "Dmd2",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Dmd2 Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02188v1_m_3": {
+      "node_id": "ent_arxiv_2610.02188v1_m_3",
+      "node_type": "entity",
+      "name": "EDM",
+      "canonical_name": "Edm",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Edm Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02188v1_m_4": {
+      "node_id": "ent_arxiv_2610.02188v1_m_4",
+      "node_type": "entity",
+      "name": "SDXL",
+      "canonical_name": "Sdxl",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Sdxl Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02188v1_m_6": {
+      "node_id": "ent_arxiv_2610.02188v1_m_6",
+      "node_type": "entity",
+      "name": "Wan2.1-T2V 14B",
+      "canonical_name": "Wan2.1-T2V 14B",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Wan2.1-T2V 14B Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02188v1_m_7": {
+      "node_id": "ent_arxiv_2610.02188v1_m_7",
+      "node_type": "entity",
+      "name": "MiniMax-H3",
+      "canonical_name": "Minimax-H3",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Minimax-H3 Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02188v1_m_8": {
+      "node_id": "ent_arxiv_2610.02188v1_m_8",
+      "node_type": "entity",
+      "name": "rCM",
+      "canonical_name": "Rcm",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Rcm Methods",
+        "role": "baseline",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02188v1_m_9": {
+      "node_id": "ent_arxiv_2610.02188v1_m_9",
+      "node_type": "entity",
+      "name": "LoRA",
+      "canonical_name": "Lora",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "method",
+        "subtype": "Lora Methods",
+        "role": "proposed",
+        "confidence": 0.9445
+      }
+    },
+    "ent_arxiv_2610.02188v1_d_1": {
+      "node_id": "ent_arxiv_2610.02188v1_d_1",
+      "node_type": "entity",
+      "name": "ImageNet-64×64",
+      "canonical_name": "Imagenet-64×64",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Imagenet-64×64 Benchmarks",
+        "role": "training",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02188v1_d_2": {
+      "node_id": "ent_arxiv_2610.02188v1_d_2",
+      "node_type": "entity",
+      "name": "10K COCO 2014 prompts",
+      "canonical_name": "10K Coco 2014 Prompts",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "10K Coco 2014 Prompts Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02188v1_d_3": {
+      "node_id": "ent_arxiv_2610.02188v1_d_3",
+      "node_type": "entity",
+      "name": "AVGen-Bench",
+      "canonical_name": "Avgen-Bench",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "dataset",
+        "subtype": "Avgen-Bench Benchmarks",
+        "role": "evaluation",
+        "confidence": 0.922
+      }
+    },
+    "ent_arxiv_2610.02188v1_ls_1": {
+      "node_id": "ent_arxiv_2610.02188v1_ls_1",
+      "node_type": "entity",
+      "name": "Fréchet Inception Distance (FID)",
+      "canonical_name": "Fréchet Inception Distance (Fid)",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Fréchet Inception Distance (Fid) Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02188v1_ls_2": {
+      "node_id": "ent_arxiv_2610.02188v1_ls_2",
+      "node_type": "entity",
+      "name": "CLIP score",
+      "canonical_name": "Clip Score",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Clip Score Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02188v1_ls_3": {
+      "node_id": "ent_arxiv_2610.02188v1_ls_3",
+      "node_type": "entity",
+      "name": "patch FID",
+      "canonical_name": "Patch Fid",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Patch Fid Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "ent_arxiv_2610.02188v1_ls_4": {
+      "node_id": "ent_arxiv_2610.02188v1_ls_4",
+      "node_type": "entity",
+      "name": "VBench",
+      "canonical_name": "Vbench",
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "entity_type": "literature_source",
+        "subtype": "Vbench Benchmarks",
+        "role": "database",
+        "confidence": 0.983
+      }
+    },
+    "clm_arxiv_2610.02188v1_1": {
+      "node_id": "clm_arxiv_2610.02188v1_1",
+      "node_type": "finding",
+      "name": "DMAD improves over few-step methods and multi-step teachers in image FID and VBe...",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "image FID and VBench total score",
+        "value": null,
+        "direction": "improvement"
+      }
+    },
+    "clm_arxiv_2610.02188v1_2": {
+      "node_id": "clm_arxiv_2610.02188v1_2",
+      "node_type": "finding",
+      "name": "Users prefer the four-step DMAD student over DMD2 and rCM on MiniMax-H3....",
+      "canonical_name": null,
+      "paper_id": "arxiv_2610.02188v1",
+      "attributes": {
+        "claim_type": "performance",
+        "metric": "user preference",
+        "value": null,
+        "direction": "observation"
+      }
+    }
+  },
+  "edges": [
+    {
+      "edge_id": "edge_1",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "We evaluate HC-DLM on three tasks"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_2",
+      "source_id": "ent_arxiv_2610.02193v1_m_2",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S192",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "Autoregressive ARM (w/o ordering) 42M"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_3",
+      "source_id": "ent_arxiv_2610.02193v1_m_3",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S192",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "ARM (with ordering) 87.18"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_4",
+      "source_id": "ent_arxiv_2610.02193v1_m_4",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S193",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "Discrete diffusion MDM (vanilla)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_5",
+      "source_id": "ent_arxiv_2610.02193v1_m_5",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S194",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "MDM (top‑prob.) 18.51"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_6",
+      "source_id": "ent_arxiv_2610.02193v1_m_6",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S694",
+        "page": 19,
+        "section": "Method Training time",
+        "quote": "LangFlow ∼292 h"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_7",
+      "source_id": "ent_arxiv_2610.02193v1_m_7",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S694",
+        "page": 19,
+        "section": "Method Training time",
+        "quote": "Plaid ∼375 h"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_8",
+      "source_id": "ent_arxiv_2610.02193v1_d_1",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "structured reasoning (Sudoku)"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_9",
+      "source_id": "ent_arxiv_2610.02193v1_d_2",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "mathematical planning (Countdown)"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_10",
+      "source_id": "ent_arxiv_2610.02193v1_d_3",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "general language generation (LM1B)"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_11",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "ent_arxiv_2610.02193v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "We evaluate HC-DLM on three tasks"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_12",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "ent_arxiv_2610.02193v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "We evaluate HC-DLM on three tasks"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_13",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "ent_arxiv_2610.02193v1_d_3",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "We evaluate HC-DLM on three tasks"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_14",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "ent_arxiv_2610.02193v1_m_2",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "We evaluate HC-DLM on three tasks"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_15",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "ent_arxiv_2610.02193v1_m_3",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "We evaluate HC-DLM on three tasks"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_16",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "ent_arxiv_2610.02193v1_m_4",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "We evaluate HC-DLM on three tasks"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_17",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "ent_arxiv_2610.02193v1_m_5",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "We evaluate HC-DLM on three tasks"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_18",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "ent_arxiv_2610.02193v1_m_6",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "We evaluate HC-DLM on three tasks"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_19",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "ent_arxiv_2610.02193v1_m_7",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S187",
+        "page": 6,
+        "section": "EXPERIMENTS",
+        "quote": "We evaluate HC-DLM on three tasks"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_20",
+      "source_id": "clm_arxiv_2610.02193v1_1",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S694",
+        "page": 19,
+        "section": "Method Training time",
+        "quote": "HC-DLM (ours) ∼48 h"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_21",
+      "source_id": "clm_arxiv_2610.02193v1_2",
+      "target_id": "paper_arxiv_2610.02193v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S314",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "the coupled model outperforms continuous‑only and discrete alternatives"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_22",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "lim_arxiv_2610.02193v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S803",
+        "page": 23,
+        "section": "LIMITATIONS",
+        "quote": "makes each training step more expensive than in a purely discrete masked diffusion baseline"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_23",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "lim_arxiv_2610.02193v1_2",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S807",
+        "page": 24,
+        "section": "LIMITATIONS",
+        "quote": "target structured reasoning and planning benchmarks at moderate scale"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_24",
+      "source_id": "ent_arxiv_2610.02193v1_m_1",
+      "target_id": "lim_arxiv_2610.02193v1_3",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S808",
+        "page": 24,
+        "section": "LIMITATIONS",
+        "quote": "scaling HC-DLM to larger pretrained backbones ... exceeds the resources typically available in academia"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_25",
+      "source_id": "paper_arxiv_2610.02193v1",
+      "target_id": "fw_arxiv_2610.02193v1_1",
+      "relation_type": "FUTURE_DIRECTION",
+      "paper_id": "arxiv_2610.02193v1",
+      "provenance": {
+        "sentence_id": "S808",
+        "page": 24,
+        "section": "LIMITATIONS",
+        "quote": "scaling HC-DLM to larger pretrained backbones ... most promising direction for future work"
+      },
+      "confidence": 0.905
+    },
+    {
+      "edge_id": "edge_26",
+      "source_id": "ent_arxiv_2610.02202v1_m_1",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S170",
+        "page": 6,
+        "section": "EVALUATION AND ANALYSIS",
+        "quote": "SPECTER2 (Singh et al. , 2022)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_27",
+      "source_id": "ent_arxiv_2610.02202v1_m_2",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S170",
+        "page": 6,
+        "section": "EVALUATION AND ANALYSIS",
+        "quote": "OpenScholar (Asai et al. , 2024)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_28",
+      "source_id": "ent_arxiv_2610.02202v1_m_3",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S258",
+        "page": 8,
+        "section": "Method CoreQ SubQ",
+        "quote": "Gemini-Embedding-2"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_29",
+      "source_id": "ent_arxiv_2610.02202v1_m_4",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S266",
+        "page": 9,
+        "section": "Method CoreQ SubQ",
+        "quote": "Gemini 3.7 Flash"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_30",
+      "source_id": "ent_arxiv_2610.02202v1_m_5",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S269",
+        "page": 9,
+        "section": "Method CoreQ SubQ",
+        "quote": "GPT-4.1"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_31",
+      "source_id": "ent_arxiv_2610.02202v1_d_1",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S279",
+        "page": 9,
+        "section": "CONCLUSION",
+        "quote": "SCHOLARCATALYST, a benchmark"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_32",
+      "source_id": "ent_arxiv_2610.02202v1_d_3",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S285",
+        "page": 9,
+        "section": "CONCLUSION",
+        "quote": "human reference accuracy on ImageNet"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_33",
+      "source_id": "ent_arxiv_2610.02202v1_d_4",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S925",
+        "page": 26,
+        "section": "E AUTOMATED DATA CONSTRUCTION PIPELINE",
+        "quote": "kaggle arXiv datasets"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_34",
+      "source_id": "clm_arxiv_2610.02202v1_1",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S266",
+        "page": 9,
+        "section": "Method CoreQ SubQ",
+        "quote": "raise Recall@20 by 0.11 for CoreQ"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_35",
+      "source_id": "clm_arxiv_2610.02202v1_2",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S266",
+        "page": 9,
+        "section": "Method CoreQ SubQ",
+        "quote": "0.02 for SubQ"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_36",
+      "source_id": "clm_arxiv_2610.02202v1_3",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S266",
+        "page": 9,
+        "section": "Method CoreQ SubQ",
+        "quote": "web search changes it by at most 0.01"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_37",
+      "source_id": "clm_arxiv_2610.02202v1_4",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S269",
+        "page": 9,
+        "section": "Method CoreQ SubQ",
+        "quote": "changes Recall@20 by at most 0.04"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_38",
+      "source_id": "clm_arxiv_2610.02202v1_5",
+      "target_id": "paper_arxiv_2610.02202v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S269",
+        "page": 9,
+        "section": "Method CoreQ SubQ",
+        "quote": "best SubQ policy still trails the retriever"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_39",
+      "source_id": "paper_arxiv_2610.02202v1",
+      "target_id": "fw_arxiv_2610.02202v1_1",
+      "relation_type": "FUTURE_DIRECTION",
+      "paper_id": "arxiv_2610.02202v1",
+      "provenance": {
+        "sentence_id": "S284",
+        "page": 9,
+        "section": "CONCLUSION",
+        "quote": "performance ceiling of this task"
+      },
+      "confidence": 0.905
+    },
+    {
+      "edge_id": "edge_40",
+      "source_id": "ent_arxiv_2610.02198v1_m_1",
+      "target_id": "paper_arxiv_2610.02198v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S5",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We propose Forward Entropy-Regularized Policy Optimization (FERPO)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_41",
+      "source_id": "ent_arxiv_2610.02198v1_m_2",
+      "target_id": "paper_arxiv_2610.02198v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S11",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "faster actor updates than Relative Entropy Pathwise Policy Optimization (REPPO)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_42",
+      "source_id": "ent_arxiv_2610.02198v1_d_1",
+      "target_id": "paper_arxiv_2610.02198v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S250",
+        "page": 7,
+        "section": "Under review",
+        "quote": "on CheetahRun, peak GPU memory usage is 22.4% higher"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_43",
+      "source_id": "ent_arxiv_2610.02198v1_d_2",
+      "target_id": "paper_arxiv_2610.02198v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S342",
+        "page": 9,
+        "section": "QM success rate",
+        "quote": "Its higher returns on AcrobotSwingupSparse"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_44",
+      "source_id": "ent_arxiv_2610.02198v1_m_1",
+      "target_id": "ent_arxiv_2610.02198v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S5",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We propose Forward Entropy-Regularized Policy Optimization (FERPO)"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_45",
+      "source_id": "ent_arxiv_2610.02198v1_m_1",
+      "target_id": "ent_arxiv_2610.02198v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S5",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We propose Forward Entropy-Regularized Policy Optimization (FERPO)"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_46",
+      "source_id": "ent_arxiv_2610.02198v1_m_1",
+      "target_id": "ent_arxiv_2610.02198v1_m_2",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S5",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We propose Forward Entropy-Regularized Policy Optimization (FERPO)"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_47",
+      "source_id": "clm_arxiv_2610.02198v1_1",
+      "target_id": "paper_arxiv_2610.02198v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S11",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "demonstrate faster actor updates than Relative Entropy Pathwise Policy Optimization (REPPO)"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_48",
+      "source_id": "clm_arxiv_2610.02198v1_2",
+      "target_id": "paper_arxiv_2610.02198v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S250",
+        "page": 7,
+        "section": "Under review",
+        "quote": "peak GPU memory usage is 22.4% higher for uncached FERPO"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_49",
+      "source_id": "ent_arxiv_2610.02198v1_m_1",
+      "target_id": "lim_arxiv_2610.02198v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S250",
+        "page": 7,
+        "section": "Under review",
+        "quote": "A drawback is higher GPU memory usage"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_50",
+      "source_id": "paper_arxiv_2610.02198v1",
+      "target_id": "fw_arxiv_2610.02198v1_1",
+      "relation_type": "FUTURE_DIRECTION",
+      "paper_id": "arxiv_2610.02198v1",
+      "provenance": {
+        "sentence_id": "S342",
+        "page": 9,
+        "section": "QM success rate",
+        "quote": "make it a particularly promising direction for future work"
+      },
+      "confidence": 0.905
+    },
+    {
+      "edge_id": "edge_51",
+      "source_id": "ent_arxiv_2610.02204v1_m_1",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S20",
+        "page": 1,
+        "section": "Deploy",
+        "quote": "We present Reconstruct, Practice, Go Real (RPG), a framework"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_52",
+      "source_id": "ent_arxiv_2610.02204v1_m_2",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S42",
+        "page": 2,
+        "section": "INTRODUCTION",
+        "quote": "In Agent-as-Policy, the MLLM remains in the control loop"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_53",
+      "source_id": "ent_arxiv_2610.02204v1_m_3",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S109",
+        "page": 3,
+        "section": "Reconstruct Practice",
+        "quote": "a multimodal agent (the Runtime Agent) follows a system prompt"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_54",
+      "source_id": "ent_arxiv_2610.02204v1_m_4",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S320",
+        "page": 8,
+        "section": "Task Before repair After repair",
+        "quote": "fixing the runtime model (Gemini 3.8 Flash with xhigh reasoning)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_55",
+      "source_id": "ent_arxiv_2610.02204v1_m_5",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S396",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "outperforming ASPIRE (75.5%) and CaP-Agent0"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_56",
+      "source_id": "ent_arxiv_2610.02204v1_m_6",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S396",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "and CaP-Agent0 with GPT-6 Astra Pro (60.0%)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_57",
+      "source_id": "ent_arxiv_2610.02204v1_m_7",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S396",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "CaP-Agent0 with GPT-6 Astra Pro (60.0%)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_58",
+      "source_id": "ent_arxiv_2610.02204v1_m_9",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S397",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "combining the Video Analyzer and Privileged Agent"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_59",
+      "source_id": "ent_arxiv_2610.02204v1_d_1",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S215",
+        "page": 5,
+        "section": "EVALUATION",
+        "quote": "The practice collection contains seven CaP-X tasks"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_60",
+      "source_id": "ent_arxiv_2610.02204v1_d_2",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S215",
+        "page": 5,
+        "section": "EVALUATION",
+        "quote": "fifteen ABC-derived or analogous tasks"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_61",
+      "source_id": "ent_arxiv_2610.02204v1_m_1",
+      "target_id": "ent_arxiv_2610.02204v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S20",
+        "page": 1,
+        "section": "Deploy",
+        "quote": "We present Reconstruct, Practice, Go Real (RPG), a framework"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_62",
+      "source_id": "ent_arxiv_2610.02204v1_m_1",
+      "target_id": "ent_arxiv_2610.02204v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S20",
+        "page": 1,
+        "section": "Deploy",
+        "quote": "We present Reconstruct, Practice, Go Real (RPG), a framework"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_63",
+      "source_id": "ent_arxiv_2610.02204v1_m_1",
+      "target_id": "ent_arxiv_2610.02204v1_m_4",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S20",
+        "page": 1,
+        "section": "Deploy",
+        "quote": "We present Reconstruct, Practice, Go Real (RPG), a framework"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_64",
+      "source_id": "ent_arxiv_2610.02204v1_m_1",
+      "target_id": "ent_arxiv_2610.02204v1_m_5",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S20",
+        "page": 1,
+        "section": "Deploy",
+        "quote": "We present Reconstruct, Practice, Go Real (RPG), a framework"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_65",
+      "source_id": "ent_arxiv_2610.02204v1_m_1",
+      "target_id": "ent_arxiv_2610.02204v1_m_6",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S20",
+        "page": 1,
+        "section": "Deploy",
+        "quote": "We present Reconstruct, Practice, Go Real (RPG), a framework"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_66",
+      "source_id": "ent_arxiv_2610.02204v1_m_1",
+      "target_id": "ent_arxiv_2610.02204v1_m_7",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S20",
+        "page": 1,
+        "section": "Deploy",
+        "quote": "We present Reconstruct, Practice, Go Real (RPG), a framework"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_67",
+      "source_id": "ent_arxiv_2610.02204v1_m_2",
+      "target_id": "ent_arxiv_2610.02204v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S42",
+        "page": 2,
+        "section": "INTRODUCTION",
+        "quote": "In Agent-as-Policy, the MLLM remains in the control loop"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_68",
+      "source_id": "ent_arxiv_2610.02204v1_m_2",
+      "target_id": "ent_arxiv_2610.02204v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S42",
+        "page": 2,
+        "section": "INTRODUCTION",
+        "quote": "In Agent-as-Policy, the MLLM remains in the control loop"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_69",
+      "source_id": "ent_arxiv_2610.02204v1_m_2",
+      "target_id": "ent_arxiv_2610.02204v1_m_4",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S42",
+        "page": 2,
+        "section": "INTRODUCTION",
+        "quote": "In Agent-as-Policy, the MLLM remains in the control loop"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_70",
+      "source_id": "ent_arxiv_2610.02204v1_m_2",
+      "target_id": "ent_arxiv_2610.02204v1_m_5",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S42",
+        "page": 2,
+        "section": "INTRODUCTION",
+        "quote": "In Agent-as-Policy, the MLLM remains in the control loop"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_71",
+      "source_id": "ent_arxiv_2610.02204v1_m_2",
+      "target_id": "ent_arxiv_2610.02204v1_m_6",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S42",
+        "page": 2,
+        "section": "INTRODUCTION",
+        "quote": "In Agent-as-Policy, the MLLM remains in the control loop"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_72",
+      "source_id": "ent_arxiv_2610.02204v1_m_2",
+      "target_id": "ent_arxiv_2610.02204v1_m_7",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S42",
+        "page": 2,
+        "section": "INTRODUCTION",
+        "quote": "In Agent-as-Policy, the MLLM remains in the control loop"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_73",
+      "source_id": "ent_arxiv_2610.02204v1_m_3",
+      "target_id": "ent_arxiv_2610.02204v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S109",
+        "page": 3,
+        "section": "Reconstruct Practice",
+        "quote": "a multimodal agent (the Runtime Agent) follows a system prompt"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_74",
+      "source_id": "ent_arxiv_2610.02204v1_m_3",
+      "target_id": "ent_arxiv_2610.02204v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S109",
+        "page": 3,
+        "section": "Reconstruct Practice",
+        "quote": "a multimodal agent (the Runtime Agent) follows a system prompt"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_75",
+      "source_id": "ent_arxiv_2610.02204v1_m_3",
+      "target_id": "ent_arxiv_2610.02204v1_m_4",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S109",
+        "page": 3,
+        "section": "Reconstruct Practice",
+        "quote": "a multimodal agent (the Runtime Agent) follows a system prompt"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_76",
+      "source_id": "ent_arxiv_2610.02204v1_m_3",
+      "target_id": "ent_arxiv_2610.02204v1_m_5",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S109",
+        "page": 3,
+        "section": "Reconstruct Practice",
+        "quote": "a multimodal agent (the Runtime Agent) follows a system prompt"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_77",
+      "source_id": "ent_arxiv_2610.02204v1_m_3",
+      "target_id": "ent_arxiv_2610.02204v1_m_6",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S109",
+        "page": 3,
+        "section": "Reconstruct Practice",
+        "quote": "a multimodal agent (the Runtime Agent) follows a system prompt"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_78",
+      "source_id": "ent_arxiv_2610.02204v1_m_3",
+      "target_id": "ent_arxiv_2610.02204v1_m_7",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S109",
+        "page": 3,
+        "section": "Reconstruct Practice",
+        "quote": "a multimodal agent (the Runtime Agent) follows a system prompt"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_79",
+      "source_id": "ent_arxiv_2610.02204v1_m_9",
+      "target_id": "ent_arxiv_2610.02204v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S397",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "combining the Video Analyzer and Privileged Agent"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_80",
+      "source_id": "ent_arxiv_2610.02204v1_m_9",
+      "target_id": "ent_arxiv_2610.02204v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S397",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "combining the Video Analyzer and Privileged Agent"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_81",
+      "source_id": "ent_arxiv_2610.02204v1_m_9",
+      "target_id": "ent_arxiv_2610.02204v1_m_4",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S397",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "combining the Video Analyzer and Privileged Agent"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_82",
+      "source_id": "ent_arxiv_2610.02204v1_m_9",
+      "target_id": "ent_arxiv_2610.02204v1_m_5",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S397",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "combining the Video Analyzer and Privileged Agent"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_83",
+      "source_id": "ent_arxiv_2610.02204v1_m_9",
+      "target_id": "ent_arxiv_2610.02204v1_m_6",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S397",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "combining the Video Analyzer and Privileged Agent"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_84",
+      "source_id": "ent_arxiv_2610.02204v1_m_9",
+      "target_id": "ent_arxiv_2610.02204v1_m_7",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S397",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "combining the Video Analyzer and Privileged Agent"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_85",
+      "source_id": "clm_arxiv_2610.02204v1_1",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S396",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "Success rises from 28.6% after the first practice round to 95.0%"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_86",
+      "source_id": "clm_arxiv_2610.02204v1_2",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S396",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "outperforming ASPIRE (75.5%)"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_87",
+      "source_id": "clm_arxiv_2610.02204v1_3",
+      "target_id": "paper_arxiv_2610.02204v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S396",
+        "page": 10,
+        "section": "CONCLUSION",
+        "quote": "CaP-Agent0 with GPT-6 Astra Pro (60.0%)"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_88",
+      "source_id": "ent_arxiv_2610.02204v1_m_1",
+      "target_id": "lim_arxiv_2610.02204v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S620",
+        "page": 15,
+        "section": "K X",
+        "quote": "The clearest remaining limitation is deformable-object manipulation"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_89",
+      "source_id": "ent_arxiv_2610.02204v1_m_2",
+      "target_id": "lim_arxiv_2610.02204v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S620",
+        "page": 15,
+        "section": "K X",
+        "quote": "The clearest remaining limitation is deformable-object manipulation"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_90",
+      "source_id": "ent_arxiv_2610.02204v1_m_3",
+      "target_id": "lim_arxiv_2610.02204v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S620",
+        "page": 15,
+        "section": "K X",
+        "quote": "The clearest remaining limitation is deformable-object manipulation"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_91",
+      "source_id": "ent_arxiv_2610.02204v1_m_9",
+      "target_id": "lim_arxiv_2610.02204v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S620",
+        "page": 15,
+        "section": "K X",
+        "quote": "The clearest remaining limitation is deformable-object manipulation"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_92",
+      "source_id": "paper_arxiv_2610.02204v1",
+      "target_id": "fw_arxiv_2610.02204v1_1",
+      "relation_type": "FUTURE_DIRECTION",
+      "paper_id": "arxiv_2610.02204v1",
+      "provenance": {
+        "sentence_id": "S412",
+        "page": 11,
+        "section": "CONCLUSION",
+        "quote": "Future work could improve efficiency through quota-aware rollout scheduling"
+      },
+      "confidence": 0.905
+    },
+    {
+      "edge_id": "edge_93",
+      "source_id": "ent_arxiv_2610.02200v1_m_1",
+      "target_id": "paper_arxiv_2610.02200v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S86",
+        "page": 2,
+        "section": "STA harness Agent",
+        "quote": "two example agent trajectories with VISTA"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_94",
+      "source_id": "ent_arxiv_2610.02200v1_m_3",
+      "target_id": "paper_arxiv_2610.02200v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S410",
+        "page": 10,
+        "section": "Conclusion",
+        "quote": "VISTA shows that a simple visual harness"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_95",
+      "source_id": "ent_arxiv_2610.02200v1_d_1",
+      "target_id": "paper_arxiv_2610.02200v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S381",
+        "page": 9,
+        "section": "General Visual Environments",
+        "quote": "static visual reasoning benchmark, BabyVision"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_96",
+      "source_id": "ent_arxiv_2610.02200v1_d_2",
+      "target_id": "paper_arxiv_2610.02200v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S409",
+        "page": 10,
+        "section": "Limitations",
+        "quote": "private set of ARC-AGI-3"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_97",
+      "source_id": "ent_arxiv_2610.02200v1_d_3",
+      "target_id": "paper_arxiv_2610.02200v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S412",
+        "page": 10,
+        "section": "Conclusion",
+        "quote": "all 25 public ARC-AGI-3 games"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_98",
+      "source_id": "ent_arxiv_2610.02200v1_m_1",
+      "target_id": "ent_arxiv_2610.02200v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S86",
+        "page": 2,
+        "section": "STA harness Agent",
+        "quote": "two example agent trajectories with VISTA"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_99",
+      "source_id": "ent_arxiv_2610.02200v1_m_1",
+      "target_id": "ent_arxiv_2610.02200v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S86",
+        "page": 2,
+        "section": "STA harness Agent",
+        "quote": "two example agent trajectories with VISTA"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_100",
+      "source_id": "ent_arxiv_2610.02200v1_m_1",
+      "target_id": "ent_arxiv_2610.02200v1_d_3",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S86",
+        "page": 2,
+        "section": "STA harness Agent",
+        "quote": "two example agent trajectories with VISTA"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_101",
+      "source_id": "ent_arxiv_2610.02200v1_m_3",
+      "target_id": "ent_arxiv_2610.02200v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S410",
+        "page": 10,
+        "section": "Conclusion",
+        "quote": "VISTA shows that a simple visual harness"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_102",
+      "source_id": "ent_arxiv_2610.02200v1_m_3",
+      "target_id": "ent_arxiv_2610.02200v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S410",
+        "page": 10,
+        "section": "Conclusion",
+        "quote": "VISTA shows that a simple visual harness"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_103",
+      "source_id": "ent_arxiv_2610.02200v1_m_3",
+      "target_id": "ent_arxiv_2610.02200v1_d_3",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S410",
+        "page": 10,
+        "section": "Conclusion",
+        "quote": "VISTA shows that a simple visual harness"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_104",
+      "source_id": "clm_arxiv_2610.02200v1_1",
+      "target_id": "paper_arxiv_2610.02200v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S412",
+        "page": 10,
+        "section": "Conclusion",
+        "quote": "complete all 25 public ARC-AGI-3 games with a perfect score"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_105",
+      "source_id": "ent_arxiv_2610.02200v1_m_1",
+      "target_id": "lim_arxiv_2610.02200v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S408",
+        "page": 10,
+        "section": "Limitations",
+        "quote": "cannot rule out the possibility that these games were included"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_106",
+      "source_id": "ent_arxiv_2610.02200v1_m_3",
+      "target_id": "lim_arxiv_2610.02200v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S408",
+        "page": 10,
+        "section": "Limitations",
+        "quote": "cannot rule out the possibility that these games were included"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_107",
+      "source_id": "paper_arxiv_2610.02200v1",
+      "target_id": "fw_arxiv_2610.02200v1_1",
+      "relation_type": "FUTURE_DIRECTION",
+      "paper_id": "arxiv_2610.02200v1",
+      "provenance": {
+        "sentence_id": "S415",
+        "page": 10,
+        "section": "Conclusion",
+        "quote": "evaluate VISTA on more complex and realistic tasks"
+      },
+      "confidence": 0.905
+    },
+    {
+      "edge_id": "edge_108",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_109",
+      "source_id": "ent_arxiv_2610.02182v1_m_2",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S4",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "Quasi-Newton (QN) methods have long been among the most effective methods"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_110",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_111",
+      "source_id": "ent_arxiv_2610.02182v1_m_4",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S36",
+        "page": 2,
+        "section": "INTRODUCTION",
+        "quote": "Kroneckerstructured updates have been proposed for applying BFGS to deep learning"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_112",
+      "source_id": "ent_arxiv_2610.02182v1_m_5",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S36",
+        "page": 2,
+        "section": "INTRODUCTION",
+        "quote": "applying BFGS to deep learning"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_113",
+      "source_id": "ent_arxiv_2610.02182v1_m_6",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S42",
+        "page": 2,
+        "section": "INTRODUCTION",
+        "quote": "variants of Newton-Schulz (Amsel et al. , 2026; Higham, 2008)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_114",
+      "source_id": "ent_arxiv_2610.02182v1_m_7",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S208",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "Our baselines are Adam, Muon, SOAP, K-FAC, and K-BFGS(L)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_115",
+      "source_id": "ent_arxiv_2610.02182v1_m_8",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S208",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "Our baselines are Adam, Muon, SOAP, K-FAC, and K-BFGS(L)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_116",
+      "source_id": "ent_arxiv_2610.02182v1_m_9",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S208",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "Our baselines are Adam, Muon, SOAP, K-FAC, and K-BFGS(L)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_117",
+      "source_id": "ent_arxiv_2610.02182v1_m_10",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S208",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "Our baselines are Adam, Muon, SOAP, K-FAC, and K-BFGS(L)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_118",
+      "source_id": "ent_arxiv_2610.02182v1_m_12",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S208",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "with L-BFGS also included for deterministic training"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_119",
+      "source_id": "ent_arxiv_2610.02182v1_m_13",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S209",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "we include SOFTSERVE-I: the normalized momentum method Eq. 14"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_120",
+      "source_id": "ent_arxiv_2610.02182v1_d_1",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S225",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "We next consider MNIST reconstruction, a standard benchmark for second-order optimization"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_121",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_122",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_m_2",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_123",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_m_4",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_124",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_m_5",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_125",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_m_6",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_126",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_m_7",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_127",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_m_8",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_128",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_m_9",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_129",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_m_10",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_130",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_m_12",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_131",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "ent_arxiv_2610.02182v1_m_13",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S1",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_132",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_133",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_m_2",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_134",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_m_4",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_135",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_m_5",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_136",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_m_6",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_137",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_m_7",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_138",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_m_8",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_139",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_m_9",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_140",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_m_10",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_141",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_m_12",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_142",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "ent_arxiv_2610.02182v1_m_13",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S8",
+        "page": 1,
+        "section": "ABSTRACT",
+        "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_143",
+      "source_id": "clm_arxiv_2610.02182v1_1",
+      "target_id": "paper_arxiv_2610.02182v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S204",
+        "page": 7,
+        "section": "EXPERIMENTS",
+        "quote": "from a small recurrent network to a 136M-parameter diffusion model"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_144",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "lim_arxiv_2610.02182v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S295",
+        "page": 9,
+        "section": "DISCUSSION AND LIMITATIONS",
+        "quote": "currently we use a fixed λ within each training run"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_145",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "lim_arxiv_2610.02182v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S295",
+        "page": 9,
+        "section": "DISCUSSION AND LIMITATIONS",
+        "quote": "currently we use a fixed λ within each training run"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_146",
+      "source_id": "ent_arxiv_2610.02182v1_m_1",
+      "target_id": "lim_arxiv_2610.02182v1_2",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S297",
+        "page": 9,
+        "section": "DISCUSSION AND LIMITATIONS",
+        "quote": "characterizing convergence guarantees under realistic settings remains an open problem"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_147",
+      "source_id": "ent_arxiv_2610.02182v1_m_3",
+      "target_id": "lim_arxiv_2610.02182v1_2",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S297",
+        "page": 9,
+        "section": "DISCUSSION AND LIMITATIONS",
+        "quote": "characterizing convergence guarantees under realistic settings remains an open problem"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_148",
+      "source_id": "paper_arxiv_2610.02182v1",
+      "target_id": "fw_arxiv_2610.02182v1_1",
+      "relation_type": "FUTURE_DIRECTION",
+      "paper_id": "arxiv_2610.02182v1",
+      "provenance": {
+        "sentence_id": "S296",
+        "page": 9,
+        "section": "DISCUSSION AND LIMITATIONS",
+        "quote": "Developing adaptive λ would further optimize performance"
+      },
+      "confidence": 0.905
+    },
+    {
+      "edge_id": "edge_149",
+      "source_id": "ent_arxiv_2610.02206v1_m_1",
+      "target_id": "paper_arxiv_2610.02206v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S7",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "We introduce KaliBench, a fine-grained benchmark"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_150",
+      "source_id": "ent_arxiv_2610.02206v1_m_2",
+      "target_id": "paper_arxiv_2610.02206v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S9",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "we develop a multi-stage verification pipeline"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_151",
+      "source_id": "ent_arxiv_2610.02206v1_m_3",
+      "target_id": "paper_arxiv_2610.02206v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S12",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "supervised fine-tuning and reinforcement learning"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_152",
+      "source_id": "ent_arxiv_2610.02206v1_m_4",
+      "target_id": "paper_arxiv_2610.02206v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S12",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "reinforcement learning with verifiable rewards"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_153",
+      "source_id": "ent_arxiv_2610.02206v1_m_5",
+      "target_id": "paper_arxiv_2610.02206v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S206",
+        "page": 6,
+        "section": "KaliBench",
+        "quote": "Supervised Fine-Tuning (SFT) and Reinforcement Learning"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_154",
+      "source_id": "ent_arxiv_2610.02206v1_m_6",
+      "target_id": "paper_arxiv_2610.02206v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S206",
+        "page": 6,
+        "section": "KaliBench",
+        "quote": "Reinforcement Learning with Verifiable Rewards (RLVR)"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_155",
+      "source_id": "ent_arxiv_2610.02206v1_d_2",
+      "target_id": "paper_arxiv_2610.02206v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S59",
+        "page": 2,
+        "section": "Introduction",
+        "quote": "the Kali Linux toolset"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_156",
+      "source_id": "ent_arxiv_2610.02206v1_m_1",
+      "target_id": "ent_arxiv_2610.02206v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S7",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "We introduce KaliBench, a fine-grained benchmark"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_157",
+      "source_id": "ent_arxiv_2610.02206v1_m_2",
+      "target_id": "ent_arxiv_2610.02206v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S9",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "we develop a multi-stage verification pipeline"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_158",
+      "source_id": "ent_arxiv_2610.02206v1_m_3",
+      "target_id": "ent_arxiv_2610.02206v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S12",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "supervised fine-tuning and reinforcement learning"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_159",
+      "source_id": "ent_arxiv_2610.02206v1_m_4",
+      "target_id": "ent_arxiv_2610.02206v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S12",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "reinforcement learning with verifiable rewards"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_160",
+      "source_id": "ent_arxiv_2610.02206v1_m_5",
+      "target_id": "ent_arxiv_2610.02206v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S206",
+        "page": 6,
+        "section": "KaliBench",
+        "quote": "Supervised Fine-Tuning (SFT) and Reinforcement Learning"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_161",
+      "source_id": "ent_arxiv_2610.02206v1_m_6",
+      "target_id": "ent_arxiv_2610.02206v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S206",
+        "page": 6,
+        "section": "KaliBench",
+        "quote": "Reinforcement Learning with Verifiable Rewards (RLVR)"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_162",
+      "source_id": "clm_arxiv_2610.02206v1_1",
+      "target_id": "paper_arxiv_2610.02206v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S12",
+        "page": 1,
+        "section": "Abstract",
+        "quote": "achieve performance comparable to a 685B MoE model"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_163",
+      "source_id": "clm_arxiv_2610.02206v1_2",
+      "target_id": "paper_arxiv_2610.02206v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S347",
+        "page": 10,
+        "section": "Discussion and Conclusion",
+        "quote": "Post-training with SFT and RLVR substantially improves"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_164",
+      "source_id": "ent_arxiv_2610.02206v1_m_1",
+      "target_id": "lim_arxiv_2610.02206v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S348",
+        "page": 10,
+        "section": "Discussion and Conclusion",
+        "quote": "focus on single-turn command generation"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_165",
+      "source_id": "ent_arxiv_2610.02206v1_m_2",
+      "target_id": "lim_arxiv_2610.02206v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S348",
+        "page": 10,
+        "section": "Discussion and Conclusion",
+        "quote": "focus on single-turn command generation"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_166",
+      "source_id": "ent_arxiv_2610.02206v1_m_3",
+      "target_id": "lim_arxiv_2610.02206v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S348",
+        "page": 10,
+        "section": "Discussion and Conclusion",
+        "quote": "focus on single-turn command generation"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_167",
+      "source_id": "ent_arxiv_2610.02206v1_m_4",
+      "target_id": "lim_arxiv_2610.02206v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S348",
+        "page": 10,
+        "section": "Discussion and Conclusion",
+        "quote": "focus on single-turn command generation"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_168",
+      "source_id": "ent_arxiv_2610.02206v1_m_5",
+      "target_id": "lim_arxiv_2610.02206v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S348",
+        "page": 10,
+        "section": "Discussion and Conclusion",
+        "quote": "focus on single-turn command generation"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_169",
+      "source_id": "ent_arxiv_2610.02206v1_m_6",
+      "target_id": "lim_arxiv_2610.02206v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S348",
+        "page": 10,
+        "section": "Discussion and Conclusion",
+        "quote": "focus on single-turn command generation"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_170",
+      "source_id": "paper_arxiv_2610.02206v1",
+      "target_id": "fw_arxiv_2610.02206v1_1",
+      "relation_type": "FUTURE_DIRECTION",
+      "paper_id": "arxiv_2610.02206v1",
+      "provenance": {
+        "sentence_id": "S349",
+        "page": 10,
+        "section": "Discussion and Conclusion",
+        "quote": "extend to multi-step workflows, retrieval-augmented tool use"
+      },
+      "confidence": 0.905
+    },
+    {
+      "edge_id": "edge_171",
+      "source_id": "ent_arxiv_2610.02186v1_m_1",
+      "target_id": "paper_arxiv_2610.02186v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S323",
+        "page": 14,
+        "section": "Methods",
+        "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_172",
+      "source_id": "ent_arxiv_2610.02186v1_m_2",
+      "target_id": "paper_arxiv_2610.02186v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S323",
+        "page": 14,
+        "section": "Methods",
+        "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_173",
+      "source_id": "ent_arxiv_2610.02186v1_m_4",
+      "target_id": "paper_arxiv_2610.02186v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S445",
+        "page": 17,
+        "section": "Methods",
+        "quote": "The resulting token embeddings are encoded by a Grammar Transformer whose self-attention uses the higher-order position bias defined below."
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_174",
+      "source_id": "ent_arxiv_2610.02186v1_d_1",
+      "target_id": "paper_arxiv_2610.02186v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S530",
+        "page": 19,
+        "section": "Data availability",
+        "quote": "RingDiv, RingDiv300k and other supporting data generated in this study will be publicly released upon publication."
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_175",
+      "source_id": "ent_arxiv_2610.02186v1_d_2",
+      "target_id": "paper_arxiv_2610.02186v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S530",
+        "page": 19,
+        "section": "Data availability",
+        "quote": "RingDiv, RingDiv300k and other supporting data generated in this study will be publicly released upon publication."
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_176",
+      "source_id": "ent_arxiv_2610.02186v1_d_3",
+      "target_id": "paper_arxiv_2610.02186v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S531",
+        "page": 19,
+        "section": "Data availability",
+        "quote": "Public benchmark datasets used in this study are available from their original sources."
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_177",
+      "source_id": "ent_arxiv_2610.02186v1_d_4",
+      "target_id": "paper_arxiv_2610.02186v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S821",
+        "page": 28,
+        "section": "RingDiv dataset construction",
+        "quote": "2.1 Source databases and curation This section documents the construction of the RingDiv datasets: RingDiv (1.18 million molecules) and RingDiv300k, a curated development subset used for rapid experim"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_178",
+      "source_id": "ent_arxiv_2610.02186v1_m_1",
+      "target_id": "ent_arxiv_2610.02186v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S323",
+        "page": 14,
+        "section": "Methods",
+        "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_179",
+      "source_id": "ent_arxiv_2610.02186v1_m_1",
+      "target_id": "ent_arxiv_2610.02186v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S323",
+        "page": 14,
+        "section": "Methods",
+        "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_180",
+      "source_id": "ent_arxiv_2610.02186v1_m_1",
+      "target_id": "ent_arxiv_2610.02186v1_d_3",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S323",
+        "page": 14,
+        "section": "Methods",
+        "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_181",
+      "source_id": "ent_arxiv_2610.02186v1_m_1",
+      "target_id": "ent_arxiv_2610.02186v1_d_4",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S323",
+        "page": 14,
+        "section": "Methods",
+        "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_182",
+      "source_id": "ent_arxiv_2610.02186v1_m_2",
+      "target_id": "ent_arxiv_2610.02186v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S323",
+        "page": 14,
+        "section": "Methods",
+        "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_183",
+      "source_id": "ent_arxiv_2610.02186v1_m_2",
+      "target_id": "ent_arxiv_2610.02186v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S323",
+        "page": 14,
+        "section": "Methods",
+        "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_184",
+      "source_id": "ent_arxiv_2610.02186v1_m_2",
+      "target_id": "ent_arxiv_2610.02186v1_d_3",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S323",
+        "page": 14,
+        "section": "Methods",
+        "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_185",
+      "source_id": "ent_arxiv_2610.02186v1_m_2",
+      "target_id": "ent_arxiv_2610.02186v1_d_4",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S323",
+        "page": 14,
+        "section": "Methods",
+        "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_186",
+      "source_id": "ent_arxiv_2610.02186v1_m_4",
+      "target_id": "ent_arxiv_2610.02186v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S445",
+        "page": 17,
+        "section": "Methods",
+        "quote": "The resulting token embeddings are encoded by a Grammar Transformer whose self-attention uses the higher-order position bias defined below."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_187",
+      "source_id": "ent_arxiv_2610.02186v1_m_4",
+      "target_id": "ent_arxiv_2610.02186v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S445",
+        "page": 17,
+        "section": "Methods",
+        "quote": "The resulting token embeddings are encoded by a Grammar Transformer whose self-attention uses the higher-order position bias defined below."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_188",
+      "source_id": "ent_arxiv_2610.02186v1_m_4",
+      "target_id": "ent_arxiv_2610.02186v1_d_3",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S445",
+        "page": 17,
+        "section": "Methods",
+        "quote": "The resulting token embeddings are encoded by a Grammar Transformer whose self-attention uses the higher-order position bias defined below."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_189",
+      "source_id": "ent_arxiv_2610.02186v1_m_4",
+      "target_id": "ent_arxiv_2610.02186v1_d_4",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S445",
+        "page": 17,
+        "section": "Methods",
+        "quote": "The resulting token embeddings are encoded by a Grammar Transformer whose self-attention uses the higher-order position bias defined below."
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_190",
+      "source_id": "ent_arxiv_2610.02186v1_m_1",
+      "target_id": "lim_arxiv_2610.02186v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S302",
+        "page": 13,
+        "section": "Discussion",
+        "quote": "This work bridges topological deep learning and sequence modelling by encoding hierarchical molecular topology as a decodable string that standard sequence models can learn from."
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_191",
+      "source_id": "ent_arxiv_2610.02186v1_m_2",
+      "target_id": "lim_arxiv_2610.02186v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S302",
+        "page": 13,
+        "section": "Discussion",
+        "quote": "This work bridges topological deep learning and sequence modelling by encoding hierarchical molecular topology as a decodable string that standard sequence models can learn from."
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_192",
+      "source_id": "ent_arxiv_2610.02186v1_m_4",
+      "target_id": "lim_arxiv_2610.02186v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S302",
+        "page": 13,
+        "section": "Discussion",
+        "quote": "This work bridges topological deep learning and sequence modelling by encoding hierarchical molecular topology as a decodable string that standard sequence models can learn from."
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_193",
+      "source_id": "ent_arxiv_2610.02186v1_m_1",
+      "target_id": "lim_arxiv_2610.02186v1_2",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S303",
+        "page": 13,
+        "section": "Discussion",
+        "quote": "Building on a combinatorial-complex view of molecules, we examined three linked aspects: reusable grammar induction, ring-diverse benchmarking, and HGR-based generation and foundation modelling."
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_194",
+      "source_id": "ent_arxiv_2610.02186v1_m_2",
+      "target_id": "lim_arxiv_2610.02186v1_2",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S303",
+        "page": 13,
+        "section": "Discussion",
+        "quote": "Building on a combinatorial-complex view of molecules, we examined three linked aspects: reusable grammar induction, ring-diverse benchmarking, and HGR-based generation and foundation modelling."
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_195",
+      "source_id": "ent_arxiv_2610.02186v1_m_4",
+      "target_id": "lim_arxiv_2610.02186v1_2",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S303",
+        "page": 13,
+        "section": "Discussion",
+        "quote": "Building on a combinatorial-complex view of molecules, we examined three linked aspects: reusable grammar induction, ring-diverse benchmarking, and HGR-based generation and foundation modelling."
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_196",
+      "source_id": "paper_arxiv_2610.02186v1",
+      "target_id": "fw_arxiv_2610.02186v1_1",
+      "relation_type": "FUTURE_DIRECTION",
+      "paper_id": "arxiv_2610.02186v1",
+      "provenance": {
+        "sentence_id": "S318",
+        "page": 13,
+        "section": "Discussion",
+        "quote": "Beyond addressing these boundaries, future work can extend HGR to other chemical tasks."
+      },
+      "confidence": 0.905
+    },
+    {
+      "edge_id": "edge_197",
+      "source_id": "ent_arxiv_2610.02180v1_m_1",
+      "target_id": "paper_arxiv_2610.02180v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S104",
+        "page": 4,
+        "section": "Method",
+        "quote": "GenCine learns to generate a video"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_198",
+      "source_id": "ent_arxiv_2610.02180v1_m_2",
+      "target_id": "paper_arxiv_2610.02180v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S214",
+        "page": 7,
+        "section": "Experiments",
+        "quote": "GenCine built upon Wan2.1-Fun-V1.1-14B-Control"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_199",
+      "source_id": "ent_arxiv_2610.02180v1_d_2",
+      "target_id": "paper_arxiv_2610.02180v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S218",
+        "page": 7,
+        "section": "Experiments",
+        "quote": "PointOdyssey ... provide ground-truth geometry"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_200",
+      "source_id": "ent_arxiv_2610.02180v1_d_3",
+      "target_id": "paper_arxiv_2610.02180v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S219",
+        "page": 7,
+        "section": "Experiments",
+        "quote": "SpatialVid-HQ ... real-world datasets"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_201",
+      "source_id": "ent_arxiv_2610.02180v1_m_1",
+      "target_id": "ent_arxiv_2610.02180v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S104",
+        "page": 4,
+        "section": "Method",
+        "quote": "GenCine learns to generate a video"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_202",
+      "source_id": "ent_arxiv_2610.02180v1_m_1",
+      "target_id": "ent_arxiv_2610.02180v1_d_3",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S104",
+        "page": 4,
+        "section": "Method",
+        "quote": "GenCine learns to generate a video"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_203",
+      "source_id": "ent_arxiv_2610.02180v1_m_1",
+      "target_id": "ent_arxiv_2610.02180v1_m_2",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S104",
+        "page": 4,
+        "section": "Method",
+        "quote": "GenCine learns to generate a video"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_204",
+      "source_id": "ent_arxiv_2610.02180v1_m_1",
+      "target_id": "lim_arxiv_2610.02180v1_1",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S297",
+        "page": 11,
+        "section": "Discussion",
+        "quote": "single-image scaffold leaves occluded regions unmodeled"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_205",
+      "source_id": "ent_arxiv_2610.02180v1_m_1",
+      "target_id": "lim_arxiv_2610.02180v1_2",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S298",
+        "page": 11,
+        "section": "Discussion",
+        "quote": "authoring many handles can become cumbersome"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_206",
+      "source_id": "ent_arxiv_2610.02180v1_m_1",
+      "target_id": "lim_arxiv_2610.02180v1_3",
+      "relation_type": "LIMITED_BY",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S299",
+        "page": 11,
+        "section": "Discussion",
+        "quote": "handles impose no physical constraints or causal interactions"
+      },
+      "confidence": 0.9125000000000001
+    },
+    {
+      "edge_id": "edge_207",
+      "source_id": "paper_arxiv_2610.02180v1",
+      "target_id": "fw_arxiv_2610.02180v1_1",
+      "relation_type": "FUTURE_DIRECTION",
+      "paper_id": "arxiv_2610.02180v1",
+      "provenance": {
+        "sentence_id": "S300",
+        "page": 11,
+        "section": "Discussion",
+        "quote": "Geometry completion, automatic handle placement, and learned interaction priors"
+      },
+      "confidence": 0.905
+    },
+    {
+      "edge_id": "edge_208",
+      "source_id": "ent_arxiv_2610.02188v1_m_1",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S176",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We evaluate DMAD on class-conditional image generation"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_209",
+      "source_id": "ent_arxiv_2610.02188v1_m_2",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S177",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "Following DMD2 [47], we distill EDM [14]"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_210",
+      "source_id": "ent_arxiv_2610.02188v1_m_3",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S177",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "we distill EDM [14] for ImageNet-64×64"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_211",
+      "source_id": "ent_arxiv_2610.02188v1_m_4",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S177",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "and SDXL [29] for zero-shot generation"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_212",
+      "source_id": "ent_arxiv_2610.02188v1_m_6",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S180",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "we distill Wan2.1-T2V 1.3B and 14B"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_213",
+      "source_id": "ent_arxiv_2610.02188v1_m_7",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S181",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We further distill MiniMax-H3 [28] to four steps"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_214",
+      "source_id": "ent_arxiv_2610.02188v1_m_8",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S180",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "evaluate them with VBench [12] on the same augmented prompt set as rCM"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_215",
+      "source_id": "ent_arxiv_2610.02188v1_m_9",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "PROPOSED_BY",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S559",
+        "page": 16,
+        "section": "B Implementation Details",
+        "quote": "Both the generator and the discriminator backbone use LoRA"
+      },
+      "confidence": 0.9445
+    },
+    {
+      "edge_id": "edge_216",
+      "source_id": "ent_arxiv_2610.02188v1_d_1",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S177",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "we distill EDM [14] for ImageNet-64×64"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_217",
+      "source_id": "ent_arxiv_2610.02188v1_d_2",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S177",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "for zero-shot generation on 10K COCO 2014 prompts"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_218",
+      "source_id": "ent_arxiv_2610.02188v1_d_3",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "USED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S181",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "evaluate them in a user study and AVGen-Bench"
+      },
+      "confidence": 0.922
+    },
+    {
+      "edge_id": "edge_219",
+      "source_id": "ent_arxiv_2610.02188v1_m_1",
+      "target_id": "ent_arxiv_2610.02188v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S176",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We evaluate DMAD on class-conditional image generation"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_220",
+      "source_id": "ent_arxiv_2610.02188v1_m_1",
+      "target_id": "ent_arxiv_2610.02188v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S176",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We evaluate DMAD on class-conditional image generation"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_221",
+      "source_id": "ent_arxiv_2610.02188v1_m_1",
+      "target_id": "ent_arxiv_2610.02188v1_d_3",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S176",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We evaluate DMAD on class-conditional image generation"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_222",
+      "source_id": "ent_arxiv_2610.02188v1_m_1",
+      "target_id": "ent_arxiv_2610.02188v1_m_2",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S176",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We evaluate DMAD on class-conditional image generation"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_223",
+      "source_id": "ent_arxiv_2610.02188v1_m_1",
+      "target_id": "ent_arxiv_2610.02188v1_m_3",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S176",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We evaluate DMAD on class-conditional image generation"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_224",
+      "source_id": "ent_arxiv_2610.02188v1_m_1",
+      "target_id": "ent_arxiv_2610.02188v1_m_4",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S176",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We evaluate DMAD on class-conditional image generation"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_225",
+      "source_id": "ent_arxiv_2610.02188v1_m_1",
+      "target_id": "ent_arxiv_2610.02188v1_m_6",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S176",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We evaluate DMAD on class-conditional image generation"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_226",
+      "source_id": "ent_arxiv_2610.02188v1_m_1",
+      "target_id": "ent_arxiv_2610.02188v1_m_7",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S176",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We evaluate DMAD on class-conditional image generation"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_227",
+      "source_id": "ent_arxiv_2610.02188v1_m_1",
+      "target_id": "ent_arxiv_2610.02188v1_m_8",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S176",
+        "page": 6,
+        "section": "Experiments",
+        "quote": "We evaluate DMAD on class-conditional image generation"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_228",
+      "source_id": "ent_arxiv_2610.02188v1_m_9",
+      "target_id": "ent_arxiv_2610.02188v1_d_1",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S559",
+        "page": 16,
+        "section": "B Implementation Details",
+        "quote": "Both the generator and the discriminator backbone use LoRA"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_229",
+      "source_id": "ent_arxiv_2610.02188v1_m_9",
+      "target_id": "ent_arxiv_2610.02188v1_d_2",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S559",
+        "page": 16,
+        "section": "B Implementation Details",
+        "quote": "Both the generator and the discriminator backbone use LoRA"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_230",
+      "source_id": "ent_arxiv_2610.02188v1_m_9",
+      "target_id": "ent_arxiv_2610.02188v1_d_3",
+      "relation_type": "EVALUATED_ON",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S559",
+        "page": 16,
+        "section": "B Implementation Details",
+        "quote": "Both the generator and the discriminator backbone use LoRA"
+      },
+      "confidence": 0.9
+    },
+    {
+      "edge_id": "edge_231",
+      "source_id": "ent_arxiv_2610.02188v1_m_9",
+      "target_id": "ent_arxiv_2610.02188v1_m_2",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S559",
+        "page": 16,
+        "section": "B Implementation Details",
+        "quote": "Both the generator and the discriminator backbone use LoRA"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_232",
+      "source_id": "ent_arxiv_2610.02188v1_m_9",
+      "target_id": "ent_arxiv_2610.02188v1_m_3",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S559",
+        "page": 16,
+        "section": "B Implementation Details",
+        "quote": "Both the generator and the discriminator backbone use LoRA"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_233",
+      "source_id": "ent_arxiv_2610.02188v1_m_9",
+      "target_id": "ent_arxiv_2610.02188v1_m_4",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S559",
+        "page": 16,
+        "section": "B Implementation Details",
+        "quote": "Both the generator and the discriminator backbone use LoRA"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_234",
+      "source_id": "ent_arxiv_2610.02188v1_m_9",
+      "target_id": "ent_arxiv_2610.02188v1_m_6",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S559",
+        "page": 16,
+        "section": "B Implementation Details",
+        "quote": "Both the generator and the discriminator backbone use LoRA"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_235",
+      "source_id": "ent_arxiv_2610.02188v1_m_9",
+      "target_id": "ent_arxiv_2610.02188v1_m_7",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S559",
+        "page": 16,
+        "section": "B Implementation Details",
+        "quote": "Both the generator and the discriminator backbone use LoRA"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_236",
+      "source_id": "ent_arxiv_2610.02188v1_m_9",
+      "target_id": "ent_arxiv_2610.02188v1_m_8",
+      "relation_type": "COMPARED_WITH",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S559",
+        "page": 16,
+        "section": "B Implementation Details",
+        "quote": "Both the generator and the discriminator backbone use LoRA"
+      },
+      "confidence": 0.92
+    },
+    {
+      "edge_id": "edge_237",
+      "source_id": "clm_arxiv_2610.02188v1_1",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S298",
+        "page": 10,
+        "section": "Conclusion",
+        "quote": "Experiments show improvements over the compared few-step methods"
+      },
+      "confidence": 0.9175
+    },
+    {
+      "edge_id": "edge_238",
+      "source_id": "clm_arxiv_2610.02188v1_2",
+      "target_id": "paper_arxiv_2610.02188v1",
+      "relation_type": "REPORTED_IN",
+      "paper_id": "arxiv_2610.02188v1",
+      "provenance": {
+        "sentence_id": "S299",
+        "page": 10,
+        "section": "Conclusion",
+        "quote": "users prefer our four-step student over DMD2 and rCM"
+      },
+      "confidence": 0.9175
+    }
+  ]
+}

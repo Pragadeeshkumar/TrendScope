@@ -1,0 +1,1278 @@
+{
+  "run_id": "e84a3beb",
+  "timestamp": "2026-10-04T10:37:14.907240",
+  "corpus_mode": "SNAPSHOT",
+  "total_papers": 20,
+  "year_range": [
+    2026,
+    2026
+  ],
+  "total_unique_methods": 53,
+  "total_unique_datasets": 22,
+  "benchmark_metrics": {
+    "hhi": 0.0455,
+    "hhi_interpretation": "Well-Diversified Benchmarks",
+    "synthetic_dataset_ratio": 0.0,
+    "external_validation_ratio": 40.0,
+    "single_dataset_paper_ratio": 10.0,
+    "top_1_dataset_share": 4.55,
+    "top_3_dataset_share": 13.64
+  },
+  "emerging_methods": [],
+  "top_methods": [
+    {
+      "name": "Clinical Large Language Model",
+      "category": "Clinical Large Language Model Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Clinical Foundation LLMs",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Clinical Large Language Model"
+      ],
+      "total_occurrences": 2,
+      "paper_percentage": 10.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 2 paper(s) (10.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 2,
+          "percentage": 10.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02202v1",
+        "arxiv_2610.02204v1"
+      ]
+    },
+    {
+      "name": "Hc-Dlm",
+      "category": "Hc-Dlm Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Hc-Dlm Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Hc-Dlm"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02193v1"
+      ]
+    },
+    {
+      "name": "Autoregressive Arm (W/O Ordering)",
+      "category": "Autoregressive Arm (W/O Ordering) Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Autoregressive Arm (W/O Ordering) Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Autoregressive Arm (W/O Ordering)"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02193v1"
+      ]
+    },
+    {
+      "name": "Autoregressive Arm (With Ordering)",
+      "category": "Autoregressive Arm (With Ordering) Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Autoregressive Arm (With Ordering) Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Autoregressive Arm (With Ordering)"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02193v1"
+      ]
+    },
+    {
+      "name": "Mdm (Vanilla)",
+      "category": "Mdm (Vanilla) Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Mdm (Vanilla) Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Mdm (Vanilla)"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02193v1"
+      ]
+    },
+    {
+      "name": "Mdm (Top‑Prob.)",
+      "category": "Mdm (Top‑Prob.) Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Mdm (Top‑Prob.) Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Mdm (Top‑Prob.)"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02193v1"
+      ]
+    },
+    {
+      "name": "Langflow",
+      "category": "Langflow Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Langflow Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Langflow"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02193v1"
+      ]
+    },
+    {
+      "name": "Plaid",
+      "category": "Plaid Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Plaid Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Plaid"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02193v1"
+      ]
+    },
+    {
+      "name": "Specter2",
+      "category": "Specter2 Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Specter2 Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Specter2"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02202v1"
+      ]
+    },
+    {
+      "name": "Openscholar",
+      "category": "Openscholar Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Openscholar Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Openscholar"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02202v1"
+      ]
+    },
+    {
+      "name": "Gemini-Embedding-2",
+      "category": "Gemini-Embedding-2 Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Gemini-Embedding-2 Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Gemini-Embedding-2"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02202v1"
+      ]
+    },
+    {
+      "name": "Gemini 3.7 Flash",
+      "category": "Gemini 3.7 Flash Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Gemini 3.7 Flash Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Gemini 3.7 Flash"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02202v1"
+      ]
+    },
+    {
+      "name": "Ferpo",
+      "category": "Ferpo Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Ferpo Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Ferpo"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02198v1"
+      ]
+    },
+    {
+      "name": "Reppo",
+      "category": "Reppo Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Reppo Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Reppo"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02198v1"
+      ]
+    },
+    {
+      "name": "Reconstruct, Practice, Go Real (Rpg)",
+      "category": "Reconstruct, Practice, Go Real (Rpg) Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Reconstruct, Practice, Go Real (Rpg) Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Reconstruct, Practice, Go Real (Rpg)"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02204v1"
+      ]
+    },
+    {
+      "name": "Agent-As-Policy",
+      "category": "Agent-As-Policy Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Agent-As-Policy Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Agent-As-Policy"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02204v1"
+      ]
+    },
+    {
+      "name": "Runtime Agent",
+      "category": "Runtime Agent Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Runtime Agent Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Runtime Agent"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02204v1"
+      ]
+    },
+    {
+      "name": "Gemini 3.8 Flash",
+      "category": "Gemini 3.8 Flash Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Gemini 3.8 Flash Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Gemini 3.8 Flash"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02204v1"
+      ]
+    },
+    {
+      "name": "Aspire",
+      "category": "Aspire Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Aspire Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Aspire"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02204v1"
+      ]
+    },
+    {
+      "name": "Cap-Agent0",
+      "category": "Cap-Agent0 Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Cap-Agent0 Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Cap-Agent0"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02204v1"
+      ]
+    }
+  ],
+  "top_datasets": [
+    {
+      "name": "Sudoku",
+      "modality": "Sudoku Benchmarks",
+      "raw_aliases": [
+        "Sudoku"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02193v1"
+      ]
+    },
+    {
+      "name": "Countdown",
+      "modality": "Countdown Benchmarks",
+      "raw_aliases": [
+        "Countdown"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02193v1"
+      ]
+    },
+    {
+      "name": "Lm1B",
+      "modality": "Lm1B Benchmarks",
+      "raw_aliases": [
+        "Lm1B"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02193v1"
+      ]
+    },
+    {
+      "name": "Scholarcatalyst",
+      "modality": "Scholarcatalyst Benchmarks",
+      "raw_aliases": [
+        "Scholarcatalyst"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02202v1"
+      ]
+    },
+    {
+      "name": "Imagenet",
+      "modality": "Imagenet Benchmarks",
+      "raw_aliases": [
+        "Imagenet"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02202v1"
+      ]
+    },
+    {
+      "name": "Cheetahrun",
+      "modality": "Cheetahrun Benchmarks",
+      "raw_aliases": [
+        "Cheetahrun"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02198v1"
+      ]
+    },
+    {
+      "name": "Acrobotswingupsparse",
+      "modality": "Acrobotswingupsparse Benchmarks",
+      "raw_aliases": [
+        "Acrobotswingupsparse"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02198v1"
+      ]
+    },
+    {
+      "name": "Cap-X",
+      "modality": "Cap-X Benchmarks",
+      "raw_aliases": [
+        "Cap-X"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02204v1"
+      ]
+    },
+    {
+      "name": "Abc",
+      "modality": "Abc Benchmarks",
+      "raw_aliases": [
+        "Abc"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02204v1"
+      ]
+    },
+    {
+      "name": "Babyvision",
+      "modality": "Babyvision Benchmarks",
+      "raw_aliases": [
+        "Babyvision"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02200v1"
+      ]
+    },
+    {
+      "name": "Arc-Agi-3",
+      "modality": "Arc-Agi-3 Benchmarks",
+      "raw_aliases": [
+        "Arc-Agi-3"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02200v1"
+      ]
+    },
+    {
+      "name": "Mnist",
+      "modality": "Mnist Benchmarks",
+      "raw_aliases": [
+        "Mnist"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02182v1"
+      ]
+    },
+    {
+      "name": "Kali Linux Toolset",
+      "modality": "Kali Linux Toolset Benchmarks",
+      "raw_aliases": [
+        "Kali Linux Toolset"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02206v1"
+      ]
+    },
+    {
+      "name": "Ringdiv",
+      "modality": "Ringdiv Benchmarks",
+      "raw_aliases": [
+        "Ringdiv"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02186v1"
+      ]
+    },
+    {
+      "name": "Ringdiv300K",
+      "modality": "Ringdiv300K Benchmarks",
+      "raw_aliases": [
+        "Ringdiv300K"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02186v1"
+      ]
+    },
+    {
+      "name": "Public",
+      "modality": "Public Benchmarks",
+      "raw_aliases": [
+        "Public"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02186v1"
+      ]
+    },
+    {
+      "name": "Source",
+      "modality": "Source Benchmarks",
+      "raw_aliases": [
+        "Source"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02186v1"
+      ]
+    },
+    {
+      "name": "Pointodyssey",
+      "modality": "Pointodyssey Benchmarks",
+      "raw_aliases": [
+        "Pointodyssey"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02180v1"
+      ]
+    },
+    {
+      "name": "Spatialvid-Hq",
+      "modality": "Spatialvid-Hq Benchmarks",
+      "raw_aliases": [
+        "Spatialvid-Hq"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02180v1"
+      ]
+    },
+    {
+      "name": "Imagenet-64×64",
+      "modality": "Imagenet-64×64 Benchmarks",
+      "raw_aliases": [
+        "Imagenet-64×64"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2610.02188v1"
+      ]
+    }
+  ],
+  "cluster_profiles": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Agentic Evaluation and Self-Improvement",
+      "total_papers": 4,
+      "dominant_method_family": "Clinical Large Language Model Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Clinical Large Language Model Methods",
+          "count": 2,
+          "percentage": 50.0
+        },
+        {
+          "name": "Reconstruct, Practice, Go Real (Rpg) Methods",
+          "count": 1,
+          "percentage": 25.0
+        },
+        {
+          "name": "Agent-As-Policy Methods",
+          "count": 1,
+          "percentage": 25.0
+        },
+        {
+          "name": "Runtime Agent Methods",
+          "count": 1,
+          "percentage": 25.0
+        },
+        {
+          "name": "Gemini 3.8 Flash Methods",
+          "count": 1,
+          "percentage": 25.0
+        }
+      ],
+      "top_datasets": [
+        {
+          "name": "Cap-X",
+          "count": 1,
+          "percentage": 25.0
+        },
+        {
+          "name": "Abc",
+          "count": 1,
+          "percentage": 25.0
+        },
+        {
+          "name": "Babyvision",
+          "count": 1,
+          "percentage": 25.0
+        },
+        {
+          "name": "Arc-Agi-3",
+          "count": 1,
+          "percentage": 25.0
+        },
+        {
+          "name": "Kali Linux Toolset",
+          "count": 1,
+          "percentage": 25.0
+        }
+      ],
+      "persistent_limitations": [
+        "Limited candidate coverage keeps many useful papers out of reach for agentic search.",
+        "Deformable-object manipulation remains a clear limitation.",
+        "Focus on single-turn command generation and reliance on documentation-grounded data.",
+        "Labels are retrospective judgments by paper authors, subject to hindsight."
+      ],
+      "supporting_paper_ids": [
+        "arxiv_2610.02204v1",
+        "arxiv_2610.02200v1",
+        "arxiv_2610.02206v1",
+        "arxiv_2610.02202v1"
+      ]
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Latent Variable Structured Generation",
+      "total_papers": 2,
+      "dominant_method_family": "Hc-Dlm Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Hc-Dlm Methods",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Autoregressive Arm (W/O Ordering) Methods",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Autoregressive Arm (With Ordering) Methods",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Mdm (Vanilla) Methods",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Mdm (Top‑Prob.) Methods",
+          "count": 1,
+          "percentage": 50.0
+        }
+      ],
+      "top_datasets": [
+        {
+          "name": "Sudoku",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Countdown",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Lm1B",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Ringdiv",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Ringdiv300K",
+          "count": 1,
+          "percentage": 50.0
+        }
+      ],
+      "persistent_limitations": [
+        "Building on a combinatorial-complex view of molecules, we examined three linked aspects: reusable grammar induction, rin",
+        "Experiments are limited to moderate‑scale structured reasoning and planning benchmarks",
+        "This work bridges topological deep learning and sequence modelling by encoding hierarchical molecular topology as a deco",
+        "Scaling to larger pretrained backbones requires compute beyond typical academic resources"
+      ],
+      "supporting_paper_ids": [
+        "arxiv_2610.02193v1",
+        "arxiv_2610.02186v1"
+      ]
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Efficient Generative Model Optimization",
+      "total_papers": 6,
+      "dominant_method_family": "Dmad Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Dmad Methods",
+          "count": 1,
+          "percentage": 16.7
+        },
+        {
+          "name": "Dmd2 Methods",
+          "count": 1,
+          "percentage": 16.7
+        },
+        {
+          "name": "Edm Methods",
+          "count": 1,
+          "percentage": 16.7
+        },
+        {
+          "name": "Sdxl Methods",
+          "count": 1,
+          "percentage": 16.7
+        },
+        {
+          "name": "Wan2.1-T2V 14B Methods",
+          "count": 1,
+          "percentage": 16.7
+        }
+      ],
+      "top_datasets": [
+        {
+          "name": "Imagenet-64×64",
+          "count": 1,
+          "percentage": 16.7
+        },
+        {
+          "name": "10K Coco 2014 Prompts",
+          "count": 1,
+          "percentage": 16.7
+        },
+        {
+          "name": "Avgen-Bench",
+          "count": 1,
+          "percentage": 16.7
+        },
+        {
+          "name": "Mnist",
+          "count": 1,
+          "percentage": 16.7
+        },
+        {
+          "name": "Pointodyssey",
+          "count": 1,
+          "percentage": 16.7
+        }
+      ],
+      "persistent_limitations": [
+        "authoring many handles can become cumbersome",
+        "Characterizing convergence guarantees under realistic settings remains an open problem",
+        "Higher GPU memory usage compared to REPPO due to PyTorch retaining additional memory.",
+        "single-image scaffold leaves occluded regions unmodeled"
+      ],
+      "supporting_paper_ids": [
+        "arxiv_2610.02207v1",
+        "arxiv_2610.02188v1",
+        "arxiv_2610.02201v1",
+        "arxiv_2610.02182v1",
+        "arxiv_2610.02180v1",
+        "arxiv_2610.02198v1"
+      ]
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "AI Ethics and Human Agency",
+      "total_papers": 4,
+      "dominant_method_family": "Specialized Methodologies",
+      "emerging_paradigm": "Adaptive Scientific AI",
+      "top_methods": [],
+      "top_datasets": [],
+      "persistent_limitations": [],
+      "supporting_paper_ids": [
+        "W7162399187",
+        "W7166533473",
+        "W7118720654",
+        "W7118979476"
+      ]
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Governance of Generative AI in East Asia",
+      "total_papers": 2,
+      "dominant_method_family": "Specialized Methodologies",
+      "emerging_paradigm": "Adaptive Scientific AI",
+      "top_methods": [],
+      "top_datasets": [],
+      "persistent_limitations": [],
+      "supporting_paper_ids": [
+        "W7164131933",
+        "W7166006500"
+      ]
+    }
+  ],
+  "research_gaps": [
+    {
+      "gap_id": "gap_e84a3beb_1",
+      "title": "Lack of Multi-Center External Validation and Prospective Clinical Trial Evidence",
+      "statement": "While complex AI models exhibit strong retrospective validation, 4/20 papers report explicit generalization barriers and call for multi-site prospective validation across diverse demographic and clinical settings.",
+      "category": "validation_deficit",
+      "supporting_papers": [
+        "arxiv_2610.02204v1",
+        "arxiv_2610.02180v1",
+        "arxiv_2610.02202v1",
+        "arxiv_2610.02200v1"
+      ],
+      "supporting_evidence_quotes": [
+        "far smaller than the three million papers",
+        "uneven representation across research areas",
+        "The clearest remaining limitation is deformable-object manipulation"
+      ],
+      "confidence": 0.94,
+      "why_insufficient": "Existing evaluations predominantly rely on single-center retrospective cohorts or synthetic data, leaving real-world clinical safety, domain-shift robustness, and demographic equity largely unproven."
+    },
+    {
+      "gap_id": "gap_e84a3beb_2",
+      "title": "Computational Overhead and High-Latency Inference in Resource-Constrained Environments",
+      "statement": "High compute and latency overhead restricts deployment in point-of-care environments, as highlighted across 4 studies.",
+      "category": "scalability_bottleneck",
+      "supporting_papers": [
+        "arxiv_2610.02202v1",
+        "arxiv_2610.02180v1",
+        "arxiv_2610.02198v1",
+        "arxiv_2610.02193v1"
+      ],
+      "supporting_evidence_quotes": [
+        "makes each training step more expensive than in a purely discrete masked diffusion baseline",
+        "scaling HC-DLM to larger pretrained backbones ... exceeds the resources typically available in academia",
+        "A drawback is higher GPU memory usage"
+      ],
+      "confidence": 0.91,
+      "why_insufficient": "Current multi-agent and foundation model pipelines prioritize raw diagnostic accuracy over edge-optimized memory footprints and real-time inference latency constraints."
+    }
+  ]
+}

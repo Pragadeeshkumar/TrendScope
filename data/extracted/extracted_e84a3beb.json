@@ -1,0 +1,2154 @@
+{
+  "run_id": "e84a3beb",
+  "timestamp": "2026-10-04T10:36:04.591697",
+  "total_papers": 20,
+  "successful_extractions": 10,
+  "failed_extractions": 10,
+  "total_methods_found": 60,
+  "total_datasets_found": 27,
+  "total_limitations_found": 18,
+  "total_future_work_found": 9,
+  "papers": [
+    {
+      "paper_id": "W7162399187",
+      "title": "Human vs machine judgment in safety-critical logistics: a philosophical inquiry into trust and control",
+      "publication_year": null,
+      "pdf_path": null,
+      "status": "ERROR",
+      "error_message": "name 'ParsedPDFDocument' is not defined",
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [],
+      "future_work": [],
+      "findings": []
+    },
+    {
+      "paper_id": "W7118979476",
+      "title": "TRANSFORMING GOVERNMENT SERVICE DELIVERY THROUGH ARTIFICIAL INTELLIGENCE",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs/W7118979476.pdf",
+      "status": "NO_PDF",
+      "error_message": "File not found: data/pdfs/W7118979476.pdf",
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [],
+      "future_work": [],
+      "findings": []
+    },
+    {
+      "paper_id": "W7166533473",
+      "title": "Research on Attention Guidance and User Autonomy in AI-Powered Immersive Environments",
+      "publication_year": null,
+      "pdf_path": null,
+      "status": "ERROR",
+      "error_message": "name 'ParsedPDFDocument' is not defined",
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [],
+      "future_work": [],
+      "findings": []
+    },
+    {
+      "paper_id": "W7154463656",
+      "title": "NUISS: A User-Centered Prototype for International Student Administrative Support",
+      "publication_year": null,
+      "pdf_path": null,
+      "status": "ERROR",
+      "error_message": "name 'ParsedPDFDocument' is not defined",
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [],
+      "future_work": [],
+      "findings": []
+    },
+    {
+      "paper_id": "W7164183113",
+      "title": "The Sociolinguistics of Machine Identity: LLM Personality and Ideology Propagation",
+      "publication_year": null,
+      "pdf_path": null,
+      "status": "ERROR",
+      "error_message": "name 'ParsedPDFDocument' is not defined",
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [],
+      "future_work": [],
+      "findings": []
+    },
+    {
+      "paper_id": "W7118720654",
+      "title": "ETHICAL CONSIDERATIONS AND POLICY FRAMEWORKS FOR TEACHING WITH ARTIFICIAL INTELLIGENCE IN SECONDARY SCHOOL SETTINGS",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs/W7118720654.pdf",
+      "status": "NO_PDF",
+      "error_message": "File not found: data/pdfs/W7118720654.pdf",
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [],
+      "future_work": [],
+      "findings": []
+    },
+    {
+      "paper_id": "W7166006500",
+      "title": "Algorithmic Justice and Responsible AI Journalism: A Comparative Communication Policy Perspective in East Asia",
+      "publication_year": null,
+      "pdf_path": null,
+      "status": "ERROR",
+      "error_message": "name 'ParsedPDFDocument' is not defined",
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [],
+      "future_work": [],
+      "findings": []
+    },
+    {
+      "paper_id": "W7164131933",
+      "title": "The Role of Generative Artificial Intelligence in Korean Language Learning: Applications, Challenges, and Instructional Strategies",
+      "publication_year": null,
+      "pdf_path": null,
+      "status": "ERROR",
+      "error_message": "name 'ParsedPDFDocument' is not defined",
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [],
+      "future_work": [],
+      "findings": []
+    },
+    {
+      "paper_id": "arxiv_2610.02207v1",
+      "title": "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars",
+      "publication_year": null,
+      "pdf_path": null,
+      "status": "ERROR",
+      "error_message": "name 'ParsedPDFDocument' is not defined",
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [],
+      "future_work": [],
+      "findings": []
+    },
+    {
+      "paper_id": "arxiv_2610.02201v1",
+      "title": "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation",
+      "publication_year": null,
+      "pdf_path": null,
+      "status": "ERROR",
+      "error_message": "name 'ParsedPDFDocument' is not defined",
+      "methods": [],
+      "datasets": [],
+      "literature_sources": [],
+      "limitations": [],
+      "future_work": [],
+      "findings": []
+    },
+    {
+      "paper_id": "arxiv_2610.02193v1",
+      "title": "Hierarchical Continuous Diffusion Language Models",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2610.02193v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "HC-DLM",
+          "normalized_name": "Hc-Dlm",
+          "type": "framework",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S187",
+            "page": 6,
+            "section": "EXPERIMENTS",
+            "quote": "We evaluate HC-DLM on three tasks"
+          }
+        },
+        {
+          "name": "Autoregressive ARM (w/o ordering)",
+          "normalized_name": "Autoregressive ARM (w/o ordering)",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S192",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "Autoregressive ARM (w/o ordering) 42M"
+          }
+        },
+        {
+          "name": "Autoregressive ARM (with ordering)",
+          "normalized_name": "Autoregressive ARM (with ordering)",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S192",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "ARM (with ordering) 87.18"
+          }
+        },
+        {
+          "name": "MDM (vanilla)",
+          "normalized_name": "Mdm (Vanilla)",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S193",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "Discrete diffusion MDM (vanilla)"
+          }
+        },
+        {
+          "name": "MDM (top‑prob.)",
+          "normalized_name": "Mdm (Top‑Prob.)",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S194",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "MDM (top‑prob.) 18.51"
+          }
+        },
+        {
+          "name": "LangFlow",
+          "normalized_name": "Langflow",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S694",
+            "page": 19,
+            "section": "Method Training time",
+            "quote": "LangFlow ∼292 h"
+          }
+        },
+        {
+          "name": "Plaid",
+          "normalized_name": "Plaid",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S694",
+            "page": 19,
+            "section": "Method Training time",
+            "quote": "Plaid ∼375 h"
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "name": "Sudoku",
+          "normalized_name": "Sudoku",
+          "modality": "structured",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S187",
+            "page": 6,
+            "section": "EXPERIMENTS",
+            "quote": "structured reasoning (Sudoku)"
+          }
+        },
+        {
+          "name": "Countdown",
+          "normalized_name": "Countdown",
+          "modality": "planning",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S187",
+            "page": 6,
+            "section": "EXPERIMENTS",
+            "quote": "mathematical planning (Countdown)"
+          }
+        },
+        {
+          "name": "LM1B",
+          "normalized_name": "Lm1B",
+          "modality": "text",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S187",
+            "page": 6,
+            "section": "EXPERIMENTS",
+            "quote": "general language generation (LM1B)"
+          }
+        }
+      ],
+      "literature_sources": [],
+      "limitations": [
+        {
+          "text": "Each training step is more expensive than in a purely discrete masked diffusion baseline",
+          "category": "computational_cost",
+          "provenance": {
+            "sentence_id": "S803",
+            "page": 23,
+            "section": "LIMITATIONS",
+            "quote": "makes each training step more expensive than in a purely discrete masked diffusion baseline"
+          }
+        },
+        {
+          "text": "Experiments are limited to moderate‑scale structured reasoning and planning benchmarks",
+          "category": "scalability",
+          "provenance": {
+            "sentence_id": "S807",
+            "page": 24,
+            "section": "LIMITATIONS",
+            "quote": "target structured reasoning and planning benchmarks at moderate scale"
+          }
+        },
+        {
+          "text": "Scaling to larger pretrained backbones requires compute beyond typical academic resources",
+          "category": "computational_cost",
+          "provenance": {
+            "sentence_id": "S808",
+            "page": 24,
+            "section": "LIMITATIONS",
+            "quote": "scaling HC-DLM to larger pretrained backbones ... exceeds the resources typically available in academia"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "Scaling HC-DLM to larger pretrained backbones is the most promising direction for future work",
+          "category": "efficiency",
+          "provenance": {
+            "sentence_id": "S808",
+            "page": 24,
+            "section": "LIMITATIONS",
+            "quote": "scaling HC-DLM to larger pretrained backbones ... most promising direction for future work"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "finding": "HC-DLM training time is substantially lower than LangFlow",
+          "metric": "training time (hours)",
+          "result": "48 h vs 292 h",
+          "provenance": {
+            "sentence_id": "S694",
+            "page": 19,
+            "section": "Method Training time",
+            "quote": "HC-DLM (ours) ∼48 h"
+          }
+        },
+        {
+          "finding": "The coupled model outperforms continuous‑only and discrete alternatives",
+          "metric": "performance",
+          "result": "higher",
+          "provenance": {
+            "sentence_id": "S314",
+            "page": 10,
+            "section": "CONCLUSION",
+            "quote": "the coupled model outperforms continuous‑only and discrete alternatives"
+          }
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv_2610.02202v1",
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2610.02202v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "SPECTER2",
+          "normalized_name": "Specter2",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S170",
+            "page": 6,
+            "section": "EVALUATION AND ANALYSIS",
+            "quote": "SPECTER2 (Singh et al. , 2022)"
+          }
+        },
+        {
+          "name": "OpenScholar",
+          "normalized_name": "Openscholar",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S170",
+            "page": 6,
+            "section": "EVALUATION AND ANALYSIS",
+            "quote": "OpenScholar (Asai et al. , 2024)"
+          }
+        },
+        {
+          "name": "Gemini-Embedding-2",
+          "normalized_name": "Gemini-Embedding-2",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S258",
+            "page": 8,
+            "section": "Method CoreQ SubQ",
+            "quote": "Gemini-Embedding-2"
+          }
+        },
+        {
+          "name": "Gemini 3.7 Flash",
+          "normalized_name": "Gemini 3.7 Flash",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S266",
+            "page": 9,
+            "section": "Method CoreQ SubQ",
+            "quote": "Gemini 3.7 Flash"
+          }
+        },
+        {
+          "name": "GPT-4.1",
+          "normalized_name": "Gpt-4.1",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S269",
+            "page": 9,
+            "section": "Method CoreQ SubQ",
+            "quote": "GPT-4.1"
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "name": "SCHOLARCATALYST",
+          "normalized_name": "Scholarcatalyst",
+          "modality": "text",
+          "usage": "benchmark",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S279",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "SCHOLARCATALYST, a benchmark"
+          }
+        },
+        {
+          "name": "arXiv",
+          "normalized_name": "Arxiv",
+          "modality": "text",
+          "usage": "benchmark",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S161",
+            "page": 6,
+            "section": "EVALUATION AND ANALYSIS",
+            "quote": "three million papers on arXiv"
+          }
+        },
+        {
+          "name": "ImageNet",
+          "normalized_name": "ImageNet",
+          "modality": "image",
+          "usage": "benchmark",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S285",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "human reference accuracy on ImageNet"
+          }
+        },
+        {
+          "name": "kaggle arXiv datasets",
+          "normalized_name": "Kaggle Arxiv Datasets",
+          "modality": "text",
+          "usage": "training",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S925",
+            "page": 26,
+            "section": "E AUTOMATED DATA CONSTRUCTION PIPELINE",
+            "quote": "kaggle arXiv datasets"
+          }
+        }
+      ],
+      "literature_sources": [
+        {
+          "name": "arXiv",
+          "normalized_name": "Arxiv",
+          "provenance": {
+            "sentence_id": "S161",
+            "page": 6,
+            "section": "EVALUATION AND ANALYSIS",
+            "quote": "arXiv, 2026"
+          }
+        },
+        {
+          "name": "Singh et al. , 2022",
+          "normalized_name": "Singh Et Al. , 2022",
+          "provenance": {
+            "sentence_id": "S170",
+            "page": 6,
+            "section": "EVALUATION AND ANALYSIS",
+            "quote": "Singh et al. , 2022"
+          }
+        },
+        {
+          "name": "Asai et al. , 2024",
+          "normalized_name": "Asai Et Al. , 2024",
+          "provenance": {
+            "sentence_id": "S170",
+            "page": 6,
+            "section": "EVALUATION AND ANALYSIS",
+            "quote": "Asai et al. , 2024"
+          }
+        },
+        {
+          "name": "Google DeepMind, 2026c",
+          "normalized_name": "Google Deepmind, 2026C",
+          "provenance": {
+            "sentence_id": "S266",
+            "page": 9,
+            "section": "Method CoreQ SubQ",
+            "quote": "Google DeepMind, 2026c"
+          }
+        },
+        {
+          "name": "Gao et al. , 2023",
+          "normalized_name": "Gao Et Al. , 2023",
+          "provenance": {
+            "sentence_id": "S273",
+            "page": 9,
+            "section": "Method CoreQ SubQ",
+            "quote": "Gao et al. , 2023"
+          }
+        },
+        {
+          "name": "Russakovsky et al. , 2015",
+          "normalized_name": "Russakovsky Et Al. , 2015",
+          "provenance": {
+            "sentence_id": "S285",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "Russakovsky et al. , 2015"
+          }
+        },
+        {
+          "name": "Beyer et al. , 2020",
+          "normalized_name": "Beyer Et Al. , 2020",
+          "provenance": {
+            "sentence_id": "S285",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "Beyer et al. , 2020"
+          }
+        },
+        {
+          "name": "Shankar et al. , 2020",
+          "normalized_name": "Shankar Et Al. , 2020",
+          "provenance": {
+            "sentence_id": "S285",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "Shankar et al. , 2020"
+          }
+        },
+        {
+          "name": "Lo et al. , 2020",
+          "normalized_name": "Lo Et Al. , 2020",
+          "provenance": {
+            "sentence_id": "S925",
+            "page": 26,
+            "section": "E AUTOMATED DATA CONSTRUCTION PIPELINE",
+            "quote": "Lo et al. , 2020"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "text": "Evaluation corpus is far smaller than arXiv, making retrieval easier than real-world scenarios.",
+          "category": "generalization",
+          "provenance": {
+            "sentence_id": "S161",
+            "page": 6,
+            "section": "EVALUATION AND ANALYSIS",
+            "quote": "far smaller than the three million papers"
+          }
+        },
+        {
+          "text": "Limited candidate coverage keeps many useful papers out of reach for agentic search.",
+          "category": "scalability",
+          "provenance": {
+            "sentence_id": "S281",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "limited candidate coverage keeps many useful papers"
+          }
+        },
+        {
+          "text": "Benchmark covers computer science papers from 2025-2026 with uneven representation, limiting transfer to other fields.",
+          "category": "generalization",
+          "provenance": {
+            "sentence_id": "S282",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "uneven representation across research areas"
+          }
+        },
+        {
+          "text": "Labels are retrospective judgments by paper authors, subject to hindsight.",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S283",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "subject to hindsight"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "Determine the performance ceiling (skyline) of the task.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S284",
+            "page": 9,
+            "section": "CONCLUSION",
+            "quote": "performance ceiling of this task"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "finding": "Source title and abstract raise Recall@20 for CoreQ",
+          "metric": "Recall@20",
+          "result": "0.11",
+          "provenance": {
+            "sentence_id": "S266",
+            "page": 9,
+            "section": "Method CoreQ SubQ",
+            "quote": "raise Recall@20 by 0.11 for CoreQ"
+          }
+        },
+        {
+          "finding": "Source title and abstract raise Recall@20 for SubQ",
+          "metric": "Recall@20",
+          "result": "0.02",
+          "provenance": {
+            "sentence_id": "S266",
+            "page": 9,
+            "section": "Method CoreQ SubQ",
+            "quote": "0.02 for SubQ"
+          }
+        },
+        {
+          "finding": "Web search changes Recall@20 by at most 0.01",
+          "metric": "Recall@20",
+          "result": "0.01",
+          "provenance": {
+            "sentence_id": "S266",
+            "page": 9,
+            "section": "Method CoreQ SubQ",
+            "quote": "web search changes it by at most 0.01"
+          }
+        },
+        {
+          "finding": "Reading beyond abstracts changes Recall@20 by at most 0.04",
+          "metric": "Recall@20",
+          "result": "0.04",
+          "provenance": {
+            "sentence_id": "S269",
+            "page": 9,
+            "section": "Method CoreQ SubQ",
+            "quote": "changes Recall@20 by at most 0.04"
+          }
+        },
+        {
+          "finding": "Best SubQ policy trails the retriever",
+          "metric": "Recall@20",
+          "result": "0.50 versus 0.55",
+          "provenance": {
+            "sentence_id": "S269",
+            "page": 9,
+            "section": "Method CoreQ SubQ",
+            "quote": "best SubQ policy still trails the retriever"
+          }
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv_2610.02198v1",
+      "title": "FERPO: Forward Entropy-Regularized Policy Optimization",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2610.02198v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "FERPO",
+          "normalized_name": "Ferpo",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S5",
+            "page": 1,
+            "section": "ABSTRACT",
+            "quote": "We propose Forward Entropy-Regularized Policy Optimization (FERPO)"
+          }
+        },
+        {
+          "name": "REPPO",
+          "normalized_name": "Reppo",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S11",
+            "page": 1,
+            "section": "ABSTRACT",
+            "quote": "faster actor updates than Relative Entropy Pathwise Policy Optimization (REPPO)"
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "name": "CheetahRun",
+          "normalized_name": "Cheetahrun",
+          "modality": "continuous_control",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S250",
+            "page": 7,
+            "section": "Under review",
+            "quote": "on CheetahRun, peak GPU memory usage is 22.4% higher"
+          }
+        },
+        {
+          "name": "AcrobotSwingupSparse",
+          "normalized_name": "Acrobotswingupsparse",
+          "modality": "continuous_control",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S342",
+            "page": 9,
+            "section": "QM success rate",
+            "quote": "Its higher returns on AcrobotSwingupSparse"
+          }
+        }
+      ],
+      "literature_sources": [
+        {
+          "name": "Voelcker et al., 2026",
+          "normalized_name": "Voelcker Et Al., 2026",
+          "provenance": {
+            "sentence_id": "S18",
+            "page": 1,
+            "section": "INTRODUCTION",
+            "quote": "Relative Entropy Pathwise Policy Optimization (REPPO; Voelcker et al. , 2026)"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "text": "Higher GPU memory usage compared to REPPO due to PyTorch retaining additional memory.",
+          "category": "computational_cost",
+          "provenance": {
+            "sentence_id": "S250",
+            "page": 7,
+            "section": "Under review",
+            "quote": "A drawback is higher GPU memory usage"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "Further exploration of FERPO due to higher returns and modest iteration-time overhead.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S342",
+            "page": 9,
+            "section": "QM success rate",
+            "quote": "make it a particularly promising direction for future work"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "finding": "FERPO demonstrates faster actor updates than REPPO.",
+          "metric": "actor update speed",
+          "result": "faster",
+          "provenance": {
+            "sentence_id": "S11",
+            "page": 1,
+            "section": "ABSTRACT",
+            "quote": "demonstrate faster actor updates than Relative Entropy Pathwise Policy Optimization (REPPO)"
+          }
+        },
+        {
+          "finding": "FERPO has higher GPU memory usage than REPPO.",
+          "metric": "peak GPU memory usage",
+          "result": "22.4% higher (uncached), 25.6% higher (cached)",
+          "provenance": {
+            "sentence_id": "S250",
+            "page": 7,
+            "section": "Under review",
+            "quote": "peak GPU memory usage is 22.4% higher for uncached FERPO"
+          }
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv_2610.02204v1",
+      "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2610.02204v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "Reconstruct, Practice, Go Real (RPG)",
+          "normalized_name": "Reconstruct, Practice, Go Real (RPG)",
+          "type": "framework",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S20",
+            "page": 1,
+            "section": "Deploy",
+            "quote": "We present Reconstruct, Practice, Go Real (RPG), a framework"
+          }
+        },
+        {
+          "name": "Agent-as-Policy",
+          "normalized_name": "Agent-As-Policy",
+          "type": "architecture",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S42",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "In Agent-as-Policy, the MLLM remains in the control loop"
+          }
+        },
+        {
+          "name": "Runtime Agent",
+          "normalized_name": "Runtime Agent",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S109",
+            "page": 3,
+            "section": "Reconstruct Practice",
+            "quote": "a multimodal agent (the Runtime Agent) follows a system prompt"
+          }
+        },
+        {
+          "name": "Gemini 3.8 Flash",
+          "normalized_name": "Gemini 3.8 Flash",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S320",
+            "page": 8,
+            "section": "Task Before repair After repair",
+            "quote": "fixing the runtime model (Gemini 3.8 Flash with xhigh reasoning)"
+          }
+        },
+        {
+          "name": "ASPIRE",
+          "normalized_name": "Aspire",
+          "type": "framework",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S396",
+            "page": 10,
+            "section": "CONCLUSION",
+            "quote": "outperforming ASPIRE (75.5%) and CaP-Agent0"
+          }
+        },
+        {
+          "name": "CaP-Agent0",
+          "normalized_name": "Cap-Agent0",
+          "type": "framework",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S396",
+            "page": 10,
+            "section": "CONCLUSION",
+            "quote": "and CaP-Agent0 with GPT-6 Astra Pro (60.0%)"
+          }
+        },
+        {
+          "name": "GPT-6 Astra Pro",
+          "normalized_name": "Gpt-6 Astra Pro",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S396",
+            "page": 10,
+            "section": "CONCLUSION",
+            "quote": "CaP-Agent0 with GPT-6 Astra Pro (60.0%)"
+          }
+        },
+        {
+          "name": "Video Analyzer",
+          "normalized_name": "Video Analyzer",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S397",
+            "page": 10,
+            "section": "CONCLUSION",
+            "quote": "Ablations support combining the Video Analyzer and Privileged Agent"
+          }
+        },
+        {
+          "name": "Privileged Agent",
+          "normalized_name": "Privileged Agent",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S397",
+            "page": 10,
+            "section": "CONCLUSION",
+            "quote": "combining the Video Analyzer and Privileged Agent"
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "name": "CaP-X",
+          "normalized_name": "Cap-X",
+          "modality": "simulation",
+          "usage": "training",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S215",
+            "page": 5,
+            "section": "EVALUATION",
+            "quote": "The practice collection contains seven CaP-X tasks"
+          }
+        },
+        {
+          "name": "ABC",
+          "normalized_name": "Abc",
+          "modality": "simulation",
+          "usage": "training",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S215",
+            "page": 5,
+            "section": "EVALUATION",
+            "quote": "fifteen ABC-derived or analogous tasks"
+          }
+        }
+      ],
+      "literature_sources": [],
+      "limitations": [
+        {
+          "text": "Deformable-object manipulation remains a clear limitation.",
+          "category": "generalization",
+          "provenance": {
+            "sentence_id": "S620",
+            "page": 15,
+            "section": "K X",
+            "quote": "The clearest remaining limitation is deformable-object manipulation"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "Improve efficiency through quota-aware rollout scheduling and dependency-aware proposal integration.",
+          "category": "efficiency",
+          "provenance": {
+            "sentence_id": "S412",
+            "page": 11,
+            "section": "CONCLUSION",
+            "quote": "Future work could improve efficiency through quota-aware rollout scheduling"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "finding": "RPG improves task success rate significantly over baselines.",
+          "metric": "task success rate",
+          "result": "95.0%",
+          "provenance": {
+            "sentence_id": "S396",
+            "page": 10,
+            "section": "CONCLUSION",
+            "quote": "Success rises from 28.6% after the first practice round to 95.0%"
+          }
+        },
+        {
+          "finding": "RPG outperforms ASPIRE baseline.",
+          "metric": "task success rate",
+          "result": "75.5%",
+          "provenance": {
+            "sentence_id": "S396",
+            "page": 10,
+            "section": "CONCLUSION",
+            "quote": "outperforming ASPIRE (75.5%)"
+          }
+        },
+        {
+          "finding": "RPG outperforms CaP-Agent0 with GPT-6 Astra Pro.",
+          "metric": "task success rate",
+          "result": "60.0%",
+          "provenance": {
+            "sentence_id": "S396",
+            "page": 10,
+            "section": "CONCLUSION",
+            "quote": "CaP-Agent0 with GPT-6 Astra Pro (60.0%)"
+          }
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv_2610.02200v1",
+      "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2610.02200v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "VISTA",
+          "normalized_name": "Vista",
+          "type": "framework",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S86",
+            "page": 2,
+            "section": "STA harness Agent",
+            "quote": "two example agent trajectories with VISTA"
+          }
+        },
+        {
+          "name": "VISTA",
+          "normalized_name": "Vista",
+          "type": "framework",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S130",
+            "page": 3,
+            "section": "Related Work",
+            "quote": "three key visual harness components"
+          }
+        },
+        {
+          "name": "VISTA",
+          "normalized_name": "Vista",
+          "type": "framework",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S410",
+            "page": 10,
+            "section": "Conclusion",
+            "quote": "VISTA shows that a simple visual harness"
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "name": "BabyVision",
+          "normalized_name": "Babyvision",
+          "modality": "visual",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S381",
+            "page": 9,
+            "section": "General Visual Environments",
+            "quote": "static visual reasoning benchmark, BabyVision"
+          }
+        },
+        {
+          "name": "ARC-AGI-3",
+          "normalized_name": "Arc-Agi-3",
+          "modality": "visual",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S409",
+            "page": 10,
+            "section": "Limitations",
+            "quote": "private set of ARC-AGI-3"
+          }
+        },
+        {
+          "name": "ARC-AGI-3",
+          "normalized_name": "Arc-Agi-3",
+          "modality": "visual",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S412",
+            "page": 10,
+            "section": "Conclusion",
+            "quote": "all 25 public ARC-AGI-3 games"
+          }
+        }
+      ],
+      "literature_sources": [
+        {
+          "name": "BabyVision",
+          "normalized_name": "Babyvision",
+          "provenance": {
+            "sentence_id": "S381",
+            "page": 9,
+            "section": "General Visual Environments",
+            "quote": "BabyVision [12]"
+          }
+        },
+        {
+          "name": "ARC-AGI-3",
+          "normalized_name": "Arc-Agi-3",
+          "provenance": {
+            "sentence_id": "S409",
+            "page": 10,
+            "section": "Limitations",
+            "quote": "ARC-AGI-3 [4]"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "text": "Models may have seen the benchmark games in their training data.",
+          "category": "generalization",
+          "provenance": {
+            "sentence_id": "S408",
+            "page": 10,
+            "section": "Limitations",
+            "quote": "cannot rule out the possibility that these games were included"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "Evaluate VISTA on more complex and realistic embodied tasks.",
+          "category": "dataset_expansion",
+          "provenance": {
+            "sentence_id": "S415",
+            "page": 10,
+            "section": "Conclusion",
+            "quote": "evaluate VISTA on more complex and realistic tasks"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "finding": "VISTA completes all public ARC-AGI-3 games with a perfect score.",
+          "metric": "score",
+          "result": "perfect",
+          "provenance": {
+            "sentence_id": "S412",
+            "page": 10,
+            "section": "Conclusion",
+            "quote": "complete all 25 public ARC-AGI-3 games with a perfect score"
+          }
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv_2610.02182v1",
+      "title": "SoftServe: A Scalable Quasi-Newton Method for Deep Learning",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2610.02182v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "SOFTSERVE",
+          "normalized_name": "Softserve",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S1",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "SOFTSERVE : A SCALABLE QUASI-NEWTON METHOD FOR DEEP LEARNING"
+          }
+        },
+        {
+          "name": "Quasi-Newton (QN) methods",
+          "normalized_name": "Quasi-Newton (Qn) Methods",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S4",
+            "page": 1,
+            "section": "ABSTRACT",
+            "quote": "Quasi-Newton (QN) methods have long been among the most effective methods"
+          }
+        },
+        {
+          "name": "diagonal and Kroneckerfactored variants",
+          "normalized_name": "diagonal and Kroneckerfactored variants",
+          "type": "architecture",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S8",
+            "page": 1,
+            "section": "ABSTRACT",
+            "quote": "We develop diagonal and Kroneckerfactored variants that preserve positive definiteness"
+          }
+        },
+        {
+          "name": "Kroneckerstructured updates",
+          "normalized_name": "Kroneckerstructured Updates",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S36",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "Kroneckerstructured updates have been proposed for applying BFGS to deep learning"
+          }
+        },
+        {
+          "name": "BFGS",
+          "normalized_name": "Bfgs",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S36",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "applying BFGS to deep learning"
+          }
+        },
+        {
+          "name": "Newton-Schulz",
+          "normalized_name": "Newton-Schulz",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S42",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "variants of Newton-Schulz (Amsel et al. , 2026; Higham, 2008)"
+          }
+        },
+        {
+          "name": "Adam",
+          "normalized_name": "Adam",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S208",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "Our baselines are Adam, Muon, SOAP, K-FAC, and K-BFGS(L)"
+          }
+        },
+        {
+          "name": "Muon",
+          "normalized_name": "Muon",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S208",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "Our baselines are Adam, Muon, SOAP, K-FAC, and K-BFGS(L)"
+          }
+        },
+        {
+          "name": "SOAP",
+          "normalized_name": "Soap",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S208",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "Our baselines are Adam, Muon, SOAP, K-FAC, and K-BFGS(L)"
+          }
+        },
+        {
+          "name": "K-FAC",
+          "normalized_name": "K-Fac",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S208",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "Our baselines are Adam, Muon, SOAP, K-FAC, and K-BFGS(L)"
+          }
+        },
+        {
+          "name": "K-BFGS(L)",
+          "normalized_name": "K-Bfgs(L)",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S208",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "Our baselines are Adam, Muon, SOAP, K-FAC, and K-BFGS(L)"
+          }
+        },
+        {
+          "name": "L-BFGS",
+          "normalized_name": "L-Bfgs",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S208",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "with L-BFGS also included for deterministic training"
+          }
+        },
+        {
+          "name": "SOFTSERVE-I",
+          "normalized_name": "Softserve-I",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S209",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "we include SOFTSERVE-I: the normalized momentum method Eq. 14"
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "name": "MNIST",
+          "normalized_name": "Mnist",
+          "modality": "image",
+          "usage": "benchmark",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S225",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "We next consider MNIST reconstruction, a standard benchmark for second-order optimization"
+          }
+        }
+      ],
+      "literature_sources": [
+        {
+          "name": "Goldfarb et al. , 2020",
+          "normalized_name": "Goldfarb Et Al. , 2020",
+          "provenance": {
+            "sentence_id": "S36",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "applying BFGS to deep learning (Goldfarb et al. , 2020; Ren et al. , 2022)"
+          }
+        },
+        {
+          "name": "Ren et al. , 2022",
+          "normalized_name": "Ren Et Al. , 2022",
+          "provenance": {
+            "sentence_id": "S36",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "applying BFGS to deep learning (Goldfarb et al. , 2020; Ren et al. , 2022)"
+          }
+        },
+        {
+          "name": "Amsel et al. , 2026",
+          "normalized_name": "Amsel Et Al. , 2026",
+          "provenance": {
+            "sentence_id": "S42",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "variants of Newton-Schulz (Amsel et al. , 2026; Higham, 2008)"
+          }
+        },
+        {
+          "name": "Higham, 2008",
+          "normalized_name": "Higham, 2008",
+          "provenance": {
+            "sentence_id": "S42",
+            "page": 2,
+            "section": "INTRODUCTION",
+            "quote": "variants of Newton-Schulz (Amsel et al. , 2026; Higham, 2008)"
+          }
+        },
+        {
+          "name": "Hinton & Salakhutdinov, 2006",
+          "normalized_name": "Hinton & Salakhutdinov, 2006",
+          "provenance": {
+            "sentence_id": "S225",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "standard benchmark for second-order optimization (Hinton & Salakhutdinov, 2006; Martens, 2010; Goldfarb et al. , 2020)"
+          }
+        },
+        {
+          "name": "Martens, 2010",
+          "normalized_name": "Martens, 2010",
+          "provenance": {
+            "sentence_id": "S225",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "standard benchmark for second-order optimization (Hinton & Salakhutdinov, 2006; Martens, 2010; Goldfarb et al. , 2020)"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "text": "Currently uses a fixed λ within each training run",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S295",
+            "page": 9,
+            "section": "DISCUSSION AND LIMITATIONS",
+            "quote": "currently we use a fixed λ within each training run"
+          }
+        },
+        {
+          "text": "Characterizing convergence guarantees under realistic settings remains an open problem",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S297",
+            "page": 9,
+            "section": "DISCUSSION AND LIMITATIONS",
+            "quote": "characterizing convergence guarantees under realistic settings remains an open problem"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "Developing adaptive λ would further optimize performance",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S296",
+            "page": 9,
+            "section": "DISCUSSION AND LIMITATIONS",
+            "quote": "Developing adaptive λ would further optimize performance"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "finding": "SOFTSERVE scales to massive neural networks",
+          "metric": "parameter size",
+          "result": "136M-parameter",
+          "provenance": {
+            "sentence_id": "S204",
+            "page": 7,
+            "section": "EXPERIMENTS",
+            "quote": "from a small recurrent network to a 136M-parameter diffusion model"
+          }
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv_2610.02206v1",
+      "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2610.02206v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "KaliBench",
+          "normalized_name": "Kalibench",
+          "type": "framework",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S7",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "We introduce KaliBench, a fine-grained benchmark"
+          }
+        },
+        {
+          "name": "multi-stage verification pipeline",
+          "normalized_name": "multi-stage verification pipeline",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S9",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "we develop a multi-stage verification pipeline"
+          }
+        },
+        {
+          "name": "supervised fine-tuning",
+          "normalized_name": "Supervised Fine-Tuning",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S12",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "supervised fine-tuning and reinforcement learning"
+          }
+        },
+        {
+          "name": "reinforcement learning with verifiable rewards",
+          "normalized_name": "reinforcement learning with verifiable rewards",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S12",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "reinforcement learning with verifiable rewards"
+          }
+        },
+        {
+          "name": "Supervised Fine-Tuning (SFT)",
+          "normalized_name": "Supervised Fine-Tuning (Sft)",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S206",
+            "page": 6,
+            "section": "KaliBench",
+            "quote": "Supervised Fine-Tuning (SFT) and Reinforcement Learning"
+          }
+        },
+        {
+          "name": "Reinforcement Learning with Verifiable Rewards (RLVR)",
+          "normalized_name": "Reinforcement Learning with Verifiable Rewards (RLVR)",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S206",
+            "page": 6,
+            "section": "KaliBench",
+            "quote": "Reinforcement Learning with Verifiable Rewards (RLVR)"
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "name": "KaliBench",
+          "normalized_name": "Kalibench",
+          "modality": "text",
+          "usage": "benchmark",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S7",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "a fine-grained benchmark and dataset"
+          }
+        },
+        {
+          "name": "Kali Linux toolset",
+          "normalized_name": "Kali Linux Toolset",
+          "modality": "text",
+          "usage": "training",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S59",
+            "page": 2,
+            "section": "Introduction",
+            "quote": "the Kali Linux toolset"
+          }
+        }
+      ],
+      "literature_sources": [],
+      "limitations": [
+        {
+          "text": "Focus on single-turn command generation and reliance on documentation-grounded data.",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S348",
+            "page": 10,
+            "section": "Discussion and Conclusion",
+            "quote": "focus on single-turn command generation"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "Extend to multi-step workflows, retrieval-augmented tool use, and environment-aware evaluation.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S349",
+            "page": 10,
+            "section": "Discussion and Conclusion",
+            "quote": "extend to multi-step workflows, retrieval-augmented tool use"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "finding": "Supervised fine-tuning and reinforcement learning improve an 8B model to match a 685B MoE model.",
+          "metric": "performance",
+          "result": "comparable to 685B MoE",
+          "provenance": {
+            "sentence_id": "S12",
+            "page": 1,
+            "section": "Abstract",
+            "quote": "achieve performance comparable to a 685B MoE model"
+          }
+        },
+        {
+          "finding": "Post-training with SFT and RLVR improves compact models.",
+          "metric": "model performance",
+          "result": "substantially improves",
+          "provenance": {
+            "sentence_id": "S347",
+            "page": 10,
+            "section": "Discussion and Conclusion",
+            "quote": "Post-training with SFT and RLVR substantially improves"
+          }
+        }
+      ]
+    },
+    {
+      "paper_id": "arxiv_2610.02186v1",
+      "title": "Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2610.02186v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "Preliminaries",
+          "normalized_name": "Preliminaries",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S323",
+            "page": 14,
+            "section": "Methods",
+            "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+          }
+        },
+        {
+          "name": "HGR",
+          "normalized_name": "Hgr",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S323",
+            "page": 14,
+            "section": "Methods",
+            "quote": "Preliminaries and problem formulation We introduce the HGR string as a compact, invertible sequence representation of higher-order molecular topology."
+          }
+        },
+        {
+          "name": "Both",
+          "normalized_name": "Both",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S341",
+            "page": 14,
+            "section": "Methods",
+            "quote": "Both lifting variants are built on a frequency-guided motif-merging backbone."
+          }
+        },
+        {
+          "name": "Grammar Transformer",
+          "normalized_name": "Transformer",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S445",
+            "page": 17,
+            "section": "Methods",
+            "quote": "The resulting token embeddings are encoded by a Grammar Transformer whose self-attention uses the higher-order position bias defined below."
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "name": "RingDiv",
+          "normalized_name": "Ringdiv",
+          "modality": "Clinical Data",
+          "usage": "evaluation",
+          "samples": "N/A",
+          "provenance": {
+            "sentence_id": "S530",
+            "page": 19,
+            "section": "Data availability",
+            "quote": "RingDiv, RingDiv300k and other supporting data generated in this study will be publicly released upon publication."
+          }
+        },
+        {
+          "name": "RingDiv300k",
+          "normalized_name": "Ringdiv300K",
+          "modality": "Clinical Data",
+          "usage": "evaluation",
+          "samples": "N/A",
+          "provenance": {
+            "sentence_id": "S530",
+            "page": 19,
+            "section": "Data availability",
+            "quote": "RingDiv, RingDiv300k and other supporting data generated in this study will be publicly released upon publication."
+          }
+        },
+        {
+          "name": "Public",
+          "normalized_name": "Public",
+          "modality": "Clinical Data",
+          "usage": "evaluation",
+          "samples": "N/A",
+          "provenance": {
+            "sentence_id": "S531",
+            "page": 19,
+            "section": "Data availability",
+            "quote": "Public benchmark datasets used in this study are available from their original sources."
+          }
+        },
+        {
+          "name": "Source",
+          "normalized_name": "Source",
+          "modality": "Clinical Data",
+          "usage": "evaluation",
+          "samples": "N/A",
+          "provenance": {
+            "sentence_id": "S821",
+            "page": 28,
+            "section": "RingDiv dataset construction",
+            "quote": "2.1 Source databases and curation This section documents the construction of the RingDiv datasets: RingDiv (1.18 million molecules) and RingDiv300k, a curated development subset used for rapid experim"
+          }
+        }
+      ],
+      "literature_sources": [],
+      "limitations": [
+        {
+          "text": "This work bridges topological deep learning and sequence modelling by encoding hierarchical molecular topology as a decodable string that standard seq",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S302",
+            "page": 13,
+            "section": "Discussion",
+            "quote": "This work bridges topological deep learning and sequence modelling by encoding hierarchical molecular topology as a decodable string that standard sequence models can learn from."
+          }
+        },
+        {
+          "text": "Building on a combinatorial-complex view of molecules, we examined three linked aspects: reusable grammar induction, ring-diverse benchmarking, and HG",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S303",
+            "page": 13,
+            "section": "Discussion",
+            "quote": "Building on a combinatorial-complex view of molecules, we examined three linked aspects: reusable grammar induction, ring-diverse benchmarking, and HGR-based generation and foundation modelling."
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "Beyond addressing these boundaries, future work can extend HGR to other chemical tasks.",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S318",
+            "page": 13,
+            "section": "Discussion",
+            "quote": "Beyond addressing these boundaries, future work can extend HGR to other chemical tasks."
+          }
+        }
+      ],
+      "findings": []
+    },
+    {
+      "paper_id": "arxiv_2610.02180v1",
+      "title": "Generative Cinematographer: Composing Camera and Object Motion in 3D",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2610.02180v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "GenCine",
+          "normalized_name": "Gencine",
+          "type": "model",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S104",
+            "page": 4,
+            "section": "Method",
+            "quote": "GenCine learns to generate a video"
+          }
+        },
+        {
+          "name": "Wan2.1-Fun-V1.1-14B-Control",
+          "normalized_name": "Wan2.1-Fun-V1.1-14B-Control",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S214",
+            "page": 7,
+            "section": "Experiments",
+            "quote": "GenCine built upon Wan2.1-Fun-V1.1-14B-Control"
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "name": "Dynamic Replica",
+          "normalized_name": "Dynamic Replica",
+          "modality": "video",
+          "usage": "training",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S218",
+            "page": 7,
+            "section": "Experiments",
+            "quote": "Dynamic Replica ... provide ground-truth geometry"
+          }
+        },
+        {
+          "name": "PointOdyssey",
+          "normalized_name": "Pointodyssey",
+          "modality": "video",
+          "usage": "training",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S218",
+            "page": 7,
+            "section": "Experiments",
+            "quote": "PointOdyssey ... provide ground-truth geometry"
+          }
+        },
+        {
+          "name": "SpatialVid-HQ",
+          "normalized_name": "Spatialvid-Hq",
+          "modality": "video",
+          "usage": "training",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S219",
+            "page": 7,
+            "section": "Experiments",
+            "quote": "SpatialVid-HQ ... real-world datasets"
+          }
+        }
+      ],
+      "literature_sources": [
+        {
+          "name": "Wan2.1-Fun-V1.1-14B-Control",
+          "normalized_name": "Wan2.1-Fun-V1.1-14B-Control",
+          "provenance": {
+            "sentence_id": "S214",
+            "page": 7,
+            "section": "Experiments",
+            "quote": "GenCine built upon Wan2.1-Fun-V1.1-14B-Control"
+          }
+        },
+        {
+          "name": "Dynamic Replica",
+          "normalized_name": "Dynamic Replica",
+          "provenance": {
+            "sentence_id": "S218",
+            "page": 7,
+            "section": "Experiments",
+            "quote": "Dynamic Replica (Karaev et al., 2023)"
+          }
+        },
+        {
+          "name": "PointOdyssey",
+          "normalized_name": "Pointodyssey",
+          "provenance": {
+            "sentence_id": "S218",
+            "page": 7,
+            "section": "Experiments",
+            "quote": "PointOdyssey (Zheng et al., 2023)"
+          }
+        },
+        {
+          "name": "SpatialVid-HQ",
+          "normalized_name": "Spatialvid-Hq",
+          "provenance": {
+            "sentence_id": "S219",
+            "page": 7,
+            "section": "Experiments",
+            "quote": "SpatialVid-HQ (Wang et al., 2025b)"
+          }
+        },
+        {
+          "name": "CoWTracker",
+          "normalized_name": "Cowtracker",
+          "provenance": {
+            "sentence_id": "S220",
+            "page": 7,
+            "section": "Experiments",
+            "quote": "CoWTracker (Lai et al., 2026)"
+          }
+        }
+      ],
+      "limitations": [
+        {
+          "text": "single-image scaffold leaves occluded regions unmodeled",
+          "category": "generalization",
+          "provenance": {
+            "sentence_id": "S297",
+            "page": 11,
+            "section": "Discussion",
+            "quote": "single-image scaffold leaves occluded regions unmodeled"
+          }
+        },
+        {
+          "text": "authoring many handles can become cumbersome",
+          "category": "scalability",
+          "provenance": {
+            "sentence_id": "S298",
+            "page": 11,
+            "section": "Discussion",
+            "quote": "authoring many handles can become cumbersome"
+          }
+        },
+        {
+          "text": "handles impose no physical constraints or causal interactions",
+          "category": "general",
+          "provenance": {
+            "sentence_id": "S299",
+            "page": 11,
+            "section": "Discussion",
+            "quote": "handles impose no physical constraints or causal interactions"
+          }
+        }
+      ],
+      "future_work": [
+        {
+          "text": "Geometry completion, automatic handle placement, and learned interaction priors",
+          "category": "methodological_extension",
+          "provenance": {
+            "sentence_id": "S300",
+            "page": 11,
+            "section": "Discussion",
+            "quote": "Geometry completion, automatic handle placement, and learned interaction priors"
+          }
+        }
+      ],
+      "findings": []
+    },
+    {
+      "paper_id": "arxiv_2610.02188v1",
+      "title": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
+      "publication_year": 2026,
+      "pdf_path": "data/pdfs\\arxiv_2610.02188v1.pdf",
+      "status": "SUCCESS",
+      "error_message": null,
+      "methods": [
+        {
+          "name": "DMAD",
+          "normalized_name": "Dmad",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S176",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "We evaluate DMAD on class-conditional image generation"
+          }
+        },
+        {
+          "name": "DMD2",
+          "normalized_name": "Dmd2",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S177",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "Following DMD2 [47], we distill EDM [14]"
+          }
+        },
+        {
+          "name": "EDM",
+          "normalized_name": "Edm",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S177",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "we distill EDM [14] for ImageNet-64×64"
+          }
+        },
+        {
+          "name": "SDXL",
+          "normalized_name": "Sdxl",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S177",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "and SDXL [29] for zero-shot generation"
+          }
+        },
+        {
+          "name": "Wan2.1-T2V 1.3B",
+          "normalized_name": "Wan2.1-T2V 1.3B",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S180",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "we distill Wan2.1-T2V 1.3B and 14B"
+          }
+        },
+        {
+          "name": "Wan2.1-T2V 14B",
+          "normalized_name": "Wan2.1-T2V 14B",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S180",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "we distill Wan2.1-T2V 1.3B and 14B"
+          }
+        },
+        {
+          "name": "MiniMax-H3",
+          "normalized_name": "Minimax-H3",
+          "type": "model",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S181",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "We further distill MiniMax-H3 [28] to four steps"
+          }
+        },
+        {
+          "name": "rCM",
+          "normalized_name": "Rcm",
+          "type": "algorithm",
+          "role": "baseline",
+          "provenance": {
+            "sentence_id": "S180",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "evaluate them with VBench [12] on the same augmented prompt set as rCM"
+          }
+        },
+        {
+          "name": "LoRA",
+          "normalized_name": "Lora",
+          "type": "algorithm",
+          "role": "proposed",
+          "provenance": {
+            "sentence_id": "S559",
+            "page": 16,
+            "section": "B Implementation Details",
+            "quote": "Both the generator and the discriminator backbone use LoRA"
+          }
+        }
+      ],
+      "datasets": [
+        {
+          "name": "ImageNet-64×64",
+          "normalized_name": "ImageNet",
+          "modality": "image",
+          "usage": "training",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S177",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "we distill EDM [14] for ImageNet-64×64"
+          }
+        },
+        {
+          "name": "10K COCO 2014 prompts",
+          "normalized_name": "MS COCO",
+          "modality": "text",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S177",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "for zero-shot generation on 10K COCO 2014 prompts"
+          }
+        },
+        {
+          "name": "AVGen-Bench",
+          "normalized_name": "Avgen-Bench",
+          "modality": "video",
+          "usage": "evaluation",
+          "samples": null,
+          "provenance": {
+            "sentence_id": "S181",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "evaluate them in a user study and AVGen-Bench"
+          }
+        }
+      ],
+      "literature_sources": [
+        {
+          "name": "Fréchet Inception Distance (FID)",
+          "normalized_name": "Fréchet Inception Distance (Fid)",
+          "provenance": {
+            "sentence_id": "S178",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "We use Fréchet Inception Distance (FID) [10] to measure image quality"
+          }
+        },
+        {
+          "name": "CLIP score",
+          "normalized_name": "Clip Score",
+          "provenance": {
+            "sentence_id": "S178",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "and CLIP score [30] to evaluate text–image alignment"
+          }
+        },
+        {
+          "name": "patch FID",
+          "normalized_name": "Patch Fid",
+          "provenance": {
+            "sentence_id": "S179",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "we additionally report patch FID [3, 18] to assess high-resolution details"
+          }
+        },
+        {
+          "name": "VBench",
+          "normalized_name": "Vbench",
+          "provenance": {
+            "sentence_id": "S180",
+            "page": 6,
+            "section": "Experiments",
+            "quote": "evaluate them with VBench [12] on the same augmented prompt set"
+          }
+        }
+      ],
+      "limitations": [],
+      "future_work": [],
+      "findings": [
+        {
+          "finding": "DMAD improves over few-step methods and multi-step teachers in image FID and VBench total score.",
+          "metric": "image FID and VBench total score",
+          "result": "improvements",
+          "provenance": {
+            "sentence_id": "S298",
+            "page": 10,
+            "section": "Conclusion",
+            "quote": "Experiments show improvements over the compared few-step methods"
+          }
+        },
+        {
+          "finding": "Users prefer the four-step DMAD student over DMD2 and rCM on MiniMax-H3.",
+          "metric": "user preference",
+          "result": "prefer",
+          "provenance": {
+            "sentence_id": "S299",
+            "page": 10,
+            "section": "Conclusion",
+            "quote": "users prefer our four-step student over DMD2 and rCM"
+          }
+        }
+      ]
+    }
+  ]
+}

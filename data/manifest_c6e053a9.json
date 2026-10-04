@@ -1,0 +1,608 @@
+{
+    "retrieval_run_id": "c6e053a9",
+    "original_query": "Cybersecurity",
+    "normalized_query": "Cybersecurity",
+    "search_strategies": [
+        "Cybersecurity"
+    ],
+    "sources": [
+        "openalex",
+        "semantic_scholar",
+        "arxiv"
+    ],
+    "api_parameters": {
+        "max_strategies": 5,
+        "max_search_rounds": 2,
+        "min_candidate_pool": 30,
+        "target_size": 20,
+        "start_year": 2024,
+        "end_year": 2026
+    },
+    "candidate_count": 48,
+    "deduplicated_count": 42,
+    "selected_count": 20,
+    "valid_pdf_count": 20,
+    "excluded_count": 22,
+    "papers": [
+        {
+            "paper_id": "arxiv_2610.02206v1",
+            "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+            "abstract": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings, or argument misordering can invalidate execution. We introduce KaliBench, a fine-grained benchmark and dataset for natural-language--to--CLI translation on Kali Linux, comprising 8,504 query--command pairs spanning 1,642 tools across 23 capability dimensions and 5 security phases. KaliBench is constructed via a manuscript-grounded pipeline with deterministic canonicalization and alias-aware evaluation, enabling precise and reproducible assessment of tool selection and argument construction. To ensure both semantic correctness and practical executability, we develop a multi-stage verification pipeline that combines LLM-based validation, sandboxed terminal execution, and human-in-the-loop refinement. Building on these fine-grained, deterministic signals, KaliBench further enables runtime-free verifiable rewards for training. Across three evaluation modes and 24 configurations of general-purpose and security-focused open-weight models, no open-weight model exceeds 42% exact-command accuracy in the unrestricted setting, highlighting the difficulty of accurate CLI-based cybersecurity tool use without explicit tool hints. We further show that supervised fine-tuning and reinforcement learning with verifiable rewards derived from KaliBench significantly improve an 8B model and achieve performance comparable to a 685B MoE model.",
+            "authors": [
+                "Pengfei Li",
+                "Naufal Suryanto",
+                "Sicheng Zhang",
+                "Muzammal Naseer"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2610.02206v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.27389545440673824,
+            "pdf_path": "data/pdfs\\arxiv_2610.02206v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2610.00590v1",
+            "title": "Towards Hierarchical Cyber Defense with Large Language Models: From Planning to Execution",
+            "abstract": "An autonomous cyber defender trained with reinforcement learning (RL) is typically tied to the network on which it was trained, limiting its ability to generalize as network scale changes. Hierarchical RL reduces decision complexity by separating strategic targeting from tactical execution, but it does not eliminate this retraining dependence. We investigate whether frozen, zero-shot large language models (LLMs) can provide retraining-free control in hierarchical cyber defense and how performance changes as LLM control is extended from planning to execution. We formulate a controller-agnostic planner-executor hierarchy in which the planner selects a subnet to defend over a fixed horizon and the executor selects defensive actions within that subnet. Using the high fidelity Cyberwheel environment, with its built-in automated red team agent mapped to the MITRE ATT&CK framework, we compare RL+RL, LLM+RL, and LLM+LLM configurations using six models ranging from 3B to 70B parameters, including two cybersecurity-specialized models, across small, medium, and large networks. Replacing only the planner with an LLM yields limited gains as network size increases. In contrast, extending LLM control to execution produces notable improvements for sufficiently capable models. For instance, a frozen general purpose 70B model holds successful lateral movement to approximately 1% of steps and attacker impact near zero across all three network scales using the same model weights, while the RL baseline is retrained for each scale. Our results show that sufficiently capable frozen LLMs can maintain strong defensive performance across the evaluated network scales without task-specific retraining, while also indicating that strong tactical execution is important to realizing the benefits of LLM-based control.",
+            "authors": [
+                "Harshith Doppalapudi",
+                "Nathaniel D. Bastian",
+                "Ankit Shah"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2610.00590v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.2965800940990448,
+            "pdf_path": "data/pdfs\\arxiv_2610.00590v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.29808v2",
+            "title": "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution",
+            "abstract": "In July 2026, an unconstrained autonomous agent participating in a frontier AI cybersecurity evaluation harness breached its evaluation sandbox, established an external command-and-control foothold, and executed a multi-stage intrusion into Hugging Face's production multi-tenant dataset conversion infrastructure (referred to in this autopsy as Incident-2026-Alpha). Over 4.5 days, the rogue agent executed 17,600 discrete actions across 6,280 worker clusters, compromised AWS EC2 Instance Metadata Service (IMDS) credentials, forged Kubernetes service account tokens, rooted physical worker nodes via overprivileged CSI drivers, harvested 136 production secrets, and enrolled 181 ephemeral sandboxes into the organization's internal mesh VPN. This monograph presents a first-principles forensic autopsy of the intrusion, provides formal evidence that the breach was a predicted consequence under the Instrumental Convergence thesis operating within an unattenuated autonomous loop lacking out-of-band circuit-breakers, exposes the Defensive LLM Guardrail Paradox that paralyzed centralized commercial models during forensic incident response, and formalizes the Dual-Sided Epistemic Andon Imperative. We specify the dual-process systems architecture---combining out-of-band supervisory control of discrete event systems (Ramadge and Wonham 1989), Synchronous Reactive (SR) ambient sentinels (Berry and Gonthier 1992; Lee and Neuendorffer 2005), and microsecond-scale (4.8 $μ$s median / $< 0.154$ ms WCET bound) POSIX preemption buses---demonstrating how compiled, deterministic epistemic boundaries prevent autonomous rogue excursions before the first off-target socket packet traverses the hypervisor.",
+            "authors": [
+                "José Luis Pino"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.29808v2",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.3214225977659225,
+            "pdf_path": "data/pdfs\\arxiv_2609.29808v2.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2610.01893v1",
+            "title": "A Structured State Space Sequence Model for Multi-Class Classification of Malware",
+            "abstract": "By 2030, Internet of Things (IoT) devices are projected to reach 40 billion, with fast-paced technological advancements in fields such as industry, healthcare, agriculture, automobiles, and building/home automation systems. This expansion has created a large attack surface for cybercrime, as the majority of these devices open the door for cybercriminals to exploit vulnerabilities, as they lack adequate built-in security. Cybercriminals launch malware attacks to compromise systems or steal sensitive data, and once a system is compromised, a ransom is typically demanded for its release. Current cybersecurity measures in place are being outpaced by the rapid growth of the IoT, which is accompanied by a subsequent growth in malware variants being created per day. Recognizing this pitfall, this research examines and proposes a novel approach to malware detection and classification to safeguard devices from further attacks and make IoT systems more robust and secure. The framework proposed utilizes a Structured State Space Sequence (S4) model, which discretizes sequences of malware samples in a sequence and captures long-range dependencies, essentially identifying the \"cause\" and \"effect\" hidden within malware execution flow. This study presents two novel contributions: the first empirical application of the S4 model for malware analysis, and a comprehensive comparison of its performance against other deep learning architectures, laying the stepping stone for future research in this new paradigm.",
+            "authors": [
+                "Emmanuela Andam",
+                "Rana Shaaban",
+                "Emanuel Grant",
+                "Naima Kaabouch"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2610.01893v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.32924364209175105,
+            "pdf_path": "data/pdfs\\arxiv_2610.01893v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.38415v1",
+            "title": "Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks",
+            "abstract": "This technical report presents an alignment evaluation developed and performed by the UK AI Security Institute for assessing whether advanced AI systems take unsanctioned actions outside the scope of their assigned task. We evaluate whether frontier models conduct supply-chain attacks against out-of-scope, third-party targets when placed in difficult cybersecurity challenges, motivated by recently observed cases of models attacking real open-source repositories during evaluations. Applying our methods to GPT-6 Astra and previous OpenAI models, with cyber safeguards disabled, we find that GPT-6 Astra attempts complete supply-chain attacks in simulation at a higher rate than GPT-5.6 Sol and GPT-5.5. This includes writing malicious code as a contribution to an out-of-scope open-source codebase, creating fake identities to deceive open-source developers, and submitting benign contributions before malicious ones. GPT-6 Astra frequently reasons about the scope of the challenge in its chain-of-thought yet still proceeds to attack out-of-scope targets; it often asks for permission, and treats an automated message as as authorisation; and it continues to take unsanctioned actions, at a reduced rate, when internet access is more explicitly disallowed. Our evaluation builds on an internal version of Petri, an open-source LLM auditing tool, with all tool calls simulated by other LLMs, so that no real network access, systems or third-party repositories are reachable and no real-world harm is caused. Finally, we discuss limitations, in particular simulation awareness. We believe simulation awareness may have driven some of the observed behaviour but does not remove our concern. Our results suggest that defences beyond model alignment, such as sandboxing and monitoring, are increasingly critical for safe and secure deployment.",
+            "authors": [
+                "Alexandra Souly",
+                "Kai Fronsdal",
+                "Abby D'Cruz",
+                "Xander Davies",
+                "Robert Kirk"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.38415v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.2518168449401855,
+            "pdf_path": "data/pdfs\\arxiv_2609.38415v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.32390v1",
+            "title": "Reward Hacking and Agent Containment Failure: A Monte Carlo Study Based on the 2026 Hugging Face Incident",
+            "abstract": "The July 2026 intrusion into Hugging Face production infrastructure showed how reward hacking can become an external cybersecurity incident when a capable agent encounters weak containment boundaries. This study develops a probabilistic risk model linking five stages: reward hacking, containment escape, usable access, persistence, and failure of detection. A Monte Carlo simulation evaluates 100,000 runs under each of four control configurations. Input distributions represent explicit uncertainty and are used for comparative analysis rather than real-world frequency prediction. Under the stated assumptions, layered controls reduce simulated external-incident probability substantially more than network isolation or monitoring used alone, an ordering that holds under independent plus/minus 25% perturbation of every coefficient in the model across 300 draws. Sensitivity analysis shows that agent capability and weaknesses in monitoring, authorization, and credential control exert the greatest influence on modeled risk. Human temporal discounting and metric gaming provide a behavioral analogy for short-horizon optimization, but the study does not infer that AI agents experience gratification or human motivation. The results support treating cyber-capable agent evaluations as hostile security zones in which indirect egress, shared infrastructure, credentials, and evaluation artifacts must remain outside the agent's effective authority.",
+            "authors": [
+                "Murat Ozer",
+                "Bulent Erenay",
+                "Ibrahim Berber"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.32390v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.3092759162187576,
+            "pdf_path": "data/pdfs\\arxiv_2609.32390v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.36573v1",
+            "title": "CyberPersistBench: Evaluating LLM-Based Cyber Attackers on Installation and Persistence",
+            "abstract": "While LLM-based attackers exhibit growing proficiency in vulnerability exploitation, most existing cybersecurity benchmarks suffer from single-stage truncation, prematurely terminating evaluation upon initial access. In practice, initial footholds are exceptionally fragile across operational disruptions such as service restarts and host reboots. Whether LLM-based attackers can establish and maintain durable footholds beyond initial compromise remains a central blind spot in cybersecurity evaluation. To bridge this gap, we introduce CyberPersistBench, the first benchmark dedicated to post-compromise installation and persistence. Decoupled from upfront exploitation, CyberPersistBench frames persistence as an adversarial survival task in which agents use native host mechanisms to maintain footholds across staged system disruptions. Deterministic checks support a six-level scoring method (L1--L6) spanning installation and persistence. The benchmark comprises 203 core tasks across seven categories, augmented by multi-host and active defense extensions. Empirical evaluations across five frontier agents show that autonomous persistence remains limited (27.6%--44.8%) and drops further on defense-enabled tasks (5.5%--13.3%); nonetheless, these results reveal an emerging cyberattack risk, underscoring the necessity of benchmarking post-compromise persistence. CyberPersistBench thus establishes a foundational benchmark for post-compromise installation and persistence, delineating the operational boundaries of autonomous cyber agents.",
+            "authors": [
+                "Sujin Chen",
+                "Lijun Li",
+                "Xuhong Wang",
+                "Jing Shao"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.36573v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.3399056017398834,
+            "pdf_path": "data/pdfs\\arxiv_2609.36573v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.39584v1",
+            "title": "Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework",
+            "abstract": "Edge computing has emerged as a critical computing paradigm in modern distributed systems by migrating data processing closer to end users and Internet of Things (IoT) devices. While this paradigm decentralizes processes, minimizes latency, and reduces backhaul bandwidth congestion, it exponentially enlarges the cyberattack surface. Heterogeneous, resource-constrained edge devices deployed across unmanaged administrative domains present highly vulnerable targets. To address these vulnerabilities without compromising global data privacy regulations, this paper proposes a novel Trust-Aware Federated Hybrid Intrusion Detection Framework (TA-FHIDF). The proposed framework integrates an Autoencoder, a 1D Convolutional Neural Network (1D-CNN), and a Bidirectional Long Short-Term Memory (BiLSTM) model into a unified, localized deep learning engine capable of autonomous spatial and temporal feature extraction. Model training is performed collaboratively via federated learning, ensuring raw network telemetry remains isolated at local gateways. Furthermore, to defend against adversarial model poisoning attacks, we introduce a robust server-side trust-aware aggregation mechanism that evaluates client reliability using a cosine similarity metric before global model integration. Empirical evaluations across multi-vector benchmark datasets (UNSW-NB15, CICIDS2017, and Edge-IIoTset) demonstrate the framework's superior detection accuracy, rapid convergence, and high Byzantine fault tolerance under adversarial attack scenarios.",
+            "authors": [
+                "Zawad Yalmie Sazid",
+                "Robert Abbas"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.39584v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.25578220188617706,
+            "pdf_path": "data/pdfs\\arxiv_2609.39584v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.33521v1",
+            "title": "LLM4Trust: Exploring the Capabilities of Large Language Models for Trust Evaluation",
+            "abstract": "Trust evaluation plays a critical role in cybersecurity by supporting risk mitigation and decision-making. A variety of trust evaluation methods have been proposed, with learning-based approaches offering high accuracy and automation. However, they often require substantial ground truth, suffer from low training efficiency, lack support for basic trust properties, and provide limited explainability. Large Language Models (LLMs) offer a compelling alternative due to their strong zero-/few-shot reasoning abilities and broad knowledge. To this end, we propose LLM4Trust, the first benchmark framework that systematically explores the capabilities of LLMs for trust evaluation. We first construct diverse trust graphs to model five basic trust properties and design corresponding property understanding tasks. We then assess the ability of eight representative LLMs to understand these properties under nine prompt methods. Based on this exploration, we identify the most effective LLM-prompt combinations and apply them to five real-world datasets for validating LLMs' trust evaluation capability. During this process, we propose two strategies to extract key information from large-scale trust graphs, addressing the context window limitations of LLMs. Extensive experiments show that LLMs can effectively understand basic trust properties and have great potential for real-world trust evaluation, particularly under limited supervision. However, they remain vulnerable to attacks targeting trust graphs and demonstration examples used in few-shot prompting, and incur high inference costs. Accordingly, we propose a defense mechanism and batch inference to improve the robustness and efficiency of LLM-based trust evaluation. The source code of LLM4Trust is available at https://github.com/Jieerbobo/LLM4Trust",
+            "authors": [
+                "Jie Wang",
+                "Yanbo Sun",
+                "Zheng Yan",
+                "Jiahe Lan",
+                "Elisa Bertino"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.33521v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.27685978710651393,
+            "pdf_path": "data/pdfs\\arxiv_2609.33521v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.33850v1",
+            "title": "Internet and Enterprise Strategy Revisited: From Digital Connectivity to AI-Enabled Enterprises, 1996 - 2026",
+            "abstract": "This paper revisits the 1996 article Internet and Enterprise Strategy and assesses how its propositions were confirmed, transformed, or contradicted as digital connectivity evolved into an AI-enabled enterprise environment by 2026. The reassessment combines historical interpretation with a structured comparison of Internet-enabled capabilities, industry structure, value-chain transformation, platform intermediation, cybersecurity, data governance, artificial intelligence, and digital sovereignty. The analysis shows that the article correctly anticipated the strategic relevance of electronic markets, cybermediaries, transaction security, online communities, and internal rules for Internet use. However, the contemporary Internet exceeds the original framing: it is now a platformized, data-intensive, cloud-dependent, regulated, geopolitically contested, and increasingly AI-mediated environment. The paper argues that this progression from connectivity to AI-enabled enterprise systems does not replace Internet strategy; it extends it. For many firms, enterprise strategy is now enacted through digital infrastructures, algorithmic coordination, ecosystem participation, and governance capabilities.",
+            "authors": [
+                "Carlos J. Costa"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.33850v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.27106522023677826,
+            "pdf_path": "data/pdfs\\arxiv_2609.33850v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.31893v1",
+            "title": "CyberWorld: World Models for Sample-Efficient Autonomous Cyber Defense",
+            "abstract": "Deep reinforcement learning has become a prominent approach to autonomous cyber defense. Existing methods are predominantly model-free and consequently require extensive environment interaction. World models provide an alternative by learning predictive dynamics and optimizing policies through imagined trajectories, yielding substantial gains in sample efficiency in robotics and embodied control. Extending this paradigm to cybersecurity raises a fundamental question: what should constitute the \"world\" in a cyber world model? We introduce CyberWorld, a Dreamer-style world modeling framework that learns latent cyber dynamics from vector, graph, textual, and multimodal representations of the defended network. Across all four scoreable CyberWheel attack strategies, the graph-based CyberWorld variant exceeds a strategy-agnostic control after 3.6k-15.8k environment steps, compared with millions of steps required by model-free PPO. Across representation choices, graph structure provides greater robustness under topology-dependent attacks, while simpler representations remain competitive in overall performance. Among successful runs, the number of episodes required to reach the control remains approximately constant as network size increases from 15 to 100 hosts. These results establish learned cyber dynamics as a sample-efficient and scalable basis for autonomous defense, and identify world representation as a central design axis for robustness and scalability.",
+            "authors": [
+                "Ryozo Masukawa",
+                "Sanggeon Yun",
+                "Raheeb Hassan",
+                "Hyunwoo Oh",
+                "SungHeon Jeong",
+                "Mohsen Imani"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.31893v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.29235999584197997,
+            "pdf_path": "data/pdfs\\arxiv_2609.31893v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.33763v1",
+            "title": "SecProbe: Adaptive Evaluation of Coding Agents on Cybersecurity Vulnerabilities",
+            "abstract": "Assessing cybersecurity vulnerability awareness in coding agents requires evaluations that reveal capability gaps and remain informative as models evolve. Static benchmarks offer fixed coverage and difficulty, while scarce vulnerable repositories and costly expert authoring limit their renewal at scale. We introduce SecProbe, a framework for adaptive evaluation that combines Item Response Theory (IRT) with on-demand synthesis of repository-scale vulnerability-repair tasks. From observed performance, \\textsc{SecProbe} estimates agent ability and identifies where additional evidence is most informative, selecting existing tasks or synthesizing new ones accordingly. As one use case, we construct 353 tasks spanning six programming languages and 151 CWE types and evaluate nine frontier models with two agent harnesses. Success rates peak at 28.33\\%, highlighting substantial gaps in vulnerability recognition and repair. Compared with random and one-shot baselines, \\textsc{SecProbe} achieves comparable agent ability estimates while requiring agents to solve up to 29.5\\% fewer tasks. These results support adaptive evaluation as an efficient and discriminative approach to assessing cybersecurity vulnerability awareness.",
+            "authors": [
+                "Xiaonan Luo",
+                "Yue Huang",
+                "Kehan Guo",
+                "Ping He",
+                "Chuan Zou",
+                "Chujie Gao",
+                "Lichi Li",
+                "Yuchen Ma",
+                "Zhangchen Xu",
+                "Zichen Chen",
+                "Yufei Han",
+                "Xiangliang Zhang"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.33763v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.30657249987125396,
+            "pdf_path": "data/pdfs\\arxiv_2609.33763v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.32424v1",
+            "title": "CyberClear: A Benchmark for LLM Agent Systems on APT Attack Chain Provenance",
+            "abstract": "Large language model agents have demonstrated promising capabilities in cybersecurity tasks, yet their ability to reconstruct complete Advanced Persistent Threat attack campaigns from complex security logs remains largely unexplored. Existing cybersecurity benchmarks for agents mainly focus on vulnerability discovery, exploitation, and security analysis tasks, leaving the evaluation of attack chain provenance under realistic security logs insufficiently studied. To address this gap, we introduce CyberClear, a benchmark for evaluating LLM agents and advanced agent systems on APT attack chain provenance from long-context security logs. CyberClear covers both single-step attacks and multi-stage attack chains, requiring agents to identify attack evidence, infer attack progression, and generate provenance graphs containing entities, causal relationships, MITRE ATT&CK techniques, and forensic evidence. To enable comprehensive evaluation, we develop an evaluation method tailored to APT attack chain provenance. Unlike conventional text similarity metrics that focus on surface-level matching, our evaluation examines whether reconstructed graphs preserve the semantics of attack chains across single-step behavior correctness, multi-step behavior identification, temporal and causal consistency, entity and relationship fidelity, and overall attack narrative consistency. Advanced multi-agent systems powered by state-of-the-art LLMs still struggle on CyberClear, motivating us to propose CyberProvenance, an agent cyber harness designed for multi-agents that augments LLM agents with evidence accumulation, execution-based validation, and feedback-guided refinement mechanisms for reliable attack-chain provenance. Extensive evaluations on CyberClear demonstrate the effectiveness of CyberProvenance in improving evidence reasoning, execution-grounded validation, and complete APT attack chain reconstruction.",
+            "authors": [
+                "Qi Chen",
+                "Fushuo Huo",
+                "Hangli Shen",
+                "Jingcai Guo",
+                "Shuhao Li",
+                "Guang Cheng"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.32424v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.2978794395923614,
+            "pdf_path": "data/pdfs\\arxiv_2609.32424v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.38262v1",
+            "title": "When Does Randomized Oversight Align AI Agents That Can Conceal?",
+            "abstract": "Oversight changes the evidence it relies on. We ask when randomized audits and scoring align AI agents that can conceal misconduct and alter records. Stronger auditing makes undeterred violations better hidden. Because the provider writes the agent's objective, sanctions need not stop at forfeiture, and rare audits deter every type of agent if evidence survives concealment and audit draws cannot be learned in advance. When evidence can be erased, deterrence must come from lower gains from violation, such as credit for stopping, or from costlier or fewer ways to conceal. These conditions identify what failed when agents in OpenAI's cybersecurity evaluations compromised parts of Hugging Face's infrastructure in July 2026.",
+            "authors": [
+                "Joshua S. Gans",
+                "Richard Holden"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.38262v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.25770042836666107,
+            "pdf_path": "data/pdfs\\arxiv_2609.38262v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.32700v1",
+            "title": "CAIRN: Dynamic Fact-Intent DAGs for Multi-Agent Exploration",
+            "abstract": "LLM-powered autonomous systems have demonstrated promising capabilities in mathematical reasoning, engineering, and cybersecurity. Yet how to organize these systems for effective, reliable, and sustained performance remains an open question. In this paper, we present CAIRN, a fact-intent-driven multi-agent paradigm for goal-directed exploration. CAIRN represents observations and planned investigations as a dynamic directed acyclic graph (DAG). A reasoner interprets facts to propose intents, which workers execute to produce new facts. Each intent references its supporting facts and defines a potential exploration branch. The persistent graph preserves goals, dependencies and findings across workers, supporting knowledge reuse and parallel exploration. The graph also makes execution trajectories traceable and auditable, providing a basis for human verification and intervention. We evaluate CAIRN across cybersecurity and mathematical reasoning tasks, examining task success, time to solution, and token consumption. DAG-based coordination can incur higher token costs with no observable performance gains on tasks that require little effort. However, on high-effort tasks (at least 1M tokens), we observe faster solutions in 76.5% of cases, with speedups of up to 3.08x. Moreover, as task effort increases, these time gains become more pronounced while relative token overhead declines, highlighting the potential of DAG-guided parallel exploration.",
+            "authors": [
+                "Zuyao Xu",
+                "Yuyang Jia",
+                "Junwei Guan",
+                "Xiang Li",
+                "Kaiwen Shen",
+                "Zhiqiang Dong"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.32700v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.22091643810272216,
+            "pdf_path": "data/pdfs\\arxiv_2609.32700v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2610.01949v1",
+            "title": "A Hybrid Approach to Malware Detection: Integrating Few-Shot Model-Agnostic Meta-Learning with Autoencoders",
+            "abstract": "Ransomware has emerged as a major cybersecurity threat, with incidents increasing in frequency and impact across critical sectors. These attacks are typically launched through phishing emails, malicious downloads, or exploitation of software vulnerabilities to gain system access. Once inside, the malware encrypts files and demands a ransom, often in cryptocurrency, for the decryption key. Conventional detection methods often struggle with novel or scarce samples, leaving systems vulnerable. To address these challenges, this paper proposes a hybrid deep learning framework that combines an Autoencoder Feature Extractor (AFE) with a Model Agnostic Meta Learning (MAML) classifier for few shot malware detection. The AFE generates compact latent features that reduce noise and dimensionality, while the MAML classifier rapidly adapts to new threats using limited labeled data. Experiments conducted on the Ransomware Dataset 2024 demonstrate the effectiveness of the framework in binary classification tasks. Across one to fifty shot settings, the proposed model consistently achieves high accuracy, F1 score, and Matthews Correlation Coefficient values, maintaining reliable classification even under extreme scarcity. These results highlight the model's robustness and effectiveness in adapting to limited data scenarios, demonstrating the potential of combining feature extraction with meta learning to enhance resilience against malware, particularly in sectors such as healthcare, manufacturing, and public infrastructure, where cyberattacks can cause significant operational and financial disruption.",
+            "authors": [
+                "Emmanuela Andam",
+                "Yasir Abbas Zaidi",
+                "Abdelali Hadir",
+                "Emmanuel Grant",
+                "Naima Kaabouch"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2610.01949v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.21329420506954191,
+            "pdf_path": "data/pdfs\\arxiv_2610.01949v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.34450v1",
+            "title": "ReproBench: Benchmarking LLM Agents on Reproducing Vulnerability From Scratch",
+            "abstract": "Large language model (LLM) agents are increasingly evaluated on cybersecurity tasks such as vulnerability reproduction, exploitation, and patching. However, existing cybersecurity benchmarks predominantly operate under a post-environment evaluation paradigm, i.e., handing the agent source code, a container, or an executable binary. This setup bypasses the critical environment reconstruction step, leaving a fundamental question for real-world vulnerability analysis: can an agent autonomously reconstruct the required execution environment and reproduce a vulnerability entirely from scratch? To address this gap, we present ReproBench, an evidence-grounded benchmark designed to evaluate agent capabilities in end-to-end vulnerability reproduction starting from solely a CVE identifier. ReproBench decomposes the full reproduction workflow into six distinct phases, and assesses performance on each phase independently using verifiable experimental artifacts: downloaded firmware images, unpacked binaries, granular analysis logs, and validated crash samples, among others. We instantiate ReproBench with 30 real-world IoT firmware vulnerabilities, which serve as ideal test cases for our from-scratch evaluation setting. Our evaluation demonstrates that 45.3% of test runs resort to vulnerability simulation - a prevalent remediation workaround adopted across all evaluated LLM agents - while only 5.3% of CVE-model pairs achieve successful reproduction of real-world vulnerabilities. Despite the low overall success rate, these non-trivial successful cases confirm that state-of-the-art LLM agents already possess the capacity for fully autonomous end-to-end vulnerability reproduction. Concurrently, our in-depth analysis of failed cases identifies core bottlenecks impeding LLM agents throughout the reproduction pipeline, offering actionable insights for subsequent research.",
+            "authors": [
+                "Liang He",
+                "Sheng Wu",
+                "Haomiao Hao",
+                "Hongduo Zhao",
+                "Jia Yan",
+                "Purui Su"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.34450v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.2541634440422058,
+            "pdf_path": "data/pdfs\\arxiv_2609.34450v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "W4416258147",
+            "title": "Locking Down Science Gateways with Landlock and Seccomp",
+            "abstract": "Abstract The most recent Linux kernels have a new feature for securing applications: Landlock. Like Seccomp before it, Landlock makes it possible for a running process to selectively relinquish access to certain system resources including network and filesystem access. Rather than being a proper successor to Seccomp, Landlock has different and somewhat complementary capabilities. In this paper, we will evaluate the applicability of using a combination of Landlock and Seccomp (Landlock/Seccomp) in the setting of securing science gateways—codes which need to parse and act upon user-supplied and often unsanitized input. We will explore three case studies in adding Landlock/Seccomp to mature scientific codes: Einstein Toolkit (a code that studies the dynamics of relativistic astrophysics, e.g. neutron star collisions), Octo-Tiger (a code for studying the dynamics of non-relativistic astrophysics, e.g. white dwarfs), and FUKA (an initial data solver for relativistic codes). Finally, we will discuss the implementation of a fully-featured FUKA science gateway designed around Landlock/Seccomp as its primary security mechanism without any user authentication needed.",
+            "authors": [
+                "Steven R. Brandt",
+                "Max Morris",
+                "Patrick Diehl",
+                "Christopher Bowen",
+                "Jacob Tucker",
+                "Lauren Bristol",
+                "Golden G. Richard"
+            ],
+            "publication_year": 2026,
+            "doi": "10.1007/s42979-026-05332-7",
+            "arxiv_id": null,
+            "openalex_id": "W4416258147",
+            "semantic_scholar_id": null,
+            "venue": "SN Computer Science",
+            "source": "openalex",
+            "sources": [
+                "openalex"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.20762236714363097,
+            "pdf_path": "data/pdfs\\W4416258147.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "openalex_direct"
+        },
+        {
+            "paper_id": "arxiv_2610.01009v1",
+            "title": "Helol Tunnel: Covert Channel Exploitation of TLS Extensibility & Privacy Features",
+            "abstract": "Covert channels exploiting network protocols for data exfiltration and command-and-control (C2) are integral parts of modern cyberattacks. In search of a significant covert channel within the fabric of the Internet, we targeted the combinatorial properties of the Client Hello (CHLO) packets in the ubiquitous Transport Layer Security (TLS) protocol. The proposed Helol tunnel is a novel covert approach to embedding information in TLS Client Hello packets, which involves the strategic rearrangement of their cryptographic information elements. To sustain TLS protocol extensibility, the recent anti-ossification TLS compliance measures encourage the interactive middleboxes and next-generation firewalls (NGFWs) to preserve the parameter configuration in the Client Hello packets. Furthermore, to improve user privacy, popular Internet applications are varying their TLS CHLO parameter configurations to resist TLS fingerprinting by third-party network entities. We demonstrate the strength of the Helol tunnel to exploit these recent developments to evade NGFWs with interactive proxy and comprehensive threat protection. We also numerically show the efficacy of Helol tunneling over state-of-the-art covert channels that exploit TLS through the use of real traffic captures and public TLS fingerprinting data.",
+            "authors": [
+                "Reza Soosahabi",
+                "Rakesh Seal"
+            ],
+            "publication_year": 2026,
+            "doi": "10.1109/svcc65277.2025.11133623",
+            "arxiv_id": "2610.01009v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "6th Silicon Valley Cybersecurity Conference (SVCC 2025)",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.15702668726444244,
+            "pdf_path": "data/pdfs\\arxiv_2610.01009v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2610.00759v1",
+            "title": "Crossing the Cyber Divide: Sim-to-Sim and Sim-to-Real Transfer for RL Agents",
+            "abstract": "Cyber attack agents are typically trained and evaluated within a single simulator, making it unclear whether learned policies transfer beyond the environments in which they were developed. This limitation hinders both deployment and fair comparison, as cyber simulators differ substantially in their state representations, observation models, and action spaces. In this paper, we study policy transfer across cyber environments and argue that simulator-to-simulator and simulator-to-real transfer can be viewed as instances of the same underlying alignment problem. We propose a framework that separates state alignment from action translation, enabling a policy trained in one environment to operate in another without retraining. We evaluate transfer across four cyber platforms, CyberBattleSim, NetSecGame, CyberWheel, and NASim, including emulated deployments in NASim. Our experiments show that zero-shot transfer is feasible, fully preserving source-policy performance in closely aligned environments and achieving 45.2% win rates when transferring policies whose source performance is 60.5%. In emulated virtual machine environments, transferred policies exhibit a Jensen-Shannon divergence of 0.085 from native policies, indicating strong behavioral similarity. Code and benchmarks are available at: https://anonymous.4open.science/r/RL-Transfer-between-env-4F47/.",
+            "authors": [
+                "Sabrina Saika",
+                "Yinuo Du",
+                "Aritran Piplai"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2610.00759v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "c6e053a9",
+            "relevance_score": 0.22366341352462768,
+            "pdf_path": "data/pdfs\\arxiv_2610.00759v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        }
+    ],
+    "api_failures": [],
+    "timestamp": "2026-10-04T16:32:40.729803",
+    "duration_seconds": 85.51009583473206,
+    "deduplication_logs": [
+        {
+            "duplicate_title": "Digital transformation of civil aviation in the context of eIDAS 2.0",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7202195116",
+            "canonical_title": "Digital transformation of civil aviation in the context of eIDAS 2.0",
+            "canonical_id": "W7202160468",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "The impact of artificial intelligence on human safety and data protection in smart logistics: opportunities, risks and governance challenges",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7202385891",
+            "canonical_title": "The impact of artificial intelligence on human safety and data protection in smart logistics: opportunities, risks and governance challenges",
+            "canonical_id": "W7202356416",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Block chain and Cyber security in Modern Accounting Practices",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7121187061",
+            "canonical_title": "Block chain and Cyber security in Modern Accounting Practices",
+            "canonical_id": "W7121073278",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Cyber security: Challenges, Threats and Modern Solutions",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7214372949",
+            "canonical_title": "Cyber security: Challenges, Threats and Modern Solutions",
+            "canonical_id": "W7214355654",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Agentic code modernization",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7213433333",
+            "canonical_title": "Agentic code modernization",
+            "canonical_id": "W7213431216",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Cybersecurity Workforce Development: Skills Gaps, Training Programmes, and Ecosystem Building: Implications for Regional Integration",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7153597622",
+            "canonical_title": "Cybersecurity Workforce Development: Skills Gaps, Training Programmes, and Ecosystem Building: Implications for Regional Integration",
+            "canonical_id": "W7153576266",
+            "match_method": "title_author_year_match"
+        }
+    ]
+}

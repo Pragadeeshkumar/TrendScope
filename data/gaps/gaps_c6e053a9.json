@@ -1,0 +1,256 @@
+{
+  "run_id": "c6e053a9",
+  "timestamp": "2026-10-04T11:10:19.065713",
+  "total_limitations_mined": 35,
+  "total_themes_discovered": 6,
+  "open_unaddressed_gaps_count": 4,
+  "resolved_or_converged_count": 2,
+  "themes": [
+    {
+      "theme_id": "theme_general_empirical",
+      "name": "Empirical System Trade-offs and Domain Bottlenecks",
+      "category": "general",
+      "description": "Empirical design trade-offs and specialized system bottlenecks identified in domain literature.",
+      "total_papers": 10,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "UNADDRESSED",
+      "confidence": 0.9,
+      "paper_ids": [
+        "arxiv_2609.32424v1",
+        "W4416258147",
+        "arxiv_2610.01009v1",
+        "arxiv_2609.29808v2",
+        "arxiv_2609.34450v1",
+        "arxiv_2609.38262v1",
+        "arxiv_2609.33763v1",
+        "arxiv_2609.36573v1",
+        "arxiv_2609.31893v1",
+        "arxiv_2610.00759v1"
+      ],
+      "key_quotes": [
+        "absence-of-feature comparison, not a performance measurement",
+        "do not directly measure end-to-end attack capabilities",
+        "improving prediction of adversary-dependent events remains an important direction",
+        "generated vulnerable code and exploit examples have dual-use potential"
+      ],
+      "resolution_evidence": "Reported across 10 papers spanning 2026–2026, with 10 papers confirming persistence in latest literature."
+    },
+    {
+      "theme_id": "theme_data_annotation",
+      "name": "Reliance on Large-Scale Supervised Annotations and Pretraining",
+      "category": "data_scarcity",
+      "description": "Sample size constraints and dataset limitations.",
+      "total_papers": 4,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "PARTIALLY_ADDRESSED",
+      "confidence": 0.85,
+      "paper_ids": [
+        "arxiv_2610.01893v1",
+        "arxiv_2610.02206v1",
+        "arxiv_2610.01949v1",
+        "arxiv_2609.29808v2"
+      ],
+      "key_quotes": [
+        "focus on single-turn command generation and reliance on documentation-grounded data",
+        "no automated halting mechanism was active in the baseline configuration",
+        "limited to a single dataset",
+        "Conventional detection methods often struggle with novel or scarce samples, leaving systems vulnerable."
+      ],
+      "resolution_evidence": "Multiple heuristic mitigations proposed across 4 papers; however, trade-offs remain acknowledged in recent publications."
+    },
+    {
+      "theme_id": "theme_evaluation_benchmarking",
+      "name": "Process-Level Evaluation Gaps and Synthetic Benchmark Bias",
+      "category": "evaluation_gap",
+      "description": "Limitations of static benchmark metrics that fail to evaluate multi-step reasoning trajectories or real-world nuance.",
+      "total_papers": 4,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "PARTIALLY_ADDRESSED",
+      "confidence": 0.85,
+      "paper_ids": [
+        "arxiv_2609.33763v1",
+        "arxiv_2609.38415v1",
+        "arxiv_2609.38262v1",
+        "arxiv_2609.36573v1"
+      ],
+      "key_quotes": [
+        "If the model identified the environments as simulated and this affected its behaviour",
+        "a main remaining limitation is the coverage of our evaluations",
+        "without modeling interactions in which defenders continually adapt",
+        "synthetic task distribution does not represent all deployed software"
+      ],
+      "resolution_evidence": "Multiple heuristic mitigations proposed across 4 papers; however, trade-offs remain acknowledged in recent publications."
+    },
+    {
+      "theme_id": "theme_compute_scaling",
+      "name": "High Computational Complexity and Memory Scaling",
+      "category": "computational_cost",
+      "description": "Challenges regarding compute demands and latency constraints.",
+      "total_papers": 4,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "PARTIALLY_ADDRESSED",
+      "confidence": 0.85,
+      "paper_ids": [
+        "arxiv_2609.33850v1",
+        "arxiv_2609.39584v1",
+        "arxiv_2610.00759v1",
+        "arxiv_2609.33521v1"
+      ],
+      "key_quotes": [
+        "consensus protocols introduce prohibitively high computational overhead",
+        "limited by static, outdated datasets unable to account for real-time concept drift",
+        "reality of 2026 is more complex than the 1996 framework could fully anticipate",
+        "incur high inference costs"
+      ],
+      "resolution_evidence": "Multiple heuristic mitigations proposed across 4 papers; however, trade-offs remain acknowledged in recent publications."
+    },
+    {
+      "theme_id": "theme_generalization_robustness",
+      "name": "Out-of-Distribution Generalization and Cross-Domain Robustness",
+      "category": "generalization",
+      "description": "Performance degradation when applied to novel environments, unseen data distributions, or real-world variations.",
+      "total_papers": 2,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "CONVERGED",
+      "confidence": 0.8,
+      "paper_ids": [
+        "arxiv_2610.00590v1",
+        "arxiv_2610.01949v1"
+      ],
+      "key_quotes": [
+        "limiting its ability to generalize as network scale changes",
+        "domain specialization does not guarantee scale generalization",
+        "to adaptability, generalization, and anomaly detection."
+      ],
+      "resolution_evidence": "Addressed by standard architectural adaptations in subsequent literature."
+    },
+    {
+      "theme_id": "theme_interpretability_explainability",
+      "name": "Black-Box Decision Making and Uncertainty Quantification",
+      "category": "interpretability",
+      "description": "Lack of transparent explanations for intermediate reasoning and unreliable confidence calibration.",
+      "total_papers": 2,
+      "first_year": 2026,
+      "latest_year": 2026,
+      "lifecycle_status": "CONVERGED",
+      "confidence": 0.8,
+      "paper_ids": [
+        "arxiv_2609.39584v1",
+        "arxiv_2609.33521v1"
+      ],
+      "key_quotes": [
+        "evaluated them almost entirely on shallow machine learning models",
+        "vulnerable to attacks targeting trust graphs",
+        "experiments focus on graph-structured data"
+      ],
+      "resolution_evidence": "Addressed by standard architectural adaptations in subsequent literature."
+    }
+  ],
+  "evidence_links": [
+    {
+      "theme_id": "theme_general_empirical",
+      "source_paper_id": "arxiv_2609.32424v1",
+      "source_year": 2026,
+      "source_quote": "face substantial challenges in evidence reasoning",
+      "target_paper_id": "W4416258147",
+      "target_year": 2026,
+      "target_quote": "Landlock and Seccomp are promising technologies when it comes to securing scientific applications",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_general_empirical",
+      "source_paper_id": "arxiv_2609.32424v1",
+      "source_year": 2026,
+      "source_quote": "face substantial challenges in evidence reasoning",
+      "target_paper_id": "arxiv_2610.01009v1",
+      "target_year": 2026,
+      "target_quote": "we present our proposed covert channel method, Helol tunnel",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_data_annotation",
+      "source_paper_id": "arxiv_2610.01893v1",
+      "source_year": 2026,
+      "source_quote": "limited to a single dataset",
+      "target_paper_id": "arxiv_2610.02206v1",
+      "target_year": 2026,
+      "target_quote": "multi-stage verification pipeline combines LLM validation, sandboxed execution, human-in-the-loop",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_data_annotation",
+      "source_paper_id": "arxiv_2610.01893v1",
+      "source_year": 2026,
+      "source_quote": "limited to a single dataset",
+      "target_paper_id": "arxiv_2610.01949v1",
+      "target_year": 2026,
+      "target_quote": "To address these challenges, this paper proposes a hybrid deep learning framework that combines an Autoencoder Feature Extractor (AFE) with a Model Agnostic Meta Learning (MAML) classifier for few sho",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_evaluation_benchmarking",
+      "source_paper_id": "arxiv_2609.33763v1",
+      "source_year": 2026,
+      "source_quote": "synthetic task distribution does not represent all deployed software",
+      "target_paper_id": "arxiv_2609.38415v1",
+      "target_year": 2026,
+      "target_quote": "We developed a new Unsanctioned Supply Chain Attack evaluation",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_evaluation_benchmarking",
+      "source_paper_id": "arxiv_2609.33763v1",
+      "source_year": 2026,
+      "source_quote": "synthetic task distribution does not represent all deployed software",
+      "target_paper_id": "arxiv_2609.38262v1",
+      "target_year": 2026,
+      "target_quote": "risk-sensitive reinforcement learning can optimize such an objective directly",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_compute_scaling",
+      "source_paper_id": "arxiv_2609.33850v1",
+      "source_year": 2026,
+      "source_quote": "reality of 2026 is more complex than the 1996 framework could fully anticipate",
+      "target_paper_id": "arxiv_2609.39584v1",
+      "target_year": 2026,
+      "target_quote": "The proposed Trust-Aware Federated Hybrid Intrusion Detection Framework (TA-FHIDF)",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_compute_scaling",
+      "source_paper_id": "arxiv_2609.33850v1",
+      "source_year": 2026,
+      "source_quote": "reality of 2026 is more complex than the 1996 framework could fully anticipate",
+      "target_paper_id": "arxiv_2610.00759v1",
+      "target_year": 2026,
+      "target_quote": "zero-shot policy transfer from MA to MB using PPO",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_generalization_robustness",
+      "source_paper_id": "arxiv_2610.00590v1",
+      "source_year": 2026,
+      "source_quote": "limiting its ability to generalize as network scale changes",
+      "target_paper_id": "arxiv_2610.01949v1",
+      "target_year": 2026,
+      "target_quote": "To address these challenges, this paper proposes a hybrid deep learning framework that combines an Autoencoder Feature Extractor (AFE) with a Model Agnostic Meta Learning (MAML) classifier for few sho",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    },
+    {
+      "theme_id": "theme_interpretability_explainability",
+      "source_paper_id": "arxiv_2609.39584v1",
+      "source_year": 2026,
+      "source_quote": "consensus protocols introduce prohibitively high computational overhead",
+      "target_paper_id": "arxiv_2609.33521v1",
+      "target_year": 2026,
+      "target_quote": "we propose LLM4Trust, the first benchmark framework",
+      "relation_type": "PARTIALLY_ADDRESSES"
+    }
+  ]
+}

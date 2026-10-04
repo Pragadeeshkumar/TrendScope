@@ -1,0 +1,785 @@
+{
+  "run_id": "467e8562",
+  "timestamp": "2026-10-04T10:30:20.491463",
+  "corpus_mode": "SNAPSHOT",
+  "total_papers": 23,
+  "year_range": [
+    2026,
+    2026
+  ],
+  "total_unique_methods": 17,
+  "total_unique_datasets": 6,
+  "benchmark_metrics": {
+    "hhi": 0.1667,
+    "hhi_interpretation": "Moderately Concentrated",
+    "synthetic_dataset_ratio": 0.0,
+    "external_validation_ratio": 8.7,
+    "single_dataset_paper_ratio": 4.35,
+    "top_1_dataset_share": 16.67,
+    "top_3_dataset_share": 50.0
+  },
+  "emerging_methods": [],
+  "top_methods": [
+    {
+      "name": "qualitative structured focused comparison",
+      "category": "qualitative structured focused comparison Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "qualitative structured focused comparison Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "qualitative structured focused comparison"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7212445558"
+      ]
+    },
+    {
+      "name": "Directed Qualitative Content Analysis",
+      "category": "Directed Qualitative Content Analysis Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Directed Qualitative Content Analysis Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Directed Qualitative Content Analysis"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7212445558"
+      ]
+    },
+    {
+      "name": "quantitative methodology with a descriptive-correlational research design",
+      "category": "quantitative methodology with a descriptive-correlational research design Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "quantitative methodology with a descriptive-correlational research design Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "quantitative methodology with a descriptive-correlational research design"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7215032658"
+      ]
+    },
+    {
+      "name": "Descriptive Component",
+      "category": "Descriptive Component Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Descriptive Component Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Descriptive Component"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7215032658"
+      ]
+    },
+    {
+      "name": "Correlational Aspect",
+      "category": "Correlational Aspect Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Correlational Aspect Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Correlational Aspect"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7215032658"
+      ]
+    },
+    {
+      "name": "Bernoulli Naïve Bayes",
+      "category": "Bernoulli Naïve Bayes Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Bernoulli Naïve Bayes Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Bernoulli Naïve Bayes"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Χ2 Tests Of Independence",
+      "category": "Χ2 Tests Of Independence Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Χ2 Tests Of Independence Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Χ2 Tests Of Independence"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Mutual Information",
+      "category": "Mutual Information Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Mutual Information Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Mutual Information"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Information Gain",
+      "category": "Information Gain Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Information Gain Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Information Gain"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Gini Gain",
+      "category": "Gini Gain Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Gini Gain Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Gini Gain"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Roc-Based Criteria",
+      "category": "Roc-Based Criteria Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Roc-Based Criteria Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Roc-Based Criteria"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Otsu Thresholding",
+      "category": "Otsu Thresholding Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Otsu Thresholding Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Otsu Thresholding"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Distribution-Based Cut Points",
+      "category": "Distribution-Based Cut Points Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Distribution-Based Cut Points Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Distribution-Based Cut Points"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Ipm",
+      "category": "Ipm Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Ipm Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Ipm"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7215061147"
+      ]
+    },
+    {
+      "name": "Airsource Heat Pump-Heated Barns",
+      "category": "Airsource Heat Pump-Heated Barns Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Airsource Heat Pump-Heated Barns Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Airsource Heat Pump-Heated Barns"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7215061147"
+      ]
+    },
+    {
+      "name": "Biomass-Fueled Barns",
+      "category": "Biomass-Fueled Barns Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Biomass-Fueled Barns Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Biomass-Fueled Barns"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7215061147"
+      ]
+    },
+    {
+      "name": "Graded Chronic Pain Scale– Revised (GCPS-R)",
+      "category": "Graded Chronic Pain Scale– Revised (GCPS-R) Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Graded Chronic Pain Scale– Revised (GCPS-R) Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Graded Chronic Pain Scale– Revised (GCPS-R)"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (4.3% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7215055276"
+      ]
+    }
+  ],
+  "top_datasets": [
+    {
+      "name": "Document Corpus",
+      "modality": "Document Corpus Benchmarks",
+      "raw_aliases": [
+        "Document Corpus"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7212445558"
+      ]
+    },
+    {
+      "name": "Thirty-One Documents",
+      "modality": "Thirty-One Documents Benchmarks",
+      "raw_aliases": [
+        "Thirty-One Documents"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7212445558"
+      ]
+    },
+    {
+      "name": "Pima Indians Diabetes Dataset",
+      "modality": "Pima Indians Diabetes Dataset Benchmarks",
+      "raw_aliases": [
+        "Pima Indians Diabetes Dataset"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Wisconsin Breast Cancer Dataset",
+      "modality": "Wisconsin Breast Cancer Dataset Benchmarks",
+      "raw_aliases": [
+        "Wisconsin Breast Cancer Dataset"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Heart Failure Prediction Dataset",
+      "modality": "Heart Failure Prediction Dataset Benchmarks",
+      "raw_aliases": [
+        "Heart Failure Prediction Dataset"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7169800959"
+      ]
+    },
+    {
+      "name": "Dryad Digital Repository",
+      "modality": "Dryad Digital Repository Benchmarks",
+      "raw_aliases": [
+        "Dryad Digital Repository"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 4.35,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 4.35
+        }
+      ],
+      "top_paper_ids": [
+        "W7215061147"
+      ]
+    }
+  ],
+  "cluster_profiles": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Automated Observation in Complex Systems",
+      "total_papers": 2,
+      "dominant_method_family": "Specialized Methodologies",
+      "emerging_paradigm": "Adaptive Scientific AI",
+      "top_methods": [],
+      "top_datasets": [],
+      "persistent_limitations": [],
+      "supporting_paper_ids": [
+        "W7162399187",
+        "W7215079213"
+      ]
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Human-Centered AI Interaction Design",
+      "total_papers": 3,
+      "dominant_method_family": "Specialized Methodologies",
+      "emerging_paradigm": "Adaptive Scientific AI",
+      "top_methods": [],
+      "top_datasets": [],
+      "persistent_limitations": [],
+      "supporting_paper_ids": [
+        "W7154463656",
+        "W7166533473",
+        "W7164131933"
+      ]
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "AI-Driven Enterprise Strategic Agility",
+      "total_papers": 2,
+      "dominant_method_family": "Specialized Methodologies",
+      "emerging_paradigm": "Adaptive Scientific AI",
+      "top_methods": [],
+      "top_datasets": [],
+      "persistent_limitations": [],
+      "supporting_paper_ids": [
+        "W7118123603",
+        "W7170437289"
+      ]
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Quantitative Socio-Economic Impact Assessment",
+      "total_papers": 2,
+      "dominant_method_family": "Graded Chronic Pain Scale– Revised (GCPS-R) Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Graded Chronic Pain Scale– Revised (GCPS-R) Methods",
+          "count": 1,
+          "percentage": 50.0
+        }
+      ],
+      "top_datasets": [],
+      "persistent_limitations": [],
+      "supporting_paper_ids": [
+        "W7167822118",
+        "W7215055276"
+      ]
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Algorithmic Governance and Regulatory Compliance",
+      "total_papers": 3,
+      "dominant_method_family": "Specialized Methodologies",
+      "emerging_paradigm": "Adaptive Scientific AI",
+      "top_methods": [],
+      "top_datasets": [],
+      "persistent_limitations": [],
+      "supporting_paper_ids": [
+        "W7166006500",
+        "W7172507390",
+        "W7170146433"
+      ]
+    },
+    {
+      "cluster_id": "5",
+      "cluster_name": "AI-Driven Industrial Safety and Maintenance",
+      "total_papers": 3,
+      "dominant_method_family": "Specialized Methodologies",
+      "emerging_paradigm": "Adaptive Scientific AI",
+      "top_methods": [],
+      "top_datasets": [],
+      "persistent_limitations": [],
+      "supporting_paper_ids": [
+        "W7202356416",
+        "W7203455470",
+        "W7213350615"
+      ]
+    },
+    {
+      "cluster_id": "6",
+      "cluster_name": "Interpretable Anomaly Detection in Industry",
+      "total_papers": 2,
+      "dominant_method_family": "Bernoulli Naïve Bayes Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Bernoulli Naïve Bayes Methods",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Χ2 Tests Of Independence Methods",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Mutual Information Methods",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Information Gain Methods",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Gini Gain Methods",
+          "count": 1,
+          "percentage": 50.0
+        }
+      ],
+      "top_datasets": [
+        {
+          "name": "Pima Indians Diabetes Dataset",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Wisconsin Breast Cancer Dataset",
+          "count": 1,
+          "percentage": 50.0
+        },
+        {
+          "name": "Heart Failure Prediction Dataset",
+          "count": 1,
+          "percentage": 50.0
+        }
+      ],
+      "persistent_limitations": [
+        "Conditional independence assumption is unlikely to hold exactly in clinical data",
+        "Threshold estimates are influenced by training data variability",
+        "Mixed continuous and categorical predictors require careful handling"
+      ],
+      "supporting_paper_ids": [
+        "W7169800959",
+        "W4415097545"
+      ]
+    }
+  ],
+  "research_gaps": [
+    {
+      "gap_id": "gap_467e8562_1",
+      "title": "Lack of Multi-Center External Validation and Prospective Clinical Trial Evidence",
+      "statement": "While complex AI models exhibit strong retrospective validation, 2/23 papers report explicit generalization barriers and call for multi-site prospective validation across diverse demographic and clinical settings.",
+      "category": "validation_deficit",
+      "supporting_papers": [
+        "W7169800959",
+        "W7215061147"
+      ],
+      "supporting_evidence_quotes": [
+        "conditional independence assumption is unlikely to hold exactly",
+        "threshold estimates are influenced by training data variability",
+        "China has a vast territory, with ﬂue-cured tobacco grown across"
+      ],
+      "confidence": 0.94,
+      "why_insufficient": "Existing evaluations predominantly rely on single-center retrospective cohorts or synthetic data, leaving real-world clinical safety, domain-shift robustness, and demographic equity largely unproven."
+    }
+  ]
+}

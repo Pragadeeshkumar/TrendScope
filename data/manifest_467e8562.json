@@ -1,0 +1,134 @@
+{
+    "retrieval_run_id": "467e8562",
+    "original_query": "AI decision making in Industries",
+    "normalized_query": "AI decision making in Industries",
+    "search_strategies": [
+        "AI decision making Industries",
+        "making Industries",
+        "AI decision making"
+    ],
+    "sources": [
+        "openalex",
+        "semantic_scholar",
+        "arxiv"
+    ],
+    "api_parameters": {
+        "max_strategies": 5,
+        "max_search_rounds": 2,
+        "min_candidate_pool": 15
+    },
+    "candidate_count": 36,
+    "deduplicated_count": 23,
+    "selected_count": 5,
+    "valid_pdf_count": 5,
+    "excluded_count": 18,
+    "api_failures": [],
+    "timestamp": "2026-10-04T15:53:48.162937",
+    "duration_seconds": 135.60948252677917,
+    "deduplication_logs": [
+        {
+            "duplicate_title": "DYNAMIC MARKET INTELLIGENCE SYSTEMS: ENHANCING STRATEGIC AGILITY WITH REAL-TIME BI FRAMEWORKS",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7118139516",
+            "canonical_title": "DYNAMIC MARKET INTELLIGENCE SYSTEMS: ENHANCING STRATEGIC AGILITY WITH REAL-TIME BI FRAMEWORKS",
+            "canonical_id": "W7118123603",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Impact of artificial intelligence on project planning, scheduling, and control",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7213095339",
+            "canonical_title": "Impact of artificial intelligence on project planning, scheduling, and control",
+            "canonical_id": "W7212997680",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Algorithmic Justice and Responsible AI Journalism: A Comparative Communication Policy Perspective in East Asia",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7166006500",
+            "canonical_title": "Algorithmic Justice and Responsible AI Journalism: A Comparative Communication Policy Perspective in East Asia",
+            "canonical_id": "W7166006500",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Regulating the Frontier: Model-Level Evidence from the EU AI Act",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7170146433",
+            "canonical_title": "Regulating the Frontier: Model-Level Evidence from the EU AI Act",
+            "canonical_id": "W7170146433",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "A Study on the Mechanism and Ways to Improve New-Quality Productivity of Enterprises Driven by AI and the Digital Economy",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7170437289",
+            "canonical_title": "A Study on the Mechanism and Ways to Improve New-Quality Productivity of Enterprises Driven by AI and the Digital Economy",
+            "canonical_id": "W7170437289",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "TinZr: A compact wireless ESP32-C3 platform for multi-modal physiological sensor integration and data acquisition.",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7213350615",
+            "canonical_title": "TinZr: A compact wireless ESP32-C3 platform for multi-modal physiological sensor integration and data acquisition.",
+            "canonical_id": "W7213350615",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Impact of artificial intelligence on project planning, scheduling, and control",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7212997680",
+            "canonical_title": "Impact of artificial intelligence on project planning, scheduling, and control",
+            "canonical_id": "W7212997680",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Impact of artificial intelligence on project planning, scheduling, and control",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7213095339",
+            "canonical_title": "Impact of artificial intelligence on project planning, scheduling, and control",
+            "canonical_id": "W7212997680",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Human vs machine judgment in safety-critical logistics: a philosophical inquiry into trust and control",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7162410191",
+            "canonical_title": "Human vs machine judgment in safety-critical logistics: a philosophical inquiry into trust and control",
+            "canonical_id": "W7162399187",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Algorithmic Justice and Responsible AI Journalism: A Comparative Communication Policy Perspective in East Asia",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7166006500",
+            "canonical_title": "Algorithmic Justice and Responsible AI Journalism: A Comparative Communication Policy Perspective in East Asia",
+            "canonical_id": "W7166006500",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Research on Attention Guidance and User Autonomy in AI-Powered Immersive Environments",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7166574674",
+            "canonical_title": "Research on Attention Guidance and User Autonomy in AI-Powered Immersive Environments",
+            "canonical_id": "W7166533473",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Regulating the Frontier: Model-Level Evidence from the EU AI Act",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7170146433",
+            "canonical_title": "Regulating the Frontier: Model-Level Evidence from the EU AI Act",
+            "canonical_id": "W7170146433",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "A Study on the Mechanism and Ways to Improve New-Quality Productivity of Enterprises Driven by AI and the Digital Economy",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7170437289",
+            "canonical_title": "A Study on the Mechanism and Ways to Improve New-Quality Productivity of Enterprises Driven by AI and the Digital Economy",
+            "canonical_id": "W7170437289",
+            "match_method": "doi_match"
+        }
+    ]
+}
