@@ -221,8 +221,8 @@ async def get_analysis_data(run_id: str):
                         "year": p.get("publication_year", 2024),
                         "venue": p.get("venue", "arXiv"),
                         "doi": p.get("doi"),
-                        "methods": [m for m in methods_list if m] or ["Scientific AI Model"],
-                        "datasets": [d for d in datasets_list if d] or ["Evaluation Benchmark"],
+                        "methods": [m for m in methods_list if m],
+                        "datasets": [d for d in datasets_list if d],
                         "limitations": [l for l in lims_list if l],
                         "future_work": p.get("future_work", []),
                         "findings": p.get("findings", "")
@@ -252,11 +252,11 @@ async def get_analysis_data(run_id: str):
                     "year": r[3] or 2026,
                     "venue": r[4] or "arXiv",
                     "doi": r[5],
-                    "methods": ["Empirical Model"],
-                    "datasets": ["Domain Dataset"],
-                    "limitations": ["External cohort validation required."],
+                    "methods": [],
+                    "datasets": [],
+                    "limitations": [],
                     "future_work": [],
-                    "findings": "Empirical validation demonstrated across benchmarks."
+                    "findings": ""
                 })
         except Exception:
             pass
