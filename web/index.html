@@ -783,16 +783,123 @@
           <!-- Tab Content 6: Research Gaps -->
           <div id="tab-a-gaps" class="atab-panel">
             <div class="white-card">
-              <h3 class="card-heading mb-3">Research Limitation Lifecycle Matrix</h3>
-              <div class="gaps-card-column" id="fullGapsList"></div>
+              <div class="card-top-bar" style="margin-bottom: 0.75rem;">
+                <div>
+                  <h3 class="card-heading">Research Limitation Lifecycle Matrix</h3>
+                  <p class="section-sub" style="margin-top: 0.2rem;">Discovered recurring technical bottlenecks across the literature corpus, classified by temporal lifecycle and actionable opportunity frontiers.</p>
+                </div>
+                <div class="gaps-summary-badges" id="gapsSummaryBadges"></div>
+              </div>
+
+              <!-- Filter & Search Controls -->
+              <div class="gaps-filter-bar">
+                <div class="gaps-filter-pills" id="gapsStatusFilters">
+                  <button class="filter-pill-btn active" data-status="ALL">All Lifecycles (<span id="gapCountAll">0</span>)</button>
+                  <button class="filter-pill-btn status-unaddressed" data-status="UNADDRESSED">🔴 Unaddressed (<span id="gapCountUnaddressed">0</span>)</button>
+                  <button class="filter-pill-btn status-partial" data-status="PARTIALLY_ADDRESSED">🟡 Partially Addressed (<span id="gapCountPartial">0</span>)</button>
+                  <button class="filter-pill-btn status-converged" data-status="CONVERGED">🟢 Converged / Resolved (<span id="gapCountConverged">0</span>)</button>
+                </div>
+                <div class="gaps-filter-inputs">
+                  <select class="form-select filter-select" id="gapCategorySelect">
+                    <option value="ALL">All Categories</option>
+                  </select>
+                  <input type="text" class="form-input filter-search-input" id="gapSearchInput" placeholder="Filter gaps by method, benchmark, or keyword...">
+                </div>
+              </div>
+
+              <div class="gaps-card-column mt-3" id="fullGapsList"></div>
             </div>
           </div>
 
           <!-- Tab Content 7: Evidence Explorer -->
           <div id="tab-a-evidence" class="atab-panel">
+            <!-- 4 Top Evidence KPI Stat Cards -->
+            <div class="kpi-grid-4 mb-3">
+              <div class="kpi-stat-card">
+                <div class="kpi-stat-icon icon-purple">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="18" cy="5" r="3"/>
+                    <circle cx="6" cy="12" r="3"/>
+                    <circle cx="18" cy="19" r="3"/>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                  </svg>
+                </div>
+                <div class="kpi-stat-content">
+                  <div class="kpi-stat-num" id="evidenceStatTotal">0</div>
+                  <div class="kpi-stat-lbl">Evidence Links <span class="info-bubble">ⓘ</span></div>
+                </div>
+              </div>
+
+              <div class="kpi-stat-card">
+                <div class="kpi-stat-icon icon-red">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="12"/>
+                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                  </svg>
+                </div>
+                <div class="kpi-stat-content">
+                  <div class="kpi-stat-num" id="evidenceStatOpenGaps">0</div>
+                  <div class="kpi-stat-lbl">Open Problem Themes <span class="info-bubble">ⓘ</span></div>
+                </div>
+              </div>
+
+              <div class="kpi-stat-card">
+                <div class="kpi-stat-icon icon-green">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                </div>
+                <div class="kpi-stat-content">
+                  <div class="kpi-stat-num" id="evidenceStatResolved">0</div>
+                  <div class="kpi-stat-lbl">Solution Trajectories <span class="info-bubble">ⓘ</span></div>
+                </div>
+              </div>
+
+              <div class="kpi-stat-card">
+                <div class="kpi-stat-icon icon-blue">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                  </svg>
+                </div>
+                <div class="kpi-stat-content">
+                  <div class="kpi-stat-num" id="evidenceStatLimitations">0</div>
+                  <div class="kpi-stat-lbl">Limitations Mined <span class="info-bubble">ⓘ</span></div>
+                </div>
+              </div>
+            </div>
+
             <div class="white-card">
-              <h3 class="card-heading mb-3">Inter-Paper Evidence Chains (Problem → Solution)</h3>
-              <div class="evidence-chain-column" id="fullEvidenceList"></div>
+              <div class="card-top-bar" style="margin-bottom: 0.75rem;">
+                <div>
+                  <h3 class="card-heading">Inter-Paper Evidence Chains (Problem ➔ Method Solution)</h3>
+                  <p class="section-sub" style="margin-top: 0.2rem;">Direct sentence-level citation pairs linking earlier identified limitations to subsequent proposed methodologies and empirical evaluations.</p>
+                </div>
+              </div>
+
+              <!-- Evidence Filters -->
+              <div class="gaps-filter-bar">
+                <div class="gaps-filter-pills" id="evidenceRelationFilters">
+                  <button class="filter-pill-btn active" data-relation="ALL">All Relations (<span id="evidenceRelCountAll">0</span>)</button>
+                  <button class="filter-pill-btn" data-relation="PARTIALLY_ADDRESSES">🔄 Partially Addresses</button>
+                  <button class="filter-pill-btn" data-relation="EXTENDS">⚡ Extends</button>
+                  <button class="filter-pill-btn" data-relation="CONFIRMS">✓ Confirms</button>
+                  <button class="filter-pill-btn" data-relation="SOLVES">★ Solves</button>
+                </div>
+                <div class="gaps-filter-inputs">
+                  <select class="form-select filter-select" id="evidenceThemeSelect">
+                    <option value="ALL">All Themes</option>
+                  </select>
+                  <input type="text" class="form-input filter-search-input" id="evidenceSearchInput" placeholder="Filter by paper title or method...">
+                </div>
+              </div>
+
+              <div class="evidence-chain-column mt-3" id="fullEvidenceList"></div>
             </div>
           </div>
 

@@ -1,0 +1,1255 @@
+{
+  "run_id": "a7de7d6d",
+  "timestamp": "2026-10-04T17:33:44.295216",
+  "corpus_mode": "SNAPSHOT",
+  "total_papers": 40,
+  "year_range": [
+    2026,
+    2026
+  ],
+  "total_unique_methods": 39,
+  "total_unique_datasets": 6,
+  "benchmark_metrics": {
+    "hhi": 0.3373,
+    "hhi_interpretation": "Highly Concentrated (Monopoly Risk)",
+    "synthetic_dataset_ratio": 0.0,
+    "external_validation_ratio": 5.0,
+    "single_dataset_paper_ratio": 22.5,
+    "top_1_dataset_share": 53.85,
+    "top_3_dataset_share": 76.92
+  },
+  "emerging_methods": [],
+  "top_methods": [
+    {
+      "name": "Large Language Model",
+      "category": "Large Language Model Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Large Language Model Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Large Language Model"
+      ],
+      "total_occurrences": 14,
+      "paper_percentage": 35.0,
+      "trajectory": "DOMINANT",
+      "trajectory_reason": "High-frequency foundational methodology appearing in 35.0% of papers in current corpus snapshot.",
+      "growth_rate": 0.0,
+      "confidence": 0.9,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 14,
+          "percentage": 35.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2608.30938v1",
+        "arxiv_2606.30658v1",
+        "arxiv_2608.22713v1",
+        "arxiv_2606.13572v2",
+        "arxiv_2609.15334v1",
+        "W7215103602",
+        "arxiv_2606.08982v2",
+        "arxiv_2608.21810v1",
+        "arxiv_2607.25489v1",
+        "arxiv_2606.14766v1"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "category": "Reinforcement Learning Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Reinforcement Learning Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Reinforcement Learning"
+      ],
+      "total_occurrences": 11,
+      "paper_percentage": 27.5,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 11 paper(s) (27.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 11,
+          "percentage": 27.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2607.15314v2",
+        "arxiv_2604.28011v1",
+        "arxiv_2601.13919v1",
+        "arxiv_2609.38924v1",
+        "arxiv_2606.08982v2",
+        "arxiv_2609.03261v2",
+        "arxiv_2607.25489v1",
+        "arxiv_2608.22323v1",
+        "arxiv_2607.11175v2",
+        "arxiv_2606.28692v1"
+      ]
+    },
+    {
+      "name": "Multi-Agent Ai Framework",
+      "category": "Multi-Agent Ai Framework Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Multi-Agent Ai Framework Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Multi-Agent Ai Framework"
+      ],
+      "total_occurrences": 8,
+      "paper_percentage": 20.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 8 paper(s) (20.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 8,
+          "percentage": 20.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2609.02191v1",
+        "arxiv_2608.28662v1",
+        "arxiv_2604.12144v2",
+        "W7214545571",
+        "arxiv_2608.09861v1",
+        "arxiv_2607.11175v2",
+        "arxiv_2606.14766v1",
+        "arxiv_2608.08163v2"
+      ]
+    },
+    {
+      "name": "Chain-Of-Thought (Cot)",
+      "category": "Chain-Of-Thought (Cot) Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Chain-Of-Thought (Cot) Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Chain-Of-Thought (Cot)"
+      ],
+      "total_occurrences": 6,
+      "paper_percentage": 15.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 6 paper(s) (15.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 6,
+          "percentage": 15.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2607.15314v2",
+        "arxiv_2607.25485v1",
+        "arxiv_2608.20549v1",
+        "arxiv_2609.39566v1",
+        "arxiv_2609.03261v2",
+        "arxiv_2609.04842v1"
+      ]
+    },
+    {
+      "name": "Clinical Large Language Model",
+      "category": "Clinical Large Language Model Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Clinical Foundation LLMs",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Clinical Large Language Model"
+      ],
+      "total_occurrences": 5,
+      "paper_percentage": 12.5,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 5 paper(s) (12.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 5,
+          "percentage": 12.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2609.02191v1",
+        "arxiv_2608.21864v1",
+        "arxiv_2606.28692v1",
+        "arxiv_2608.08163v2",
+        "arxiv_2608.25771v1"
+      ]
+    },
+    {
+      "name": "Transformer",
+      "category": "Attention Architectures",
+      "paradigm": "Deep Learning & Representation Learning",
+      "type": "Attention Architectures",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Transformer"
+      ],
+      "total_occurrences": 5,
+      "paper_percentage": 12.5,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 5 paper(s) (12.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 5,
+          "percentage": 12.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2608.28662v1",
+        "arxiv_2609.33685v1",
+        "W7215103602",
+        "arxiv_2608.20549v1",
+        "W7214467995"
+      ]
+    },
+    {
+      "name": "Lora",
+      "category": "Lora Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Lora Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Lora"
+      ],
+      "total_occurrences": 3,
+      "paper_percentage": 7.5,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 3 paper(s) (7.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 3,
+          "percentage": 7.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2606.13572v2",
+        "arxiv_2609.14823v1",
+        "arxiv_2609.03261v2"
+      ]
+    },
+    {
+      "name": "ResNet",
+      "category": "Convolutional Architectures",
+      "paradigm": "Deep Learning & Representation Learning",
+      "type": "Convolutional Architectures",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "ResNet"
+      ],
+      "total_occurrences": 3,
+      "paper_percentage": 7.5,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 3 paper(s) (7.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 3,
+          "percentage": 7.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2609.15334v1",
+        "arxiv_2609.33685v1",
+        "arxiv_2608.20549v1"
+      ]
+    },
+    {
+      "name": "Retrieval-Augmented Generation (Rag)",
+      "category": "Retrieval-Augmented Generation (Rag) Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Retrieval-Augmented Generation (Rag) Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Retrieval-Augmented Generation (Rag)"
+      ],
+      "total_occurrences": 3,
+      "paper_percentage": 7.5,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 3 paper(s) (7.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 3,
+          "percentage": 7.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2608.21810v1",
+        "arxiv_2606.28692v1",
+        "arxiv_2608.08163v2"
+      ]
+    },
+    {
+      "name": "Logistic Regression",
+      "category": "Generalized Linear Models",
+      "paradigm": "Classical Predictive ML",
+      "type": "Generalized Linear Models",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Logistic Regression"
+      ],
+      "total_occurrences": 2,
+      "paper_percentage": 5.0,
+      "trajectory": "STABLE",
+      "trajectory_reason": "Consistently validated methodology adopted across 2 independent papers (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.85,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 2,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2608.28662v1",
+        "W7215104932"
+      ]
+    },
+    {
+      "name": "Qwen Architecture",
+      "category": "Qwen Architecture Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Qwen Architecture Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Qwen Architecture"
+      ],
+      "total_occurrences": 2,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 2 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 2,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2609.14823v1",
+        "arxiv_2609.15334v1"
+      ]
+    },
+    {
+      "name": "Graph Neural Network",
+      "category": "Graph Neural Network Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Graph Neural Network Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Graph Neural Network"
+      ],
+      "total_occurrences": 2,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 2 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 2,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "W7215103602",
+        "W7214968756"
+      ]
+    },
+    {
+      "name": "Random Forest",
+      "category": "Tree & Ensemble Learning",
+      "paradigm": "Classical Predictive ML",
+      "type": "Tree & Ensemble Learning",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Random Forest"
+      ],
+      "total_occurrences": 2,
+      "paper_percentage": 5.0,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 2 paper(s) (5.0% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 2,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "W7215104932",
+        "W7214968756"
+      ]
+    },
+    {
+      "name": "Masgr",
+      "category": "Masgr Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Masgr Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Masgr"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (2.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2608.30938v1"
+      ]
+    },
+    {
+      "name": "FRAC-MAS Multi-Agent System",
+      "category": "Agentic Clinical Systems",
+      "paradigm": "Agentic Clinical AI",
+      "type": "Agentic Clinical Systems",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "FRAC-MAS Multi-Agent System"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (2.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2608.28662v1"
+      ]
+    },
+    {
+      "name": "Llama Architecture",
+      "category": "Llama Architecture Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Llama Architecture Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Llama Architecture"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (2.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2608.28662v1"
+      ]
+    },
+    {
+      "name": "Arogyasutra",
+      "category": "Arogyasutra Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Arogyasutra Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Arogyasutra"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (2.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2606.13572v2"
+      ]
+    },
+    {
+      "name": "Arogyabodha",
+      "category": "Arogyabodha Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Arogyabodha Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Arogyabodha"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (2.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2606.13572v2"
+      ]
+    },
+    {
+      "name": "Densenet",
+      "category": "Densenet Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Densenet Methods",
+      "role_primary": "baseline",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Densenet"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "trajectory": "BASELINE_COMPARATOR",
+      "trajectory_reason": "Serves as standardized comparative baseline across 1 paper(s) (2.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.95,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2609.14823v1"
+      ]
+    },
+    {
+      "name": "Medtrace",
+      "category": "Medtrace Methods",
+      "paradigm": "Specialized AI Methodologies",
+      "type": "Medtrace Methods",
+      "role_primary": "proposed",
+      "replaces_target": null,
+      "raw_aliases": [
+        "Medtrace"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "trajectory": "SPECIALIZED",
+      "trajectory_reason": "Domain-specific proposed methodology introduced in single study (2.5% share).",
+      "growth_rate": 0.0,
+      "confidence": 0.8,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2609.14823v1"
+      ]
+    }
+  ],
+  "top_datasets": [
+    {
+      "name": "MIMIC Clinical Database",
+      "modality": "Intensive Care EHR & Chest X-Ray",
+      "raw_aliases": [
+        "MIMIC Clinical Database"
+      ],
+      "total_occurrences": 7,
+      "paper_percentage": 17.5,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 7,
+          "percentage": 17.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2609.14823v1",
+        "arxiv_2606.20164v1",
+        "arxiv_2601.13919v1",
+        "arxiv_2609.38924v1",
+        "arxiv_2608.21810v1",
+        "arxiv_2607.25489v1",
+        "arxiv_2601.03733v1"
+      ]
+    },
+    {
+      "name": "MedQA / USMLE Medical Exam",
+      "modality": "Medical Question Answering",
+      "raw_aliases": [
+        "MedQA / USMLE Medical Exam"
+      ],
+      "total_occurrences": 2,
+      "paper_percentage": 5.0,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 2,
+          "percentage": 5.0
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2607.15314v2",
+        "arxiv_2607.11175v2"
+      ]
+    },
+    {
+      "name": "ACDC Cardiac MRI",
+      "modality": "Cardiac Cine-MRI",
+      "raw_aliases": [
+        "ACDC Cardiac MRI"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2604.12144v2"
+      ]
+    },
+    {
+      "name": "BraTS Brain Tumor MRI",
+      "modality": "Multimodal Brain Tumor MRI",
+      "raw_aliases": [
+        "BraTS Brain Tumor MRI"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2604.12144v2"
+      ]
+    },
+    {
+      "name": "Ms Coco",
+      "modality": "Ms Coco Benchmarks",
+      "raw_aliases": [
+        "Ms Coco"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2604.28011v1"
+      ]
+    },
+    {
+      "name": "CheXpert",
+      "modality": "Chest Radiograph Multi-Label",
+      "raw_aliases": [
+        "CheXpert"
+      ],
+      "total_occurrences": 1,
+      "paper_percentage": 2.5,
+      "is_benchmark_monopoly": false,
+      "is_synthetic": false,
+      "yearly_distribution": [
+        {
+          "year": 2026,
+          "count": 1,
+          "percentage": 2.5
+        }
+      ],
+      "top_paper_ids": [
+        "arxiv_2606.20164v1"
+      ]
+    }
+  ],
+  "cluster_profiles": [
+    {
+      "cluster_id": "0",
+      "cluster_name": "Agentic Clinical Reasoning with Tool Use",
+      "total_papers": 5,
+      "dominant_method_family": "Clinical Large Language Model Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Clinical Large Language Model Methods",
+          "count": 3,
+          "percentage": 60.0
+        },
+        {
+          "name": "Large Language Model Methods",
+          "count": 2,
+          "percentage": 40.0
+        },
+        {
+          "name": "Reinforcement Learning Methods",
+          "count": 1,
+          "percentage": 20.0
+        },
+        {
+          "name": "Athena-R1 Methods",
+          "count": 1,
+          "percentage": 20.0
+        },
+        {
+          "name": "Retrieval-Augmented Generation (Rag) Methods",
+          "count": 1,
+          "percentage": 20.0
+        }
+      ],
+      "top_datasets": [],
+      "persistent_limitations": [
+        "Zhiling Yan, MS1, Zhe Fang, MD, PhD2, David J King, MD3, Ann Pongsakul, MD4, Eashan Adhikarla, PhD1, Hui Ren, MD, PhD5, ",
+        "Our findings suggest that P4 agents may have a role in empowering surrogate decision-makers with structured predictions ",
+        "These findings provide preliminary proof-of-concept that the generative capabilities of LLMs can boost decision-support ",
+        "It is not a point-of-care reference tool or a risk calculator, but a research system to evaluate whether AI can learn th"
+      ],
+      "supporting_paper_ids": [
+        "arxiv_2606.30658v1",
+        "arxiv_2606.28692v1",
+        "arxiv_2607.25485v1",
+        "arxiv_2609.02191v1",
+        "arxiv_2608.25771v1"
+      ]
+    },
+    {
+      "cluster_id": "1",
+      "cluster_name": "Agentic Multimodal Clinical Decision Support",
+      "total_papers": 6,
+      "dominant_method_family": "Tree & Ensemble Learning",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Tree & Ensemble Learning",
+          "count": 3,
+          "percentage": 50.0
+        },
+        {
+          "name": "Graph Neural Network Methods",
+          "count": 2,
+          "percentage": 33.3
+        },
+        {
+          "name": "Attention Architectures",
+          "count": 1,
+          "percentage": 16.7
+        },
+        {
+          "name": "Large Language Model Methods",
+          "count": 1,
+          "percentage": 16.7
+        },
+        {
+          "name": "Multi-Agent Ai Framework Methods",
+          "count": 1,
+          "percentage": 16.7
+        }
+      ],
+      "top_datasets": [],
+      "persistent_limitations": [
+        "Furthermore, high-throughput laboratories require low-latency processing; the computational overhead of multi-step agent",
+        "Medical imaging has served as primary proving ground for clinical artificial intelligence (AI), yet a",
+        "Another limitation is that the analysis is based primarily on the transcript rather than a",
+        "EDITED BY Shang-Ming Zhou, University of Plymouth, United Kingdom"
+      ],
+      "supporting_paper_ids": [
+        "W7215103602",
+        "W7214545571",
+        "arxiv_2607.27428v1",
+        "W7215104932",
+        "W7214968756",
+        "W7215074904"
+      ]
+    },
+    {
+      "cluster_id": "2",
+      "cluster_name": "Agentic Multimodal 3D Medical Reasoning",
+      "total_papers": 4,
+      "dominant_method_family": "Attention Architectures",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Attention Architectures",
+          "count": 2,
+          "percentage": 50.0
+        },
+        {
+          "name": "Multi-Agent Ai Framework Methods",
+          "count": 2,
+          "percentage": 50.0
+        },
+        {
+          "name": "Chain-Of-Thought (Cot) Methods",
+          "count": 1,
+          "percentage": 25.0
+        },
+        {
+          "name": "Convolutional Architectures",
+          "count": 1,
+          "percentage": 25.0
+        },
+        {
+          "name": "Reinforcement Learning Methods",
+          "count": 1,
+          "percentage": 25.0
+        }
+      ],
+      "top_datasets": [
+        {
+          "name": "MedQA / USMLE Medical Exam",
+          "count": 1,
+          "percentage": 25.0
+        }
+      ],
+      "persistent_limitations": [
+        "Self-evolving and embodied intelligence",
+        "The emergence of foundation models has brought broad, transferable representations to medical imaging, yet these models ",
+        "npj | digital medicine Brief communication",
+        "Despite the promising results demonstrated by the proposed agentic AI-driven immersive training platform, several limita"
+      ],
+      "supporting_paper_ids": [
+        "arxiv_2608.20549v1",
+        "arxiv_2607.11175v2",
+        "arxiv_2608.08163v2",
+        "W7214467995"
+      ]
+    },
+    {
+      "cluster_id": "3",
+      "cluster_name": "Agentic Multimodal Clinical Reasoning",
+      "total_papers": 3,
+      "dominant_method_family": "Reinforcement Learning Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Reinforcement Learning Methods",
+          "count": 3,
+          "percentage": 100.0
+        },
+        {
+          "name": "Hyperwalker Methods",
+          "count": 1,
+          "percentage": 33.3
+        }
+      ],
+      "top_datasets": [
+        {
+          "name": "MIMIC Clinical Database",
+          "count": 2,
+          "percentage": 66.7
+        },
+        {
+          "name": "Ms Coco",
+          "count": 1,
+          "percentage": 33.3
+        }
+      ],
+      "persistent_limitations": [
+        "Ultrasound is one of the most widely used diagnostic modalities in clinical medicine, valued for its non-invasiveness, p",
+        "As shown in Table 4, the absence of EHR leads to a decline in BLEU-4 from 4.98 to 3.62.",
+        "models primarily rely on structured clinical variables [2]–[4] or dedicated cardiac imaging biomarkers [5], [6], limitin",
+        "TABLE IV: Ablation study of Lingshu-7B across internal and external datasets."
+      ],
+      "supporting_paper_ids": [
+        "arxiv_2601.13919v1",
+        "arxiv_2609.38924v1",
+        "arxiv_2604.28011v1"
+      ]
+    },
+    {
+      "cluster_id": "4",
+      "cluster_name": "Agentic Multimodal Clinical Reasoning",
+      "total_papers": 8,
+      "dominant_method_family": "Large Language Model Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Large Language Model Methods",
+          "count": 4,
+          "percentage": 50.0
+        },
+        {
+          "name": "Chain-Of-Thought (Cot) Methods",
+          "count": 3,
+          "percentage": 37.5
+        },
+        {
+          "name": "Reinforcement Learning Methods",
+          "count": 2,
+          "percentage": 25.0
+        },
+        {
+          "name": "Vision Transformers",
+          "count": 1,
+          "percentage": 12.5
+        },
+        {
+          "name": "Direct Preference Optimization (Dpo) Methods",
+          "count": 1,
+          "percentage": 12.5
+        }
+      ],
+      "top_datasets": [
+        {
+          "name": "MedQA / USMLE Medical Exam",
+          "count": 1,
+          "percentage": 12.5
+        },
+        {
+          "name": "MIMIC Clinical Database",
+          "count": 1,
+          "percentage": 12.5
+        }
+      ],
+      "persistent_limitations": [
+        "Furthermore, dataset-specific further validated that enhancements were steadily positive across diverse clinical tasks, ",
+        "Frontier language models now answer difficult clinical questions (Singhal et al. , 2023), but healthcare deployment requ",
+        "Still, the advancement of clinical intelligence systems depicts several major challenges [3]- high computation cost asso",
+        "It addresses the common limitation of general-purpose models, which often fall into passive response patterns."
+      ],
+      "supporting_paper_ids": [
+        "arxiv_2602.12705v4",
+        "arxiv_2606.08982v2",
+        "arxiv_2608.21864v1",
+        "arxiv_2606.13572v2",
+        "arxiv_2607.15314v2",
+        "arxiv_2608.21810v1",
+        "arxiv_2609.39566v1",
+        "arxiv_2609.04842v1"
+      ]
+    },
+    {
+      "cluster_id": "5",
+      "cluster_name": "Multi-Agent Explainable Clinical Reasoning",
+      "total_papers": 3,
+      "dominant_method_family": "Multi-Agent Ai Framework Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Multi-Agent Ai Framework Methods",
+          "count": 2,
+          "percentage": 66.7
+        },
+        {
+          "name": "Attention Architectures",
+          "count": 2,
+          "percentage": 66.7
+        },
+        {
+          "name": "Generalized Linear Models",
+          "count": 1,
+          "percentage": 33.3
+        },
+        {
+          "name": "Agentic Clinical Systems",
+          "count": 1,
+          "percentage": 33.3
+        },
+        {
+          "name": "Llama Architecture Methods",
+          "count": 1,
+          "percentage": 33.3
+        }
+      ],
+      "top_datasets": [
+        {
+          "name": "ACDC Cardiac MRI",
+          "count": 1,
+          "percentage": 33.3
+        },
+        {
+          "name": "BraTS Brain Tumor MRI",
+          "count": 1,
+          "percentage": 33.3
+        }
+      ],
+      "persistent_limitations": [
+        "We presented VERITAS, a multi-agent co-scientist for autonomous, auditable hypothesis testing inspired by clinician-scie",
+        "Crucially, our pipeline-depth ablation demonstrated that our multi-agent critic successfully triages cases, offering a +",
+        "Developing efficient methods for very long sequences remains an open challenge.",
+        "It achieves strong performance even against baselines that receive human assistance (e.g. , pre-computed per-group stati"
+      ],
+      "supporting_paper_ids": [
+        "arxiv_2608.28662v1",
+        "arxiv_2604.12144v2",
+        "arxiv_2609.33685v1"
+      ]
+    },
+    {
+      "cluster_id": "6",
+      "cluster_name": "Multimodal Diagnostic Reasoning in Clinical AI",
+      "total_papers": 5,
+      "dominant_method_family": "Reinforcement Learning Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Reinforcement Learning Methods",
+          "count": 2,
+          "percentage": 40.0
+        },
+        {
+          "name": "Large Language Model Methods",
+          "count": 2,
+          "percentage": 40.0
+        },
+        {
+          "name": "Medreamm Methods",
+          "count": 1,
+          "percentage": 20.0
+        },
+        {
+          "name": "Coral Methods",
+          "count": 1,
+          "percentage": 20.0
+        },
+        {
+          "name": "Hierarchical Vision Transformers",
+          "count": 1,
+          "percentage": 20.0
+        }
+      ],
+      "top_datasets": [
+        {
+          "name": "CheXpert",
+          "count": 1,
+          "percentage": 20.0
+        },
+        {
+          "name": "MIMIC Clinical Database",
+          "count": 1,
+          "percentage": 20.0
+        }
+      ],
+      "persistent_limitations": [
+        "The strongest behavioral claims are limited to three option-form shortcut families; imagetext and device/material analys",
+        "It further introduces a Clinical Evidence Graph Memory to connect patient-specific observations with retrieved evidence,",
+        "1Population Health Sciences, Weill Cornell Medicine, New York City, USA 2Department of Medicine, Weill Cornell Medicine,",
+        "First, although MedReaMM is constructed from real-world case reports and emphasizes clinically complex diagnostic reason"
+      ],
+      "supporting_paper_ids": [
+        "arxiv_2608.22323v1",
+        "arxiv_2608.22713v1",
+        "arxiv_2609.15334v1",
+        "arxiv_2606.20164v1",
+        "arxiv_2609.03261v2"
+      ]
+    },
+    {
+      "cluster_id": "7",
+      "cluster_name": "Tool-Augmented Multimodal Clinical Reasoning",
+      "total_papers": 3,
+      "dominant_method_family": "Large Language Model Methods",
+      "emerging_paradigm": "Specialized AI Methodologies",
+      "top_methods": [
+        {
+          "name": "Large Language Model Methods",
+          "count": 2,
+          "percentage": 66.7
+        },
+        {
+          "name": "Multi-Agent Ai Framework Methods",
+          "count": 1,
+          "percentage": 33.3
+        },
+        {
+          "name": "Xmedfusion Methods",
+          "count": 1,
+          "percentage": 33.3
+        },
+        {
+          "name": "Densenet Methods",
+          "count": 1,
+          "percentage": 33.3
+        },
+        {
+          "name": "Medtrace Methods",
+          "count": 1,
+          "percentage": 33.3
+        }
+      ],
+      "top_datasets": [
+        {
+          "name": "MIMIC Clinical Database",
+          "count": 2,
+          "percentage": 66.7
+        }
+      ],
+      "persistent_limitations": [
+        "The combination of explicit visual grounding, structured knowledge representation, and iterative verification enhances s",
+        "First, the framework still has room for improvement on particularly challenging subsets, where even small inconsistencie",
+        "While RadDiff demonstrates strong performance across diverse radiological difference identification tasks, several limit",
+        "Ji Lu1, Lifei Liu2, Haoran Yu3, Xianglong Wang4, Yiru Fang4, Kuo Yang5,"
+      ],
+      "supporting_paper_ids": [
+        "arxiv_2606.14766v1",
+        "arxiv_2609.14823v1",
+        "arxiv_2601.03733v1"
+      ]
+    }
+  ],
+  "research_gaps": [
+    {
+      "gap_id": "gap_a7de7d6d_1",
+      "title": "Lack of Multi-Center External Validation and Prospective Clinical Trial Evidence",
+      "statement": "While complex AI models exhibit strong retrospective validation, 13/40 papers report explicit generalization barriers and call for multi-site prospective validation across diverse demographic and clinical settings.",
+      "category": "validation_deficit",
+      "supporting_papers": [
+        "arxiv_2604.28011v1",
+        "arxiv_2609.15334v1",
+        "arxiv_2609.39566v1",
+        "arxiv_2609.04842v1",
+        "W7215074904",
+        "arxiv_2606.13572v2",
+        "arxiv_2609.14823v1",
+        "arxiv_2608.22323v1",
+        "W7214968756",
+        "arxiv_2608.21864v1",
+        "arxiv_2608.25771v1",
+        "arxiv_2606.08982v2",
+        "arxiv_2602.12705v4"
+      ],
+      "supporting_evidence_quotes": [
+        "Each instance consists of an expert-verified multimodal medical query paired with a single unambiguous ground-truth answ",
+        "Li, Y., Dong, J., Zeng, H., Zhang, F., Dong, Z., Yang, C., Tian, Y.: Towards robust medical image segmentation: Spectro-",
+        "To assess cross-modality generalization, we further evaluate on the IU X-Ray dataset [6], which consists of chest radiog"
+      ],
+      "confidence": 0.94,
+      "why_insufficient": "Existing evaluations predominantly rely on single-center retrospective cohorts or synthetic data, leaving real-world clinical safety, domain-shift robustness, and demographic equity largely unproven."
+    },
+    {
+      "gap_id": "gap_a7de7d6d_2",
+      "title": "Computational Overhead and High-Latency Inference in Resource-Constrained Environments",
+      "statement": "High compute and latency overhead restricts deployment in point-of-care environments, as highlighted across 39 studies.",
+      "category": "scalability_bottleneck",
+      "supporting_papers": [
+        "arxiv_2604.28011v1",
+        "arxiv_2609.15334v1",
+        "arxiv_2608.30938v1",
+        "arxiv_2607.25489v1",
+        "arxiv_2607.15314v2",
+        "arxiv_2608.21810v1",
+        "arxiv_2609.03261v2",
+        "W7215103602",
+        "W7214545571",
+        "arxiv_2606.14766v1",
+        "arxiv_2609.02191v1",
+        "W7214968756",
+        "arxiv_2608.09861v1",
+        "arxiv_2608.25771v1",
+        "arxiv_2608.28662v1",
+        "arxiv_2608.20549v1",
+        "arxiv_2602.12705v4",
+        "arxiv_2606.30658v1",
+        "arxiv_2609.33685v1",
+        "arxiv_2609.04842v1",
+        "W7215074904",
+        "arxiv_2606.13572v2",
+        "W7214467995",
+        "arxiv_2601.13919v1",
+        "arxiv_2607.27428v1",
+        "arxiv_2608.08163v2",
+        "arxiv_2609.39566v1",
+        "arxiv_2608.22713v1",
+        "arxiv_2609.14823v1",
+        "arxiv_2606.20164v1",
+        "arxiv_2608.22323v1",
+        "arxiv_2607.11175v2",
+        "arxiv_2601.03733v1",
+        "arxiv_2604.12144v2",
+        "arxiv_2607.25485v1",
+        "arxiv_2606.08982v2",
+        "W7215104932",
+        "arxiv_2606.28692v1",
+        "arxiv_2609.38924v1"
+      ],
+      "supporting_evidence_quotes": [
+        "While Large Language Models (LLMs) have advanced medical dialogue systems, they struggle with real-world referral tasks ",
+        "The right part shows Case 2, which highlights a limitation of current agents.",
+        "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral"
+      ],
+      "confidence": 0.91,
+      "why_insufficient": "Current multi-agent and foundation model pipelines prioritize raw diagnostic accuracy over edge-optimized memory footprints and real-time inference latency constraints."
+    }
+  ]
+}

@@ -137,6 +137,58 @@ function setupEventListeners() {
       }
     });
   }
+
+  // Research Gaps Filter Pills & Inputs
+  document.querySelectorAll('#gapsStatusFilters .filter-pill-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#gapsStatusFilters .filter-pill-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.gapFilterStatus = btn.getAttribute('data-status') || 'ALL';
+      if (state.analysisData) renderGapsTab(state.analysisData.gaps || []);
+    });
+  });
+
+  const gapCategorySelect = document.getElementById('gapCategorySelect');
+  if (gapCategorySelect) {
+    gapCategorySelect.addEventListener('change', (e) => {
+      state.gapFilterCategory = e.target.value || 'ALL';
+      if (state.analysisData) renderGapsTab(state.analysisData.gaps || []);
+    });
+  }
+
+  const gapSearchInput = document.getElementById('gapSearchInput');
+  if (gapSearchInput) {
+    gapSearchInput.addEventListener('input', (e) => {
+      state.gapSearchQuery = e.target.value.trim();
+      if (state.analysisData) renderGapsTab(state.analysisData.gaps || []);
+    });
+  }
+
+  // Evidence Explorer Filter Pills & Inputs
+  document.querySelectorAll('#evidenceRelationFilters .filter-pill-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#evidenceRelationFilters .filter-pill-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.evidenceRelationFilter = btn.getAttribute('data-relation') || 'ALL';
+      if (state.analysisData) renderEvidenceTab(state.analysisData.evidence_links || [], state.analysisData.evidence_stats || {}, state.analysisData.papers || []);
+    });
+  });
+
+  const evidenceThemeSelect = document.getElementById('evidenceThemeSelect');
+  if (evidenceThemeSelect) {
+    evidenceThemeSelect.addEventListener('change', (e) => {
+      state.evidenceThemeFilter = e.target.value || 'ALL';
+      if (state.analysisData) renderEvidenceTab(state.analysisData.evidence_links || [], state.analysisData.evidence_stats || {}, state.analysisData.papers || []);
+    });
+  }
+
+  const evidenceSearchInput = document.getElementById('evidenceSearchInput');
+  if (evidenceSearchInput) {
+    evidenceSearchInput.addEventListener('input', (e) => {
+      state.evidenceSearchQuery = e.target.value.trim();
+      if (state.analysisData) renderEvidenceTab(state.analysisData.evidence_links || [], state.analysisData.evidence_stats || {}, state.analysisData.papers || []);
+    });
+  }
 }
 
 // ==============================================================================
@@ -682,7 +734,7 @@ function renderAnalysisDashboard(data) {
   renderMethodsTab(data.top_methods || data.paradigms || []);
   renderBenchmarksTab(data.top_benchmarks || []);
   renderGapsTab(data.gaps || []);
-  renderEvidenceTab(data.papers || []);
+  renderEvidenceTab(data.evidence_links || [], data.evidence_stats || {}, data.papers || []);
 }
 
 // Render Papers Table
@@ -820,8 +872,10 @@ function renderBenchmarksTab(benchmarks) {
 
 // Render Gaps Tab (Heading Only on Overview, Detailed on Dedicated Gaps Tab)
 function renderGapsTab(gaps) {
+  state.gaps = gaps || [];
   const topList = document.getElementById('topGapsAlertList');
   const fullList = document.getElementById('fullGapsList');
+  const summaryBadges = document.getElementById('gapsSummaryBadges');
 
   if (!gaps || gaps.length === 0) {
     const emptyMsg = `<div style="color: #94A3B8; font-size: 0.85rem; padding: 1.5rem; text-align: center;">No research gaps identified yet.</div>`;
@@ -830,10 +884,42 @@ function renderGapsTab(gaps) {
     return;
   }
 
-  // 1. Overview Dashboard Widget: Heading Title Only
+  // 1. Calculate Status Counts
+  const totalCount = gaps.length;
+  const unaddressedCount = gaps.filter(g => String(g.lifecycle_status || '').toUpperCase().includes('UNADDRESSED')).length;
+  const partialCount = gaps.filter(g => String(g.lifecycle_status || '').toUpperCase().includes('PARTIAL')).length;
+  const convergedCount = gaps.filter(g => ['CONVERGED', 'RESOLVED'].some(s => String(g.lifecycle_status || '').toUpperCase().includes(s))).length;
+
+  // Update counters in UI
+  const cntAll = document.getElementById('gapCountAll');
+  const cntUn = document.getElementById('gapCountUnaddressed');
+  const cntPart = document.getElementById('gapCountPartial');
+  const cntConv = document.getElementById('gapCountConverged');
+  if (cntAll) cntAll.textContent = totalCount;
+  if (cntUn) cntUn.textContent = unaddressedCount;
+  if (cntPart) cntPart.textContent = partialCount;
+  if (cntConv) cntConv.textContent = convergedCount;
+
+  if (summaryBadges) {
+    summaryBadges.innerHTML = `
+      <span class="tag-pill tag-red" style="font-weight: 700;">${unaddressedCount} Open Gaps</span>
+      <span class="tag-pill tag-blue" style="font-weight: 700;">${totalCount} Themes</span>
+    `;
+  }
+
+  // 2. Populate Category Filter Dropdown
+  const categorySelect = document.getElementById('gapCategorySelect');
+  if (categorySelect) {
+    const categories = Array.from(new Set(gaps.map(g => g.category || 'general').filter(Boolean)));
+    const currentVal = categorySelect.value || 'ALL';
+    categorySelect.innerHTML = `<option value="ALL">All Categories (${categories.length})</option>` + 
+      categories.map(c => `<option value="${escapeHtml(c)}">${escapeHtml(c.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()))}</option>`).join('');
+    categorySelect.value = categories.includes(currentVal) ? currentVal : 'ALL';
+  }
+
+  // 3. Overview Dashboard Widget: Heading Title Only
   const renderOverviewGapTitle = (g) => {
     const title = g.name || g.title || 'Unresolved Empirical Challenge';
-
     return `
       <div class="gap-alert-item alert-red" style="cursor: pointer;" onclick="openProvenanceDrawer('${escapeHtml(title)}', 'Research Gap')">
         <div class="gap-alert-left">
@@ -846,89 +932,299 @@ function renderGapsTab(gaps) {
       </div>
     `;
   };
+  if (topList) topList.innerHTML = gaps.slice(0, 5).map(renderOverviewGapTitle).join('');
 
-  // 2. Dedicated Research Gaps Tab: Detailed Rich Cards
+  // 4. Filter Gaps for Detailed View
+  const statusFilter = state.gapFilterStatus || 'ALL';
+  const categoryFilter = state.gapFilterCategory || 'ALL';
+  const searchQuery = (state.gapSearchQuery || '').toLowerCase();
+
+  const filteredGaps = gaps.filter(g => {
+    const status = String(g.lifecycle_status || '').toUpperCase();
+    if (statusFilter === 'UNADDRESSED' && !status.includes('UNADDRESSED')) return false;
+    if (statusFilter === 'PARTIALLY_ADDRESSED' && !status.includes('PARTIAL')) return false;
+    if (statusFilter === 'CONVERGED' && !['CONVERGED', 'RESOLVED'].some(s => status.includes(s))) return false;
+
+    if (categoryFilter !== 'ALL') {
+      const cat = g.category || '';
+      if (cat !== categoryFilter) return false;
+    }
+
+    if (searchQuery) {
+      const matchTitle = (g.name || g.title || '').toLowerCase().includes(searchQuery);
+      const matchDesc = (g.description || '').toLowerCase().includes(searchQuery);
+      const matchFrontier = (g.actionable_frontier || '').toLowerCase().includes(searchQuery);
+      const matchMethods = (g.affected_methods || []).some(m => String(m).toLowerCase().includes(searchQuery));
+      const matchBenchmarks = (g.affected_benchmarks || []).some(b => String(b).toLowerCase().includes(searchQuery));
+      if (!matchTitle && !matchDesc && !matchFrontier && !matchMethods && !matchBenchmarks) return false;
+    }
+    return true;
+  });
+
+  // 5. Dedicated Research Gaps Tab: Detailed Rich Cards
   const renderDetailedGapCard = (g) => {
     const title = g.name || g.title || 'Unresolved Empirical Challenge';
     const desc = g.description || g.desc || (g.key_quotes ? g.key_quotes[0] : 'Critical methodological bottleneck identified across literature.');
-    const status = g.lifecycle_status || g.priority || 'UNADDRESSED';
-    const evidence = g.resolution_evidence || (g.key_quotes && g.key_quotes.length > 1 ? g.key_quotes[1] : '');
+    const status = g.lifecycle_status || 'UNADDRESSED';
+    const frontier = g.actionable_frontier || 'Formulate targeted architectural benchmarks, standardized evaluation criteria, and external cohort validation to overcome this domain bottleneck.';
+    const affectedMethods = g.affected_methods || [];
+    const affectedBenchmarks = g.affected_benchmarks || [];
+    const quotes = g.key_quotes || [];
     const papersCount = g.total_papers || (g.paper_ids ? g.paper_ids.length : 1);
-    const category = g.category || 'Empirical Limitation';
+    const category = g.category || 'General Empirical';
+    const firstYear = g.first_year || 2024;
+    const latestYear = g.latest_year || 2026;
+    const yearSpan = (firstYear === latestYear) ? `${firstYear}` : `${firstYear}–${latestYear}`;
 
     const isUnaddressed = String(status).toUpperCase().includes('UNADDRESSED');
-    const statusClass = isUnaddressed ? 'tag-red' : 'tag-orange';
+    const isPartial = String(status).toUpperCase().includes('PARTIAL');
+    const statusClass = isUnaddressed ? 'tag-red' : (isPartial ? 'tag-orange' : 'tag-green');
+    const borderClass = isUnaddressed ? 'border-unaddressed' : (isPartial ? 'border-partial' : 'border-converged');
+    const badgeIconBg = isUnaddressed ? 'bg-red' : (isPartial ? 'bg-orange' : 'bg-green');
+    const badgeIconText = isUnaddressed ? '!' : (isPartial ? '▲' : '✓');
 
     return `
-      <div class="white-card mb-3" style="margin-bottom: 1.25rem; border-left: 4px solid #DC2626; cursor: pointer; padding: 1.25rem;" onclick="openProvenanceDrawer('${escapeHtml(title)}', 'Research Gap')">
-        <div class="card-top-bar" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 0.5rem;">
-          <div style="display: flex; align-items: center; gap: 0.6rem;">
-            <span class="gap-icon" style="background: #DC2626; color: #FFFFFF; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; flex-shrink: 0;">!</span>
-            <strong style="font-size: 1.05rem; color: #0F172A; font-weight: 700;">${escapeHtml(title)}</strong>
+      <div class="gap-theme-card ${borderClass}">
+        <div class="gap-card-top">
+          <div class="gap-title-group">
+            <span class="gap-badge-icon ${badgeIconBg}">${badgeIconText}</span>
+            <div>
+              <h4 class="gap-theme-title">${escapeHtml(title)}</h4>
+              <div style="display: flex; gap: 0.4rem; align-items: center; margin-top: 0.25rem;">
+                <span class="tag-pill tag-purple" style="font-size: 0.72rem;">${escapeHtml(category.replace(/_/g, ' '))}</span>
+                <span class="text-mono" style="font-size: 0.72rem; color: #64748B;">Observed: ${yearSpan}</span>
+              </div>
+            </div>
           </div>
-          <span class="tag-pill ${statusClass}" style="font-weight: 700; white-space: nowrap;">${escapeHtml(status)}</span>
+          <div class="gap-meta-pills">
+            <span class="tag-pill ${statusClass}" style="font-weight: 700;">${escapeHtml(status)}</span>
+            <span class="tag-pill tag-blue" style="font-size: 0.75rem; font-weight: 600;">${papersCount} Papers</span>
+          </div>
         </div>
 
-        <p style="font-size: 0.88rem; color: #334155; line-height: 1.5; margin: 0.5rem 0 0.75rem 0;">
-          ${escapeHtml(desc)}
-        </p>
+        <p class="gap-problem-desc">${escapeHtml(desc)}</p>
 
-        ${evidence ? `
-          <div style="background: #FEF2F2; padding: 0.65rem 0.85rem; border-radius: 6px; margin-bottom: 0.75rem; border-left: 3px solid #DC2626;">
-            <span style="font-size: 0.72rem; font-weight: 700; color: #991B1B; text-transform: uppercase;">Literature Evidence & Convergence</span>
-            <p style="font-size: 0.82rem; color: #7F1D1D; font-style: italic; margin-top: 0.2rem;">"${escapeHtml(evidence)}"</p>
+        <!-- Actionable Research Frontier Box -->
+        <div class="gap-frontier-box">
+          <div class="gap-frontier-header">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+            <span>💡 Recommended Research Vector & Opportunity</span>
+          </div>
+          <p class="gap-frontier-text">${escapeHtml(frontier)}</p>
+        </div>
+
+        <!-- Affected Methods and Benchmarks Grid -->
+        <div class="gap-entities-grid">
+          <div>
+            <span class="gap-entity-group-title">AFFECTED METHOD FAMILIES</span>
+            <div class="tags-group">
+              ${affectedMethods.length > 0 
+                ? affectedMethods.map(m => `<span class="tag-pill tag-purple" style="cursor: pointer;" onclick="openProvenanceDrawer('${escapeHtml(m)}', 'Method')">${escapeHtml(m)}</span>`).join('') 
+                : `<span class="tag-pill tag-not-found">General Architecture</span>`}
+            </div>
+          </div>
+          <div>
+            <span class="gap-entity-group-title">AFFECTED BENCHMARKS & DATASETS</span>
+            <div class="tags-group">
+              ${affectedBenchmarks.length > 0 
+                ? affectedBenchmarks.map(b => `<span class="tag-pill tag-green" style="cursor: pointer;" onclick="openProvenanceDrawer('${escapeHtml(b)}', 'Benchmark')">${escapeHtml(b)}</span>`).join('') 
+                : `<span class="tag-pill tag-not-found">Domain Evaluations</span>`}
+            </div>
+          </div>
+        </div>
+
+        <!-- Verbatim Limitation Quotes -->
+        ${quotes.length > 0 ? `
+          <div class="gap-quotes-box">
+            <div class="gap-quotes-header">Literature Grounded Limitation Quotes</div>
+            ${quotes.slice(0, 3).map(q => `<div class="gap-quote-item">"${escapeHtml(q)}"</div>`).join('')}
           </div>
         ` : ''}
 
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem; padding-top: 0.6rem; border-top: 1px solid #F1F5F9;">
-          <div style="display: flex; gap: 0.5rem; align-items: center;">
-            <span class="tag-pill tag-blue" style="font-size: 0.75rem; font-weight: 600;">
-              ${papersCount} Supporting Paper${papersCount > 1 ? 's' : ''}
-            </span>
-            <span class="tag-pill tag-purple" style="font-size: 0.75rem;">
-              Category: ${escapeHtml(category)}
-            </span>
-          </div>
-          <span style="font-size: 0.78rem; color: #2563EB; font-weight: 600;">Inspect Citations →</span>
+        <div class="gap-card-footer">
+          <span style="font-size: 0.75rem; color: #64748B;">Classification Confidence: ${(g.confidence ? Math.round(g.confidence * 100) : 85)}%</span>
+          <button class="btn-link" onclick="openProvenanceDrawer('${escapeHtml(title)}', 'Research Gap')" style="font-size: 0.8rem; font-weight: 600;">
+            Inspect Citations & Evidence Trail →
+          </button>
         </div>
       </div>
     `;
   };
 
-  if (topList) topList.innerHTML = gaps.slice(0, 5).map(renderOverviewGapTitle).join('');
-  if (fullList) fullList.innerHTML = gaps.map(renderDetailedGapCard).join('');
+  if (fullList) {
+    if (filteredGaps.length === 0) {
+      fullList.innerHTML = `<div style="color: #94A3B8; font-size: 0.9rem; padding: 2.5rem; text-align: center; background: #F8FAFC; border-radius: 8px;">No research gaps match the current filter criteria.</div>`;
+    } else {
+      fullList.innerHTML = filteredGaps.map(renderDetailedGapCard).join('');
+    }
+  }
 }
 
 // Render Evidence Tab
-function renderEvidenceTab(papers) {
+function renderEvidenceTab(evidenceLinks, evidenceStats, papers) {
+  state.evidence_links = evidenceLinks || [];
+  state.evidence_stats = evidenceStats || {};
   const container = document.getElementById('fullEvidenceList');
   if (!container) return;
 
-  const evidencePapers = (papers && papers.length >= 2) ? papers.slice(0, 4) : [];
+  const links = evidenceLinks || [];
+  const stats = evidenceStats || {};
 
-  if (evidencePapers.length === 0) {
-    container.innerHTML = `<div class="white-card" style="padding: 1.5rem; color: #94A3B8; text-align: center;">No evidence links available.</div>`;
+  // 1. Update KPI Stats
+  const statTotal = document.getElementById('evidenceStatTotal');
+  const statOpen = document.getElementById('evidenceStatOpenGaps');
+  const statResolved = document.getElementById('evidenceStatResolved');
+  const statLims = document.getElementById('evidenceStatLimitations');
+
+  if (statTotal) statTotal.textContent = stats.total_links !== undefined ? stats.total_links : links.length;
+  if (statOpen) statOpen.textContent = stats.open_gaps_count !== undefined ? stats.open_gaps_count : (state.gaps ? state.gaps.length : 0);
+  if (statResolved) statResolved.textContent = stats.resolved_count !== undefined ? stats.resolved_count : links.filter(l => l.relation_type === 'SOLVES' || l.relation_type === 'PARTIALLY_ADDRESSES').length;
+  if (statLims) statLims.textContent = stats.total_limitations_mined !== undefined ? stats.total_limitations_mined : (papers ? sumLimitations(papers) : 0);
+
+  const relCountAll = document.getElementById('evidenceRelCountAll');
+  if (relCountAll) relCountAll.textContent = links.length;
+
+  // 2. Populate Theme Dropdown
+  const themeSelect = document.getElementById('evidenceThemeSelect');
+  if (themeSelect) {
+    const themes = Array.from(new Set(links.map(l => l.theme_name || l.theme_id).filter(Boolean)));
+    const currentVal = themeSelect.value || 'ALL';
+    themeSelect.innerHTML = `<option value="ALL">All Themes (${themes.length})</option>` + 
+      themes.map(t => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`).join('');
+    themeSelect.value = themes.includes(currentVal) ? currentVal : 'ALL';
+  }
+
+  // 3. Fallback if no links
+  if (links.length === 0) {
+    container.innerHTML = `
+      <div class="white-card" style="padding: 2.5rem; color: #94A3B8; text-align: center; background: #F8FAFC; border-radius: 8px;">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2" style="margin: 0 auto 0.5rem auto; display: block;">
+          <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+        </svg>
+        <strong style="color: #475569; font-size: 1rem; display: block;">No inter-paper evidence chains generated yet.</strong>
+        <p style="font-size: 0.85rem; margin-top: 0.25rem;">Evidence chains connect earlier paper limitation quotes to later proposed methodologies and empirical evaluations.</p>
+      </div>
+    `;
     return;
   }
 
-  container.innerHTML = `
-    <div class="white-card mb-3" style="margin-bottom: 1rem;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span class="tag-pill tag-purple">PARTIALLY_ADDRESSES</span>
-        <span class="text-mono" style="font-size: 0.75rem; color: var(--text-muted);">Citation Provenance Link</span>
-      </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.5rem;">
-        <div style="background: #FEF2F2; padding: 0.75rem; border-radius: 8px;">
-          <span style="font-size: 0.7rem; font-weight: 700; color: #DC2626;">LIMITATION SOURCE (${escapeHtml(evidencePapers[0]?.id || 'Paper 1')})</span>
-          <p style="font-size: 0.8rem; font-style: italic; margin-top: 0.25rem;">"${escapeHtml(evidencePapers[0]?.limitations?.[0] || 'Out-of-distribution domain shift on unseen hospital scans.')}"</p>
+  // 4. Filter Links
+  const relationFilter = state.evidenceRelationFilter || 'ALL';
+  const themeFilter = state.evidenceThemeFilter || 'ALL';
+  const searchQuery = (state.evidenceSearchQuery || '').toLowerCase();
+
+  const filteredLinks = links.filter(l => {
+    if (relationFilter !== 'ALL' && l.relation_type !== relationFilter) {
+      return false;
+    }
+    if (themeFilter !== 'ALL') {
+      const tName = l.theme_name || l.theme_id;
+      if (tName !== themeFilter) return false;
+    }
+    if (searchQuery) {
+      const matchSrc = (l.source_paper_title || l.source_paper_id || '').toLowerCase().includes(searchQuery);
+      const matchTgt = (l.target_paper_title || l.target_paper_id || '').toLowerCase().includes(searchQuery);
+      const matchMethod = (l.target_method || '').toLowerCase().includes(searchQuery);
+      const matchQuote = (l.source_quote || '').toLowerCase().includes(searchQuery) || (l.target_quote || '').toLowerCase().includes(searchQuery);
+      if (!matchSrc && !matchTgt && !matchMethod && !matchQuote) return false;
+    }
+    return true;
+  });
+
+  if (filteredLinks.length === 0) {
+    container.innerHTML = `<div style="color: #94A3B8; font-size: 0.9rem; padding: 2.5rem; text-align: center; background: #F8FAFC; border-radius: 8px;">No evidence links match the current filter criteria.</div>`;
+    return;
+  }
+
+  // 5. Render Bipartite Evidence Cards
+  container.innerHTML = filteredLinks.map(link => {
+    const themeTitle = link.theme_name || link.theme_id || 'Research Limitation';
+    const relType = link.relation_type || 'PARTIALLY_ADDRESSES';
+    const relBadgeClass = relType === 'SOLVES' ? 'tag-green' : (relType === 'EXTENDS' ? 'tag-purple' : (relType === 'CONFIRMS' ? 'tag-blue' : 'tag-orange'));
+    
+    const srcTitle = link.source_paper_title || link.source_paper_id;
+    const srcYear = link.source_year || 2024;
+    const srcSection = link.source_section || 'Limitations';
+    const srcPage = link.source_page || 1;
+    const srcQuote = link.source_quote || 'Empirical limitation observed in validation experiments.';
+
+    const tgtTitle = link.target_paper_title || link.target_paper_id;
+    const tgtYear = link.target_year || 2026;
+    const tgtMethod = link.target_method || 'Proposed Architecture';
+    const tgtSection = link.target_section || 'Methodology';
+    const tgtPage = link.target_page || 1;
+    const tgtQuote = link.target_quote || 'Proposes novel architectural framework to address domain bottlenecks.';
+
+    return `
+      <div class="evidence-bipartite-card">
+        <div class="evidence-card-top">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span class="tag-pill tag-purple" style="font-size: 0.75rem; font-weight: 700;">Theme: ${escapeHtml(themeTitle)}</span>
+          </div>
+          <span class="tag-pill ${relBadgeClass}" style="font-weight: 700;">${escapeHtml(relType)}</span>
         </div>
-        <div style="background: #ECFDF5; padding: 0.75rem; border-radius: 8px;">
-          <span style="font-size: 0.7rem; font-weight: 700; color: #059669;">SUBSEQUENT METHOD (${escapeHtml(evidencePapers[1]?.id || 'Paper 2')})</span>
-          <p style="font-size: 0.8rem; font-style: italic; margin-top: 0.25rem;">"${escapeHtml(evidencePapers[1]?.findings || 'We propose multi-agent architecture to cross-validate predictions across external EHRs.')}"</p>
+
+        <div class="evidence-bipartite-grid">
+          <!-- Left: Problem Source Panel -->
+          <div class="evidence-source-panel">
+            <div class="evidence-panel-header">
+              <span class="tag-pill tag-red" style="font-size: 0.7rem; font-weight: 700;">PROBLEM SOURCE</span>
+              <span class="text-mono" style="font-size: 0.72rem; color: #991B1B;">${srcYear} · Sec ${escapeHtml(srcSection)} (p.${srcPage})</span>
+            </div>
+            <h5 class="evidence-paper-title" onclick="openProvenanceDrawer('${escapeHtml(link.source_paper_id)}', 'Paper')" title="${escapeHtml(srcTitle)}">
+              ${escapeHtml(srcTitle)}
+            </h5>
+            <div class="evidence-quote-box">
+              "${escapeHtml(srcQuote)}"
+            </div>
+          </div>
+
+          <!-- Center: Flow Indicator -->
+          <div class="evidence-flow-center">
+            <span class="tag-pill ${relBadgeClass}" style="font-size: 0.7rem; font-weight: 700; white-space: nowrap;">
+              ${escapeHtml(relType)}
+            </span>
+            <div class="evidence-flow-arrow"></div>
+            <span style="font-size: 0.68rem; color: #64748B; font-weight: 600;">Literature Trajectory</span>
+          </div>
+
+          <!-- Right: Subsequent Method / Solution Panel -->
+          <div class="evidence-target-panel">
+            <div class="evidence-panel-header">
+              <span class="tag-pill tag-green" style="font-size: 0.7rem; font-weight: 700;">SUBSEQUENT METHOD</span>
+              <span class="text-mono" style="font-size: 0.72rem; color: #065F46;">${tgtYear} · Sec ${escapeHtml(tgtSection)} (p.${tgtPage})</span>
+            </div>
+            <h5 class="evidence-paper-title" onclick="openProvenanceDrawer('${escapeHtml(link.target_paper_id)}', 'Paper')" title="${escapeHtml(tgtTitle)}">
+              ${escapeHtml(tgtTitle)}
+            </h5>
+            <div style="margin: 0.2rem 0;">
+              <span class="tag-pill tag-purple" style="font-size: 0.7rem; font-weight: 600;">Method: ${escapeHtml(tgtMethod)}</span>
+            </div>
+            <div class="evidence-quote-box">
+              "${escapeHtml(tgtQuote)}"
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; margin-top: 0.6rem; padding-top: 0.5rem; border-top: 1px solid #F8FAFC;">
+          <button class="btn-link" style="font-size: 0.76rem;" onclick="openProvenanceDrawer('${escapeHtml(link.target_paper_id)}', 'Paper')">
+            Inspect Full Citation & Provenance Trail →
+          </button>
         </div>
       </div>
-    </div>
-  `;
+    `;
+  }).join('');
+}
+
+function sumLimitations(papers) {
+  let count = 0;
+  for (const p of papers) {
+    if (p.limitations) count += p.limitations.length;
+  }
+  return count;
 }
 
 // ==============================================================================

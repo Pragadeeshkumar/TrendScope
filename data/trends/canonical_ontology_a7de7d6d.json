@@ -1,0 +1,647 @@
+[
+  {
+    "canonical_id": "canon_method_large_language_model",
+    "canonical_name": "Large Language Model",
+    "alias": "Large Language Model",
+    "entity_type": "method",
+    "family": "Large Language Model Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2608.30938v1",
+      "arxiv_2606.30658v1",
+      "arxiv_2608.22713v1",
+      "arxiv_2606.13572v2",
+      "arxiv_2609.15334v1",
+      "W7215103602",
+      "arxiv_2606.08982v2",
+      "arxiv_2608.21810v1",
+      "arxiv_2607.25489v1",
+      "arxiv_2606.14766v1",
+      "arxiv_2606.28692v1",
+      "arxiv_2601.03733v1",
+      "arxiv_2608.08163v2",
+      "arxiv_2609.04842v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_masgr",
+    "canonical_name": "Masgr",
+    "alias": "Masgr",
+    "entity_type": "method",
+    "family": "Masgr Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2608.30938v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_clinical_large_language_model",
+    "canonical_name": "Clinical Large Language Model",
+    "alias": "Gpt Architecture",
+    "entity_type": "method",
+    "family": "Clinical Foundation LLMs",
+    "paradigm": "Foundation Models & LLMs",
+    "reason": "Generative clinical LLM",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2609.02191v1",
+      "arxiv_2608.21864v1",
+      "arxiv_2606.28692v1",
+      "arxiv_2608.08163v2",
+      "arxiv_2608.25771v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_multi_agent_ai_framework",
+    "canonical_name": "Multi-Agent Ai Framework",
+    "alias": "Multi-Agent AI Framework",
+    "entity_type": "method",
+    "family": "Multi-Agent Ai Framework Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2609.02191v1",
+      "arxiv_2608.28662v1",
+      "arxiv_2604.12144v2",
+      "W7214545571",
+      "arxiv_2608.09861v1",
+      "arxiv_2607.11175v2",
+      "arxiv_2606.14766v1",
+      "arxiv_2608.08163v2"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_logistic_regression",
+    "canonical_name": "Logistic Regression",
+    "alias": "Logistic Regression",
+    "entity_type": "method",
+    "family": "Generalized Linear Models",
+    "paradigm": "Classical Predictive ML",
+    "reason": "Exact statistical model match",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2608.28662v1",
+      "W7215104932"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_transformer",
+    "canonical_name": "Transformer",
+    "alias": "Transformer",
+    "entity_type": "method",
+    "family": "Attention Architectures",
+    "paradigm": "Deep Learning & Representation Learning",
+    "reason": "Base attention architecture",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2608.28662v1",
+      "arxiv_2609.33685v1",
+      "W7215103602",
+      "arxiv_2608.20549v1",
+      "W7214467995"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_frac_mas_multi_agent_system",
+    "canonical_name": "FRAC-MAS Multi-Agent System",
+    "alias": "Frac-Mas",
+    "entity_type": "method",
+    "family": "Agentic Clinical Systems",
+    "paradigm": "Agentic Clinical AI",
+    "reason": "Collaborative diagnostic agent system",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2608.28662v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_llama_architecture",
+    "canonical_name": "Llama Architecture",
+    "alias": "Llama Architecture",
+    "entity_type": "method",
+    "family": "Llama Architecture Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2608.28662v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_arogyasutra",
+    "canonical_name": "Arogyasutra",
+    "alias": "Arogyasutra",
+    "entity_type": "method",
+    "family": "Arogyasutra Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2606.13572v2"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_lora",
+    "canonical_name": "Lora",
+    "alias": "LoRA",
+    "entity_type": "method",
+    "family": "Lora Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2606.13572v2",
+      "arxiv_2609.14823v1",
+      "arxiv_2609.03261v2"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_arogyabodha",
+    "canonical_name": "Arogyabodha",
+    "alias": "Arogyabodha",
+    "entity_type": "method",
+    "family": "Arogyabodha Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2606.13572v2"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_densenet",
+    "canonical_name": "Densenet",
+    "alias": "DenseNet",
+    "entity_type": "method",
+    "family": "Densenet Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2609.14823v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_medtrace",
+    "canonical_name": "Medtrace",
+    "alias": "Medtrace",
+    "entity_type": "method",
+    "family": "Medtrace Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2609.14823v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_qwen_architecture",
+    "canonical_name": "Qwen Architecture",
+    "alias": "Qwen Architecture",
+    "entity_type": "method",
+    "family": "Qwen Architecture Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2609.14823v1",
+      "arxiv_2609.15334v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_mimic_clinical_database",
+    "canonical_name": "MIMIC Clinical Database",
+    "alias": "MIMIC Database",
+    "entity_type": "dataset",
+    "family": "Intensive Care EHR & Chest X-Ray",
+    "paradigm": "Clinical EHR & Multimodal Data",
+    "reason": "Standard intensive care clinical benchmark",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2609.14823v1",
+      "arxiv_2606.20164v1",
+      "arxiv_2601.13919v1",
+      "arxiv_2609.38924v1",
+      "arxiv_2608.21810v1",
+      "arxiv_2607.25489v1",
+      "arxiv_2601.03733v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_coral",
+    "canonical_name": "Coral",
+    "alias": "Coral",
+    "entity_type": "method",
+    "family": "Coral Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2609.15334v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_swin_transformer",
+    "canonical_name": "Swin Transformer",
+    "alias": "Swin Transformer",
+    "entity_type": "method",
+    "family": "Hierarchical Vision Transformers",
+    "paradigm": "Deep Learning & Representation Learning",
+    "reason": "Shifted window transformer match",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2609.15334v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_resnet",
+    "canonical_name": "ResNet",
+    "alias": "ResNet",
+    "entity_type": "method",
+    "family": "Convolutional Architectures",
+    "paradigm": "Deep Learning & Representation Learning",
+    "reason": "Standard backbone architecture match",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2609.15334v1",
+      "arxiv_2609.33685v1",
+      "arxiv_2608.20549v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_acdc_cardiac_mri",
+    "canonical_name": "ACDC Cardiac MRI",
+    "alias": "ACDC Cardiac MRI",
+    "entity_type": "dataset",
+    "family": "Cardiac Cine-MRI",
+    "paradigm": "Radiological Benchmarks",
+    "reason": "Standard cardiac MRI benchmark",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2604.12144v2"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_brats_brain_tumor_mri",
+    "canonical_name": "BraTS Brain Tumor MRI",
+    "alias": "BraTS 2021",
+    "entity_type": "dataset",
+    "family": "Multimodal Brain Tumor MRI",
+    "paradigm": "Radiological Benchmarks",
+    "reason": "Standard brain segmentation benchmark",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2604.12144v2"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_direct_preference_optimization__dpo_",
+    "canonical_name": "Direct Preference Optimization (Dpo)",
+    "alias": "Direct Preference Optimization (DPO)",
+    "entity_type": "method",
+    "family": "Direct Preference Optimization (Dpo) Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2608.21864v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_biomed_agent_rl",
+    "canonical_name": "Biomed-Agent-Rl",
+    "alias": "Biomed-Agent-Rl",
+    "entity_type": "method",
+    "family": "Biomed-Agent-Rl Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2608.21864v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_reinforcement_learning",
+    "canonical_name": "Reinforcement Learning",
+    "alias": "Reinforcement Learning",
+    "entity_type": "method",
+    "family": "Reinforcement Learning Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2607.15314v2",
+      "arxiv_2604.28011v1",
+      "arxiv_2601.13919v1",
+      "arxiv_2609.38924v1",
+      "arxiv_2606.08982v2",
+      "arxiv_2609.03261v2",
+      "arxiv_2607.25489v1",
+      "arxiv_2608.22323v1",
+      "arxiv_2607.11175v2",
+      "arxiv_2606.28692v1",
+      "W7214968756"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_chain_of_thought__cot_",
+    "canonical_name": "Chain-Of-Thought (Cot)",
+    "alias": "Chain-of-Thought (CoT)",
+    "entity_type": "method",
+    "family": "Chain-Of-Thought (Cot) Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2607.15314v2",
+      "arxiv_2607.25485v1",
+      "arxiv_2608.20549v1",
+      "arxiv_2609.39566v1",
+      "arxiv_2609.03261v2",
+      "arxiv_2609.04842v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_medqa___usmle_medical_exam",
+    "canonical_name": "MedQA / USMLE Medical Exam",
+    "alias": "MedQA Benchmark",
+    "entity_type": "dataset",
+    "family": "Medical Question Answering",
+    "paradigm": "Clinical NLP & Reasoning Benchmarks",
+    "reason": "Clinical reasoning exam benchmark",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2607.15314v2",
+      "arxiv_2607.11175v2"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_ms_coco",
+    "canonical_name": "Ms Coco",
+    "alias": "MS COCO",
+    "entity_type": "dataset",
+    "family": "Ms Coco Benchmarks",
+    "paradigm": "Domain-Specific Resources",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2604.28011v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_dataset_chexpert",
+    "canonical_name": "CheXpert",
+    "alias": "CheXpert",
+    "entity_type": "dataset",
+    "family": "Chest Radiograph Multi-Label",
+    "paradigm": "Radiological Benchmarks",
+    "reason": "Standard chest radiograph dataset",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2606.20164v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_vision_transformer",
+    "canonical_name": "Vision Transformer",
+    "alias": "Vision Transformer",
+    "entity_type": "method",
+    "family": "Vision Transformers",
+    "paradigm": "Deep Learning & Representation Learning",
+    "reason": "Attention backbone match",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "arxiv_2602.12705v4"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_hyperwalker",
+    "canonical_name": "Hyperwalker",
+    "alias": "Hyperwalker",
+    "entity_type": "method",
+    "family": "Hyperwalker Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2601.13919v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_graph_neural_network",
+    "canonical_name": "Graph Neural Network",
+    "alias": "Graph Neural Network",
+    "entity_type": "method",
+    "family": "Graph Neural Network Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "W7215103602",
+      "W7214968756"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_random_forest",
+    "canonical_name": "Random Forest",
+    "alias": "Random Forest",
+    "entity_type": "method",
+    "family": "Tree & Ensemble Learning",
+    "paradigm": "Classical Predictive ML",
+    "reason": "Exact morphological/abbreviation match",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "W7215104932",
+      "W7214968756"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_xgboost",
+    "canonical_name": "XGBoost",
+    "alias": "XGBoost",
+    "entity_type": "method",
+    "family": "Tree & Ensemble Learning",
+    "paradigm": "Classical Predictive ML",
+    "reason": "Exact algorithmic abbreviation match",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "W7215104932"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_support_vector_machine",
+    "canonical_name": "Support Vector Machine",
+    "alias": "Support Vector Machine",
+    "entity_type": "method",
+    "family": "Kernel Methods",
+    "paradigm": "Classical Predictive ML",
+    "reason": "Exact algorithmic abbreviation match",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "W7215104932"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_medical",
+    "canonical_name": "Medical",
+    "alias": "Medical",
+    "entity_type": "method",
+    "family": "Medical Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2608.21810v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_retrieval_augmented_generation__rag_",
+    "canonical_name": "Retrieval-Augmented Generation (Rag)",
+    "alias": "Retrieval-Augmented Generation (RAG)",
+    "entity_type": "method",
+    "family": "Retrieval-Augmented Generation (Rag) Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2608.21810v1",
+      "arxiv_2606.28692v1",
+      "arxiv_2608.08163v2"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_medreamm",
+    "canonical_name": "Medreamm",
+    "alias": "Medreamm",
+    "entity_type": "method",
+    "family": "Medreamm Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2608.22323v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_xmedfusion",
+    "canonical_name": "Xmedfusion",
+    "alias": "Xmedfusion",
+    "entity_type": "method",
+    "family": "Xmedfusion Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2606.14766v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_athena_r1",
+    "canonical_name": "Athena-R1",
+    "alias": "Athena-R1",
+    "entity_type": "method",
+    "family": "Athena-R1 Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2606.28692v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_diffusion_generative_model",
+    "canonical_name": "Diffusion Generative Model",
+    "alias": "Diffusion Model",
+    "entity_type": "method",
+    "family": "Generative Models",
+    "paradigm": "Generative AI & Synthesis",
+    "reason": "Denoising diffusion architecture",
+    "confidence": 0.98,
+    "supporting_paper_ids": [
+      "W7214467995"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_surgveo",
+    "canonical_name": "Surgveo",
+    "alias": "Surgveo",
+    "entity_type": "method",
+    "family": "Surgveo Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "W7214467995"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_raddiff",
+    "canonical_name": "Raddiff",
+    "alias": "Raddiff",
+    "entity_type": "method",
+    "family": "Raddiff Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2601.03733v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_mmtclinic",
+    "canonical_name": "Mmtclinic",
+    "alias": "Mmtclinic",
+    "entity_type": "method",
+    "family": "Mmtclinic Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2609.04842v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_self_attention",
+    "canonical_name": "Self-Attention",
+    "alias": "Self-Attention",
+    "entity_type": "method",
+    "family": "Self-Attention Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "W7214968756"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_p4_dt",
+    "canonical_name": "P4-Dt",
+    "alias": "P4-Dt",
+    "entity_type": "method",
+    "family": "P4-Dt Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2608.25771v1"
+    ]
+  },
+  {
+    "canonical_id": "canon_method_in_context_learning",
+    "canonical_name": "In-Context Learning",
+    "alias": "In-Context Learning",
+    "entity_type": "method",
+    "family": "In-Context Learning Methods",
+    "paradigm": "Specialized AI Methodologies",
+    "reason": "Direct morphological normalization",
+    "confidence": 0.85,
+    "supporting_paper_ids": [
+      "arxiv_2608.25771v1"
+    ]
+  }
+]

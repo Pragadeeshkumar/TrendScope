@@ -382,13 +382,16 @@ async def get_analysis_data(run_id: str):
             })
 
     # 5. Gaps & Limitation Chains
+    # 5. Gaps & Limitation Chains
     gaps_data = {}
     gaps = []
+    evidence_links = []
     if os.path.exists(gaps_path):
         try:
             with open(gaps_path, "r", encoding="utf-8") as f:
                 gaps_data = json.load(f)
                 gaps = gaps_data.get("themes", []) or gaps_data.get("gaps", [])
+                evidence_links = gaps_data.get("evidence_links", [])
         except Exception:
             pass
 
@@ -402,12 +405,26 @@ async def get_analysis_data(run_id: str):
         if lims:
             for idx, lim_text in enumerate(lims[:5]):
                 gaps.append({
+                    "theme_id": f"fallback_theme_{idx+1}",
+                    "name": f"Empirical Frontier: {lim_text[:50]}...",
                     "title": f"Empirical Frontier: {lim_text[:50]}...",
                     "description": lim_text,
                     "lifecycle_status": "UNADDRESSED",
                     "priority": "HIGH",
-                    "category": "Generalization & Scalability"
+                    "category": "Generalization & Scalability",
+                    "actionable_frontier": "Conduct multi-institutional evaluation and external cohort validation.",
+                    "affected_methods": ["Neural Architecture", "Domain Adaptation"],
+                    "affected_benchmarks": ["Standard Benchmark"],
+                    "key_quotes": [lim_text]
                 })
+
+    evidence_stats = {
+        "total_links": len(evidence_links),
+        "open_gaps_count": gaps_data.get("open_unaddressed_gaps_count", len(gaps)),
+        "resolved_count": gaps_data.get("resolved_or_converged_count", 0),
+        "total_themes": len(gaps),
+        "total_limitations_mined": gaps_data.get("total_limitations_mined", sum(len(p.get("limitations", [])) for p in papers))
+    }
 
     # 6. Markdown Reports
     trend_md = ""
@@ -434,6 +451,8 @@ async def get_analysis_data(run_id: str):
         "top_methods": top_methods,
         "top_benchmarks": top_benchmarks,
         "gaps": gaps,
+        "evidence_links": evidence_links,
+        "evidence_stats": evidence_stats,
         "papers": papers,
         "trendReportMd": trend_md,
         "gapReportMd": gap_md,

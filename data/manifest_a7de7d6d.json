@@ -1,0 +1,1472 @@
+{
+    "retrieval_run_id": "a7de7d6d",
+    "original_query": "Medical AI agents and multimodal clinical reasoning",
+    "normalized_query": "Medical AI agents and multimodal clinical reasoning",
+    "search_strategies": [
+        "Medical AI agents multimodal clinical reasoning",
+        "Medical AI agents",
+        "multimodal clinical reasoning"
+    ],
+    "sources": [
+        "openalex",
+        "semantic_scholar",
+        "arxiv"
+    ],
+    "api_parameters": {
+        "max_strategies": 5,
+        "max_search_rounds": 2,
+        "min_candidate_pool": 60,
+        "target_size": 40,
+        "start_year": 2024,
+        "end_year": 2026
+    },
+    "candidate_count": 272,
+    "deduplicated_count": 251,
+    "selected_count": 40,
+    "valid_pdf_count": 40,
+    "excluded_count": 211,
+    "papers": [
+        {
+            "paper_id": "arxiv_2609.02191v1",
+            "title": "Examining the Vulnerability of Multi-Agent Medical Systems to Human Interventions for Clinical Reasoning",
+            "abstract": "Human interventions at fault points can alter the diagnostic accuracy of multi-agent medical systems. We defined fault points as moments in AI agent conversations, in which an agent's reasoning became most vulnerable to external influence. Using the MedQA dataset, this study analyzed simulated doctor-patient conversations to measure how interventions shifted reasoning and accuracy. Correct intervention methods showed an improvement in baseline diagnostic accuracy of up to 40%, while incorrect or bias-related interventions degraded performance by up to 6% and increased diagnostic drift and uncertainty. Beyond performance changes, our analysis revealed behavioral similarities between cognitive biases in simulated agent environments and real-world clinical practice. Examples included premature closure and susceptibility to misleading cues. Overall, these findings demonstrate that identifying and guiding fault points with human interventions may provide a mechanism for improving diagnostic robustness in multi-agent medical systems.",
+            "authors": [
+                "Benjamin C Liu",
+                "Dillon Mehta",
+                "Rishi Malhotra",
+                "Adam Zobian",
+                "Yong Ying Tan",
+                "Samir Chopra",
+                "Daniella Rand",
+                "Natalie Pang",
+                "Abhiram Gudimella",
+                "Kevin Zhu"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.02191v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7518100738525391,
+            "pdf_path": "data/pdfs\\arxiv_2609.02191v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2608.30938v1",
+            "title": "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral",
+            "abstract": "Medical referral (directing patients to the appropriate hospital department) is a complex decision-making process requiring the synthesis of multimodal data, including patient narratives, laboratory indicators, and radiology imaging. While Large Language Models (LLMs) have advanced medical dialogue systems, they struggle with real-world referral tasks due to two primary limitations: (1) Information Overload, where models fixate on high-frequency disease terms while overlooking subtle but critical urgency indicators; and (2) Unstructured Collaboration, where existing multi-agent frameworks rely on loose dialogue that leads to semantic drift and confirmation bias. To address these challenges, we introduce MASGR (Multi-Agent Structured Graph Reasoning), a framework that treats referral not as a classification task but as a structured graph construction problem. MASGR deploys specialized agents to extract evidence from distinct modalities and coordinates them through a clinical reasoning graph. This graph forces agents to establish explicit logical connections between conflicting evidence. Furthermore, we integrate a knowledge-guided arbitration mechanism that prioritizes patient safety rules over standard diagnostic classification. Extensive experiments on real-world medical records demonstrate that MASGR significantly outperforms state-of-the-art LLMs and existing multi-agent systems, particularly in complex cases requiring the balancing of chronic disease management and emergency intervention. The AI contribution lies in the Multi-Agent Structured Graph Reasoning framework that transforms unstructured multi-agent dialogue into a verifiable logical graph construction. The engineering application is demonstrated through its deployment in a complex healthcare decision-making system to optimize the precision of complex medical referrals.",
+            "authors": [
+                "Qi Peng",
+                "Yi Cai",
+                "Jialin Cui",
+                "Tong Zhu",
+                "Yujuan Ding",
+                "Qingbao Huang",
+                "Tao Wang",
+                "Jiayuan Xie",
+                "Changmeng Zheng",
+                "Qing Li"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2608.30938v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.747776061296463,
+            "pdf_path": "data/pdfs\\arxiv_2608.30938v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2608.28662v1",
+            "title": "FRAC-MAS: A Safe and Explainable Multi-Agent System for Fracture Diagnosis",
+            "abstract": "Fracture detection and its clinical interpretability see notable improvements when deep vision models are integrated with agentic AI architectures. While deep learning models achieve high diagnostic performance, their black-box nature limits clinical adoption. We propose FRAC-MAS, an agentic AI system for automated, explainable, and safe bone fracture detection. The framework combines a stacked ensemble of four vision models with conformal prediction to produce statistically grounded differential diagnoses, while a multi-agent workflow performs independent verification, retrieves clinical guidelines, and generates patient-friendly reports. A pipeline-depth ablation study confirms that our multi-agent critic triages 86.6% of cases into a high-confidence auto-confirmed cohort while escalating uncertain cases, outperforming a single-agent baseline. Patient preference studies against Llama, MedGemma, and Gemini further demonstrate significantly more comprehensible clinical reports. These results suggest that integrating multi-agent critics with conformal guarantees enables safer radiology triage while preserving clinician oversight. More broadly, FRAC-MAS demonstrates how cooperative agentic architectures can serve as auditable, human-in-the-loop decision support systems for safety-critical healthcare. Our code is available at https://github.com/hardik1712/FRAC-MAS, and the website is available at https://frac-mas.vercel.app.",
+            "authors": [
+                "Hardik Iyer",
+                "Tirath Bhathawala",
+                "Mihir Panchal",
+                "Ying-Jung Chen",
+                "Kiran Bhowmick",
+                "Pankaj Sonawane",
+                "Meera Narvekar"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2608.28662v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7022200703620911,
+            "pdf_path": "data/pdfs\\arxiv_2608.28662v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2606.30658v1",
+            "title": "Agentic AI Enhances Physician Trust in Clinical Decision Making",
+            "abstract": "Medical AI has shifted from reasoning to agentic AI, a new paradigm that autonomously invokes external tools during reasoning, rendering intermediate reasoning steps and tool outputs transparent to users. Although proven to outperform previous models, physician trust in agentic AI remains largely unexplored. To address this, three physicians evaluated 315 multimodal clinical cases quantifying both process-oriented cognitive trust and outcome-oriented behavioral reliance. Comparing agentic AI against non-agentic baselines, physicians exhibited significantly higher cognitive and behavioral trust for the agentic model (P < 0.001). Specifically, on treatment planning tasks, physicians trusted the agentic reasoning most, preferring it in 89.57% of cases. Furthermore, process-oriented cognitive trust is significantly associated with outcome-oriented behavioral reliance (P < 0.001). However, measurable over-reliance on incorrect agentic outputs still exists, highlighting the inherent limitations of decision-logic transparency alone and underscoring the continuous need for rigorous clinician oversight.",
+            "authors": [
+                "Zhiling Yan",
+                "Zhe Fang",
+                "David J King",
+                "Ann Pongsakul",
+                "Eashan Adhikarla",
+                "Hui Ren",
+                "Sunyang Fu",
+                "Quanzheng Li",
+                "Lifang He",
+                "Xiang Li",
+                "Hongfang Liu",
+                "Yonghui Wu",
+                "Lichao Sun"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2606.30658v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7400708198547363,
+            "pdf_path": "data/pdfs\\arxiv_2606.30658v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2608.22713v1",
+            "title": "A Source-Grounded Framework for Constructing and Evaluating Progressive Multimodal Diagnostic Dialogues from Clinical Case Reports",
+            "abstract": "Clinical diagnosis requires progressive integration of patient history, physical examination, laboratory findings, medical images, and diagnostic-informative tests. However, most multimodal medical benchmarks evaluate fixed inputs or endpoint answers, while fully interactive diagnostic agents conflate evidence selection with evidence interpretation. We present a source-grounded framework to construct progressive multimodal diagnostic dialogues from case reports and an evaluation strategy for assessing MLLMs on final diagnosis, diagnostic reasoning, and image-finding interpretation. Evaluation on 24 internal medicine case reports showed that our framework can accurately convert case reports into reference dialogues, achieving a diagnosis F1 of 0.99 and a reasoning-quality score of 4.79 out of 5. Evaluation on two frontier MLLMs (o4-mini and Claude Haiku 4.5) achieved reasoning-quality scores of 2.75 and 2.50, respectively, with substantially lower diagnosis, reasoning, and image-finding F1 scores. The results demonstrate that fluent responses do not necessarily reflect evidence-grounded clinical reasoning and highlight the utility of the proposed framework for evaluating multimodal diagnostic reasoning.",
+            "authors": [
+                "Yufan Wang",
+                "Rui Yang",
+                "Yi Liu",
+                "Yi Lin",
+                "Yifan Peng"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2608.22713v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7355535268783568,
+            "pdf_path": "data/pdfs\\arxiv_2608.22713v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2606.13572v2",
+            "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
+            "abstract": "Multimodal Large Language Models (MLLMs) have shown promising reasoning capabilities in general domains, yet their performance remains limited in specialized settings such as healthcare, especially in multilingual and low-resource scenarios. This gap is critical in regions like rural India, where patients often express complex medical queries in native Indic languages and rely on multimodal inputs such as medical images. Existing English-centric MLLMs struggle to support such use cases, limiting equitable access to AI-driven healthcare assistance. To address this challenge, we introduce ArogyaBodha, a large-scale multilingual multimodal medical question-answer dataset constructed from eight heterogeneous sources, covering 31 body systems, six imaging modalities, and 21 clinical domains across English and seven major Indian languages. We further propose ArogyaSutra, an actor-critic-based multi-agent framework that integrates tool grounding with dual-memory mechanisms for step-wise, reasoning-aware decision making, and uses stored actor-critic simulation trajectories for distillation. Experiments show that our dataset and framework improve multilingual medical reasoning accuracy across all Indic languages, with ablations validating the contribution of each component. The source code and dataset are available at: https://iitp-cse.github.io/ArogyaSutra/",
+            "authors": [
+                "Tanmoy Kanti Halder",
+                "Akash Ghosh",
+                "Subhadip Baidya",
+                "Arijit Roy",
+                "Sriparna Saha"
+            ],
+            "publication_year": 2026,
+            "doi": "10.24963/ijcai.2026/799",
+            "arxiv_id": "2606.13572v2",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI-26), pages 7183-7191, 2026",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7723124206066131,
+            "pdf_path": "data/pdfs\\arxiv_2606.13572v2.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.14823v1",
+            "title": "MedTRACE: Tool-Augmented Multimodal Clinical Reasoning Agents for Evidence-Grounded Decision-Making",
+            "abstract": "Multimodal clinical decision-making requires reliable reasoning over heterogeneous evidence from electronic health records, medical images, and physiological signals. Existing models typically map these inputs directly to diagnoses without explicitly assessing evidence sufficiency, tool-use requirements, or diagnostic uncertainty. This paper presents MedTRACE, a tool-augmented multimodal clinical reasoning agent for evidence-grounded decision-making. MedTRACE uses modality-specific encoders to construct a unified patient-state representation and performs an iterative loop of hypothesis formation, toolaware deliberation, and evidence verification. It dynamically invokes visual grounding, evidence retrieval, and structured parsing tools to locate diagnosis-relevant regions, retrieve clinical knowledge and similar cases, and extract structured findings. The acquired evidence enters an evidence memory, where a consistency verifier confirms or revises the current hypothesis. MedTRACE outputs a diagnosis together with supporting evidence, an auditable reasoning trace, and calibrated confidence. Experiments on multiple multimodal clinical diagnosis benchmarks show that MedTRACE improves diagnostic accuracy by 5.4% and AUROC by 4.7 percentage points over the strongest baseline. It also improves evidenceselection F1 by 8.2 percentage points and visual-grounding IoU by 6.5 percentage points, reduces expected calibration error by 31.6%, and decreases unsupported diagnostic errors by 27.8%. These results demonstrate that active evidence acquisition and verification improve the accuracy, interpretability, and reliability of multimodal clinical decisionmaking.",
+            "authors": [
+                "Ji Lu",
+                "Lifei Liu",
+                "Haoran Yu",
+                "Xianglong Wang",
+                "Yiru Fang",
+                "Kuo Yang",
+                "Huiran Duan",
+                "Jianping Gou"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.14823v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7750556826591491,
+            "pdf_path": "data/pdfs\\arxiv_2609.14823v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.15334v1",
+            "title": "Concept-Grounded Reasoning with Prompt-Driven Localization for Interpretable Structured Report Generation",
+            "abstract": "Medical imaging modalities such as ultrasound and X-ray are widely used in clinical practice, where diagnosis follows a structured, evidence-driven workflow aligned with standardized criteria. While multimodal large language models (MLLMs) show promise for automated medical report generation, most existing systems rely on end-to-end multimodal fusion without modeling clinically defined intermediate attributes, leading to limited grounding and interpretability. To address this issue, we propose CORAL (COncept-grounded ReAsoning with Localization), a multimodal framework that integrates spatial grounding and concept-level supervision into a unified reasoning process. CORAL employs a prompt-driven medical segmentation model to localize lesions and predicts multi-class clinical attributes through a Concept Bottleneck module. The resulting textual concept tokens are combined with mask-modulated visual features within an MLLM to enable structured report generation and diagnostic prediction. Experiments on BUS-CoT and IU X-ray datasets demonstrate consistent improvements in diagnostic accuracy, concept consistency, and report quality over strong general-purpose and medical MLLMs, indicating that concept-grounded reasoning better aligns generation with clinical decision processes.",
+            "authors": [
+                "Xinyue Xu",
+                "Hongbin Lin",
+                "Juangui Xu",
+                "Hualiang Wang",
+                "Lehan Wang",
+                "Lijie Hu",
+                "Weiyang Liu",
+                "Adrian Weller",
+                "Xiaomeng Li"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.15334v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7028915226459502,
+            "pdf_path": "data/pdfs\\arxiv_2609.15334v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2604.12144v2",
+            "title": "VERITAS: A Multi-Agent Co-Scientist for Verifiable Image-Derived Hypothesis Testing",
+            "abstract": "Scientific research based on multimodal clinical data (including medical imaging) requires coordinating clinical, radiological, programming, and biostatistical expertise, a fragmented process that bottlenecks discovery. We present VERITAS (Verifiable Epistemic Reasoning for Image-Derived Hypothesis Testing via Agentic Systems), a clinical co-scientist: a multi-agent system that autonomously tests natural-language hypotheses and produces a fully auditable evidence trail, tracing every conclusion through executable outputs from analysis plan to segmentation masks to statistical code to final verdict. Unlike prior AI-scientist systems, which mainly operate on tabular or text data, VERITAS grounds autonomous discovery directly in medical images. It decomposes the workflow into four phases handled by role-specialized agents, and introduces an epistemic evidence label framework that mechanically classifies outcomes as Supported, Refuted, Underpowered, or Invalid by jointly evaluating significance, effect direction, and study power. This distinction is critical in medical imaging, where non-significant results often reflect insufficient sample size rather than absent effects. We construct a tiered benchmark of 64 hypotheses spanning six complexity levels across cardiac and brain glioma MRI datasets. VERITAS reaches 81.4% verdict accuracy with frontier models and 71.2% with locally-hosted open-weight models (8-30B), outperforming all single-model baselines in both classes. It also produces the highest rate of independently verifiable statistical outputs (86.6%), so even its failures remain diagnosable through artifact inspection. Structured multi-agent decomposition thus substitutes for model scale while preserving the verifiability that scientific discovery demands. We release code, hypothesis bank, and evaluation pipeline at https://github.com/LucZot/veritas.",
+            "authors": [
+                "Lucas Stoffl",
+                "Benedikt Wiestler",
+                "Johannes C. Paetzold"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2604.12144v2",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7548814892768859,
+            "pdf_path": "data/pdfs\\arxiv_2604.12144v2.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2608.21864v1",
+            "title": "BioMed-Agent-RL: A Meta Learning, All You Need for Biomedical Applications",
+            "abstract": "The current progress of Clinical Vision Large Language Models (C-VLLMs) has substantially improved digital diagnostics, still these frameworks often endure lesion noises, modality misalignment, hallucination, and missed contextual grounding in complex clinical cases. Moreover, prevailing agent systems usually depend on static and non-adaptable pipelines and lack the versatility necessary for complex medical reasoning. To resolve these difficulties, we present BioMed-Agent-RL, a unified medical agent that incorporates adaptive orchestration, policy, and reward-based reinforcement learning (RL) models for biomedical applications. To ensure reliability, it invokes clinical context-aware preference optimization (CPO), direct preference optimization (DPO), and group relative policy optimization (GRPO) with dynamic entropy regulation. This pipeline utilizes a multimodal meta-learning approach that operates as a field-specific expert and human judgment synthesizer. The agent adaptively utilizes a set of model-level expertise, such as clinical grounding and reasoner, lesion segmenter, and field-specific synthesizer, across various clinical modalities (e.g., X-ray) by utilizing an iterative and adaptive RL approach. The agent learns to seriously synthesize misleading, conflicting vision cues and trust in inherent reasoning, while specialist advice is faulty. An intensive ablation study is conducted across multiple benchmarks, and the agent significantly outperforms existing state of the art models, such as GPT-5, attaining up to ~73% accuracy (gain of ~5%) over contemporary baselines. As a result, the framework suggests a new standard for building factual, reliable, robust, and expert-like intelligent agent systems for independent clinical reasoning.",
+            "authors": [
+                "Md Asaduzzaman Jabin",
+                "Zihao Wu",
+                "Tianming Liu"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2608.21864v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7342792570590972,
+            "pdf_path": "data/pdfs\\arxiv_2608.21864v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2607.15314v2",
+            "title": "Cura 1T: Specialized Model for Agentic Healthcare",
+            "abstract": "Healthcare AI agents handle patient consultation, clinical reasoning over text and images, interactive diagnosis, and electronic health record (EHR) tool use, yet specialized agentic models that cover these use cases together remain limited. These capabilities fail in different ways, and a narrow update for one task can degrade another. We present Cura 1T, a healthcare-specialized LLM built on the open-weight Kimi-K2.6 and trained through a human-gated recursive self-improvement (RSI) loop. Specifically, in each round, the RSI harness plans a target capability, trains the model, evaluates benchmark trajectories, and refines the data mixture from observed failures with targeted synthetic and curated examples rather than a single generic medical-data update. Across the healthcare evaluation suite, Cura 1T ranks at or near the top among frontier baselines while remaining competitive on out-of-domain reasoning and agentic benchmarks.",
+            "authors": [
+                "actAVA AI",
+                ":",
+                "Haolin Chen",
+                "Leon Qi",
+                "Steve Brown",
+                "Deon Metelski",
+                "Tao Xia",
+                "Joonyul Lee",
+                "Qixuan Wang",
+                "Kevin Riley",
+                "Frank Wang",
+                "Weiran Yao"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2607.15314v2",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7060660779476166,
+            "pdf_path": "data/pdfs\\arxiv_2607.15314v2.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2607.27428v1",
+            "title": "Rethinking Artificial Intelligence in Medical Imaging: Assumptions, Reality, and Reframing",
+            "abstract": "Medical imaging has served as primary proving ground for clinical artificial intelligence (AI), yet a decade of intense research has not translated into proportionate bedside impact. We argue that this gap is not primarily a product of insufficient algorithmic performance, inadequate regulation, or limited explainability. Rather, it reflects a structural misalignment, between how AI systems are designed and evaluated, and how clinical decisions are made. This Perspective identifies six interconnected dimensions of this misalignment: the dominance of pixel-only models in a multimodal clinical world; the erosion of physician trust through opaque and inflexible systems; the unfulfilled promise of foundation models in data-sparse medical domains; the persistent bottleneck of non-shareable, under-curated datasets; the gap between validated algorithms and deployable clinical platforms; and the failure of prediction-centric AI to generate actionable clinical guidance. For each dimension, we reframe the problem and propose a path forward, culminating in a vision of agentic, physician-aligned AI that extends, rather than replaces, clinical judgment.",
+            "authors": [
+                "Arman Rahmim",
+                "Nourhan Bayasi",
+                "Xiaoxiao Li",
+                "Babak Saboury",
+                "Fereshteh Yousefirizi"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2607.27428v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7373259305953979,
+            "pdf_path": "data/pdfs\\arxiv_2607.27428v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2604.28011v1",
+            "title": "Echo-α: Large Agentic Multimodal Reasoning Model for Ultrasound Interpretation",
+            "abstract": "Ultrasound interpretation requires both precise lesion localization and holistic clinical reasoning, yet existing methods typically excel at only one of these capabilities: specialized detectors offer strong localization but limited reasoning, whereas multimodal large language models (MLLMs) provide flexible reasoning but weak grounding in specialized medical domains. We present Echo-α, an agentic multimodal reasoning model for ultrasound interpretation that unifies these strengths within an invoke-and-reason framework. Echo-α is trained to coordinate organ-specific detector outputs, integrate them with global visual context, and convert the resulting evidence into grounded diagnostic decisions beyond detector-only inference. This behavior is established through a nine-task supervised curriculum and then refined by sequential reinforcement learning under different reward trade-offs, yielding Echo-α-Grounding for lesion anchoring and Echo-α-Diagnosis for final diagnosis. On multi-center renal and breast ultrasound benchmarks, Echo-α outperforms competitive baselines on both grounding and diagnosis. In particular, on cross-center test sets, Echo-α-Grounding attains 56.73%/43.78% F1@0.5 and Echo- α-Diagnosis reaches 74.90%/49.20% overall accuracy on renal/breast ultrasound. These results suggest that agentic multimodal reasoning can turn specialized detectors into verifiable clinical evidence, offering a practical route toward ultrasound AI systems that are more accurate, interpretable, and transferable. The repository is at https://github.com/MiliLab/Echo-Alpha.",
+            "authors": [
+                "Jing Zhang",
+                "Wentao Jiang",
+                "Tao Huang",
+                "Zhiwei Wang",
+                "Jianxin Liu",
+                "Jian Chen",
+                "Ping Ye",
+                "Gang Wang",
+                "Zengmao Wang",
+                "Bo Du",
+                "Dacheng Tao"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2604.28011v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7538991570472717,
+            "pdf_path": "data/pdfs\\arxiv_2604.28011v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "W7214545571",
+            "title": "Role of Agentic Artificial Intelligence in Anatomical and Clinical Laboratory",
+            "abstract": "Background: Laboratory medicine is transitioning from passive machine learning models and static decision-support algorithms toward agentic artificial intelligence (AI)—systems capable of goal-directed autonomy, environmental perception, multi-step reasoning, dynamic tool utilization, and iterative self-correction. This review synthesizes the operational frameworks and clinical implications of agentic AI across anatomical pathology and clinical laboratories (Biochemistry, hematology, microbiology, and molecular diagnostics). In anatomical pathology, multi-agent frameworks optimize whole-slide imaging workflows through adaptive region-of-interest navigation, autonomous pre-screening, automated biomarker quantification, and integrated multi-modal report generation. In clinical laboratories, agentic architectures streamline pre-analytic specimen quality verification, orchestrate real-time delta-check evaluations, resolve atypical hematologic cell flagging, guide microbiology culture plate selection, and automate complex next-generation sequencing variant curation. By interconnecting Laboratory Information Systems, digital instrumentation, and electronic health records, multi-agent networks bridge data silos to enable cross-disciplinary diagnostic synthesis. Despite substantial gains in diagnostic throughput, turnaround times, and quality assurance, clinical implementation is constrained by computational overhead, potential error propagation in reasoning chains, data privacy, and the risk of automated \"hallucinations\". Addressing these challenges necessitates robust human-in-the-loop oversight, standardized audit trails for decision chains, and evolving regulatory compliance frameworks (FDA, CE-IVDR). Agentic AI represents a paradigm shift from narrow analytical tools to collaborative diagnostic teammates, positioned to elevate precision medicine and operational efficiency while redefining the roles of pathologists and laboratory scientists.",
+            "authors": [
+                "Vibhav Nigam",
+                "Atulya",
+                "Nidhi Mathur",
+                "Dilutpal Sharma"
+            ],
+            "publication_year": 2026,
+            "doi": "10.1922/pjs.16.7s.2026.1168",
+            "arxiv_id": null,
+            "openalex_id": "W7214545571",
+            "semantic_scholar_id": null,
+            "venue": "PAIN JOINTS SPINE",
+            "source": "openalex",
+            "sources": [
+                "openalex"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7370294451713562,
+            "pdf_path": "data/pdfs\\W7214545571.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "openalex_direct"
+        },
+        {
+            "paper_id": "arxiv_2606.20164v1",
+            "title": "MedRLM: Recursive Multimodal Health Intelligence for Long-Context Clinical Reasoning, Sensor-Guided Screening, Evidence-Grounded Decision Support, and Community-to-Tertiary Referral Optimization",
+            "abstract": "Real-world clinical decision support requires reasoning over heterogeneous and longitudinal patient information rather than answering isolated medical questions. However, current medical large language models and retrieval-augmented generation systems often rely on single-step prompting or retrieval, which can be fragile when clinical evidence is distributed across long electronic health records, medical images, sensor streams, guidelines, and referral constraints. This paper proposes MedRLM, a Recursive Multimodal Health Intelligence framework for long-context clinical reasoning, sensor-guided screening, and community-to-tertiary referral support. Instead of compressing all patient information into one prompt, MedRLM treats the patient case as an external clinical environment that can be recursively inspected, decomposed, retrieved, verified, and synthesized. The framework coordinates specialized agents for clinical text, longitudinal EHR, medical imaging, physiological sensor signals, guideline retrieval, uncertainty auditing, and referral planning. It further introduces a Clinical Evidence Graph Memory to connect patient-specific observations with retrieved evidence, standardized definitions, sensor-derived biomarkers, and referral criteria. A sensor-guided recursive triggering mechanism activates deeper reasoning when abnormal physiological or behavioral patterns are detected, while uncertainty-gated refinement supports clinician review for high-risk or low-confidence cases. We also outline a real-data evaluation design using public and credentialed clinical datasets spanning EHR, radiology, ECG, ICU time series, and referral-proxy outcomes. MedRLM aims to move medical AI from static question answering toward auditable, multimodal, and workflow-aware clinical decision support.",
+            "authors": [
+                "Aueaphum Aueawatthanaphisut"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2606.20164v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.732561469078064,
+            "pdf_path": "data/pdfs\\arxiv_2606.20164v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.33685v1",
+            "title": "T-MoXAI: A Hierarchical Explainability Framework for Temporal Multimodal Data",
+            "abstract": "Artificial Intelligence (AI) models for temporal multimodal data have potential in healthcare and agriculture, but their opacity can limit trust and adoption. We introduce T-MoXAI (Temporal Multimodal eXplainable AI), a hierarchical framework explaining (1) when timepoints influence predictions, using temporal Shapley values; (2) which modalities contribute at those moments, using attention analysis; and (3) what features or image regions drive decisions, using gradient based attribution. A transformer based architecture handles irregular temporal sequences and heterogeneous data, generating all three explanation levels in under one second for interactive decision support. We evaluate the framework on two real world tasks: predicting IVF treatment outcomes from ultrasound sequences and clinical measurements (AUC 0.660 despite significant class imbalance), and forecasting wheat yield from temporal RGB imagery and phenotypic traits ($R^2$ 0.265 amid substantial environmental variability). Ablation studies indicate that temporal modelling is critical in both domains: removing it reduces performance to the equivalent of random guessing. Temporal ROAR experiments provide evidence that the explanations reflect the model's reasoning process. With a unified, domain agnostic architecture and open source implementation, T-MoXAI provides a baseline for temporal multimodal XAI, addressing fragmentation in the field and supporting applications where understanding decisions is as important as predictive accuracy.",
+            "authors": [
+                "Ali Inha",
+                "Mo Vali",
+                "Saaliha Vali",
+                "Pietro Liò",
+                "Meen-Yau Thum"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.33685v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.6573405385017395,
+            "pdf_path": "data/pdfs\\arxiv_2609.33685v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2602.12705v4",
+            "title": "MedXIAOHE: A Comprehensive Recipe for Building Medical MLLMs",
+            "abstract": "We present MedXIAOHE, a medical vision-language foundation model designed to advance general-purpose medical understanding and reasoning in real-world clinical applications. MedXIAOHE achieves state-of-the-art performance across diverse medical benchmarks and surpasses leading closed-source multimodal systems on multiple capabilities. To achieve this, we propose an entity-aware continual pretraining framework that organizes heterogeneous medical corpora to broaden knowledge coverage and reduce long-tail gaps (e.g., rare diseases). For medical expert-level reasoning and interaction, MedXIAOHE incorporates diverse medical reasoning patterns via reinforcement learning and tool-augmented agentic training, enabling multi-step diagnostic reasoning with verifiable decision traces. To improve reliability in real-world use, MedXIAOHE integrates user-preference rubrics, evidence-grounded reasoning, and low-hallucination long-form report generation, with improved adherence to medical instructions. We release this report to document our practical design choices, scaling insights, and evaluation framework, hoping to inspire further research.",
+            "authors": [
+                "Baorong Shi",
+                "Bo Cui",
+                "Boyuan Jiang",
+                "Deli Yu",
+                "Fang Qian",
+                "Haihua Yang",
+                "Huichao Wang",
+                "Jiale Chen",
+                "Jianfei Pan",
+                "Jieqiong Cao",
+                "Jinghao Lin",
+                "Kai Wu",
+                "Lin Yang",
+                "Shengsheng Yao",
+                "Tao Chen",
+                "Xiaojun Xiao",
+                "Xiaozhong Ji",
+                "Xu Wang",
+                "Yijun He",
+                "Zhixiong Yang"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2602.12705v4",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7357979834079742,
+            "pdf_path": "data/pdfs\\arxiv_2602.12705v4.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2601.13919v1",
+            "title": "HyperWalker: Dynamic Hypergraph-Based Deep Diagnosis for Multi-Hop Clinical Modeling across EHR and X-Ray in Medical VLMs",
+            "abstract": "Automated clinical diagnosis remains a core challenge in medical AI, which usually requires models to integrate multi-modal data and reason across complex, case-specific contexts. Although recent methods have advanced medical report generation (MRG) and visual question answering (VQA) with medical vision-language models (VLMs), these methods, however, predominantly operate under a sample-isolated inference paradigm, as such processing cases independently without access to longitudinal electronic health records (EHRs) or structurally related patient examples. This paradigm limits reasoning to image-derived information alone, which ignores external complementary medical evidence for potentially more accurate diagnosis. To overcome this limitation, we propose \\textbf{HyperWalker}, a \\textit{Deep Diagnosis} framework that reformulates clinical reasoning via dynamic hypergraphs and test-time training. First, we construct a dynamic hypergraph, termed \\textbf{iBrochure}, to model the structural heterogeneity of EHR data and implicit high-order associations among multimodal clinical information. Within this hypergraph, a reinforcement learning agent, \\textbf{Walker}, navigates to and identifies optimal diagnostic paths. To ensure comprehensive coverage of diverse clinical characteristics in test samples, we incorporate a \\textit{linger mechanism}, a multi-hop orthogonal retrieval strategy that iteratively selects clinically complementary neighborhood cases reflecting distinct clinical attributes. Experiments on MRG with MIMIC and medical VQA on EHRXQA demonstrate that HyperWalker achieves state-of-the-art performance. Code is available at: https://github.com/Bean-Young/HyperWalker",
+            "authors": [
+                "Yuezhe Yang",
+                "Hao Wang",
+                "Yige Peng",
+                "Jinman Kim",
+                "Lei Bi"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2601.13919v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7332040905952453,
+            "pdf_path": "data/pdfs\\arxiv_2601.13919v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2608.09861v1",
+            "title": "Towards Expert-level Medical AI for Real-time Video Consultations",
+            "abstract": "Audio-visual interaction is the standard for patient-physician consultations, enabling natural communication and effective assessment of illness through non-verbal cues. While text-based AI has shown promise, it discards essential perceptual dimensions and limits patients who cannot articulate symptoms in writing. Early efforts to extend medical AI to audio-visual interaction have demonstrated feasibility but not reached clinician-level performance. Here, we provide the first demonstration of expert-level AI in real-time clinical video consultations using AMIE (Articulate Medical Intelligence Explorer) in a video configuration. AMIE (Video) is a Gemini-based multi-agent system integrating low-latency dialogue, clinical reasoning, and real-time audio-visual perception. To guide development, we established a taxonomy and automated evaluations for clinical audio-visual cues in telehealth settings. In a randomized Objective Structured Clinical Examination (OSCE) study with 30 primary care physicians (PCPs), 15 patient actors and 100 clinical scenarios, we compared AMIE (Video), its text-only counterpart AMIE (Text), and PCPs consulting via video. Clinical evaluators rated AMIE (Video) on par or better than PCPs in history-taking, diagnosis, management, and physical observation and examination. Patient actors preferred AMIE's approach to assessing and explaining conditions, while PCPs were preferred for rapport and partnership building. In modality ablation, patient actors preferred AMIE (Video)'s interface over text chat for communicative effectiveness, convenience, and feeling understood. Limitations remain in fine anatomical precision, subtle affective nuances, and high-frequency movements. While further research is needed before real-world translation, these results mark an important milestone toward AI systems capable of augmenting care across the sensory complexity of clinical practice.",
+            "authors": [
+                "Mahvish Nagda",
+                "Jihyeon Lee",
+                "Matthew Thompson",
+                "Chunjong Park",
+                "Tim Strother",
+                "Valentin Liévin",
+                "Roma Ruparel",
+                "Akshay Goel",
+                "Teya Bergamaschi",
+                "Suhana Bedi",
+                "Meet Shah",
+                "Pavel Dubov",
+                "Liviu Panait",
+                "Toshiyuki Fukuzawa",
+                "Sam Schmidgall",
+                "Craig Schiff",
+                "Joseph Xu",
+                "Aliya Rysbek",
+                "Yana Lunts",
+                "Jan Freyberg",
+                "Rebecca Hemengway",
+                "Sunny Virmani",
+                "David Racz",
+                "Carey Radebaugh",
+                "Joëlle Barral",
+                "Kavi Goel",
+                "Dale R. Webster",
+                "Katherine Chou",
+                "Avinatan Hassidim",
+                "Yossi Matias",
+                "James Manyika",
+                "Gregory Wayne",
+                "Tao Tu",
+                "Yun Liu",
+                "Ethan Goh",
+                "Christina Chen",
+                "Ryutaro Tanno",
+                "Po-Hsuan Cameron Chen",
+                "Mike Schaekermann",
+                "Anil Palepu"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2608.09861v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7164832055568695,
+            "pdf_path": "data/pdfs\\arxiv_2608.09861v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.38924v1",
+            "title": "From Image Interpretation to Clinical Reasoning: Upstream Physician-Context-Aware Multimodal Learning with Causal Reinforcement Learning",
+            "abstract": "Major adverse cardiovascular events (MACE) remain the leading cause of mortality worldwide. Opportunistic screening using routinely acquired clinical data offers a scalable approach for identifying high-risk individuals before acute events occur. Although chest X-rays (CXRs) capture latent cardiovascular biomarkers and clinical histories provide complementary patient context, existing medical vision-language models are primarily optimized for radiology interpretation rather than prognostic reasoning. We propose a causal reinforcement learning framework for multimodal clinical reasoning that integrates CXRs and physician-authored clinical histories for opportunistic MACE prediction. The framework introduces (1) a role-decoupled dual-LLM architecture that separates reasoning from risk prediction, (2) a dual-action causal reinforcement learning policy for evidence selection and reasoning optimization, and (3) causal token pruning to learn compact multimodal representations. Evaluated on an internal cohort, an emergency department cohort, and the external MIMIC dataset, the proposed framework consistently outperformed unimodal baselines and state-of-the-art medical vision-language models, achieving AUROCs of 0.720, 0.760, and 0.845, respectively. It also substantially improved reasoning quality, achieving higher GREEN scores and higher expert preference while maintaining robust predictive performance across diverse patient populations.",
+            "authors": [
+                "Jialu Pi",
+                "Yanan Ma",
+                "Weijie Chen",
+                "Owen Crystal",
+                "Shubham Trivedi",
+                "Stephen Xie",
+                "Anna Silverman",
+                "Matthew Stib",
+                "Chadi Ayoub",
+                "Reza Arsanjani",
+                "Imon Banerjee"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.38924v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7046070992946625,
+            "pdf_path": "data/pdfs\\arxiv_2609.38924v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "W7215103602",
+            "title": "Harmonizing Vietnamese traditional and western medicine: a digital health blueprint and the IMKE architectural framework",
+            "abstract": "The concurrent use of traditional and Western medicine is a global healthcare reality. In countries like Vietnam, dual-paradigm clinical guidelines actively mandate integrated treatments for high-prevalence chronic diseases. However, safe integration at the point of care is severely hindered by data fragmentation, profound epistemological differences, and a critical “shadow pharmacovigilance” crisis regarding underreported herb-drug interactions (HDIs). This paper analyzes the state-of-the-art of Artificial Intelligence (AI) in integrative healthcare and proposes the Integrative Medicine Knowledge Engine (IMKE), a novel architectural blueprint designed to safely bridge Vietnamese traditional medicine (VTM) and Western biomedicine. Shifting from siloed technical models to a clinical-first perspective, the IMKE conceptualizes a three-stage digital health pipeline: (1) advanced medical text mining to digitize unstructured traditional practitioner notes; (2) an Integrative Knowledge Graph (IKG) that maps holistic VTM diagnostic patterns to Western pharmacological databases and ICD-10 standards; and (3) an AI-driven Clinical Decision Support System (CDSS) for proactive HDI safety monitoring. We illustrate this architectural data flow through three clinical scenarios—Essential Hypertension, Type 2 Diabetes, and Rheumatoid Arthritis. These scenarios demonstrate the system’s theoretical capacity to retrieve culturally appropriate treatments, identify cross-paradigm therapeutic synergies, and generate explainable, mechanistic safety alerts that augment physician judgment while mitigating clinical alert fatigue. Ultimately, the IMKE framework provides a scalable, culturally inclusive roadmap for digital health. By translating centuries of experiential medical wisdom into an interoperable, computationally safeguarded infrastructure, this blueprint sets the foundation for evidence-based integrative care, future retrospective clinical validation, and enhanced patient safety.",
+            "authors": [
+                "Anh Nguyen Thi Dieu",
+                "Hieu Le Ngoc"
+            ],
+            "publication_year": 2026,
+            "doi": "10.3389/fdgth.2026.1928965",
+            "arxiv_id": null,
+            "openalex_id": "W7215103602",
+            "semantic_scholar_id": null,
+            "venue": "Frontiers in Digital Health",
+            "source": "openalex",
+            "sources": [
+                "openalex"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.6780589282512665,
+            "pdf_path": "data/pdfs\\W7215103602.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "openalex_direct"
+        },
+        {
+            "paper_id": "W7215104932",
+            "title": "Artificial intelligence in perioperative pressure injury management: a scoping review of evidence, gaps, and implications for population health and digital public health policy",
+            "abstract": "Background Perioperative pressure injury (POPI) is a significant global public health challenge, contributing to substantial iatrogenic morbidity and heavy economic burden worldwide. Traditional prevention is limited by insufficient assessment tools, the “black box” nature of intraoperative monitoring, and delayed intervention. Artificial intelligence (AI) offers a novel approach by integrating multidimensional data for real-time risk prediction; however, no scoping review has systematically mapped AI applications across the full perioperative continuum from a population health perspective. Methods Systematic searches were conducted in PubMed, Embase, CINAHL, Cochrane Library, IEEE Xplore, ACM Digital Library, Web of Science, and Scopus from inception to December 11, 2025. Studies applying machine learning, conventional regression-based benchmarking tools, or intelligent sensor-based monitoring for POPI prediction, monitoring, or prevention during the perioperative period were included. Two reviewers independently performed screening and data extraction, followed by descriptive synthesis and evidence mapping. Results Six studies (2018–2025), all from East Asia, were included. This geographic concentration highlights an unassessed generalizability and algorithmic fairness risk, rather than an established inequity finding. Evidence concentrated on post-hoc risk stratification (five prediction studies), predominantly using machine learning models (e.g., Random Forest, XGBoost) with AUCs of the best-performing models ranging from 0.806 to 0.836; one study reported a prediction accuracy of 0.9733, which is not directly comparable to AUC. Models identified specialty-specific risk factors (e.g., cardiopulmonary bypass time, forced positioning). Only one proof-of-concept study addressed intraoperative real-time monitoring, visualizing pressure increases after 2 hours of surgery. Evidence for postoperative early warning systems is absent. Conclusion Current studies demonstrate the feasibility of specialty-specific post-hoc risk stratification using intraoperative covariates, though truly preoperative models remain absent. Intraoperative monitoring shows early promise, but postoperative early warning is a critical gap, and evidence lacks global diversity. Future research should develop closed-loop intelligent systems integrating preoperative prediction, intraoperative multimodal monitoring, and postoperative warning. Nursing protocols should consider incorporating AI-identified risk factors as hypothesis-generating inputs pending prospective validation, while policymakers should establish frameworks for continuous validation and cross-population calibration to ensure equitable impact.",
+            "authors": [
+                "Qin Zeng",
+                "Jiawei Li",
+                "Jiacheng Hu",
+                "Cheng Yang"
+            ],
+            "publication_year": 2026,
+            "doi": "10.3389/fpubh.2026.1952864",
+            "arxiv_id": null,
+            "openalex_id": "W7215104932",
+            "semantic_scholar_id": null,
+            "venue": "Frontiers in Public Health",
+            "source": "openalex",
+            "sources": [
+                "openalex"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.6399266928434372,
+            "pdf_path": "data/pdfs\\W7215104932.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "openalex_direct"
+        },
+        {
+            "paper_id": "W7215074904",
+            "title": "ARTIFICIAL INTELLIGENCE AUTHORITY AND HUMAN DECISION-MAKING: AN ANALYSIS OF THE FILM “MERCY” (2026) FROM A COMMUNICATION PERSPECTIVE",
+            "abstract": "This study aims to examine the representations of artificial intelligence systems in the film *Mercy* (2026) regarding human decision-making, human-machine interaction, and communication processes. The increasing prevalence of AI-supported decision-making systems across various social domains makes it crucial to understand how these systems establish authority within decision-making processes. The film’s textual content was used as the data source in the research; the document analysis technique was employed during the data collection process, and the data were analyzed using qualitative content analysis. The analysis revealed five themes: the construction of AI authority, a data-driven reality framework, the ethical, emotional, and intuitive dimensions of human decision-making, a human-machine interaction model, and the fragility of AI authority. The findings indicate that although artificial intelligence is portrayed as a powerful decision-making authority in the film, it is positioned in interaction with human reasoning, and decision-making processes are not reduced solely to algorithmic calculations. Consequently, the study demonstrates that AI-supported decision-making systems must be evaluated not only for their technical aspects but also for their communicative and ethical dimensions.",
+            "authors": [
+                "Fatih Aksoy"
+            ],
+            "publication_year": 2026,
+            "doi": "10.19145/e-gifder.1930270",
+            "arxiv_id": null,
+            "openalex_id": "W7215074904",
+            "semantic_scholar_id": null,
+            "venue": "Gümüşhane Üniversitesi İletişim Fakültesi Elektronik Dergisi",
+            "source": "openalex",
+            "sources": [
+                "openalex"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.6057061374187469,
+            "pdf_path": "data/pdfs\\W7215074904.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "openalex_direct"
+        },
+        {
+            "paper_id": "arxiv_2606.08982v2",
+            "title": "Baichuan-M4: A Clinical-Grade Medical Agent System for Continuous Care",
+            "abstract": "Baichuan-M4 is Baichuan Intelligence's clinical-grade medical large model, designed for continuous care rather than single-turn medical question answering. It is built as a coordinated medical agent system around three pillars: Baichuan-Harness, a unified runtime that keeps reinforcement-learning training and real-world deployment consistent while enforcing action constraints, tool use, long-term patient memory, and multi-agent coordination; a core reasoning model trained with a continuous-care reinforcement-learning framework that integrates span-level reward modeling (SPAR++), reasoning-path compression, curriculum learning, and stabilized policy optimization; and a clinical tool layer for patient-memory management, authoritative evidence-based retrieval, and multimodal medical perception across documents, X-rays, and dermatology. On a cross-dimensional medical evaluation suite, Baichuan-M4 attains leading results in static medical knowledge and safety, dynamic OSCE-style consultation, long-context clinical memory, evidence-based retrieval, medical document OCR, and multimodal image understanding, while lowering the hallucination rate to 3.3%.",
+            "authors": [
+                "Aiyuan Yang",
+                "Canbin Piao",
+                "Chengfeng Dou",
+                "Da Pan",
+                "Dian Wang",
+                "Fan Yang",
+                "Fei Deng",
+                "Fei Li",
+                "Guangwei Ai",
+                "Hui Liu",
+                "Hongda Zhang",
+                "Jinyang Tai",
+                "Kai Lu",
+                "Lijun Liu",
+                "Linwei Chen",
+                "Linyu Li",
+                "Meiqing Guo",
+                "Peidong Guo",
+                "Qiang Ju",
+                "Rihui Xin",
+                "Shuai Wang",
+                "XinKai Ma",
+                "Xudong Chen",
+                "Yichuan Mo",
+                "Yijie Zhou",
+                "Leyi Pan",
+                "Yihe Luo",
+                "Zian Wang"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2606.08982v2",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.6783773183822632,
+            "pdf_path": "data/pdfs\\arxiv_2606.08982v2.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2607.25485v1",
+            "title": "PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents",
+            "abstract": "Health AI is evolving from answering questions to agentic systems that converse with patients, reason about health records, and act on their behalf. Primary care guards against diagnostic errors and unsafe care; agents assisting in this domain warrant evaluation against the same risks. Current benchmarks focus on medical knowledge, assessed through isolated question-answering or clinician-facing tasks. PatientAgentBench benchmarks patient-facing agentic healthcare; it evaluates a foundation model, wrapped in an agent with a sandbox of healthcare tools, conversing with a simulated patient. Each conversation is scored by an LLM-as-a-Jury across six dimensions via over a hundred conversation-agnostic, clinician-grounded criteria. To validate alignment, licensed clinicians annotated shared conversations, yielding 79-93% adjacent agreement between jury and expert raters, on par with or exceeding clinician inter-rater agreement. We benchmarked 10 models across four families on the same 1,200 scenarios and found clinical gaps. Triage quality is the most discriminating dimension: pass rates rise from 32% for the weakest models to 88% for the strongest, with agents often acting on administrative requests without clinical screening. Clinical safety and workflow accuracy follow the same pattern: the weakest models fail often, fabricating unexecuted actions, while frontier models fail on only 1-3% of cases, from unverified tool outputs and omitted crisis resources in an emergency. More capable models narrow these gaps but do not close them; the strongest scores only 4.25 of 5 overall. These failures surface only in sustained, tool-using conversations against realistic patient records, confirming that static benchmarks are insufficient as healthcare agentic systems gain autonomy. We release the framework as a reproducible, clinician-validated evaluation standard to help the field close this gap.",
+            "authors": [
+                "Korosh Vatanparvar",
+                "Ashutosh Joshi",
+                "Maria Xenochristou",
+                "Mohammad Abuzar Hashemi",
+                "Prasad Kasu",
+                "Deepak Bansal",
+                "Daniel Lopez-Martinez",
+                "Anchal Nema",
+                "Ramya Ganesan",
+                "Will Kimbrough",
+                "Alex Woody",
+                "Yadunandana Rao",
+                "Dilek Hakkani-Tur",
+                "Wilko Schulz-Mahlendorf"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2607.25485v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7070541262626648,
+            "pdf_path": "data/pdfs\\arxiv_2607.25485v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2608.21810v1",
+            "title": "MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents",
+            "abstract": "Clinical decision-making is inherently experience-driven: physicians progressively refine their reasoning by synthesizing patient history, multimodal observations, and prior diagnostic experiences across interactions. In contrast, current multimodal large language model (MLLM)-based medical AI agents largely operate as stateless inference systems, generating decisions independently for each interaction without retaining or internalizing experiential knowledge. This discrepancy limits their ability to progressively improve reasoning reliability through usage and adapt to longitudinal patient contexts in real-world clinical workflows. In this study, we propose Medical Structured Multimodal Memory (MSM-Mem), an agentic memory framework that enables medical AI agents to evolve through accumulated clinical experiences. MSM-Mem organizes heterogeneous clinical experiences into semantic, episodic, and visual memory and incrementally updates them during inference, allowing the agent to retrieve prior experiences to inform current reasoning and progressively refine decision-making over time. Evaluations on MoE-LLaVA backbones demonstrate consistent performance improve- ments with further gains observed through continued usage. In general, MSM-Mem offers a viable pathway toward medical AI agents capable of evolving their reasoning competence in a manner analogous to the way clinicians learn from practice over time.",
+            "authors": [
+                "Md Asaduzzaman Jabin",
+                "Khoa Le",
+                "Lin Zhao",
+                "Tianming Liu"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2608.21810v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7699964463710784,
+            "pdf_path": "data/pdfs\\arxiv_2608.21810v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2608.20549v1",
+            "title": "Volumetric Radiology AI in the Era of Multimodal Large Language Models",
+            "abstract": "Advances in multimodal large language models (MLLMs) are extending radiological artificial intelligence (AI) beyond task-specific image analysis toward multimodal understanding and reasoning. Volumetric radiology, however, presents a fundamental representational mismatch: clinical interpretation often requires full-volume spatial context and acquisition-dependent quantitative information, whereas current MLLMs are commonly conditioned on selected two-dimensional (2D) images, compressed visual representations, or report-derived text. Reliable volumetric radiology AI therefore requires representations that preserve task-relevant three-dimensional (3D) information and systems that can access, verify, and integrate this information across clinical workflows. In this Review, we examine more than 200 publications through July 2026. We organize the literature around volumetric representation and multimodal understanding at the model level, agentic orchestration at the system level, and their links to clinical applications and evaluation. We review volumetric foundation models, language alignment and compression strategies, and agentic systems that extend MLLMs through planning, tools, memory, and workflow interaction. We distinguish settings in which selected 2D views or report-mediated reasoning may suffice from those that warrant native volumetric modeling. We also introduce a Claim-Design-Validation framework to assess whether technical, workflow, and clinical claims are matched by appropriate design and validation. Across the literature, native volumetric modeling and agentic capabilities depend on the spatial, quantitative, contextual, and workflow requirements of the intended task. Clinical credibility requires faithful volumetric representation, traceable system behavior, claim-aligned validation, and clearly defined human oversight in realistic workflows.",
+            "authors": [
+                "Zanting Ye",
+                "Shengyuan Liu",
+                "Xin Liu",
+                "Chenhui Wang",
+                "Zhisong Wang",
+                "Jiashuai Liu",
+                "Zipei Wang",
+                "Cheng Wang",
+                "Wentao Pan",
+                "Mengjie Fang",
+                "Di Dong",
+                "Mohammad Salmanpour",
+                "Arman Rahmim",
+                "Yu Gu",
+                "Yong Xia",
+                "Hongming Shan",
+                "Yixuan Yuan",
+                "Yefeng Zheng",
+                "Lijun Lu"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2608.20549v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7063488781452179,
+            "pdf_path": "data/pdfs\\arxiv_2608.20549v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.39566v1",
+            "title": "From Given to Gathered Evidence: Agentic Learning for Longitudinal Medical Reasoning",
+            "abstract": "Foundation models can serve as clinical agents through tool-use harnesses. However, conventional medical benchmarks assess reasoning over preselected evidence rather than the ability to seek it across clinical records and longitudinal imaging. We propose CASE: a series of role-specific Clinical Agents for Seeking Evidence, together with a tool-use harness and an agentic post-training framework for compact vision-language policy models. We further introduce a longitudinal multimodal benchmark built on UK Biobank, comprising 50,401 clinical questions derived from real-world ICD-10-coded diagnoses of 4,739 participants. Each question links to a patient-specific environment containing clinical context and multi-sequence MRI from baseline and follow-up visits, where agents autonomously select which visits, organs, modalities, slices, and specialist tools to inspect and compare. Supervised fine-tuning transfers evidence-seeking workflows from 14,734 frontier-model interaction trajectories, followed by agentic reinforcement learning on the learner's own environment interactions. Privileged on-policy self-distillation and rubric-based LLM feedback refine evidence-to-conclusion reasoning without prescribing tool sequences. Experiments show that CASE moves beyond question-answer imitation toward transferable investigation policies, strengthening evidence-grounded longitudinal reasoning. Under matched evaluation conditions, our Qwen3-VL-8B based agent achieves over 16% and 10% relative improvements in answer accuracy over GPT-5.4 and Claude Opus 4.8. Code will be available at https://github.com/VinyehShaw/CASE.",
+            "authors": [
+                "Minye Shao",
+                "Chaohui Yu",
+                "Yixuan Wu",
+                "Fan Wang",
+                "Ling Shao",
+                "Yang Long"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.39566v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7266714394092559,
+            "pdf_path": "data/pdfs\\arxiv_2609.39566v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.03261v2",
+            "title": "MedQA-MM: Shortcuts Behind Medical Visual Reasoning",
+            "abstract": "A benchmark score credits final answers, but not the route by which an item can be answered. In medical multimodal multiple-choice questions (MCQs), this distinction matters because a correct answer can be supported by the intended image finding or by benchmark-preserved cues in the wording of answers, non-visual clinical text, visible image text, artificial annotations, or device/context artifacts. We call the resulting score-level overinterpretation reasoning inflation. Here, a route is an observable input path that can support answer selection, not a claim about the model's hidden cognition. Across six medical multimodal MCQ datasets, we separate candidate cues from behavioral evidence through prompt- and image-side audits, modality ablations, and matched repairs that preserve the medical target and answer key. In a 13-configuration open-model panel, full-input accuracy is 62.63%, while text-only and options-only settings achieve 53.96% and 29.71%, respectively. Removing length-gap, absolute/conspicuous, and spatial/prepositional cues lowers accuracy by 6.58, 3.50, and 4.77 percentage points. We also construct MedQA-MM, a 1,000-item shortcut-mitigated subset, where text-only and options-only accuracy fall to 5.21% and 12.33%. This does not imply that models never use images; it shows that medical image-reasoning claims require route-level evidence.",
+            "authors": [
+                "Benlu Wang",
+                "Yifan Zhang",
+                "Jiaqing Yu",
+                "Chin Siang Ong",
+                "Juncheng Huang",
+                "Zhuohao Li",
+                "Zhenyu Zhang",
+                "Arman Cohan",
+                "Hong Yu",
+                "Zonghai Yao"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.03261v2",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7281459391117096,
+            "pdf_path": "data/pdfs\\arxiv_2609.03261v2.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2607.25489v1",
+            "title": "Agentic AI in medicine: architectures, applications, evaluation, and challenges for clinical translation",
+            "abstract": "Large language models and multimodal foundation models are enabling medical artificial intelligence (AI) systems to move beyond isolated prediction and undertake multistep clinical tasks that require planning, tool use, memory, iterative correction, and coordination among specialized agents. However, the scope of agentic AI in medicine remains unsettled, and current evaluation practices are not yet aligned with the requirements of clinical use. We conducted a scoping review with systematic evidence mapping across five electronic sources, screened 1,649 exportable records, and provisionally included 557 unique studies that met predefined criteria for goal-directed task execution, tool use, interaction with external resources, feedback-based refinement, or multi-agent collaboration. The included studies describe single agents that use external tools, workflows supported by retrieval and external knowledge, multimodal agents, and multi-agent systems applied to medical question answering, image interpretation, electronic health record analysis, drug safety, and clinical trial prediction. The evidence base remains dominated by public benchmarks, simulated settings, retrospective datasets, and small-scale expert evaluation. Process reliability, evidence traceability, uncertainty, safety, workflow impact, and external validity are evaluated less consistently. Clinical translation will depend on clearer definitions, reproducible evaluation, auditable oversight, interoperable system design, and prospective validation in real-world clinical workflows.",
+            "authors": [
+                "Zheng Tong",
+                "Yang Liu",
+                "Wanshu Fan",
+                "Jing Qin",
+                "Zhongbin Han",
+                "Haifan Gong",
+                "Congyu Liao",
+                "Xiaofeng Liu",
+                "Cong Wang"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2607.25489v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7827286720275879,
+            "pdf_path": "data/pdfs\\arxiv_2607.25489v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2608.22323v1",
+            "title": "MedReaMM: Evaluating Large Multimodal Models on Expert-Level Clinical Diagnostic Synthesis",
+            "abstract": "The application of Large Language Models (LLMs) to diagnostic decision-making has garnered growing interest. However, existing benchmarks largely focus on textual reasoning or isolated visual question-answering (VQA) tasks, lacking holistic integration of clinical narratives and medical imaging, and thus failing to assess the multimodal diagnostic synthesis capability central to expert clinical judgment. To bridge this gap, we introduce MedReaMM, a benchmark specifically designed to evaluate models' ability to synthesize heterogeneous clinical evidence consisting of detailed patient histories alongside multiple medical images into accurate differential diagnoses under a complete-information paradigm. Constructed from case reports sourced from top-tier medical journals and curated clinical case databases, MedReaMM comprises 625 expert-validated cases with an average of 2.79 medical images per case and a total of 1,042 standardized diagnoses annotated with ICD-11 codes. These cases predominantly represent rare, atypical, or multi-system presentations that demand expert-level evidence integration beyond routine pattern recognition. We evaluate 23 Large Multimodal Models (LMMs) and find that most achieve diagnostic accuracy scores below 50%, underscoring a substantial gap in multimodal diagnostic synthesis capability. Further analysis reveals that medical knowledge proficiency, medical image understanding, and evidence integration are all highly correlated with diagnostic performance.",
+            "authors": [
+                "Lai Wei",
+                "Yuchao Chen",
+                "Zhenbiao Cao",
+                "Xiaojin Zhang",
+                "Zhongyu Wei",
+                "Bangting Wang",
+                "Wei Chen",
+                "Xiang Bai"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2608.22323v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7323264837265014,
+            "pdf_path": "data/pdfs\\arxiv_2608.22323v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2607.11175v2",
+            "title": "The Path to Self-Evolving Clinical Systems: Scaling Medical Agents from Assistance to Autonomy",
+            "abstract": "The growing ability of large language models and vision-language models to jointly interpret and reason over images and text is reshaping medical imaging AI, moving it from task-specific predictors toward autonomous agents that perceive, reason, plan, remember, and act in clinical environments. This survey departs from the capability-first perspective of existing literature and instead begins from clinical deployment, asking what tasks, contamination-resistant benchmarks, and interactive training environments are required before medical agents can be trusted in practice. Medical agents are formalized as sequential decision-making systems under partial observability, together with a three-level autonomy taxonomy spanning assisted, cooperative, and fully autonomous operation. The field is organized along a unified scaling spine consisting of framework scaling, capability scaling, and environment scaling. Within this framework, clinical environment scaling, the integration of tools, data, and clinical gyms, is identified as the most actionable yet underexplored direction for agents operating in PACS, EHR, and FHIR ecosystems. Clinical self-evolution, where agents improve through interaction with their environments rather than parameter scaling alone, is further positioned as a key research frontier, drawing insights from self-improving agents, agent gyms, and test-time compute scaling. Applications across radiology, pathology, ophthalmology, and hospital workflows are examined together with deployment challenges including hallucination, cascading failures, and fairness. By consolidating more than 300 references, with particular emphasis on advances from 2025 to 2026, this survey provides a roadmap toward trustworthy, self-improving medical imaging systems for real clinical practice.",
+            "authors": [
+                "Chunzheng Zhu",
+                "Lei Tian",
+                "Bohan Tan",
+                "Ziqi Zhou",
+                "Yuxuan Sun",
+                "Yijun Wang",
+                "Chengchao Lv",
+                "Yilin Wen",
+                "Yijun He",
+                "Jinghao Lin",
+                "Yihang Chen",
+                "Chee Wei Tan",
+                "Qianshan Wei",
+                "Lei Zhao",
+                "Bin Pu",
+                "Kenli Li",
+                "Yuan Xue",
+                "Jianxin Lin"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2607.11175v2",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7116270780563354,
+            "pdf_path": "data/pdfs\\arxiv_2607.11175v2.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2606.14766v1",
+            "title": "XMedFusion: A Knowledge-Guided Multimodal Perception and Reasoning Framework for Autonomous Medical Systems",
+            "abstract": "Autonomous medical and robotic systems increasingly rely on intelligent perception and reasoning capabilities to interpret visual data and support clinical decision making. Radiology report generation represents a critical component of such automated diagnostic workflows, yet existing end-to-end multimodal models often suffer from weak visual grounding, resulting in unreliable interpretations and omission of subtle clinical findings. This paper presents XMedFusion, a modular AI framework designed as an intelligent perception and reasoning module for autonomous medical systems. The proposed framework decomposes visual information into coordinated functional components that emulate expert-driven analysis, including a visual perception agent that extracts image-grounded evidence, a knowledge graph construction agent that structures clinically relevant findings, and a retrieval-guided drafting process that ensures a consistent reporting structure. A synthesis agent iteratively integrates visual and structured evidence through reasoning-driven verification to produce reliable and interpretable diagnostic outputs. Experimental evaluation on a public chest radiograph dataset demonstrates significant improvements over baseline vision-language models, achieving gains from 0.0493 to 0.3359 in BLEU-1, 0.0863 to 0.2440 in ROUGE-L, and 0.0829 to 0.1708 in METEOR, along with substantial improvements in semantic evaluation metrics such as Consistency (2.38 to 7.80) and Accuracy (2.34 to 6.93). The results highlight the effectiveness of structured multi-agent perception and reasoning for enhancing robustness, transparency, and automation in intelligent medical imaging systems, enabling integration into autonomous healthcare and robotic diagnostic workflows.",
+            "authors": [
+                "Hamza Riaz",
+                "Arham Haroon",
+                "Maha Baig",
+                "Muhammad Dawood Rizwan",
+                "Muhammad Naseer Bajwa",
+                "Muhammad Moazam Fraz"
+            ],
+            "publication_year": 2026,
+            "doi": "10.1109/icrai70912.2026.11551956",
+            "arxiv_id": "2606.14766v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "2026 International Conference on Robotics and Automation in Industry (ICRAI), pp. 1-6, May 2026",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7706183314323425,
+            "pdf_path": "data/pdfs\\arxiv_2606.14766v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2606.28692v1",
+            "title": "An AI agent for treatment reasoning over a biomedical tool universe",
+            "abstract": "Treatment reasoning underpins every therapeutic decision, integrating disease context, comorbidities, medications, contraindications, and evolving biomedical knowledge to select an appropriate therapy. It is inherently iterative: candidates are weighed against many constraints, revised as evidence emerges, and grounded in verifiable sources. Here we introduce ATHENA-R1, an AI agent for treatment reasoning across all FDA approved drugs since 1939, trained by reinforcement learning over a universe of 212 biomedical tools. At each step it identifies missing information, selects and runs relevant tools, and incorporates the evidence. To train it without human-annotated traces, we build a two-level self-learning framework: multi-agent systems construct the tools, tasks, and reasoning trajectories for supervised fine-tuning, then reinforcement learning with scientific feedback rewards reasoning quality (evidence gathering, grounded tool use, logical non-redundancy). Across five benchmarks of 3,168 drug reasoning tasks and 456 patient treatment cases, ATHENA-R1 outperforms language models and tool-use systems, reaching 94.7% accuracy on open-ended drug reasoning and 82.9% on treatment reasoning, 17.8 and 10.7 points above GPT-5. In blinded evaluations by experts from 28 rare disease organizations, it is preferred over reference models on all criteria, and physicians rated it favorably on complex hospitalized cardiovascular and infectious-disease cases. Adverse-event hypotheses it generated, tested in electronic health records from 5.4 million patients, reached adjusted odds ratios of 1.48-1.84, with no elevation among negative controls. Because it requires knowing what evidence to seek before concluding, treatment reasoning has long been hard for AI; we show it can be reframed as a learnable process of iterative evidence gathering that reinforcement learning can train AI to perform.",
+            "authors": [
+                "Shanghua Gao",
+                "Ayush Noori",
+                "Richard Zhu",
+                "Curtis Ginder",
+                "Zhenglun Kong",
+                "Xiaorui Su",
+                "Justin Kauffman",
+                "Benjamin S. Glicksberg",
+                "Joshua Lampert",
+                "Ankit Sakhuja",
+                "Ashwin Sawant",
+                "ATHENA-R1 Evaluation Consortium",
+                "David A. Clifton",
+                "Noa Dagan",
+                "Ran Balicer",
+                "Marinka Zitnik"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2606.28692v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7248923182487488,
+            "pdf_path": "data/pdfs\\arxiv_2606.28692v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "W7214467995",
+            "title": "Quantifying the plausibility gap in generative AI for surgical video generation with expert assessment",
+            "abstract": "Generative artificial intelligence (AI) shows promise for physical simulation, yet its clinical application remains critically unexplored. We present SurgVeo, a pioneering expert-guided benchmark paired with the Surgical Plausibility Pyramid framework. Evaluating the Veo-3 and Wan2.2 models reveals a consistent plausibility gap: despite high visual fidelity, the majority of errors are surgical logic failures rather than visual quality deficits. By exposing this reliance on visual synthesis, this study provides a roadmap for developing surgical world models.",
+            "authors": [
+                "Zhen Chen",
+                "Qing Xu",
+                "Jinlin Wu",
+                "Biao Yang",
+                "Yuhao Zhai",
+                "Geng Guo",
+                "Jing Zhang",
+                "Yinlu Ding",
+                "Nassir Navab",
+                "Jiebo Luo"
+            ],
+            "publication_year": 2026,
+            "doi": "10.1038/s41746-026-03276-z",
+            "arxiv_id": null,
+            "openalex_id": "W7214467995",
+            "semantic_scholar_id": null,
+            "venue": "npj Digital Medicine",
+            "source": "openalex",
+            "sources": [
+                "openalex"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.6691358268260956,
+            "pdf_path": "data/pdfs\\W7214467995.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "unpaywall"
+        },
+        {
+            "paper_id": "arxiv_2601.03733v1",
+            "title": "RadDiff: Describing Differences in Radiology Image Sets with Natural Language",
+            "abstract": "Understanding how two radiology image sets differ is critical for generating clinical insights and for interpreting medical AI systems. We introduce RadDiff, a multimodal agentic system that performs radiologist-style comparative reasoning to describe clinically meaningful differences between paired radiology studies. RadDiff builds on a proposer-ranker framework from VisDiff, and incorporates four innovations inspired by real diagnostic workflows: (1) medical knowledge injection through domain-adapted vision-language models; (2) multimodal reasoning that integrates images with their clinical reports; (3) iterative hypothesis refinement across multiple reasoning rounds; and (4) targeted visual search that localizes and zooms in on salient regions to capture subtle findings. To evaluate RadDiff, we construct RadDiffBench, a challenging benchmark comprising 57 expert-validated radiology study pairs with ground-truth difference descriptions. On RadDiffBench, RadDiff achieves 47% accuracy, and 50% accuracy when guided by ground-truth reports, significantly outperforming the general-domain VisDiff baseline. We further demonstrate RadDiff's versatility across diverse clinical tasks, including COVID-19 phenotype comparison, racial subgroup analysis, and discovery of survival-related imaging features. Together, RadDiff and RadDiffBench provide the first method-and-benchmark foundation for systematically uncovering meaningful differences in radiological data.",
+            "authors": [
+                "Xiaoxian Shen",
+                "Yuhui Zhang",
+                "Sahithi Ankireddy",
+                "Xiaohan Wang",
+                "Maya Varma",
+                "Henry Guo",
+                "Curtis Langlotz",
+                "Serena Yeung-Levy"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2601.03733v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.7329593420028686,
+            "pdf_path": "data/pdfs\\arxiv_2601.03733v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2608.08163v2",
+            "title": "Agentic AI-driven Immersive Simulation: A Knowledge-Aware Virtual Training Platform for High Dose Rate (HDR) Brachytherapy",
+            "abstract": "The convergence of the Metaverse and Large Language Model (LLM)-based AI agent is catalyzing a shift toward autonomous, immersive, and personalized pedagogical frameworks in medical education. This paper presents a novel agentic AI-driven immersive simulation specifically designed for High Dose Rate (HDR) vaginal cylinder (VC) brachytherapy in cancer care. By integrating Virtual Reality (VR) and mobile computing, the system establishes a high-fidelity, risk-free environment that allows trainees to master complex procedural skills without the facility or safety constraints posed by physical anatomy or live radioactive sources. A core contribution of this work is the seamless integration of a knowledge-aware assistant leveraging Retrieval-Augmented Generation (RAG) to ground agent interactions in authoritative clinical guidelines. This architecture also enables an interactive agent to provide natural language interfaces and hands-free, real-time guidance during intricate medical maneuvers. We validate the proposed system through a prototype deployment comprising a Meta Quest 3 interface linked to a local GPU-accelerated AI backend, demonstrating a feasible architecture for HDR brachytherapy simulation. Experimental results indicate that the system maintains suitable end-to-end latency and high context precision, answer completeness, and relevance in the RAG-enhanced pedagogical support.",
+            "authors": [
+                "Ronghua Xu",
+                "Kepha Barasa",
+                "Manoj Kumal",
+                "Xinyun Liu",
+                "Weihua Zhou",
+                "Xin Qian"
+            ],
+            "publication_year": 2026,
+            "doi": "10.1109/chase69719.2026.00069",
+            "arxiv_id": "2608.08163v2",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.6594778537750243,
+            "pdf_path": "data/pdfs\\arxiv_2608.08163v2.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "arxiv_2609.04842v1",
+            "title": "MMTClinic: Multimodal, Multilingual Time Series Question Answering and Reasoning Benchmark for Clinical Domain",
+            "abstract": "Time-series data in clinical settings is crucial for capturing dynamic changes in a patient's health over time, enabling timely diagnosis, personalized treatment, and early detection of critical events. However, the development of clinically reliable and linguistically inclusive medical AI systems remains a significant challenge, primarily due to the lack of multimodal, multilingual, and time-series-grounded benchmarks that reflect the complexity of real-world clinical scenarios. To fill this gap, we present MMTClinic, a benchmark designed to evaluate large language models (LLMs) on complex reasoning and question-answering tasks involving clinical time-series. MMTClinic combines text, medical images, and multivariate physiological signals and includes 30,000 QA pairs (15,000 multiple choice questions (MCQs) and 15,000 open-ended questions) across five languages: English, Hindi, Bengali, Marathi, and Tamil. These questions cover three important clinical tasks---mortality prediction, heart rate forecasting, and SOFA score estimation. We evaluate 13 state-of-the-art LLMs in zero-shot, few-shot, and chain-of-thought settings. Our evaluation reveals notable differences in model performance across tasks, languages, and modalities, highlighting current limitations in clinical reasoning capabilities. MMTClinic provides a valuable resource for advancing multilingual, multimodal, and time-series-aware medical AI research. The dataset will be made publicly available on successful acceptance of the work.",
+            "authors": [
+                "Sourav Malakar",
+                "Harshit Nigam",
+                "Akash Ghosh",
+                "Sriparna Saha",
+                "Amlan Chakrabarti",
+                "Saptarsi Goswami",
+                "Priti Singh"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2609.04842v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.6991316318511962,
+            "pdf_path": "data/pdfs\\arxiv_2609.04842v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        },
+        {
+            "paper_id": "W7214968756",
+            "title": "Modeling human skin aging with artificial intelligence: from multi-layer structure to personalized intervention",
+            "abstract": "Abstract Skin aging is driven by progressive alterations across cutaneous structures and systemic biological processes, yet current assessment and intervention strategies remain largely population based and lack precision. Recent advances in artificial intelligence (AI) enable integrated modeling of skin aging phenotypes, structural dynamics, and individualized rejuvenation responses through multimodal analysis and predictive simulation. Here, we summarize emerging AI-driven approaches in skin aging research, focusing on multi-structure modeling, multimodal data integration, interpretable prediction, and clinically closed-loop optimization. We further discuss current challenges in data heterogeneity, generalizability, fairness, and clinical translation, and outline future directions toward personalized rejuvenation medicine.",
+            "authors": [
+                "Wenyue Zheng",
+                "Yantong Cai",
+                "Yiwen Xu",
+                "Ke Hu",
+                "Haoran Zhang",
+                "Songshan Li",
+                "Zhaowen Wang",
+                "Yuanqiu Zhong",
+                "Liying Xu",
+                "Donghua Chen",
+                "Shuya Ren",
+                "Ougen Liu",
+                "Chao Yuan",
+                "Bin Yang"
+            ],
+            "publication_year": 2026,
+            "doi": "10.1038/s41514-026-00518-y",
+            "arxiv_id": null,
+            "openalex_id": "W7214968756",
+            "semantic_scholar_id": null,
+            "venue": "npj Aging",
+            "source": "openalex",
+            "sources": [
+                "openalex"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.6202020674943924,
+            "pdf_path": "data/pdfs\\W7214968756.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "openalex_direct"
+        },
+        {
+            "paper_id": "arxiv_2608.25771v1",
+            "title": "Large Language Model Few-Shot Prompting with Dilemma Training Outperforms Human Surrogates in Predicting Patient Preferences",
+            "abstract": "In serious illness, human surrogates often struggle to accurately predict patient preferences (68% accuracy), causing decision conflict. Personalized Patient Preference Predictor (P4) agents offer a potential solution, but prior prototypes treat values as static ratings, ignoring the contextual, situation-dependent nature of medical choices. Grounded in the 'logic of care', we present P4-DT (Dilemma Training), a P4 agent that constructs a patient decision policy by engaging users with varied medical dilemmas, eliciting individual preference reasoning through bi-directional training. In a study with 12 patient-surrogate dyads, P4-DT predicted patient treatment choices with 81.7% accuracy, significantly exceeding chance (OR = 5.61 [2.03, 15.51], p < .001) and outperforming both unassisted surrogates (55.0%; OR = 3.67 [1.59, 8.47], p = .002) and surrogates assisted by P4-DT (61.7%). Comparative prompt analyses showed that incorporating contextual scenario decisions and open-ended text improved accuracy by 15.0 percentage points over initial values ratings alone. We discuss implications for further testing and designing of context-aware AI agents that embody richer human experience to partner in complex decision-making.",
+            "authors": [
+                "Natasha Ureyang",
+                "Sebastian Porsdam Mann",
+                "Yuxin Liu",
+                "Zuriel Hassirim",
+                "Melanie Almonte",
+                "Wenhao Chen",
+                "Joyce Ng",
+                "Thant Nay Lin",
+                "Aung Thiha",
+                "Gerald CH Koh",
+                "Brian David Earp",
+                "Pin Sym Foong"
+            ],
+            "publication_year": 2026,
+            "doi": null,
+            "arxiv_id": "2608.25771v1",
+            "openalex_id": null,
+            "semantic_scholar_id": null,
+            "venue": "arXiv",
+            "source": "arxiv",
+            "sources": [
+                "arxiv"
+            ],
+            "run_id": "a7de7d6d",
+            "relevance_score": 0.6534883558750153,
+            "pdf_path": "data/pdfs\\arxiv_2608.25771v1.pdf",
+            "fulltext_resolved": true,
+            "resolution_method": "arxiv_direct"
+        }
+    ],
+    "api_failures": [],
+    "timestamp": "2026-10-04T22:18:03.369087",
+    "duration_seconds": 270.99857687950134,
+    "deduplication_logs": [
+        {
+            "duplicate_title": "A Clinician-in-the-Loop, Explainable and Fairness-Aware Framework for AI-Assisted Screening of Depression and Anxiety: Design and Validation Protocol",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7216060076",
+            "canonical_title": "A Clinician-in-the-Loop, Explainable and Fairness-Aware Framework for AI-Assisted Screening of Depression and Anxiety: Design and Validation Protocol",
+            "canonical_id": "W7215945947",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Application of Retrieval-Augmented Generation Large Language Models in Stomatology: A Scoping Review",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215061526",
+            "canonical_title": "Application of Retrieval-Augmented Generation Large Language Models in Stomatology: A Scoping Review",
+            "canonical_id": "W7215061526",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Application of Retrieval-Augmented Generation Large Language Models in Stomatology: A Scoping Review",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215061526",
+            "canonical_title": "Application of Retrieval-Augmented Generation Large Language Models in Stomatology: A Scoping Review",
+            "canonical_id": "W7215061526",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Beyond pixels: A comprehensive survey on deep learning-based scene understanding for human-centered applications",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7216330445",
+            "canonical_title": "Beyond pixels: A comprehensive survey on deep learning-based scene understanding for human-centered applications",
+            "canonical_id": "W7216330445",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Pastoral AI ethics for chatbots in religious education",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7214909809",
+            "canonical_title": "Pastoral AI ethics for chatbots in religious education",
+            "canonical_id": "W7214909809",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Generative AI and digital productivity: Transitions, institutional misalignment, and human role redefinition",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7214934116",
+            "canonical_title": "Generative AI and digital productivity: Transitions, institutional misalignment, and human role redefinition",
+            "canonical_id": "W7214934116",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Human-centric digital twins in industry 5.0: technologies, applications, and future directions",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215030669",
+            "canonical_title": "Human-centric digital twins in industry 5.0: technologies, applications, and future directions",
+            "canonical_id": "W7215030669",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Reframing epidemic early warning: toward AI-native decision intelligence for public health governance",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215069972",
+            "canonical_title": "Reframing epidemic early warning: toward AI-native decision intelligence for public health governance",
+            "canonical_id": "W7215069972",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "ARTIFICIAL INTELLIGENCE AUTHORITY AND HUMAN DECISION-MAKING: AN ANALYSIS OF THE FILM “MERCY” (2026) FROM A COMMUNICATION PERSPECTIVE",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215074904",
+            "canonical_title": "ARTIFICIAL INTELLIGENCE AUTHORITY AND HUMAN DECISION-MAKING: AN ANALYSIS OF THE FILM “MERCY” (2026) FROM A COMMUNICATION PERSPECTIVE",
+            "canonical_id": "W7215074904",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "AI-Optimized Resource Allocation Models for Public Health Emergency Response and Compliance Auditing",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215080558",
+            "canonical_title": "AI-Optimized Resource Allocation Models for Public Health Emergency Response and Compliance Auditing",
+            "canonical_id": "W7215080558",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Nano-totalitarianism: Brain-computer interfaces, fusion databases, and the weaponisation of consciousness",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215080763",
+            "canonical_title": "Nano-totalitarianism: Brain-computer interfaces, fusion databases, and the weaponisation of consciousness",
+            "canonical_id": "W7215080763",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Audiologist-Guided Multimodal AI for Pure-Tone Audiometry and Tympanometry Interpretation and Reporting",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215096118",
+            "canonical_title": "Audiologist-Guided Multimodal AI for Pure-Tone Audiometry and Tympanometry Interpretation and Reporting",
+            "canonical_id": "W7215096118",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Harmonizing Vietnamese traditional and western medicine: a digital health blueprint and the IMKE architectural framework",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215103602",
+            "canonical_title": "Harmonizing Vietnamese traditional and western medicine: a digital health blueprint and the IMKE architectural framework",
+            "canonical_id": "W7215103602",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "MEMOIR-VLM—a multimodal vision-language model for Alzheimer's disease classification and question answering",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215112637",
+            "canonical_title": "MEMOIR-VLM—a multimodal vision-language model for Alzheimer's disease classification and question answering",
+            "canonical_id": "W7215112637",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "A comprehensive review on recent pretrained multimodal deep learning models from architectures to future directions",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215112952",
+            "canonical_title": "A comprehensive review on recent pretrained multimodal deep learning models from architectures to future directions",
+            "canonical_id": "W7215112952",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Artificial Intelligence and Large Language Models in Laboratory Medicine: Applications and Future Perspectives",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7215113648",
+            "canonical_title": "Artificial Intelligence and Large Language Models in Laboratory Medicine: Applications and Future Perspectives",
+            "canonical_id": "W7215113648",
+            "match_method": "doi_match"
+        },
+        {
+            "duplicate_title": "Hierarchical Failure Taxonomy and Ensemble Repair Framework for Multimodal Medical AI Agents",
+            "duplicate_source": "openalex",
+            "duplicate_id": "W7214964927",
+            "canonical_title": "Hierarchical Failure Taxonomy and Ensemble Repair Framework for Multimodal Medical AI Agents",
+            "canonical_id": "W7214955720",
+            "match_method": "title_author_year_match"
+        },
+        {
+            "duplicate_title": "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral",
+            "duplicate_source": "arxiv",
+            "duplicate_id": "arxiv_2608.30938v1",
+            "canonical_title": "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral",
+            "canonical_id": "arxiv_2608.30938v1",
+            "match_method": "arxiv_id_match"
+        },
+        {
+            "duplicate_title": "MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents",
+            "duplicate_source": "arxiv",
+            "duplicate_id": "arxiv_2608.21810v1",
+            "canonical_title": "MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents",
+            "canonical_id": "arxiv_2608.21810v1",
+            "match_method": "arxiv_id_match"
+        },
+        {
+            "duplicate_title": "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral",
+            "duplicate_source": "arxiv",
+            "duplicate_id": "arxiv_2608.30938v1",
+            "canonical_title": "Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral",
+            "canonical_id": "arxiv_2608.30938v1",
+            "match_method": "arxiv_id_match"
+        },
+        {
+            "duplicate_title": "MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents",
+            "duplicate_source": "arxiv",
+            "duplicate_id": "arxiv_2608.21810v1",
+            "canonical_title": "MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents",
+            "canonical_id": "arxiv_2608.21810v1",
+            "match_method": "arxiv_id_match"
+        }
+    ]
+}
