@@ -70,6 +70,8 @@ class GroqFallbackClient:
         except Exception as e:
             logger.warning(f"Could not initialize Groq clients: {e}")
 
+        self.rate_limit_cooldowns: Dict[str, float] = {}
+
     def generate_json(
         self, 
         system_prompt: str, 
@@ -79,7 +81,7 @@ class GroqFallbackClient:
     ) -> Optional[Dict[str, Any]]:
         """
         Executes chat completion with JSON parsing, distributing requests across keys via Round-Robin
-        with automatic failover to sibling keys.
+        with automatic failover to sibling keys and fast cooldown detection.
         """
         if not self.clients:
             return None
@@ -94,16 +96,23 @@ class GroqFallbackClient:
             self.request_counter += 1
 
         # Multi-Model Fallback Pool: Active verified Groq models
-        model_pool = ["openai/gpt-oss-20b", "qwen/qwen3.8-27b"]
+        model_pool = ["qwen/qwen3.8-27b", "openai/gpt-oss-120b", "openai/gpt-oss-20b"]
         if self.model_name and self.model_name not in model_pool:
             model_pool.insert(0, self.model_name)
+
+        now = time.time()
 
         for current_model in model_pool:
             for offset in range(num_clients):
                 idx = (start_idx + offset) % num_clients
                 client = self.clients[idx]
                 key_preview = self.client_keys[idx]
+                cooldown_key = f"{key_preview}:{current_model}"
                 
+                # Skip if key is currently in rate-limit cooldown
+                if self.rate_limit_cooldowns.get(cooldown_key, 0) > now:
+                    continue
+
                 try:
                     kwargs = {
                         "model": current_model,
@@ -141,9 +150,10 @@ class GroqFallbackClient:
 
                 except Exception as e:
                     err_str = str(e).lower()
-                    if "429" in err_str or "rate" in err_str or "limit" in err_str or "tpm" in err_str or "otpm" in err_str:
-                        logger.warning(f"[Groq Key #{idx+1} ({key_preview}) | Model {current_model}] 429 Rate limit, backing off 1.5s...")
-                        time.sleep(1.5)
+                    if "429" in err_str or "rate" in err_str or "limit" in err_str or "tpm" in err_str or "tpd" in err_str:
+                        # Cooldown for 60 seconds
+                        self.rate_limit_cooldowns[cooldown_key] = time.time() + 60
+                        logger.warning(f"[Groq Key #{idx+1} ({key_preview}) | Model {current_model}] Rate limit reached. In cooling down.")
                         continue
                     logger.warning(f"[Groq Key #{idx+1} ({key_preview}) | Model {current_model}] {e}")
                     continue

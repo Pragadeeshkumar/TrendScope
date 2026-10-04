@@ -135,8 +135,9 @@ def parse_pdf(filepath: str, paper_id: str) -> ParsedPDFDocument:
             doc.total_pages = len(pdf)
             sentence_idx = 1
             current_section = "Abstract"
+            max_pages = min(len(pdf), 25)
             
-            for page_num in range(len(pdf)):
+            for page_num in range(max_pages):
                 page = pdf[page_num]
                 page_index = page_num + 1
                 blocks = page.get_text("blocks")
@@ -181,7 +182,9 @@ def parse_pdf(filepath: str, paper_id: str) -> ParsedPDFDocument:
                 doc.total_pages = len(pdf.pages)
                 sentence_idx = 1
                 current_section = "Abstract"
-                for page_num, page in enumerate(pdf.pages):
+                max_pages = min(len(pdf.pages), 20)
+                for page_num in range(max_pages):
+                    page = pdf.pages[page_num]
                     page_index = page_num + 1
                     raw_text = page.extract_text() or ""
                     clean_text = clean_line_noise(raw_text)
